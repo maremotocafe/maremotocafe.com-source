@@ -2,14 +2,78 @@
 baseURL = "http://maremotocafe.com/"
 title = "Maremoto Café and Cocktail"
 theme = "meghna-hugo"
+defaultContentLanguage = "es"
 languageCode = "es"
 
 enableRobotsTXT = true
-googleAnalytics = ""
 enableGitInfo = false
 
-############################# Plugins ##########################
-# css plugins
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "15"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = []
+
+####### DEFAULT PARAMETERS ######
+[params]
+logo = "images/logo.png"
+description = "Maremoto Café and Cocktail"
+author = "Mario Ortiz Manero"
+google_analitycs_id = "" # Your ID
+post_share = true
+
+###### LANGUAGE-DEPENDENT CONTENT ######
+[Languages.es]
+languageName = "Es"
+languageCode = "es-es"
+contentDir = "content/spanish"
+weight = 1
+home = "Inicio"
+copyright = "copyright &copy; 2019 [gethugothemes](https://gethugothemes.com) all right reserved"
+
+# preloader
+[params.preloader]
+enable = true
+preloader = "images/logo.png"
+
+# google map
+[params.map]
+enable = true
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+map_latitude = "41.6455785"
+map_longitude = "-0.878576"
+map_marker = "images/marker.png"
+
+############################# social icons ##########################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-dribbble" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+####### PLUGINS #######
+# CSS
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
@@ -21,7 +85,7 @@ link = "plugins/slick/slick.css"
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
 
-# js plugins
+# JS
 [[params.plugins.js]]
 link = "plugins/jquery/jquery.min.js"
 [[params.plugins.js]]
@@ -37,7 +101,7 @@ link = "plugins/lazy-load/lozad.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/map.js"
 
-############################# Navigation ##################################
+####### NAVIGATION #######
 [[menu.main]]
 name = "About Us"
 URL = "about"
@@ -78,71 +142,3 @@ weight = 7
 name = "Themefisher"
 URL = "https://themefisher.com/"
 weight = 8
-
-############################# Default Parameters ##########################
-[params]
-logo = "images/logo.png"
-# Meta data
-description = "Responsive Multipurpose Parallax HTML5 Template"
-author = "Themefisher"
-# Google Analitycs
-google_analitycs_id = "" # Your ID
-# post share
-post_share = true
-
-# preloader
-[params.preloader]
-enable = true
-preloader = "images/logo.png"
-
-# google map
-[params.map]
-enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
-
-############################# social icons ##########################
-[[params.social]]
-icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-icon = "ti-dribbble" # themify icon pack : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-icon = "ti-pinterest" # themify icon pack : https://themify.me/themify-icons
-link = "#"
-
-
-################################ English Language ########################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 1
-home = "Home"
-copyright = "copyright &copy; 2019 [gethugothemes](https://gethugothemes.com) all right reserved"
-
-################################ France Language ########################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 2
-home = "Accueil"
-copyright = "copyright et copie; 2019 [gethugothemes] (https://gethugothemes.com) tous droits réservés"
