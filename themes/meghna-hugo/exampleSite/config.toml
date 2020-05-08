@@ -1,12 +1,15 @@
-####### MAIN CONFIG #######
-baseURL = "http://maremotocafe.com/"
-title = "Maremoto Café and Cocktail"
+################################# Default configuration ###################
+baseURL = "https://examplesite.com"
+title = "Meghna"
 theme = "meghna-hugo"
-languageCode = "es"
-
-enableRobotsTXT = true
-googleAnalytics = ""
-enableGitInfo = false
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "15"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = []
 
 ############################# Plugins ##########################
 # css plugins
