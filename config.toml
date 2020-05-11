@@ -22,7 +22,7 @@ disableLanguages = []
 logo = "images/logo.png"
 description = "Maremoto Café and Cocktail"
 author = "Mario Ortiz Manero"
-google_analitycs_id = "" # Your ID
+google_analytics_id = "UA-162662877-2"
 post_share = true
 
 ###### LANGUAGE-DEPENDENT CONTENT ######
