@@ -8,5 +8,5 @@ banner:
   content: "Cafés, Desayunos, Brunch, Copas, Cocktails de Autor y mucho más"
   button:
     enable: true
-    label: "¡Hola! ¿Qué te apetece?"
+    label: "¿Qué te apetece?"
     link: "#services"
