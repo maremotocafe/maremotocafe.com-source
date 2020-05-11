@@ -1,11 +1,6 @@
 {{ if .Site.Params.map.enable }}
 {{ with .Site.Params.map }}
 {{"<!-- Google Map -->" | safeHTML}}
-<div class="google-map">
-	<div id="map" data-latitude="{{ .map_latitude }}"
-	data-longitude="{{ .map_longitude }}"
-	data-marker="{{ .map_marker | absURL }}"
-	data-marker-name="{{ $.Site.Title }}"></div>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb={{ .gmap_id }}" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 {{ end }}
 {{ end }}

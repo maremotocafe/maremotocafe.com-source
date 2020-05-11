@@ -42,7 +42,8 @@ preloader = "images/logo.png"
 # google map
 [params.map]
 enable = true
-gmap_api = "AIzaSyCPAqseQaVKuCSbU3bR0QA2X36nxaADnMI"
+# ID obtained by sharing the location and then selecting "Embed map"
+gmap_id = "!1m14!1m8!1m3!1d11925.881421582186!2d-0.878576!3d41.6455785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfad6f08736f1f129!2sMaremoto%20Caf%C3%A9%20%26%20Cocktail!5e0!3m2!1sen!2ses!4v1589193455388!5m2!1sen!2ses"
 map_latitude = "41.6455785"
 map_longitude = "-0.878576"
 map_marker = "images/marker.png"
