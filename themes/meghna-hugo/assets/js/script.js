@@ -2,10 +2,6 @@
 /*	Page Preloader
 /* ========================================================================= */
 
-$(window).on('load', function () {
-	$('.preloader').fadeOut(100);
-});
-
 jQuery(function ($) {
 	"use strict";
 
