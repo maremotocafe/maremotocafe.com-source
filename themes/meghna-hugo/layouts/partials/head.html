@@ -9,17 +9,23 @@
 	<meta name="author" content="{{ . }}">{{ end }}
 	{{ hugo.Generator }}
 
-	{{ "<!-- plugins -->" | safeHTML }}
-	{{ range .Site.Params.plugins.css }}
-	<link rel="stylesheet" href="{{ .link | absURL }}">
-	{{ end }}
+    {{ "<!-- CSS Plugins -->" | safeHTML }}
+
+    {{ "<!-- Bootstrap -->" | safeHTML }}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    {{ "<!-- Slick Carousel -->" | safeHTML }}
+    <link rel="stylesheet" src="{{ `plugins/slick/slick.css` | absURL }}"></script>
+
+    {{ "<!-- Themify icons -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ `plugins/themify-icons/themify-icons.css` | absURL }}">
+
+    {{ "<!-- Magnific Popup -->" | safeHTML }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 
 	{{"<!-- Main Stylesheet -->"|safeHTML}}
 	{{ $styles := resources.Get "css/style.css" | minify}}
 	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-
-    {{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
-    <link rel="stylesheet" href="{{ `css/custom.css` | relURL}}" media="screen">
 
 	{{ "<!--Favicon-->" | safeHTML }}
 	<link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
