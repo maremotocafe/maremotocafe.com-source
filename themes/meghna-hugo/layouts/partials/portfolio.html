@@ -22,6 +22,7 @@
 					<label class="btn active">
 						<input type="radio" name="shuffle-filter" value="all" checked="checked" />{{ i18n "all"}}
 					</label>
+                    <!-- TODO maximum category width -->
 					{{ $categories := slice }}
 					{{ range .portfolio_item }}
 					{{ range .categories }}
@@ -30,7 +31,7 @@
 					{{ end }}
 					{{ range ( $categories | uniq ) }}
 					<label class="btn">
-						<input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . | humanize }}
+						<input type="radio" name="shuffle-filter" value="{{ . | urlize }}" />{{ . }}
 					</label>
 					{{ end }}
 				</div>
