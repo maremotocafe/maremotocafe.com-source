@@ -42,6 +42,15 @@
 
 {{ "<!-- Magnific Popup -->" | safeHTML }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script>
+$('.shuffle-wrapper').magnificPopup({
+    delegate: 'figure .portfolio-block img',
+    type: 'image',
+    gallery: {
+        enabled: true
+    }
+});
+</script>
 
 {{ "<!-- Lozad -->" | safeHTML }}
 <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>

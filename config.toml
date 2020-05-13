@@ -37,8 +37,6 @@ copyright = "copyright &copy; 2019 [gethugothemes](https://gethugothemes.com) al
 ####### MAP #######
 [params.map]
 enable = true
-# Restricted Google Key for the site
-key = "AIzaSyBYcMHfSj0iAHWXcTipyrI2wyct2NIpmWI"
 place = "Maremoto Café & Cocktail"
 
 ####### SOCIAL NETWORKS #######
