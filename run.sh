@@ -7,11 +7,11 @@ cmd_exists() {
 
 # Obtaining the IP with `ip`, or in case it's not installed, `ifconfig`.
 if cmd_exists ip; then
-    MY_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
+    PRIVATE_IP=$(ip route get 1 | awk '{print $(NF-2);exit}')
 else
-    MY_IP=$(ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
+    PRIVATE_IP=$(ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p')
 fi
-URL="http://$MY_IP:1313"
+URL="http://$PRIVATE_IP:1313"
 
 # Opening a tab in the browser with the URL
 if cmd_exists xdg-open; then
@@ -21,4 +21,4 @@ elif cmd_exists open; then
 fi
 
 # Starting the server at the end
-hugo server --bind "$MY_IP" --baseURL "$URL"
+hugo server --bind "$PRIVATE_IP" --baseURL "$URL"
