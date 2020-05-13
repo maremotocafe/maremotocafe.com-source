@@ -1,6 +1,6 @@
 #################################### portfolio ###############################
 enable: true
-title: Nuestro Menú
+title: Nuestra Carta
 categories:
   - name: Cafés y Tés
     subcategories:
