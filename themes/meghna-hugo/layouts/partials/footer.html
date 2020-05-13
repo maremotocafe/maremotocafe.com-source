@@ -43,13 +43,10 @@
 {{ "<!-- Magnific Popup -->" | safeHTML }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script>
-$('.shuffle-wrapper').magnificPopup({
-    delegate: 'figure .portfolio-block img',
-    type: 'image',
-    gallery: {
-        enabled: true
-    }
-});
+  $('.open-popup-link').magnificPopup({
+    type:'inline',
+    midClick: true
+  })
 </script>
 
 {{ "<!-- Lozad -->" | safeHTML }}
@@ -59,7 +56,7 @@ $('.shuffle-wrapper').magnificPopup({
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
 
-{{ "<!-- google analytics -->" | safeHTML }}
+{{ "<!-- Google Analytics -->" | safeHTML }}
 {{ with .Site.Params.google_analytics_id }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>

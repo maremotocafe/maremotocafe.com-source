@@ -3,6 +3,13 @@ enable: true
 title: Nuestra Carta
 description: >
     Puedes usar los botones de abajo para filtrar los ítems de la carta.
+titulo_ingredientes: Ingredientes
+titulo_alergenos: Alérgenos
+titulo_txt_aclaraciones: Aclaraciones
+titulo_txt_temporal: Nota
+titulo_grad_alcoholica: Graduación
+titulo_vol_ml: Volumen (ml)
+titulo_edul_gr: Edulcorantes (gr)
 categorias:
   - nombre: Cafés y Tés
     subcategorias:
@@ -55,66 +62,133 @@ categorias:
 
 items:
   - nombre: Tag Design
-    imagen: images/fotos_menu/imagen1.png
+    imagen: images/portfolio/portfolio-1.jpg
     imagen_pequenya: images/portfolio/portfolio-1.webp
     categorias: ["Cafés y Tés", "Cafés sin Alcohol"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Example
     imagen: images/portfolio/portfolio-1.jpg
     imagen_pequenya: images/portfolio/portfolio-1.webp
     categorias: ["Cafés y Tés", "Infusiones", "Calientes"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Sound system
     imagen: images/portfolio/portfolio-2.jpg
     imagen_pequenya: images/portfolio/portfolio-2.webp
     categorias: ["Cocktails & Drinks", "Gin Tonic y Combinados"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Clock Product
     imagen: images/portfolio/portfolio-3.jpg
     imagen_pequenya: images/portfolio/portfolio-3.webp
     categorias: ["Desayunos"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Bottol Label
     imagen: images/portfolio/portfolio-4.jpg
     imagen_pequenya: images/portfolio/portfolio-4.webp
     categorias: ["Bocadillos"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Shopping Bag
     imagen: images/portfolio/portfolio-5.jpg
     imagen_pequenya: images/portfolio/portfolio-5.webp
     categorias: ["Smoothies"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
 
   - nombre: Tag Design
     imagen: images/portfolio/portfolio-6.jpg
     imagen_pequenya: images/portfolio/portfolio-6.webp
     categorias: ["Smoothies"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Business Card
     imagen: images/portfolio/portfolio-7.jpg
     imagen_pequenya: images/portfolio/portfolio-7.webp
     categorias: ["Bocadillos"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Stationary Design
     imagen: images/portfolio/portfolio-8.jpg
     imagen_pequenya: images/portfolio/portfolio-8.webp
     categorias: ["Bocadillos", "Desayunos"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Tag Design
     imagen: images/portfolio/portfolio-2.jpg
     imagen_pequenya: images/portfolio/portfolio-2.webp
     categorias: ["Cocktails & Drinks", "Cafés y Tés"]
-    content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
     
   - nombre: Mi cocktail
     imagen: images/portfolio/portfolio-2.jpg
     imagen_pequenya: images/portfolio/portfolio-2.webp
     categorias: ["Cocktails & Drinks", "Cafés y Tés"]
+    ingredientes: abc
+    alergenos: abc
+    txt_aclaraciones: abc
+    txt_temporal: abc
+    grad_alcoholica: 10000%
+    vol_ml: 5000ml
+    edul_gr: 40000g
