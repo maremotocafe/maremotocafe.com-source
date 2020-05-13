@@ -835,7 +835,6 @@ a:hover {
   Portfolio section
 ==================================================================*/
 .portfolio-filter {
-  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -925,10 +924,16 @@ a:hover {
   line-height: 50px;
 }
 
+.menu-level-one {
+  margin-bottom: 20px;
+}
+
 .menu-level-two {
+  margin-bottom: 20px;
 }
 
 .menu-level-three {
+  margin-bottom: 20px;
 }
 
 /*=================================================================
