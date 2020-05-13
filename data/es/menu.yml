@@ -26,6 +26,13 @@ categories:
         - name: Frozen
         - name: Long Drinks
         - name: Clásicos
+  - name: Desayunos, Almuerzos y Zumos
+    subcategories:
+        - name: Desayunos
+        - name: Almuerzos
+        - name: Zumos Naturales
+        - name: Repostería Saludable
+        - name: Bizcochos y Cookies
   - name: Bocadillos, Sándwich y Focaccias
     subcategories:
         - name: Bocadillos

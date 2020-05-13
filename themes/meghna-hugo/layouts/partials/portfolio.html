@@ -75,17 +75,10 @@
 				data-groups="[{{ range $index, $element:= .categories }}{{ if ne $index 0 }},{{end}}&quot;{{ . | urlize}}&quot;{{ end }}]">
 				<div class="portfolio-block mb-4">
 					<img class="img-fluid" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
-                    <div class="portfolio-title">{{ .name }}</div>
-					<div class="caption">
-						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="{{ .image | relURL }}"
-							data-lightbox="image-1">
-							<i class="ti-search"></i>
-						</a>
-						<h4 class="mt-3">
-							{{ .name }}
-						</h4>
-						<p>{{ .content | markdownify }}</p>
-					</div>
+                    <a class="caption image-popup" href="{{ .image | relURL }}" data-effect="mfp-with-zoom"	data-lightbox="image-1">
+                        <span>{{ .name }}</span>
+                        <i class="ti-search"></i>
+                    </a>
 				</div>
 			</figure>
 			{{ end }}
