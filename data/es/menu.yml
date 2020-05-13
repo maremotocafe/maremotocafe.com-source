@@ -55,7 +55,7 @@ categories:
 
 items:
   - name: Tag Design
-    image: images/portfolio/portfolio-1.jpg
+    image: images/fotos_menu/imagen1.png
     image_webp: images/portfolio/portfolio-1.webp
     categories: ["Cafés y Tés", "Cafés sin Alcohol"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
@@ -113,3 +113,8 @@ items:
     image_webp: images/portfolio/portfolio-2.webp
     categories: ["Cocktails & Drinks", "Cafés y Tés"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
+    
+  - name: Mi cocktail
+    image: images/portfolio/portfolio-2.jpg
+    image_webp: images/portfolio/portfolio-2.webp
+    categories: ["Cocktails & Drinks", "Cafés y Tés"]
