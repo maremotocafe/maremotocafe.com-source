@@ -3,118 +3,118 @@ enable: true
 title: Nuestra Carta
 description: >
     Puedes usar los botones de abajo para filtrar los ítems de la carta.
-categories:
-  - name: Cafés y Tés
-    subcategories:
-        - name: Cafés con Alcohol
-        - name: Cafés sin Alcohol
-        - name: Cafés Fríos
-        - name: Infusiones
-          subcategories:
-              - name: Frías
-              - name: Calientes
-  - name: Cocktails & Drinks
-    subcategories:
-        - name: Gin Tonic y Combinados
-        - name: Smash Juledes
-          subcategories:
-              - name: Con Ron y Cachara
-              - name: Con Whisky
-              - name: Con Vodka
-              - name: Otros Licores
-        - name: Cocktails de Autor
-        - name: Frozen
-        - name: Long Drinks
-        - name: Clásicos
-  - name: Desayunos, Almuerzos y Zumos
-    subcategories:
-        - name: Desayunos
-        - name: Almuerzos
-        - name: Zumos Naturales
-        - name: Repostería Saludable
-        - name: Bizcochos y Cookies
-  - name: Bocadillos, Sándwich y Focaccias
-    subcategories:
-        - name: Bocadillos
-        - name: Sandwiches
-        - name: Focaccias
-  - name: Smoothies, Healthy Drinks y Batidos
-    subcategories:
-        - name: Smoothies
-        - name: Granizados
-        - name: Batidos
-        - name: Healthy Cocktails
-          subcategories:
-              - name: Sin Alcohol
-              - name: Sin Alcohol ni Azúcares
-  - name: Ofertas Destacadas
-    subcategories:
-        - name: Día
-        - name: Tarde
-        - name: Noche
+categorias:
+  - nombre: Cafés y Tés
+    subcategorias:
+        - nombre: Cafés con Alcohol
+        - nombre: Cafés sin Alcohol
+        - nombre: Cafés Fríos
+        - nombre: Infusiones
+          subcategorias:
+              - nombre: Frías
+              - nombre: Calientes
+  - nombre: Cocktails & Drinks
+    subcategorias:
+        - nombre: Gin Tonic y Combinados
+        - nombre: Smash Juledes
+          subcategorias:
+              - nombre: Con Ron y Cachara
+              - nombre: Con Whisky
+              - nombre: Con Vodka
+              - nombre: Otros Licores
+        - nombre: Cocktails de Autor
+        - nombre: Frozen
+        - nombre: Long Drinks
+        - nombre: Clásicos
+  - nombre: Desayunos, Almuerzos y Zumos
+    subcategorias:
+        - nombre: Desayunos
+        - nombre: Almuerzos
+        - nombre: Zumos Naturales
+        - nombre: Repostería Saludable
+        - nombre: Bizcochos y Cookies
+  - nombre: Bocadillos, Sándwich y Focaccias
+    subcategorias:
+        - nombre: Bocadillos
+        - nombre: Sandwiches
+        - nombre: Focaccias
+  - nombre: Smoothies, Healthy Drinks y Batidos
+    subcategorias:
+        - nombre: Smoothies
+        - nombre: Granizados
+        - nombre: Batidos
+        - nombre: Healthy Cocktails
+          subcategorias:
+              - nombre: Sin Alcohol
+              - nombre: Sin Alcohol ni Azúcares
+  - nombre: Ofertas Destacadas
+    subcategorias:
+        - nombre: Día
+        - nombre: Tarde
+        - nombre: Noche
 
 items:
-  - name: Tag Design
-    image: images/fotos_menu/imagen1.png
-    image_webp: images/portfolio/portfolio-1.webp
-    categories: ["Cafés y Tés", "Cafés sin Alcohol"]
+  - nombre: Tag Design
+    imagen: images/fotos_menu/imagen1.png
+    imagen_pequenya: images/portfolio/portfolio-1.webp
+    categorias: ["Cafés y Tés", "Cafés sin Alcohol"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Example
-    image: images/portfolio/portfolio-1.jpg
-    image_webp: images/portfolio/portfolio-1.webp
-    categories: ["Cafés y Tés", "Infusiones", "Calientes"]
+  - nombre: Example
+    imagen: images/portfolio/portfolio-1.jpg
+    imagen_pequenya: images/portfolio/portfolio-1.webp
+    categorias: ["Cafés y Tés", "Infusiones", "Calientes"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Sound system
-    image: images/portfolio/portfolio-2.jpg
-    image_webp: images/portfolio/portfolio-2.webp
-    categories: ["Cocktails & Drinks", "Gin Tonic y Combinados"]
+  - nombre: Sound system
+    imagen: images/portfolio/portfolio-2.jpg
+    imagen_pequenya: images/portfolio/portfolio-2.webp
+    categorias: ["Cocktails & Drinks", "Gin Tonic y Combinados"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Clock Product
-    image: images/portfolio/portfolio-3.jpg
-    image_webp: images/portfolio/portfolio-3.webp
-    categories: ["Desayunos"]
+  - nombre: Clock Product
+    imagen: images/portfolio/portfolio-3.jpg
+    imagen_pequenya: images/portfolio/portfolio-3.webp
+    categorias: ["Desayunos"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Bottol Label
-    image: images/portfolio/portfolio-4.jpg
-    image_webp: images/portfolio/portfolio-4.webp
-    categories: ["Bocadillos"]
+  - nombre: Bottol Label
+    imagen: images/portfolio/portfolio-4.jpg
+    imagen_pequenya: images/portfolio/portfolio-4.webp
+    categorias: ["Bocadillos"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Shopping Bag
-    image: images/portfolio/portfolio-5.jpg
-    image_webp: images/portfolio/portfolio-5.webp
-    categories: ["Smoothies"]
+  - nombre: Shopping Bag
+    imagen: images/portfolio/portfolio-5.jpg
+    imagen_pequenya: images/portfolio/portfolio-5.webp
+    categorias: ["Smoothies"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
 
-  - name: Tag Design
-    image: images/portfolio/portfolio-6.jpg
-    image_webp: images/portfolio/portfolio-6.webp
-    categories: ["Smoothies"]
+  - nombre: Tag Design
+    imagen: images/portfolio/portfolio-6.jpg
+    imagen_pequenya: images/portfolio/portfolio-6.webp
+    categorias: ["Smoothies"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Business Card
-    image: images/portfolio/portfolio-7.jpg
-    image_webp: images/portfolio/portfolio-7.webp
-    categories: ["Bocadillos"]
+  - nombre: Business Card
+    imagen: images/portfolio/portfolio-7.jpg
+    imagen_pequenya: images/portfolio/portfolio-7.webp
+    categorias: ["Bocadillos"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Stationary Design
-    image: images/portfolio/portfolio-8.jpg
-    image_webp: images/portfolio/portfolio-8.webp
-    categories: ["Bocadillos", "Desayunos"]
+  - nombre: Stationary Design
+    imagen: images/portfolio/portfolio-8.jpg
+    imagen_pequenya: images/portfolio/portfolio-8.webp
+    categorias: ["Bocadillos", "Desayunos"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Tag Design
-    image: images/portfolio/portfolio-2.jpg
-    image_webp: images/portfolio/portfolio-2.webp
-    categories: ["Cocktails & Drinks", "Cafés y Tés"]
+  - nombre: Tag Design
+    imagen: images/portfolio/portfolio-2.jpg
+    imagen_pequenya: images/portfolio/portfolio-2.webp
+    categorias: ["Cocktails & Drinks", "Cafés y Tés"]
     content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!
     
-  - name: Mi cocktail
-    image: images/portfolio/portfolio-2.jpg
-    image_webp: images/portfolio/portfolio-2.webp
-    categories: ["Cocktails & Drinks", "Cafés y Tés"]
+  - nombre: Mi cocktail
+    imagen: images/portfolio/portfolio-2.jpg
+    imagen_pequenya: images/portfolio/portfolio-2.webp
+    categorias: ["Cocktails & Drinks", "Cafés y Tés"]

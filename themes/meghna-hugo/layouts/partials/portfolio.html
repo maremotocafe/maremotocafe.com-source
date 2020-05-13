@@ -25,23 +25,23 @@
 					<label class="btn active">
 						<input type="radio" autocomplete="off" name="shuffle-filter" value="all" checked>{{ i18n "all"}}
 					</label>
-                    {{ range $menu.categories }}
+                    {{ range $menu.categorias }}
 					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .name | urlize }}">{{ .name }}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">{{ .nombre }}
 					</label>
 					{{ end }}
 				</div>
 
                 <!-- Second level -->
-                {{ range $parent := $menu.categories }}
-                {{ if .subcategories }}
-				<div class="btn-group btn-group-toggle portfolio-filter menu-level-two justify-content-center d-none flex-wrap" parent="{{ $parent.name | urlize }}" data-toggle="buttons">
+                {{ range $parent := $menu.categorias }}
+                {{ if .subcategorias }}
+				<div class="btn-group btn-group-toggle portfolio-filter menu-level-two justify-content-center d-none flex-wrap" parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
 					<label class="btn active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.name | urlize }}" checked>{{ i18n "all"}}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.nombre | urlize }}" checked>{{ i18n "all"}}
 					</label>
-                    {{ range .subcategories }}
+                    {{ range .subcategorias }}
 					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .name | urlize }}">{{ .name }}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">{{ .nombre }}
 					</label>
                     {{ end }}
 				</div>
@@ -49,16 +49,16 @@
                 {{ end }}
 
                 <!-- Third level -->
-                {{ range $menu.categories }}
-                {{ range $parent := .subcategories }}
-                {{ if .subcategories }}
-				<div class="btn-group btn-group-toggle portfolio-filter menu-level-three justify-content-center d-none flex-wrap" parent="{{ $parent.name | urlize }}" data-toggle="buttons">
+                {{ range $menu.categorias }}
+                {{ range $parent := .subcategorias }}
+                {{ if .subcategorias }}
+				<div class="btn-group btn-group-toggle portfolio-filter menu-level-three justify-content-center d-none flex-wrap" parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
 					<label class="btn active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.name | urlize }}" checked/>{{ i18n "all"}}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.nombre | urlize }}" checked/>{{ i18n "all"}}
 					</label>
-                    {{ range .subcategories }}
+                    {{ range .subcategorias }}
 					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .name | urlize }}">{{ .name }}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">{{ .nombre }}
 					</label>
                     {{ end }}
 				</div>
@@ -72,11 +72,11 @@
 			{{"<!-- portfolio item -->" | safeHTML}}
 			{{ range $menu.items }}
 			<figure class="col-lg-4 shuffle-item"
-				data-groups="[{{ range $index, $element:= .categories }}{{ if ne $index 0 }},{{end}}&quot;{{ . | urlize}}&quot;{{ end }}]">
+				data-groups="[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{end}}&quot;{{ . | urlize}}&quot;{{ end }}]">
 				<div class="portfolio-block mb-4">
-					<img class="img-fluid" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .name }}">
+					<img class="img-fluid" src="{{ .image_webp | absURL }}" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" alt="{{ .nombre }}">
                     <a class="caption image-popup" href="{{ .image | relURL }}" data-effect="mfp-with-zoom"	data-lightbox="image-1">
-                        <span>{{ .name }}</span>
+                        <span>{{ .nombre }}</span>
                         <i class="ti-search"></i>
                     </a>
 				</div>
