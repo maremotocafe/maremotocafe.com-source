@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.skill.skill.enable }}
-{{ with $data.skill.skill }}
+{{ if $data.skill.enable }}
+{{ with $data.skill }}
 {{"<!-- Skills -->" | safeHTML }}
 <section id="skills" class="parallax-section section section-bg overly">
 	<div class="container">

@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.team.team.enable }}
-{{ with $data.team.team }}
+{{ if $data.team.enable }}
+{{ with $data.team }}
 {{"<!-- Start Our Team -->" | safeHTML}}
 <section id="team" class="section">
   <div class="container">

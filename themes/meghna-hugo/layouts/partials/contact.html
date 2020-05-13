@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.contact.contact.enable }}
-{{ with $data.contact.contact }}
+{{ if $data.contact.enable }}
+{{ with $data.contact }}
 {{"<!-- Start Contact Us -->" | safeHTML}}
 <section id="contact" class="contact-us section-bg">
 	<div class="container pb-5">

@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.about.about.enable }}
-{{ with $data.about.about }}
+{{ if $data.about.enable }}
+{{ with $data.about }}
 {{"<!-- Start About Section -->" | safeHTML}}
 <section class="bg-one about section" id="about">
 	<div class="container">
