@@ -66,6 +66,20 @@ jQuery(function ($) {
                 return
             }
 
+            // Remove all active buttons
+            for (let i = 0; i < bar.children.length; i++) {
+                if (bar.children[i].classList.contains('active')) {
+                    bar.children[i].classList.remove('active');
+                    bar.children[i].classList.checked = false;
+                    break;
+                }
+            }
+
+            // Default back to the first option
+            bar.children[0].classList.add('active');
+            bar.children[0].classList.checked = true;
+
+            // Fade out with an animation
             bar_jq.css('opacity', 1);
             bar_jq.removeClass('d-flex');
             bar_jq.addClass('d-none');
@@ -78,6 +92,7 @@ jQuery(function ($) {
                 return
             }
 
+            // Fade in with an animation
             bar_jq.css('opacity', 0);
             bar_jq.removeClass('d-none');
             bar_jq.addClass('d-flex');
