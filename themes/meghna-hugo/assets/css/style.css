@@ -836,6 +836,9 @@ a:hover {
 ==================================================================*/
 .portfolio-filter {
   text-align: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
 }
 
 .portfolio-filter .btn {
@@ -848,6 +851,11 @@ a:hover {
   font-weight: 700;
   color: #c4cdd5;
   transition: .3s all;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-filter .btn.active {

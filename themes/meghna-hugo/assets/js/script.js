@@ -60,12 +60,7 @@ jQuery(function ($) {
             return false;
         }
 
-        function hideBar(bar) {
-            const bar_jq = $(bar);
-            if (bar_jq.is(':hidden')) {
-                return
-            }
-
+        function resetBar(bar) {
             // Remove all active buttons
             for (let i = 0; i < bar.children.length; i++) {
                 if (bar.children[i].classList.contains('active')) {
@@ -78,6 +73,15 @@ jQuery(function ($) {
             // Default back to the first option
             bar.children[0].classList.add('active');
             bar.children[0].classList.checked = true;
+        }
+
+        function hideBar(bar) {
+            const bar_jq = $(bar);
+            if (bar_jq.is(':hidden')) {
+                return
+            }
+
+            resetBar(bar);
 
             // Fade out with an animation
             bar_jq.css('opacity', 1);
@@ -123,6 +127,12 @@ jQuery(function ($) {
                         || bar_parent === input.value) {
                     // The bar will fade in if isn't already visible.
                     showBar(bar);
+
+                    // The child will be resetted (this is important for
+                    // whenever the same parent item is pressed).
+                    if (bar_parent === input.value) {
+                        resetBar(bar);
+                    }
                 } else {
                     // The bar will fade out if it isn't already hidden.
                     hideBar(bar);
