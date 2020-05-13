@@ -1,13 +1,19 @@
-#!/bin/sh
-# Script used to build the website with Hugo and upload it to the vidify.org
-# GitHub repository.
+#!/bin/bash
+# Script used to build the website with Hugo and upload it to the 
+# GitHub repositories. You can optionally use a parameter to assign a
+# commit message.
 
-log() { echo -e "\e[36m$*\e[0m"; }
 set -e
 
+log() {
+    echo -e ">> $*"
+}
+
 # Making sure it's running in the correct directory
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-cd "$DIR"
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
+TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
+MSG="$1"
 
 log "Building site..."
 hugo
@@ -15,5 +21,18 @@ hugo
 log "Deploying to GitHub..."
 cd public
 git add .
-git commit -m "Build on $(date +"%Y-%m-%d %H:%M")"
+if [ -z "$MSG" ]; then
+    git commit -m "$MSG"
+else
+    git commit -m "Build on $TIMESTAMP"
+fi
 git push origin master
+
+log "Uploading source files..."
+cd ..
+git add .
+if [ -z "$MSG" ]; then
+    git commit -m "$MSG"
+else
+    git commit -m "Update on $TIMESTAMP"
+fi

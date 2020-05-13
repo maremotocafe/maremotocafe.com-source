@@ -1,15 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 # Simple script to run the site in the local network.
 
 set -e
 
-# Making sure it's running in the correct directory
-DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-cd "$DIR"
-
 cmd_exists() {
     command -v "$1" >/dev/null 2>&1
 }
+
+# Making sure it's running in the correct directory
+cd "$(dirname "${BASH_SOURCE[0]}")"
 
 # Obtaining the IP with `ip`, or in case it's not installed, `ifconfig`.
 if cmd_exists ip; then
