@@ -301,7 +301,8 @@ a:hover {
 }
 
 .title p {
-  color: #666;
+    width: 60%;
+    margin: 30px auto 0 auto;
 }
 
 .title.title-white h2 {
@@ -881,6 +882,17 @@ a:hover {
 .portfolio-block img {
   width: 100%;
   height: auto;
+  margin-bottom: 0;
+}
+
+.portfolio-block .portfolio-title {
+  background: white;
+  text-align: center;
+  color: #555;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
 }
 
 .portfolio-block:hover:before {

@@ -1,6 +1,8 @@
 #################################### portfolio ###############################
 enable: true
 title: Nuestra Carta
+description: >
+    Puedes usar los botones de abajo para filtrar los ítems de la carta.
 categories:
   - name: Cafés y Tés
     subcategories:
