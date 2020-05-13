@@ -36,7 +36,7 @@
                 {{ if .subcategories }}
 				<div class="btn-group btn-group-toggle portfolio-filter menu-level-two justify-content-center d-none flex-wrap" parent="{{ $parent.name | urlize }}" data-toggle="buttons">
 					<label class="btn active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="all" checked>{{ i18n "all"}}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.name | urlize }}" checked>{{ i18n "all"}}
 					</label>
                     {{ range .subcategories }}
 					<label class="btn">
@@ -53,7 +53,7 @@
                 {{ if .subcategories }}
 				<div class="btn-group btn-group-toggle portfolio-filter menu-level-three justify-content-center d-none flex-wrap" parent="{{ $parent.name | urlize }}" data-toggle="buttons">
 					<label class="btn active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="all" checked/>{{ i18n "all"}}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.name | urlize }}" checked/>{{ i18n "all"}}
 					</label>
                     {{ range .subcategories }}
 					<label class="btn">

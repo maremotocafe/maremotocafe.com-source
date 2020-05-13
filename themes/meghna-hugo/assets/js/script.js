@@ -34,6 +34,8 @@ jQuery(function ($) {
 	/*	Portfolio Filtering Hook
 	/* ================================================== */
 
+    // TODO CONSISTENT NAMING, CAMELCASE OR SNAKE CASE
+
     // Maximum of three nested filters for the gallery.
 	const containerEl = document.querySelector('.shuffle-wrapper');
 	if (containerEl) {
@@ -58,6 +60,30 @@ jQuery(function ($) {
             return false;
         }
 
+        function hideBar(bar) {
+            const bar_jq = $(bar);
+            if (bar_jq.is(':hidden')) {
+                return
+            }
+
+            bar_jq.css('opacity', 1);
+            bar_jq.removeClass('d-flex');
+            bar_jq.addClass('d-none');
+            bar_jq.animate({opacity: 0}, 400);
+        }
+
+        function showBar(bar) {
+            const bar_jq = $(bar);
+            if (!bar_jq.is(':hidden')) {
+                return
+            }
+
+            bar_jq.css('opacity', 0);
+            bar_jq.removeClass('d-none');
+            bar_jq.addClass('d-flex');
+            bar_jq.animate({opacity: 1}, 400);
+        }
+
         // The hidden levels will appear and disappear depending on the first
         // level.
 		$('input[name="shuffle-filter"]').on('change', evt => {
@@ -72,25 +98,19 @@ jQuery(function ($) {
             myShuffle.filter(input.value);
 
             // Updating the displayed rows.
-            // TODO HIDE ANIMATION AND RESET ACTIVE TO "Todo"
+            // TODO RESET ACTIVE TO "Todo"
             bars.forEach((bar) => {
-                console.log(bar, input_bar, input);
-                // Every bar will be hidden except for itself, its first
-                // child bar and its parents.
                 const bar_parent = bar.getAttribute('parent');
-                const input_bar_parent = input_bar.getAttribute('parent');
-                if (bar === input_bar  // Itself
-                        || contains(bar, input_bar_parent)
-                        || bar_parent === input.value) {  // Children
-                    if (bar.classList.contains('d-none')) {
-                        bar.classList.remove('d-none');
-                        bar.classList.add('d-flex');
-                    } else {
-
-                    }
+                // Every bar will be hidden except for itself, its first
+                // child bar and its parents, respectively
+                if (bar === input_bar
+                        || contains(bar, input_bar.getAttribute('parent'))
+                        || bar_parent === input.value) {
+                    // The bar will fade in if isn't already visible.
+                    showBar(bar);
                 } else {
-                    bar.classList.add('d-none');
-                    bar.classList.remove('d-flex');
+                    // The bar will fade out if it isn't already hidden.
+                    hideBar(bar);
                 }
             });
 		});
