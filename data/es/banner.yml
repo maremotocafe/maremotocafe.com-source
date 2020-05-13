@@ -9,4 +9,4 @@ banner:
   button:
     enable: true
     label: "¿Qué te apetece?"
-    link: "#services"
+    link: "#carta"

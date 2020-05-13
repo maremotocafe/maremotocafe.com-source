@@ -37,8 +37,7 @@ copyright = "copyright &copy; 2019 [gethugothemes](https://gethugothemes.com) al
 ####### MAP #######
 [params.map]
 enable = true
-# ID obtained by sharing the location and then selecting "Embed map"
-gmap_id = "!1m14!1m8!1m3!1d11925.881421582186!2d-0.878576!3d41.6455785!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfad6f08736f1f129!2sMaremoto%20Caf%C3%A9%20%26%20Cocktail!5e0!3m2!1sen!2ses!4v1589193455388!5m2!1sen!2ses"
+place = "Maremoto Café & Cocktail"
 
 ####### SOCIAL NETWORKS #######
 [[params.social]]
@@ -55,42 +54,21 @@ link = "https://www.instagram.com/maremotocafeandcocktail"
 
 ####### NAVIGATION #######
 [[menu.main]]
-name = "About Us"
-URL = "about"
+name = "Carta"
+URL = "carta"
 weight = 1
-
-[[menu.main]]
-name = "Service"
-URL = "services"
-weight = 2
-
-[[menu.main]]
-name = "Portfolio"
-URL = "portfolio"
-weight = 3
-
-[[menu.main]]
-name = "Team"
-URL = "team"
-weight = 4
-
-[[menu.main]]
-name = "Pricing"
-URL = "pricing"
-weight = 5
 
 [[menu.main]]
 name = "Blog"
 URL = "blog"
-weight = 6
+weight = 2
 
 [[menu.main]]
 name = "Contact"
 URL = "contact"
-weight = 7
+weight = 3
 
-#### external / static link ####
-[[menu.static]]
-name = "Themefisher"
-URL = "https://themefisher.com/"
-weight = 8
+[[menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 3

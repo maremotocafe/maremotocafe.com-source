@@ -301,7 +301,8 @@ a:hover {
 }
 
 .title p {
-  color: #666;
+    width: 60%;
+    margin: 30px auto 0 auto;
 }
 
 .title.title-white h2 {
@@ -835,8 +836,10 @@ a:hover {
   Portfolio section
 ==================================================================*/
 .portfolio-filter {
-  margin-bottom: 40px;
   text-align: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
 }
 
 .portfolio-filter .btn {
@@ -849,6 +852,11 @@ a:hover {
   font-weight: 700;
   color: #c4cdd5;
   transition: .3s all;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-filter .btn.active {
@@ -859,70 +867,48 @@ a:hover {
   position: relative;
 }
 
-.portfolio-block:before {
-  transition: all 0.3s ease-in-out;
-  background: white;
-  opacity: 0;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  position: absolute;
-  content: '';
-}
-
 .portfolio-block img {
   width: 100%;
   height: auto;
-}
-
-.portfolio-block:hover:before {
-  opacity: 1;
-}
-
-.portfolio-block:hover .caption h4 {
-  top: 45%;
-}
-
-.portfolio-block:hover .caption {
-  opacity: 1;
-  top: 55%;
+  margin-bottom: 0;
 }
 
 .portfolio-block .caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  transition: all 0.2s ease-in-out;
-  text-align: center;
-}
-
-.portfolio-block .caption h4 {
-  font-size: 16px;
-  font-weight: 600;
+  display: table;
+  background: white;
   color: #555;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.portfolio-block .caption p {
-  color: #555;
+.portfolio-block .caption span {
+  display: table-cell;
+  text-align: left;
+  padding-left: 10px;
 }
 
-.portfolio-block .caption .search-icon {
-  background: #57cbcc;
+.portfolio-block .caption i {
+  display: table-cell;
+  text-align: right;
   width: 50px;
   height: 50px;
-  color: #fff;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 30px;
+  font-size: 15px;
+  line-height: 50px;
+  padding-right: 10px;
 }
 
-.portfolio-block .caption .search-icon i {
-  line-height: 50px;
+.menu-level-one {
+  margin-bottom: 20px;
+}
+
+.menu-level-two {
+  margin-bottom: 20px;
+}
+
+.menu-level-three {
+  margin-bottom: 20px;
 }
 
 /*=================================================================
@@ -1521,12 +1507,12 @@ input#e-mail,
 }
 
 .social-icon ul li a i {
-  color: #55606a;
+  color: #fff;
   display: inline-block;
   font-size: 32px;
   line-height: 70px;
   margin: 0;
-  opacity: 0.3;
+  opacity: 0.7;
   transition: all 400ms ease-out 0s;
 }
 
