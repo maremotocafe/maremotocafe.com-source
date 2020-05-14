@@ -19,6 +19,7 @@ fi
 URL="http://$PRIVATE_IP:1313"
 
 # Opening a tab in the browser with the URL
+echo ">> Opening browser at $URL"
 if cmd_exists xdg-open; then
     xdg-open "$URL"
 elif cmd_exists open; then
@@ -26,4 +27,5 @@ elif cmd_exists open; then
 fi
 
 # Starting the server at the end
+echo ">> Starting server"
 hugo server --bind "$PRIVATE_IP" --baseURL "$URL"
