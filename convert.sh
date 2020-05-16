@@ -1,4 +1,6 @@
 #!/bin/sh
+# This script automatically converts all the files in a provided directory
+# into a compressed format for the web.
 
 set -e
 
