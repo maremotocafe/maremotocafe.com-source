@@ -17,7 +17,7 @@ hugo
 echo ">> Deploying to GitHub..."
 cd public
 git add .
-if [ -z "$MSG" ]; then
+if [ -n "$MSG" ]; then
     git commit -m "$MSG"
 else
     git commit -m "Build on $TIMESTAMP"
@@ -27,7 +27,7 @@ git push origin master
 echo ">> Uploading source files..."
 cd ..
 git add .
-if [ -z "$MSG" ]; then
+if [ -n "$MSG" ]; then
     git commit -m "$MSG"
 else
     git commit -m "Update on $TIMESTAMP"

@@ -89,28 +89,25 @@
                     <div class="popup-content-text">
                         <h1>{{ .nombre }}</h1>
                         {{ with .ingredientes }}
-                        <p><b>{{ $menu.titulo_ingredientes }}:</b> {{ . }}</p>
+                        <p><b>{{ $menu.titulo_ingredientes | markdownify }}:</b> {{ . }}</p>
                         {{ end }}
                         {{ with .alergenos }}
-                        <p><b>{{ $menu.titulo_alergenos }}:</b> {{ . }}</p>
+                        <p><b>{{ $menu.titulo_alergenos | markdownify }}:</b> {{ . }}</p>
                         {{ end }}
                         {{ with .txt_aclaraciones }}
-                        <p><b>{{ $menu.titulo_txt_aclaraciones }}:</b> {{ . }}</p>
+                        <p><b>{{ $menu.titulo_txt_aclaraciones | markdownify }}:</b> {{ . }}</p>
                         {{ end }}
                         {{ with .txt_temporal }}
-                        <p><b>{{ $menu.titulo_txt_temporal }}:</b> {{ . }}</p>
-                        {{ end }}
-                        {{ with .txt_temporal }}
-                        <p><b>{{ $menu.titulo_vol_ml }}:</b> {{ . }}</p>
+                        <p><b>{{ $menu.titulo_txt_temporal | markdownify }}:</b> {{ . }}</p>
                         {{ end }}
                         {{ with .grad_alcoholica }}
-                        <p><b>{{ $menu.titulo_grad_alcoholica }}:</b> {{ . }}</p>
+                        <p><b>{{ $menu.titulo_grad_alcoholica | markdownify }}:</b> {{ . }}</p>
                         {{ end }}
                         {{ with .vol_ml }}
-                        <p><b>{{ $menu.titulo_vol_ml }}:</b> {{ . }}</p>
+                        <p><b>{{ $menu.titulo_vol_ml | markdownify }}:</b> {{ . }}</p>
                         {{ end }}
                         {{ with .edul_gr }}
-                        <p><b>{{ $menu.titulo_edul_gr }}:</b> {{ . }}</p>
+                        <p><b>{{ $menu.titulo_edul_gr | markdownify }}:</b> {{ . }}</p>
                         {{ end }}
                     </div>
                 </div>
