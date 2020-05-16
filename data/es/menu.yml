@@ -6,7 +6,7 @@ description: >
 titulo_ingredientes: Ingredientes
 titulo_alergenos: Alérgenos
 titulo_txt_aclaraciones: Aclaraciones
-titulo_txt_temporal: Nota
+titulo_txt_temporal: Temporalidad
 titulo_grad_alcoholica: Graduación
 titulo_vol_ml: Volumen (ml)
 titulo_edul_gr: Edulcorantes (gr)
@@ -62,129 +62,135 @@ categorias:
 
 items:
   - nombre: Bloody Mary Free
-    imagen: "images/fotos caja de luz abril 2020/bloody mary free.jpg"
-    imagen_pequenya: images/portfolio/portfolio-1.webp
-    categorias: ["Smoothies", "Healthy Drinks y Batidos", "Healthy Cocktails", "Sin "]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+    imagen: images/carta/42.jpg
+    imagen_pequenya: images/carta/42_small.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails", "Sin Alcohol ni Azúcares"]
+    ingredientes: Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta 
+    alergenos: "*Apio.*" 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 0%
+    vol_ml: 300ml 
+    edul_gr: 0 gr Azucares añadidos 0 gr Edulcorantes artificiales.
+    pvp_local: 6€
+    pvp_terraza: 6,50€
     
-  - nombre: Example
-    imagen: images/portfolio/portfolio-1.jpg
-    imagen_pequenya: images/portfolio/portfolio-1.webp
-    categorias: ["Cafés y Tés", "Infusiones", "Calientes"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+  - nombre: Café Bombón 
+    imagen: images/carta/0.jpg
+    imagen_pequenya: images/carta/0_small.jpg
+    categorias: ["Cafés y Tés", "Cafés sin Alcohol"]
+    ingredientes: Café expresso, Leche condensada y Crema de leche.
+    alergenos: "*leche*"
+    txt_temporal: 
+    grad_alcoholica: 0%
+    pvp_local: 2€
+    pvp_terraza: 2,5€
     
-  - nombre: Sound system
-    imagen: images/portfolio/portfolio-2.jpg
-    imagen_pequenya: images/portfolio/portfolio-2.webp
-    categorias: ["Cocktails & Drinks", "Gin Tonic y Combinados"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+  - nombre: Café Bombón Limón
+    imagen: images/carta/0.jpg
+    imagen_pequenya: images/carta/0_small.jpg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
+    ingredientes: Café expresso, Leche merengada y Crema de leche.
+    alergenos: "*Leche*"
+    txt_aclaraciones: 
+    txt_temporal: 
+    grad_alcoholica: 0%
+    vol_ml: 
+    edul_gr:
+    pvp_local: 2€
+    pvp_terraza: 2,5€
+     
     
-  - nombre: Clock Product
-    imagen: images/portfolio/portfolio-3.jpg
-    imagen_pequenya: images/portfolio/portfolio-3.webp
-    categorias: ["Desayunos"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+  - nombre: Vienes
+    imagen: images/carta/127.jpg
+    imagen_pequenya: images/carta/127_small.jpg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
+    ingredientes: Café espresso, Nata semimontada y Topping de Chocolate.
+    alergenos: "*Leche*"
+    txt_aclaraciones: 
+    txt_temporal: 
+    grad_alcoholica: 0%
+    vol_ml: 
+    edul_gr: 14gr Azúcar moreno 
+    pvp_local: 2,75€
+    pvp_terraza: 3,25€
     
-  - nombre: Bottol Label
-    imagen: images/portfolio/portfolio-4.jpg
-    imagen_pequenya: images/portfolio/portfolio-4.webp
-    categorias: ["Bocadillos"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+  - nombre: Capuccino Clásico
+    imagen: images/carta/132.jpg
+    imagen_pequenya: images/carta/132_small.jpg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
+    ingredientes: Café espresso, Crema de leche y Toque de Cacao.
+    alergenos: "*Leche*"
+    txt_aclaraciones: Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja
+    txt_aclaraciones2: Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas
+    txt_temporal: 
+    grad_alcoholica: 0%
+    vol_ml: 
+    edul_gr:
+    pvp_local: 2,25€
+    pvp_terraza: 2,75€
     
-  - nombre: Shopping Bag
-    imagen: images/portfolio/portfolio-5.jpg
-    imagen_pequenya: images/portfolio/portfolio-5.webp
-    categorias: ["Smoothies"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+  - nombre: Capuccino de Canela
+    imagen: images/carta/161.jpg
+    imagen_pequenya: images/carta/161_small.jpg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
+    ingredientes: Café espresso, Crema de leche, Sirope de Canela y Toque de Cacao.
+    alergenos: "*Leche*"
+    txt_aclaraciones: Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja 
+    txt_aclaraciones2:  Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas
+    txt_temporal:
+    grad_alcoholica: 0%
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 2,50€
+    pvp_terraza: 3€
+    
 
-  - nombre: Tag Design
-    imagen: images/portfolio/portfolio-6.jpg
-    imagen_pequenya: images/portfolio/portfolio-6.webp
-    categorias: ["Smoothies"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+  - nombre: Café + Tostada + Zumo Natural
+    imagen: images/carta/10.jpg
+    imagen_pequenya: images/carta/10_small.jpg
+    categorias: ["ofertas destacadas" , "día"]
+    ingredientes: Café o té + Tostada (De hogaza normal o integral 5 semillas) combínala con + Zumo Natural a elegir 
+    alergenos: "*Leche*"
+    txt_aclaraciones: Oferta Válida de 7 a 12h
+    txt_temporal: 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr:
     
-  - nombre: Business Card
-    imagen: images/portfolio/portfolio-7.jpg
-    imagen_pequenya: images/portfolio/portfolio-7.webp
-    categorias: ["Bocadillos"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
     
-  - nombre: Stationary Design
-    imagen: images/portfolio/portfolio-8.jpg
-    imagen_pequenya: images/portfolio/portfolio-8.webp
-    categorias: ["Bocadillos", "Desayunos"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
+  - nombre: Frapuccino
+    imagen: images/carta/191.jpg
+    imagen_pequenya: images/carta/191_small.jpg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés fríos"]
+    ingredientes: Café, Chocolate, Crema de Leche y Cacao
+    alergenos: "*Leche*"
+    txt_aclaraciones: Refrescante bebida de cfé con hielo picado. También lo puedes pedir descafeinado!
+    txt_temporal:
+    grad_alcoholica: 0%
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 2,75€
+    pvp_terraza: 3,25€
     
-  - nombre: Tag Design
-    imagen: images/portfolio/portfolio-2.jpg
-    imagen_pequenya: images/portfolio/portfolio-2.webp
-    categorias: ["Cocktails & Drinks", "Cafés y Tés"]
-    ingredientes: abc
-    alergenos: abc
-    txt_aclaraciones: abc
-    txt_temporal: abc
-    grad_alcoholica: 10000%
-    vol_ml: 5000ml
-    edul_gr: 40000g
     
-  - nombre: Mi cocktail
-    imagen: images/portfolio/portfolio-2.jpg
-    imagen_pequenya: images/portfolio/portfolio-2.webp
-    categorias: ["Cocktails & Drinks", "Cafés y Tés"]
+  - nombre: Frappe de Baileys
+    imagen: images/carta/191.jpg
+    imagen_pequenya: images/carta/191_small.jpg
+    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos"]
+    ingredientes: Café, Baileys, Crema de leche y Cacao
+    alergenos: "*Leche*"
+    txt_aclaraciones: Refrescante bebida de cfé con hielo picado. También lo puedes pedir descafeinado!
+    txt_temporal: 
+    grad_alcoholica: 3,80%
+    vol_ml: 
+    edul_gr:
+    pvp_local: 3,75€
+    pvp_terraza: 4,25€ 
+    
+  - nombre: Pu-erh Cítricos
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
+    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: abc
     alergenos: abc
     txt_aclaraciones: abc
@@ -192,3 +198,51 @@ items:
     grad_alcoholica: 10000%
     vol_ml: 5000ml
     edul_gr: 40000g
+    pvp_local: 2€
+    pvp_terraza: 2,5€
+
+    
+    
+  - nombre: Té de Frutas del Bosque
+    imagen: images/carta/192.jpg
+    imagen_pequenya: images/carta/192_small.jpg
+    categorias: ["Cafés y Tés" , "Infusiones" , "Frías"]
+    ingredientes: Hibiscus, Frutas del bosque, Escaramujo, Rosas y Enebro
+    alergenos: 
+    txt_aclaraciones: 
+    txt_temporal: 
+    grad_alcoholica: 0%
+    vol_ml: 200ml
+    edul_gr: 
+    pvp_local: 2,75€
+    pvp_terraza: 3,25€
+
+
+
+  - nombre: 
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: [""]
+    ingredientes:
+    alergenos: 
+    txt_aclaraciones: 
+    txt_temporal: 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 
+    pvp_terraza:
+
+  - nombre: 
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: [""]
+    ingredientes:
+    alergenos: 
+    txt_aclaraciones: 
+    txt_temporal: 
+    grad_alcoholica: 
+    vol_ml: 
+    edul_gr: 
+    pvp_local: 
+    pvp_terraza:
