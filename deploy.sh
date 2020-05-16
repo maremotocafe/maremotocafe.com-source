@@ -21,8 +21,10 @@ if [ -n "$MSG" ]; then
     git commit -m "$MSG"
 else
     git commit -m "Build on $TIMESTAMP"
-fi
-git push origin master
+fi || true
+# Doesn't matter if this command fails: maybe all files have already been
+# uploaded, so just continue.
+git push origin master || true
 
 echo ">> Uploading source files..."
 cd ..
@@ -31,5 +33,5 @@ if [ -n "$MSG" ]; then
     git commit -m "$MSG"
 else
     git commit -m "Update on $TIMESTAMP"
-fi
-git push origin master
+fi || true
+git push origin master || true
