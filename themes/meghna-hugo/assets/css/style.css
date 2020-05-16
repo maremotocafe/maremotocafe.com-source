@@ -911,6 +911,23 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.popup-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #FFF;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.popup-content div {
+  padding-left: 10px;
+}
+
+.popup-content-text {
+  color: #555;
+}
+
 /*=================================================================
   Services section
 ==================================================================*/
