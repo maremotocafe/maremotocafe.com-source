@@ -61,10 +61,10 @@ categorias:
         - nombre: Noche
 
 items:
-  - nombre: Tag Design
-    imagen: images/portfolio/portfolio-1.jpg
+  - nombre: Bloody Mary Free
+    imagen: "images/fotos caja de luz abril 2020/bloody mary free.jpg"
     imagen_pequenya: images/portfolio/portfolio-1.webp
-    categorias: ["Cafés y Tés", "Cafés sin Alcohol"]
+    categorias: ["Smoothies", "Healthy Drinks y Batidos", "Healthy Cocktails", "Sin "]
     ingredientes: abc
     alergenos: abc
     txt_aclaraciones: abc
