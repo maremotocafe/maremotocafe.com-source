@@ -1532,7 +1532,7 @@ items:
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Aperol, proseco Cinzano y Soda
-    alergenos: "*Sulfitos*"
+    alergenos: "*Sulfitos*"
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 9%
@@ -1546,7 +1546,7 @@ items:
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Vermout del Professore Bianco, proseco Cinzano, y Mixer Cherry Blossom Thomas Henrry. 
-    alergenos: "*Sulfitos*"
+    alergenos: "*Sulfitos*"
     txt_aclaraciones: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 8,60%
@@ -1694,10 +1694,3 @@ items:
     edul_gr: 
     pvp_local: 
     pvp_terraza:
-
-  
-    
-    
-     
-    
-    
