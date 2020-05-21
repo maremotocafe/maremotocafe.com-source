@@ -22,7 +22,7 @@ categorias:
               - nombre: Calientes
   - nombre: Cocktails & Drinks
     subcategorias:
-        - nombre: Gin Tonic y Combinados
+        - nombre: Gin Tonic y Vodka Tonic
         - nombre: Mojitos Caipirinhas y Similares
           subcategorias:
               - nombre: Con Rón o Cachaça
@@ -1563,72 +1563,870 @@ items:
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
+    grad_alcoholica: 4%
+    vol_ml: 315 ml
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
-  - nombre: 
+  - nombre: Aperoni Gin
     imagen: images/carta/
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: 
+    ingredientes: Tanqueray Ten, Aperol, Zumo de Pomelo y Azúcar.
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
+    grad_alcoholica: 13%
+    vol_ml: 150 ml
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Bloody Mary
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Zumo de Tomate, Vodka Finlandia, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.
+    alergenos: "*Apio*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 215 ml
+    edul_gr: 
+    pvp_local: 6,50€
+    pvp_terraza: 7€
+
+  - nombre: Margarita Clásica
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: [Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Tequila El Jimador, Zumo de Lima, Triple Seco y Azúcar
+    alergenos:
+    txt_aclaraciones: Este cocktail va escarchado con sal, si no lo desea avise al camarero.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 24% 
+    vol_ml: 115 ml
+    edul_gr: 
+    pvp_local: 6€
+    pvp_terraza: 6,50€
+
+  - nombre: Cosmopolitan
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Vodka Finlandia, Zumo de Lima, Zumo de Arándanos y Tripe Seco. 
+    alergenos: 
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 23%
+    vol_ml: 110 ml
+    edul_gr: 
+    pvp_local: 6€
+    pvp_terraza: 6,50€
+
+  - nombre: Daiquiri 
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Rón Plantation 3 Stars, Zumo de Limón, Triple Seco y Azúcar.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 20%
+    vol_ml: 140 ml
+    edul_gr: 
+    pvp_local: 6€
+    pvp_terraza: 6,50€
+
+  - nombre: Alexander
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Brandy, Nata y Licor Mozart.
+    alergenos: "*Lacteo*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 19,80%
+    vol_ml: 115 ml
+    edul_gr: 
+    pvp_local: 6€
+    pvp_terraza: 6,50€
+
+  - nombre: Black Russian
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Vodka Finlandia y Kalhua
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 30%
+    vol_ml: 85 ml
+    edul_gr: 
+    pvp_local: 6,50€
+    pvp_terraza: 7€
+
+  - nombre: Manhatan
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Bulleit Bourbon, Cinzano 1757 y Angostura
+    alergenos: "*Sulfitos*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 29%
+    vol_ml: 115 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Gin Fizz
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Ginebra Gin-Za, Zumo de Limón y Azúcar.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 13,50%
+    vol_ml: 150 ml
+    edul_gr: 
+    pvp_local: 6,50€
+    pvp_terraza: 7€
+
+  - nombre: Dry Martini
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Ginebra Tanqueray Ten, Vermout dry y Aceitunas
+    alergenos: "*Sulfitos*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 28,40%
+    vol_ml: 115 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Espresso Martini
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    ingredientes: Café espresso, Vodka Finlandia, Kalhua y Azúcar
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 14,50%
+    vol_ml: 110 ml
+    edul_gr: 
+    pvp_local: 6€
+    pvp_terraza: 6,50€
+
+  - nombre: Vodka Berry
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Vodka Finlandia infusionado con Frambuesas & tonica Royal Bliss Berry Sensation.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Finlandia & Schweppes Hibiscus
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Con Twit de Naranja.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Belvedere Mediterraneo & Fever Tree Mediterranean 
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Infusionado con Romero.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Ciroc & Schweppes Pimienta Rosa
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Con brocheta de Uva y twist de Pomelo.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Grey Goose & Schweppes Pimienta Rosa
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Con twist de Lima.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Crystal Head & Schweppes Premium Toque de Lima.
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Con Bitter de Pomelo y twist de Pomelo.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
     vol_ml: 
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: 8,50€
+    pvp_terraza: 9€
+
+  - nombre: Gin Maremoto (Con Espuma de Pomelo...)
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Tanqueray Ten, Fever Tree y Espuma de Pomelo, lima, Agua de Azahar y Clara de huevo pasteurizada
+    alergenos: "*Huevo*"
+    txt_aclaraciones: Uno de nuestras elaboraciones más populares
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7%
+    vol_ml: 290 ml
+    edul_gr: 
+    pvp_local: 8€ 
+    pvp_terraza: 8,50€
+
+  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana...)
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Gin Xoringer, Schweppes Hibiscus y Espuma de Manzana, Albahaca, Cardamomo y Clara de huevo pasteurizada
+    alergenos: "*Huevo*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7%
+    vol_ml: 290 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Gin Pasión & Schweppes Premium Toque de Lima (Ginebras Infusionadas) 
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Ginebra Ampersand infusionada con Mora, Grosella, Fresa e Hibisco & Schweppes Premium Toque de Lima
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Gin Thai Pepper & Schweppes Pimienta Rosa (Ginebras Infusionadas) 
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:  Ginebra Ampersand infusionada con Canela, Jengibre, Cardamomo, Pimienta y Rooibos.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250% 
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Gin Blue Curaçao & Schweppes Premium Toque de Lima
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Ginebra Ampersand infusionada con Lima, limón, Naranja, Pomelo, lemongrass, Jenjibre y flor de Malva.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Gin Red Temptation.
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Ginebra Ampersand infusionada con Hibisco, escaramujo, Lemongrass y Rosas
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml 
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Xoringer & Schweppes Premium Toque de Lima
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra menorquina elaborada con alcohol vinico. Sabor suave y mediterraneo.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,60%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Tankeray Flor de Sevilla & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra elaborada con naranjas sevillanas y flor de Azahar. Sabor cítrico y afrutado. 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Gin.Za & Schweppes Premium Toque de Lima
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra Zaragozana que fusiona a la perfección sabores de la tierra como el melocotón de Calanda con cítricos japoneses (Yuzu y Mano de Buda) y Té Matcha 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Larios 150 Aniversario & Fever Tre Mediterranean
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Versión superpremium de Larios. Gran expresión de Enebro y matices mediterraneos.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,40%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: June & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Elixir frances clasificado como licor de ginebra por su baja graduación, macerado con flor de vid. Sabor cálido y elegante.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 5,60%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Bulldog & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra cásica inglesa con notas florales, cítricas y frutales.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8% 
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Hendrick's & Schweppes Pimienta Rosa
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra escocesa elaborada con pepino y pétalos de rosas.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,80%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Pink & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra londinense de tipo clásico con notas dulces cítricas y especiadas.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 9,40%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Martin Miller`s & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra clásica inglesa de muy alta calida debido en parte a la utilización de agua de los glaciares de Islandia. ¡Una apuesta segura!
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€ 
+
+  - nombre: Citadelle & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:  
+    alergenos:
+    txt_aclaraciones: Ginebra francesa distinguida y que impresiona por su gusto complejo y sus notas florales. 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 9,20%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Ginbraltar & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra desarrollada por un cocinero zaragozano. Destaca por contener eucalipto entre sus botánicos lo que la hace muy refrescante.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Ginbraltar Citrus & Schweppes Premium Toque de Lima
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra desarrollada por un cocinero zaragozano. 2ª versión de Ginbraltar en este caso más cítrica debido al uso de bergamota 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Tanqueray Ten & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra escocesa muy galardonada y de excelente calidad. frescura cítrica muy acentuada debido al uso de ingredientes frescos.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 9,50%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra escocesa elaborada con lima Rangpur, una variedad de lima muy aromática que la convierte en una de nuestras favoritas.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Voortrekker & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra holandesa que se caracteriza por su suavidad y su sabor final con notas a naranja.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Magellan & Schweppes Pimienta Rosa
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra francesa de ligero tono azulado debido a la raiz de iris y flores que contiene su receta. Sabor suave y armonioso.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,30%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Nordest & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra gallega para nada convencional, con aromas atlánticos debido a su base de alcohol de albariño y al uso de eucalipto, salicornia y laurel entre otro botánicos.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,5€
+    pvp_terraza: 8€
+
+  - nombre: Cubical & Fever
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra inglesa que se caracteriza por el uso de mano de buda, un cítrico oriental menos amargo y más aromático que la mayoría de los cítricos.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: €
+    pvp_terraza: €
+
+  - nombre: Bloom & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra inglesa de textura floral única con agradable "deje" dulce y cítrico.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Sipsmith & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra londinense de carácter clásico en la que destaca el enebro. Aroma cítrico y ligera dulzura.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,30%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Mombasa & Schweppes Pimienta Rosa
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra británica exótica y sorprendente por sus aromas a clavo y comino entre otros que contiene su receta. Sabor elegante y fresco. 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,30%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Ish & Schweppes Pimienta Rosa
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra británica clásica con mayor proporción de enebro de lo habitual yque también contine notas cítricas y florales.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,20%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Ish Limed & Schweppes Premium Toque de Lima
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra británica muy cítrica debido a un mayor porcentaje de lima en su elaboración, pero sin perder de vista el enebro.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Gin Loe
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra Ecológica procedente de formentera elaborada con agua del mediterraneo. También se caracteriza por el uso de aloe vera entre sus botánicos. 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: G'Vine Floraisson & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra francesa elaborada con alcohol vinico y macerada con flor de vid lo que le otorga un sabor fresco primaveral y floral.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Gin Mare & Fever Tree Mediterranean
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra española cuya principal caracteristica es el uso de botánicos mediterraneos como la albahaca, romero, tomillo y aceituna arbequina.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Ford`s Gin & Fever Tre
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra clásica británica con marcados aromas a enebro y lavanda picante.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Gin del Professore Monsieur & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra italiana macerada en frio con 12 botánicos entre los que destaca el enebro italiano de Umbría.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,80%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8,50€
+    pvp_terraza: 9€
+
+  - nombre: Gin del Professore Madame & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra italiana aromática, delicada y especiada con un toque dulce.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,60%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8,50€
+    pvp_terraza: 9€
+
+  - nombre: Gin Plymout & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra británica con siglos de historia y de fama mundial. Sabor clásico y alta calidad.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,80%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8,50€
+    pvp_terraza: 9€
+
+  - nombre: Gordon`s Pink & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra británica elaborada con frambuesas y grosellas naturales.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Puerto de Indias & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra sevillana de aromas dulces y salvajes a fresa y enebro.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7€
+    pvp_terraza: 7,50€
+
+  - nombre: Ginial Rosé & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Femenina y exigente a la par que dulce. Una ginebra elaorada con cítricos, flores y fresas. Destaca por su baja graduación (25%)
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 5%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Proof 13 & 1724 tonic water
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: denominada como gin licuor debido a su graduación de 30% está elaborada con bayas de enebro, moras y frambuesas entre otros botánicos.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 6%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Brockman`s & Fever Tree
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Elaborada con araándanos y moras entre otros botánicos. destaca por su elegancia y suavidad.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 8€
+    pvp_terraza: 8,50€
 
   - nombre: 
     imagen: images/carta/
     imagen_pequenya: images/carta/
-    categorias: [""]
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: €
+    pvp_terraza: €
 
   - nombre: 
     imagen: images/carta/
     imagen_pequenya: images/carta/
-    categorias: [""]
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: €
+    pvp_terraza: €
 
   - nombre: 
     imagen: images/carta/
     imagen_pequenya: images/carta/
-    categorias: [""]
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: €
+    pvp_terraza: €
 
   - nombre: 
     imagen: images/carta/
     imagen_pequenya: images/carta/
-    categorias: [""]
+    categorias: 
     ingredientes: 
     alergenos:
     txt_aclaraciones:
@@ -1636,13 +2434,13 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: €
+    pvp_terraza: €
 
   - nombre: 
     imagen: images/carta/
     imagen_pequenya: images/carta/
-    categorias: [""]
+    categorias: 
     ingredientes: 
     alergenos:
     txt_aclaraciones:
@@ -1650,47 +2448,5 @@ items:
     grad_alcoholica: 
     vol_ml: 
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: [""]
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: 
-    pvp_terraza:
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: [""]
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: 
-    pvp_terraza:
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: [""]
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: €
+    pvp_terraza: €
