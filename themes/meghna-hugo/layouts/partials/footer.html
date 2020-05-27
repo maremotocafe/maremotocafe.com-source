@@ -16,7 +16,7 @@
 				{{"<!-- copyright -->" | safeHTML}}
 				<div class="copyright text-center">
 					<a href="{{ .Site.BaseURL | absLangURL }}">
-						<img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
+						<img class="lozad" data-src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
 					</a>
 					<br>
 					<p>{{ .Site.Params.copyright | markdownify }}</p>
@@ -51,6 +51,11 @@
 
 {{ "<!-- Lozad -->" | safeHTML }}
 <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script>
+  // lazy loads elements with default selector as '.lozad'
+  const observer = lozad();
+  observer.observe();
+</script>
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
