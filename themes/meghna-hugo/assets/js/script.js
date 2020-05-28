@@ -34,6 +34,8 @@ jQuery(function ($) {
 	/*	Portfolio Filtering Hook
 	/* ================================================== */
 
+    const observer = lozad();
+    observer.observe();
     // TODO CONSISTENT NAMING, CAMELCASE OR SNAKE CASE
 
     // Maximum of three nested filters for the gallery.
@@ -140,6 +142,7 @@ jQuery(function ($) {
             });
 		});
 	}
+    observer.observe();
 
 	/* ================================================== */
 	/*	Animation scroll js
