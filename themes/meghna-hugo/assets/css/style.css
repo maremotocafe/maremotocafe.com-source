@@ -913,26 +913,37 @@ a:hover {
 
 .popup-content {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   background: #FFF;
-  max-width: 80%;
-  margin: 0 auto;
 }
 
 .popup-content .popup-img {
+  min-width: 300px;
+  max-width: 700px;
   flex: 1;
   text-align: center;
   margin: 20px;
 }
 
+.popup-content .popup-img img {
+  max-width: 100%;
+}
+
 .popup-content .popup-details {
-  width: 50%;
-  padding-left: 10px;
+  text-align: left;
+  min-width: 300px;
+  max-width: 700px;
   height: 100%;
   margin: 20px;
 }
 .popup-content .popup-details h1, p {
   color: #555;
+}
+
+.mfp-auto-cursor .mfp-content {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 /*=================================================================
