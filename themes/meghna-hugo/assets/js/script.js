@@ -1,10 +1,6 @@
 'use strict';
 
 jQuery(function ($) {
-	/* ================================================== */
-	/*	Lazy load initialize
-	/* ================================================== */
-
     // Lazy loads elements with default selector as ".lozad"
 	const observer = lozad();
 	observer.observe();
@@ -33,7 +29,6 @@ jQuery(function ($) {
 	/* ================================================== */
 	/*	Portfolio Filtering Hook
 	/* ================================================== */
-
     // TODO CONSISTENT NAMING, CAMELCASE OR SNAKE CASE
 
     // Maximum of three nested filters for the gallery.
@@ -44,6 +39,9 @@ jQuery(function ($) {
 			itemSelector: '.shuffle-item',
 			buffer: 1
 		});
+        myShuffle.on(Shuffle.EventType.LAYOUT, function () {
+            observer.observe();
+        });
 
         // The main bar will never be selected, since it's always visible.
 		const bars = document.querySelectorAll(
@@ -138,6 +136,8 @@ jQuery(function ($) {
                     hideBar(bar);
                 }
             });
+
+            observer.observe();
 		});
 	}
 
