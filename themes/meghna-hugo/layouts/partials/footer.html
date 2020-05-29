@@ -16,7 +16,7 @@
 				{{"<!-- copyright -->" | safeHTML}}
 				<div class="copyright text-center">
 					<a href="{{ .Site.BaseURL | absLangURL }}">
-						<img class="lozad" data-src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
+						<img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
 					</a>
 					<br>
 					<p>{{ .Site.Params.copyright | markdownify }}</p>
@@ -38,7 +38,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 {{ "<!-- Magnific Popup -->" | safeHTML }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" crossorigin="anonymous"></script>
 <script>
   $('.open-popup-link').magnificPopup({
     type:'inline',
@@ -47,15 +47,10 @@
 </script>
 
 {{ "<!-- Lozad -->" | safeHTML }}
-<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-<script>
-  // lazy loads elements with default selector as '.lozad'
-  const observer = lozad();
-  observer.observe();
-</script>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js" crossorigin="anonymous"></script>
 
 {{ "<!-- Shuffle -->" | safeHTML }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.min.js" crossorigin="anonymous"></script>
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}

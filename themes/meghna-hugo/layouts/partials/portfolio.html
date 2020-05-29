@@ -74,10 +74,13 @@
 			{{"<!-- Portfolio item -->" | safeHTML}}
 			<figure class="col-lg-4 shuffle-item" data-groups="[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}&quot;{{ . | urlize }}&quot;{{ end }}]">
 				<div class="portfolio-block mb-4">
-					<img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
-                    <a class="caption open-popup-link" href="#carta-img{{ $i }}" data-effect="mfp-with-zoom">
-                        <span>{{ .nombre }}</span>
-                        <i class="ti-search"></i>
+                    <a class="open-popup-link" href="#carta-img{{ $i }}" data-effect="mfp-with-zoom">
+                        <!-- <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}"> -->
+                        <img class="img-fluid" src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
+                        <div class="caption">
+                            <span>{{ .nombre }}</span>
+                            <i class="ti-search"></i>
+                        </div>
                     </a>
 				</div>
 			</figure>
