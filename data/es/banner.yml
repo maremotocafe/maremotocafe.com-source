@@ -1,6 +1,6 @@
 ############################### Banner ################################
 enable: true
-bg_image_webp: "images/backgrounds/hero-area.webp"
+bg_image_webp: "images/backgrounds/hero-area.jpg"
 bg_image: "images/backgrounds/hero-area.jpg"
 icon: "" # themify icon pack : https://themify.me/themify-icons
 title: "Maremoto Café & Cocktail"

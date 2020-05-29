@@ -399,6 +399,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+.logo {
+  height: 3em;
+}
+
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link.show,

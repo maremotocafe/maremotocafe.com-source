@@ -2,7 +2,7 @@
 enable: true
 title: Nuestra Carta
 description: >
-    Puedes usar los botones de abajo para filtrar los ítems de la carta.
+    Acota tu busqueda utilizando las pestañas de familias de articulos.
 titulo_ingredientes: Ingredientes
 titulo_alergenos: Alérgenos
 titulo_txt_aclaraciones: Aclaraciones
@@ -81,7 +81,7 @@ items:
     ingredientes: Café expresso, Leche condensada y Crema de leche.
     alergenos: "*leche*"
     txt_temporal: 
-    grad_alcoholica: 0%
+    grad_alcoholica:
     pvp_local: 2€
     pvp_terraza: 2,5€
     
@@ -93,7 +93,7 @@ items:
     alergenos: "*Leche*"
     txt_aclaraciones: 
     txt_temporal: 
-    grad_alcoholica: 0%
+    grad_alcoholica: 
     vol_ml: 
     edul_gr:
     pvp_local: 2€
@@ -108,7 +108,7 @@ items:
     alergenos: "*Leche*"
     txt_aclaraciones: 
     txt_temporal: 
-    grad_alcoholica: 0%
+    grad_alcoholica: 
     vol_ml: 
     edul_gr: 14gr Azúcar moreno 
     pvp_local: 2,75€
@@ -124,7 +124,7 @@ items:
       Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja
       Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas
     txt_temporal: 
-    grad_alcoholica: 0%
+    grad_alcoholica: 
     vol_ml: 
     edul_gr:
     pvp_local: 2,25€
@@ -140,7 +140,7 @@ items:
       Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja. 
       Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas.
     txt_temporal:
-    grad_alcoholica: 0%
+    grad_alcoholica: 
     vol_ml: 
     edul_gr: 
     pvp_local: 2,50€
@@ -150,7 +150,7 @@ items:
   - nombre: Café + Tostada + Zumo Natural
     imagen: images/carta/193.jpg
     imagen_pequenya: images/carta/193_small.jpg
-    categorias: ["ofertas destacadas" , "día"]
+    categorias: ["Desayunos Almuerzos y Zumos" , "Desayunos" , "Ofertas Destacadas" , "Día"]
     ingredientes: >
      Café o té + Tostada (De hogaza normal o integral 5 semillas) + Zumo Natural. 
      Tu tostada con?: Mermelada (Fresa, Melocotón o Naranja amarga), Miel, Philadelphia*, Crema de Cacao* Crema de Caramelo
@@ -193,8 +193,8 @@ items:
     pvp_terraza: 4,25€ 
     
   - nombre: Pu-erh Cítricos
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Pu-erh, Naranja y Limón
     alergenos: 
@@ -242,8 +242,8 @@ items:
     pvp_terraza: 3€
 
   - nombre: Bombón Licor 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/2a.jpg
+    imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con Leche condensada y Licor a elegir 
     alergenos: "*Leche*"
@@ -256,8 +256,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Bombón Licor Limón
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/2a.jpg
+    imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con Leche merengada y Licor a elegir 
     alergenos: "*Leche*"
@@ -270,8 +270,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Irlandés
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/2a.jpg
+    imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con azúcar moreno, Whisky Irlandes y Nata semimontada.
     alergenos: "*Leche*"
@@ -284,8 +284,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Coffee Licor
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/2a.jpg
+    imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con nata y licor a elegir
     alergenos: "*Leche*"
@@ -298,8 +298,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Coffee Ceam
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/2a.jpg
+    imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con Cacao, nata y Crema de licor a elegir
     alergenos: "*Leche*"
@@ -312,8 +312,8 @@ items:
     pvp_terraza: 4,25%
 
   - nombre: Quemadillo de Rón 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/2a.jpg
+    imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Ron flambeado con granos de café y corteza de naranja, Licor 43, Canela y Crema de leche.
     alergenos: "*Leche*"
@@ -326,8 +326,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Mexican Coffe
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/2a.jpg
+    imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso, Tequila Reposado macerado con Café y Canela, Nata, Orgeat, Cacao y Azúcar moreno
     alergenos: "*Leche*"
@@ -396,8 +396,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Hierbas de Ibiza
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Anis estrellado, Tomillo, Romero, Hinojo, Hierba Luisa, Piel de Limón y Naranja 
     alergenos: 
@@ -410,8 +410,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Digestiva
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Manzanilla,Regaliz, Melisa u Anís
     alergenos: 
@@ -424,8 +424,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Touareg
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Té Verde, Hierbabuena, Menta y Clorofila.
     alergenos: 
@@ -438,8 +438,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Pasión Prohibida
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Manzana, Fresa, Grosella, Mora e Hibisco 
     alergenos: 
@@ -452,8 +452,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Taj Majal
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Té Negro, Canela, Cardamomo, Pimienta, Clavo y Jengibre.
     alergenos: 
@@ -466,8 +466,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Caribe
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Piña y Coco.
     alergenos: 
@@ -480,8 +480,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Relax
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Ortiga, Lemongrass, Valeriana, Melisa y Ginko.
     alergenos: 
@@ -494,8 +494,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Sueños de Chocolate
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Cacao, Chocolate blanco y negro, Pétalos de Flores y Rosas.
     alergenos: 
@@ -508,8 +508,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Té Indian Almond
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/1a.jpg
+    imagen_pequenya: images/carta/1a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Reconfortante bebida caliente a base de Té Chai y Leche de Almendra. 
     alergenos: 
@@ -522,10 +522,10 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Té Mojito Iced 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/3a.jpg
+    imagen_pequenya: images/carta/3a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Frías"]
-    ingredientes: T´Verde , Menta , Limón y Lemongrass
+    ingredientes: Té Verde, Menta, Limón y Lemongrass
     alergenos: 
     txt_aclaraciones: 
     txt_temporal: 
@@ -536,8 +536,8 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Té Chai con Leche de Soja
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/4a.jpg
+    imagen_pequenya: images/carta/4a_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Frías"]
     ingredientes: Té Chai, Leche de Soja y Azúcar
     alergenos: 
@@ -550,8 +550,8 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Batidos de Sabores
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/5a.jpg
+    imagen_pequenya: images/carta/5a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Batidos"]
     ingredientes: Leche, Fruta liofilizada, fructosa y Hielo.
     alergenos: "*Leche*"
@@ -567,8 +567,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Smoothies de Fruta con base de leche y un único sabor
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes:  Leche, Puré de frutas y Hielo 
     alergenos: "*Leche*"
@@ -583,8 +583,8 @@ items:
     pvp_terraza: 4€
 
   - nombre: Smoothies de Fruta con base cítrica y un único sabor
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Zumos de frutas o limonada, Puré de frutas y Hielo
     alergenos: 
@@ -598,8 +598,8 @@ items:
     pvp_terraza: 4€
 
   - nombre: Smoothies Sabores Combinados
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Leche, Puré de Frutas y Hielo. 
     alergenos: "*Leche*"
@@ -614,8 +614,8 @@ items:
     pvp_terraza: 4€
 
   - nombre: Smoothie Leche Merengada
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Leche, Limón, Canela, Azúcar y Hielo
     alergenos: 
@@ -628,8 +628,8 @@ items:
     pvp_terraza: 4€
 
   - nombre: Smoothie Estambul 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Zumo De Naranja, Zumo de Lima, Puré de frambuesa Natural y Hielo.
     alergenos: 
@@ -642,8 +642,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Smoothie Paradis
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Zumo de Piña, Zumo de Limón, Puré de Fresa Natural, Arandanos, Granadina y Hielo.
     alergenos: 
@@ -656,8 +656,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Smoothie Auténtico Placer
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Plátano, Cacao 100%, Nata, Cardamomo, Azucar y Hielo.
     alergenos: "*Leche*"
@@ -670,8 +670,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Smoothie Mango & Basil
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Limonada, Puré de Mango Natural, Albahaca fresca y Hielo
     alergenos: 
@@ -684,8 +684,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Smoothie Caribe
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Puré de Mango Natural, Puré de Plátano, Zumo de limón y Zumo de Naranja Natural
     alergenos: 
@@ -698,8 +698,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Smoothie de Naranja, Fresa y Menta
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/6a.jpg
+    imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
     ingredientes: Zumo de Naranja Natural, Puré de fresa Natural, Menta fresca y Hielo.
     alergenos: 
@@ -754,8 +754,8 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Limonada de Jengigre y Pomelo
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/7a.jpg
+    imagen_pequenya: images/carta/7a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Limón, Zumo de Pomelo Natural, Jengibre fresco, Azucar Integral de caña, y Menta fresca.
     alergenos: 
@@ -768,8 +768,8 @@ items:
     pvp_terraza: 5€
 
   - nombre: Limonada de Sandía y Menta
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/7a.jpg
+    imagen_pequenya: images/carta/7a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
     alergenos: 
@@ -782,8 +782,8 @@ items:
     pvp_terraza: 5€
 
   - nombre: Limonada Mr Smith
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/7a.jpg
+    imagen_pequenya: images/carta/7a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Manzana Granny Smith Natural, Zumo de Pepino Natural, Zumo de Lima y Azúcar de Integral de caña.
     alergenos: 
@@ -796,8 +796,8 @@ items:
     pvp_terraza: 5€
 
   - nombre: San Francisco
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Naranja Natural, Zumo de piña, Zumo de Limón y Granadina.
     alergenos: 
@@ -810,8 +810,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Virgin Mojito
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Lima, Hierbabuena, Azucar, Piña, Jengibre fresco y Soda. 
     alergenos: 
@@ -824,8 +824,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Virgin Colada.
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Piña, Zumo de Lima, Puré de coco, Azúcar y Nata.
     alergenos: "*Leche*"
@@ -838,8 +838,8 @@ items:
     pvp_terraza: 6€
 
   - nombre: Shin Tonic
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Sirope casero de especias y cítricos & Tonica Yuzu Sensation de Royal Bliss
     alergenos: 
@@ -852,8 +852,8 @@ items:
     pvp_terraza: 6€
 
   - nombre: Frescor Cálido
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
     alergenos: 
@@ -866,8 +866,8 @@ items:
     pvp_terraza: 6€
 
   - nombre: EmocionaTé
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Te rojo, Limón, Zumo Natural de Manzana Granny Smith, Srhub de Frambuesa, Sirope de Manzana caramelizada y Ginger beer.
     alergenos: "*Sulfitos*"
@@ -880,8 +880,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Jalamango 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
     ingredientes: Mango Natural, Jalapeños, Zumo Natural de Naranja y Cilantro fresco.
     alergenos:
@@ -894,8 +894,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Fizz de Pomelo y Romero
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/8a.jpg
+    imagen_pequenya: images/carta/8a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
     ingredientes: Zumo de Pomelo Natural, Datil Medjool, Romero fresco y CO2 
     alergenos:
@@ -908,8 +908,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Mojito Clásico 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Rón blanco Plantation, Lima, Hierbabuena, Azúcar y Soda.
     alergenos:
@@ -922,8 +922,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Mojito Sabor
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Rón blanco Plantation, Lima, Hierbabuena, Puré de Frutas, Azúcar y Soda.
     alergenos:
@@ -936,8 +936,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Mojito Moreno
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Ron Añejo especiado, Lima, Hierbabuena, Azúcar moreno, Angostura y Soda
     alergenos:
@@ -950,8 +950,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Mai Tai
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/110.jpg
+    imagen_pequenya: images/carta/110_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Rón Blanco Plantation, Rón añejo Captain Morgan Dark, Lima, Pomelo, Triple Seco, Caramelo, Falernum, Angostura y Pernod.
     alergenos: "*Almendra*"
@@ -964,8 +964,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Mint Julep
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Whisky o Bourbon"]
     ingredientes: Bulleit bourbon, Menta fresca, Azúcar y Soda.
     alergenos:
@@ -978,8 +978,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Honey & Mint
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Whisky o Bourbon"]
     ingredientes: J & B Honey, Lima, Manzana Granny Smith y Azúcar
     alergenos:
@@ -992,8 +992,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Lynchburg Lemonade
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Whisky o Bourbon"]
     ingredientes: Jack Daniels, Zumo de Limón, Triple Seco, Azúcar y Sprite.
     alergenos:
@@ -1006,8 +1006,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Gin Smash Basil
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Tanqueray Ten, Zumo de Limón, Zumo de Pomelo, Albahaca y Azúcar.  
     alergenos:
@@ -1020,8 +1020,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Caipiroska 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Vodka Finlandia, Lima y Azúcar.
     alergenos:
@@ -1034,8 +1034,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Caipiroska Sabor
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Vodka Finlandia, Lima, Pure de Fruta y Azúcar.
     alergenos:
@@ -1048,8 +1048,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Caipiroska Black
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Vodka Eristoff Black, Lima y A zúcar.
     alergenos:
@@ -1062,8 +1062,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Moskow Mule
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Vodka Finlandia, Zumo de Lima, Sirope de Ágave y Giger Beer
     alergenos:
@@ -1076,8 +1076,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Caipirinha
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Cachaça, Lima y Azúcar.
     alergenos:
@@ -1090,8 +1090,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Caipirinha de Naranja y Piña
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/9a.jpg
+    imagen_pequenya: images/carta/9a_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Cachaça, Lima, Mermelada de Naranja homemade, Zumo de Piña y Azúcar.
     alergenos:
@@ -1103,10 +1103,10 @@ items:
     pvp_local: 6,50€
     pvp_terraza: 7€
 
-  - nombre: Whiky Sour  
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Cocktails & Drinks" , "Clásicos"]
+  - nombre: Whisky Sour  
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Bulleit bourbon, Zumo de Limón, Clara de Huevo pasteurizada, Angostura y Azúcar.
     alergenos: "*Huevo*"
     txt_aclaraciones:
@@ -1118,9 +1118,9 @@ items:
     pvp_terraza: 8€
 
   - nombre: Pisco Sour
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Cocktails & Drinks" , "Clásicos"]
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Pisco Quebranta, Zumo de Lima, Clara de huevo pasteurizada, Angostura y Azúcar  
     alergenos: "*Huevo*"
     txt_aclaraciones:
@@ -1132,8 +1132,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Dark Soul 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Bulleit Bourbon, Puré de Melocotón en vino, Zumo de Naranja y Bitter de Melocotón.
     alergenos: "*Sulfitos*"
@@ -1146,8 +1146,8 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Grandma's Cherry 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
     alergenos: 
@@ -1160,8 +1160,8 @@ items:
     pvp_terraza: 8,50€s
 
   - nombre: El Viejo Santa Claus
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Inspirado en la Navidad pero disponible todo el año.
     alergenos: "*Huevo*"
@@ -1174,8 +1174,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Vodka Patilla
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y bitter de Lima.
     alergenos:
@@ -1188,8 +1188,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Rock Melón
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licor Proof 13, Puré de Melón Cantalupo Natural, Sirope de Hierbaluisa y Jengibre, Zumo de Naranja Natural, Zumo de Lima y Puré de Calabaza especiada.
     alergenos:
@@ -1202,8 +1202,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Nido de Escocia
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Naked Grouse, Manzanilla (vino de Jerez) infusionada con té Lapsang Souchong, Cizano 1757, frambuesa, Romero, Azucar y Soda. 
     alergenos: "*Sulfitos*"
@@ -1218,8 +1218,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Donde Dije DHigo
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Ron Plantation 3 Stars, Sirope de Higo Natural, Zumo de Naranja Natural, Gran Marnier Rouge, Jägermeister, Sirope de Canela y bitter Thomas Henrry.
     alergenos:
@@ -1232,8 +1232,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Sevent Pillar
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Macallan 12 años, Zumo de Manzana Granny Smith, Sirope de Hierbaluisa y Jengibre, Miel de Dátil especiada, Licor de Miel de brezo, Clara de huevo pasteurizada, Bitter Jerry Thomas y Soda 
     alergenos: "*Huevo*"
@@ -1246,8 +1246,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Puro Perú
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Pisco Quebranta, Sirope de Hierbaluisa y Jengibre, Arándanos frescos, Sirope de Manzana Caramelizada con Canela, 1724 tonic water y Espuma de Manzana, Albahaca y Cardamomo. 
     alergenos: "*Huevo*"
@@ -1260,8 +1260,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: The First Cocktail
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Rón Plantation 3 Stars, Mango Natural, Fresa Natural, Manzana Granny Smith, Sirope de Hierba luisa y jengibre, Falernum, Bitter de Melocotón y Soda.
     alergenos: "*Almendra*"
@@ -1274,8 +1274,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Mohito Nipon
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licuor Proof 13, Puré de Yuzu, Zumo de Manzana Granny Smith Natural, Albahaca y Frambuesa.
     alergenos:
@@ -1288,8 +1288,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Refujito de Ágave
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tequila el Jimador, Pure de Maracuyá, Zumo de Lima y Sirope de Ágave.
     alergenos:
@@ -1302,8 +1302,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Mezcalito de Romero
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Mezcal Joven Alipús, Zumo de Pomelo, Sirope de Romero, Sirope de Ágave y Romero fresco.
     alergenos:
@@ -1316,8 +1316,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Brandy Smash Tiki
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/11a.jpg
+    imagen_pequenya: images/carta/11a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Cognac Courvoisier, Zumo de Lima, Zumo de Naranja, Pimiento Dram, Azúcar y Bitter de Chocolate y Canela. 
     alergenos:
@@ -1416,8 +1416,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Green Station 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Ron Plantation 3 Stars, Zumo de Naranja, Zumo de Limón, Zumo de Piña y Curaçao azul. 
     alergenos:
@@ -1430,8 +1430,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Sangria Jamaicana
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: 
     alergenos:
@@ -1444,8 +1444,8 @@ items:
     pvp_terraza:
 
   - nombre: Singapure Sling
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Ginegra Ampersand, Triple Seco, Benedictine, Heering de Cereza, Zumo de Piña, Zumo de Limón y Angostura.
     alergenos:
@@ -1458,8 +1458,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Tom Collins
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Tanqueray Rangpur, Zumo de Limón, Soda y Azúcar.
     alergenos:
@@ -1472,8 +1472,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Sex on the Beach
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Vodka Finlandia, Licor de Melocotón, Zumo de Naranja y Zumo de Arándanos.
     alergenos:
@@ -1486,8 +1486,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Destornillador
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Vodka Finlandia y Zumo de Naranja Natural.
     alergenos:
@@ -1500,8 +1500,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Paloma
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Tequila, Mixer de Pomelo y Zumo de Lima.
     alergenos:
@@ -1514,8 +1514,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Cold Green Chilli Peppers
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Tequila El Jimador, Licor de Chilli Ancho Reyes, Zumo de Lima, Sirope de Ágave y Ginger Beer.
     alergenos:
@@ -1528,8 +1528,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre:  Aperol Spritz
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Aperol, proseco Cinzano y Soda
     alergenos: "*Sulfitos*"
@@ -1542,8 +1542,8 @@ items:
     pvp_terraza: 5€
 
   - nombre: Cherry Blossom Fizz
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Vermout del Professore Bianco, proseco Cinzano, y Mixer Cherry Blossom Thomas Henrry. 
     alergenos: "*Sulfitos*"
@@ -1556,8 +1556,8 @@ items:
     pvp_terraza: 6,5€
 
   - nombre: Garibaldi Fizz
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Campari, Zumo de Naranja, Sirope de especias y cítricos y 1724 Tonic Water.
     alergenos:
@@ -1570,8 +1570,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Aperoni Gin
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/12a.jpg
+    imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Tanqueray Ten, Aperol, Zumo de Pomelo y Azúcar.
     alergenos:
@@ -1584,8 +1584,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Bloody Mary
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Zumo de Tomate, Vodka Finlandia, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.
     alergenos: "*Apio*"
@@ -1598,8 +1598,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Margarita Clásica
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: [Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Tequila El Jimador, Zumo de Lima, Triple Seco y Azúcar
     alergenos:
@@ -1612,8 +1612,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Cosmopolitan
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Vodka Finlandia, Zumo de Lima, Zumo de Arándanos y Tripe Seco. 
     alergenos: 
@@ -1626,8 +1626,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Daiquiri 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Rón Plantation 3 Stars, Zumo de Limón, Triple Seco y Azúcar.
     alergenos:
@@ -1640,8 +1640,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Alexander
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Brandy, Nata y Licor Mozart.
     alergenos: "*Lacteo*"
@@ -1654,8 +1654,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Black Russian
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Vodka Finlandia y Kalhua
     alergenos:
@@ -1668,8 +1668,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Manhatan
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Bulleit Bourbon, Cinzano 1757 y Angostura
     alergenos: "*Sulfitos*"
@@ -1682,8 +1682,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Gin Fizz
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Ginebra Gin-Za, Zumo de Limón y Azúcar.
     alergenos:
@@ -1696,8 +1696,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Dry Martini
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Ginebra Tanqueray Ten, Vermout dry y Aceitunas
     alergenos: "*Sulfitos*"
@@ -1710,8 +1710,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Espresso Martini
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/10a.jpg
+    imagen_pequenya: images/carta/10a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
     ingredientes: Café espresso, Vodka Finlandia, Kalhua y Azúcar
     alergenos:
