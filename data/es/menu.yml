@@ -2381,10 +2381,10 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+  - nombre: Carta de Bocadillos
+    imagen: images/carta/1b.jpg
+    imagen_pequenya: images/carta/1b_small.jpg
+    categorias: ["Bocadillos, Sándwich y Focaccias" , "Bocadillos"]
     ingredientes: 
     alergenos:
     txt_aclaraciones:
