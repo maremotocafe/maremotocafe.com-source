@@ -2437,16 +2437,7 @@ items:
     pvp_local: €
     pvp_terraza: €
 
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: 
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: €
-    pvp_terraza: €
+  - nombre: VACÍO
+    imagen: images/carta/1.jpg
+    imagen_pequenya: images/carta/1.jpg
+    categorias: ["Cocktails & Drinks"]
