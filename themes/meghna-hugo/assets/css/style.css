@@ -942,7 +942,10 @@ a:hover {
   height: 100%;
   margin: 20px;
 }
-.popup-content .popup-details h1, p {
+.popup-content .popup-details p {
+  color: #555;
+}
+.popup-content .popup-details h1 {
   color: #555;
 }
 
