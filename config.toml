@@ -59,16 +59,6 @@ URL = "carta"
 weight = 1
 
 [[menu.main]]
-name = "Blog"
-URL = "blog"
+name = "Contacto"
+URL = "contact"
 weight = 2
-
-[[menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 3
-
-[[menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 3
