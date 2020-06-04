@@ -209,4 +209,37 @@ jQuery(function ($) {
 	$(window).on('scroll', function () {
 		counter();
 	});
+
+	/* ================================================================= */
+	/*   Contact Form Validating
+	/* ================================================================= */
+	$('#contact-submit').click(function (e) {
+		// Stop the form from being submitted
+		e.preventDefault();
+
+        // Making sure the fields are somewhat correct.
+		var subject = $('#subject').val();
+		var message = $('#message').val();
+		if (subject.length == 0) {
+			$('#subject').css("border-color", "#D8000C");
+            return;
+		} else {
+			$('#subject').css("border-color", "rgba(236,239,241,.07)");
+		}
+		if (message.length == 0) {
+			$('#message').css("border-color", "#D8000C");
+            return;
+		} else {
+			$('#message').css("border-color", "rgba(236,239,241,.07)");
+		}
+
+        // Now opening their mail client with the provided data.
+        let uri = 'mailto:yesus19@hotmail.es?subject='
+            + encodeURIComponent(subject) + '&body='
+            + encodeURIComponent(message);
+        window.open(uri, '_blank');
+
+        // Show a message with help in case it didn't work.
+        $('#contact-help').show();
+	});
 });

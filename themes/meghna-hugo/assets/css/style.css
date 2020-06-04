@@ -674,6 +674,10 @@ a:hover {
   padding-top: 50px;
 }
 
+.contact-help {
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
   .contact-us {
     padding-top: 80px;
