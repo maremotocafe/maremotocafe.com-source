@@ -10,6 +10,8 @@ titulo_txt_temporal: Temporalidad
 titulo_grad_alcoholica: Graduación
 titulo_vol_ml: Volumen (ml)
 titulo_edul_gr: Edulcorantes (gr)
+titulo_pvp_local: PVP en local
+titulo_pvp_terraza: PVP en terraza
 categorias:
   - nombre: Cafés y Tés
     subcategorias:

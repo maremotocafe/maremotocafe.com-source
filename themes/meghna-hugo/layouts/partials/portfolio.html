@@ -72,7 +72,7 @@
             {{ $i := 0 }}
 			{{ range (shuffle $menu.items) }}
 
-            {{ $fields := dict $menu.titulo_ingredientes .ingredientes $menu.titulo_alergenos .alergenos $menu.titulo_txt_aclaraciones .txt_aclaraciones $menu.titulo_txt_temporal .txt_temporal $menu.titulo_grad_alcoholica .grad_alcoholica $menu.titulo_vol_ml .vol_ml $menu.titulo_edul_gr .edul_gr }}
+            {{ $fields := dict $menu.titulo_ingredientes .ingredientes $menu.titulo_alergenos .alergenos $menu.titulo_txt_aclaraciones .txt_aclaraciones $menu.titulo_txt_temporal .txt_temporal $menu.titulo_grad_alcoholica .grad_alcoholica $menu.titulo_vol_ml .vol_ml $menu.titulo_edul_gr .edul_gr $menu.titulo_pvp_local .pvp_local $menu.titulo_pvp_terraza .pvp_terraza }}
 
             {{ $standalone := true }}
             {{ range $_, $data := $fields }}
