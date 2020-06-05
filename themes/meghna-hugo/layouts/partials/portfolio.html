@@ -117,7 +117,7 @@
                         <h1>{{ .nombre }}</h1>
                         {{ range $title, $data := $fields }}
                             {{ with $data }}
-                            <p><b>{{ $title | markdownify }}:</b> {{ . }}</p>
+                            <p><b>{{ $title }}:</b> {{ . | markdownify }}</p>
                             {{ end }}
                         {{ end }}
                     </div>
