@@ -1,5 +1,5 @@
 ####### MAIN CONFIG #######
-baseURL = "http://maremotocafe.com/"
+baseURL = "https://maremotocafe.com/"
 title = "Maremoto Café and Cocktail"
 theme = "meghna-hugo"
 defaultContentLanguage = "es"
