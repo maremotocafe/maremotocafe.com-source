@@ -9,11 +9,11 @@ submit_txt: Enviar
 help_txt: "Si no se abrió tu cliente de correo es posible que necesites configurar tu navegador. [Haz click aquí](https://www.cristianmonroy.com/2016/03/abre-los-enlaces-mailto-de-internet-en-tu-cliente-de-correo-preferido-cuando-usas-chrome-o-firefox.html)."
 
 contact_details:
-  - icon: ti-location-pin # themify icon pack : https://themify.me/themify-icons
+  - icon: las la-map-marker
     info: "Cesáreo Alierta Nº 20 50008 Zaragoza"
     
-  - icon: ti-mobile # themify icon pack : https://themify.me/themify-icons
+  - icon: las la-phone
     info: "Tlf 976231990"
     
-  - icon: ti-email # themify icon pack : https://themify.me/themify-icons
+  - icon: las la-envelope
     info: "Email: yesus19@hotmail.es"

@@ -44,18 +44,19 @@ place = "Maremoto Café & Cocktail"
 enable = true
 where = "#carta"
 txt = "Ir a Carta"
+icon = "las la-angle-double-up"
 
 ####### SOCIAL NETWORKS #######
 [[params.social]]
-icon = "ti-facebook"
+icon = "lab la-facebook-f"
 link = "https://www.facebook.com/maremotocafeandcocktail/"
 
 [[params.social]]
-icon = "ti-twitter-alt"
+icon = "lab la-twitter"
 link = "https://twitter.com/maremotocafe"
 
 [[params.social]]
-icon = "ti-instagram"
+icon = "lab la-instagram"
 link = "https://www.instagram.com/maremotocafeandcocktail"
 
 ####### NAVIGATION #######

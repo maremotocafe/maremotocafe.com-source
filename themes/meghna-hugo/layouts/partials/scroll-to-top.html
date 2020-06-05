@@ -1,7 +1,7 @@
 {{ if .Site.Params.scrollToTop.enable }}
 {{ with .Site.Params.scrollToTop }}
 <a id="scroll-to-top" class="btn btn-transparent page-scroll scroll-to-top" title="Go to top" href="{{ .where }}">
-    <i class="ti-arrow-up"></i>
+    <i class="{{ .icon }}"></i>
     {{ .txt }}
 </a>
 {{ end }}
