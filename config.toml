@@ -39,6 +39,12 @@ copyright = "copyright &copy; 2019 [gethugothemes](https://gethugothemes.com) al
 enable = true
 place = "Maremoto Café & Cocktail"
 
+####### SCROLL TO TOP #######
+[params.scrollToTop]
+enable = true
+where = "#carta"
+txt = "Ir a Carta"
+
 ####### SOCIAL NETWORKS #######
 [[params.social]]
 icon = "ti-facebook"

@@ -535,6 +535,22 @@ a:hover {
   z-index: -1;
 }
 
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #57cbcc;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
 /*=================================================================
   About us section
 ==================================================================*/

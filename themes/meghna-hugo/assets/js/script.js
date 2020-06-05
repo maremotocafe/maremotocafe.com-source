@@ -55,7 +55,25 @@ function showBar(bar) {
 
 
 // Things that have to be loaded at the end
-window.onload = (event) => {
+window.onload = (e) => {
+    /* ================================================== */
+    /*    Scroll to top
+    /* ================================================== */
+
+    // The scroll to top button will be shown once the page has already
+    // been scrolled (either on load, or on scroll).
+    const min_scroll = 1000;
+    const scroll_btn = document.getElementById('scroll-to-top');
+    function toggleScrollToTop() {
+        if (document.documentElement.scrollTop > min_scroll || window.pageYOffset > min_scroll || document.body.scrollTop > min_scroll) {
+            scroll_btn.style.display = "block";
+        } else {
+            scroll_btn.style.display = "none";
+        }
+    }
+    window.onscroll = toggleScrollToTop;
+    toggleScrollToTop();
+
     /* ================================================== */
     /*    Lazy Loading
     /* ================================================== */
