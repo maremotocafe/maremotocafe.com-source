@@ -37,10 +37,6 @@ categorias:
         - nombre: Cocktails Clásicos
   - nombre: Desayunos, Almuerzos y Zumos
   - nombre: Bocadillos, Sándwich y Focaccias
-    subcategorias:
-        - nombre: Bocadillos
-        - nombre: Sándwiches
-        - nombre: Focaccias
   - nombre: Smoothies, Healthy Drinks y Batidos
     subcategorias:
         - nombre: Smoothies
@@ -2371,18 +2367,18 @@ items:
   - nombre: Carta de Bocadillos
     imagen: images/carta/1b.jpg
     imagen_pequenya: images/carta/b1.jpg
-    categorias: ["Bocadillos, Sándwich y Focaccias" , "Bocadillos"]
+    categorias: ["Bocadillos, Sándwich y Focaccias"]
 
   - nombre: Carta de Sándwiches
     imagen: images/carta/1s.jpg
     imagen_pequenya: images/carta/s1.jpg
-    categorias: ["Bocadillos, Sándwich y Focaccias" , "Sándwiches"]
+    categorias: ["Bocadillos, Sándwich y Focaccias"]
     
 
   - nombre: Carta de Focaccias
     imagen: images/carta/1f.jpg
     imagen_pequenya: images/carta/f1.jpg
-    categorias: ["Bocadillos, Sándwich y Focaccias" , "Focaccias"]
+    categorias: ["Bocadillos, Sándwich y Focaccias"]
  
 
   - nombre: Almuerzos
