@@ -183,13 +183,13 @@ window.onload = (e) => {
         var subject = $('#subject').val();
         var message = $('#message').val();
         if (subject.length == 0) {
-            $('#subject').css("border-color", "#D8000C");
+            $('#subject').css("border-color", "#b10b1f");
             return;
         } else {
             $('#subject').css("border-color", "rgba(236,239,241,.07)");
         }
         if (message.length == 0) {
-            $('#message').css("border-color", "#D8000C");
+            $('#message').css("border-color", "#b10b1f");
             return;
         } else {
             $('#message').css("border-color", "rgba(236,239,241,.07)");
