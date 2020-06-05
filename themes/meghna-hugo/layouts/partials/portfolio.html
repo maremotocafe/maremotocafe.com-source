@@ -22,12 +22,16 @@
                 <!-- TODO maximum category width -->
                 {{"<!-- First level -->" | safeHTML}}
 				<div class="btn-group btn-group-toggle portfolio-filter menu-level-one justify-content-center d-flex flex-wrap" data-toggle="buttons">
-					<label class="btn active">
-						<input type="radio" autocomplete="off" name="shuffle-filter" value="all" checked>{{ i18n "all"}}
+					<label class="btn default active">
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="all" checked>
+                        <i class="{{ $menu.icono_todo }}"></i>
+                        <span>{{ i18n "all"}}</span>
 					</label>
                     {{ range $menu.categorias }}
 					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">{{ .nombre }}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">
+                        <i class="{{ .icono }}"></i>
+                        <span>{{ .nombre }}</span>
 					</label>
 					{{ end }}
 				</div>
@@ -36,29 +40,37 @@
                 {{ range $parent := $menu.categorias }}
                 {{ if .subcategorias }}
 				<div class="btn-group btn-group-toggle portfolio-filter menu-level-two justify-content-center d-none flex-wrap" parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
-					<label class="btn active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.nombre | urlize }}" checked>{{ i18n "all"}}
+					<label class="btn default active">
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.nombre | urlize }}" checked>
+                        <i class="{{ $menu.icono_todo }}"></i>
+                        <span>{{ i18n "all"}}</span>
 					</label>
                     {{ range .subcategorias }}
 					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">{{ .nombre }}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">
+                        <i class="{{ $parent.icono }}"></i>
+                        <span>{{ .nombre }}</span>
 					</label>
                     {{ end }}
 				</div>
                 {{ end }}
                 {{ end }}
 
-                {{"<!-- First level -->" | safeHTML}}
-                {{ range $menu.categorias }}
+                {{"<!-- Third level -->" | safeHTML}}
+                {{ range $grandparent := $menu.categorias }}
                 {{ range $parent := .subcategorias }}
                 {{ if .subcategorias }}
 				<div class="btn-group btn-group-toggle portfolio-filter menu-level-three justify-content-center d-none flex-wrap" parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
-					<label class="btn active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.nombre | urlize }}" checked/>{{ i18n "all"}}
+					<label class="btn default active">
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ $parent.nombre | urlize }}" checked/>
+                        <i class="{{ $menu.icono_todo }}"></i>
+                        <span>{{ i18n "all"}}</span>
 					</label>
                     {{ range .subcategorias }}
 					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">{{ .nombre }}
+                        <input type="radio" autocomplete="off" name="shuffle-filter" value="{{ .nombre | urlize }}">
+                        <i class="{{ $grandparent.icono }}"></i>
+                        <span>{{ .nombre }}</span>
 					</label>
                     {{ end }}
 				</div>

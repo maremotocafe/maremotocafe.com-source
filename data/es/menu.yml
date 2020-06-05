@@ -1,4 +1,5 @@
 #################################### portfolio ###############################
+# Iconos obtenidos de https://icons8.com/line-awesome
 enable: true
 title: Nuestra Carta
 description: >
@@ -12,8 +13,10 @@ titulo_vol_ml: Volumen (ml)
 titulo_edul_gr: Edulcorantes (gr)
 titulo_pvp_local: PVP en local
 titulo_pvp_terraza: PVP en terraza
+icono_todo: las la-times
 categorias:
   - nombre: Cafés y Tés
+    icono: las la-coffee
     subcategorias:
         - nombre: Cafés con Alcohol
         - nombre: Cafés sin Alcohol
@@ -23,6 +26,7 @@ categorias:
               - nombre: Frías
               - nombre: Calientes
   - nombre: Cocktails & Drinks
+    icono: las la-cocktail
     subcategorias:
         - nombre: Gin Tonic y Vodka Tonic
         - nombre: Mojitos Caipirinhas y Similares
@@ -36,8 +40,11 @@ categorias:
         - nombre: Cocktails Long Drinks
         - nombre: Cocktails Clásicos
   - nombre: Desayunos, Almuerzos y Zumos
+    icono: las la-bacon
   - nombre: Bocadillos, Sándwich y Focaccias
+    icono: las la-hamburger
   - nombre: Smoothies, Healthy Drinks y Batidos
+    icono: las la-blender
     subcategorias:
         - nombre: Smoothies
         - nombre: Granizados
@@ -47,6 +54,7 @@ categorias:
               - nombre: Sin Alcohol
               - nombre: Sin Alcohol ni Azúcares
   - nombre: Ofertas Destacadas
+    icono: las la-certificate
     subcategorias:
         - nombre: Día
         - nombre: Tarde

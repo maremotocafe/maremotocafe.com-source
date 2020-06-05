@@ -1,58 +1,5 @@
 'use strict';
 
-function barContains(bar, value) {
-    for (let i = 0; i < bar.children.length; i++) {
-        if (bar.children[i].children[0].value === value) {
-            return true;
-        }
-    }
-
-    return false;
-}
-
-function resetBar(bar) {
-    // Remove all active buttons
-    for (let i = 0; i < bar.children.length; i++) {
-        if (bar.children[i].classList.contains('active')) {
-            bar.children[i].classList.remove('active');
-            bar.children[i].classList.checked = false;
-            break;
-        }
-    }
-
-    // Default back to the first option
-    bar.children[0].classList.add('active');
-    bar.children[0].classList.checked = true;
-}
-
-function hideBar(bar) {
-    const bar_jq = $(bar);
-    if (bar_jq.is(':hidden')) {
-        return
-    }
-
-    resetBar(bar);
-
-    // Fade out with an animation
-    bar_jq.css('opacity', 1);
-    bar_jq.removeClass('d-flex');
-    bar_jq.addClass('d-none');
-    bar_jq.animate({opacity: 0}, 400);
-}
-
-function showBar(bar) {
-    const bar_jq = $(bar);
-    if (!bar_jq.is(':hidden')) {
-        return
-    }
-
-    // Fade in with an animation
-    bar_jq.css('opacity', 0);
-    bar_jq.removeClass('d-none');
-    bar_jq.addClass('d-flex');
-    bar_jq.animate({opacity: 1}, 400);
-}
-
 
 // Things that have to be loaded at the end
 window.onload = (e) => {
@@ -62,13 +9,15 @@ window.onload = (e) => {
 
     // The scroll to top button will be shown once the page has already
     // been scrolled (either on load, or on scroll).
-    const min_scroll = 1000;
-    const scroll_btn = document.getElementById('scroll-to-top');
+    const minScroll = 1000;
+    const scrollBtn = document.getElementById('scroll-to-top');
     function toggleScrollToTop() {
-        if (document.documentElement.scrollTop > min_scroll || window.pageYOffset > min_scroll || document.body.scrollTop > min_scroll) {
-            scroll_btn.style.display = "block";
+        if (document.documentElement.scrollTop > minScroll
+            || window.pageYOffset > minScroll
+            || document.body.scrollTop > minScroll) {
+            scrollBtn.style.display = "block";
         } else {
-            scroll_btn.style.display = "none";
+            scrollBtn.style.display = "none";
         }
     }
     window.onscroll = toggleScrollToTop;
@@ -93,15 +42,69 @@ window.onload = (e) => {
     /* ================================================== */
     /*    Portfolio Filtering Hook
     /* ================================================== */
-    // TODO CONSISTENT NAMING, CAMELCASE OR SNAKE CASE
 
     // Maximum of three nested filters for the gallery.
     const containerEl = document.querySelector('.shuffle-wrapper');
     if (containerEl) {
-        let Shuffle = window.Shuffle;
+        function barContains(bar, value) {
+            for (let i = 0; i < bar.children.length; i++) {
+                if (bar.children[i].children[0].value === value) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        function resetBar(bar) {
+            // Remove all active buttons
+            for (let i = 0; i < bar.children.length; i++) {
+                if (bar.children[i].classList.contains('active')) {
+                    bar.children[i].classList.remove('active');
+                    bar.children[i].classList.checked = false;
+                    break;
+                }
+            }
+
+            // Default back to the first option
+            bar.children[0].classList.add('active');
+            bar.children[0].classList.checked = true;
+        }
+
+        function hideBar(bar) {
+            const barJQ = $(bar);
+            if (barJQ.is(':hidden')) {
+                return
+            }
+
+            resetBar(bar);
+
+            // Fade out with an animation
+            barJQ.css('opacity', 1);
+            barJQ.removeClass('d-flex');
+            barJQ.addClass('d-none');
+            barJQ.animate({opacity: 0}, 400);
+        }
+
+        function showBar(bar) {
+            const barJQ = $(bar);
+            if (!barJQ.is(':hidden')) {
+                return
+            }
+
+            // Fade in with an animation
+            barJQ.css('opacity', 0);
+            barJQ.removeClass('d-none');
+            barJQ.addClass('d-flex');
+            barJQ.animate({opacity: 1}, 400);
+        }
+
+
+        var Shuffle = window.Shuffle;
         let myShuffle = new Shuffle(containerEl, {
             itemSelector: '.shuffle-item',
-            buffer: 1
+            buffer: 1,
+            useTransforms: false  // better performance
         });
         myShuffle.on(Shuffle.EventType.LAYOUT, function () {
             observer.observe();
@@ -117,7 +120,7 @@ window.onload = (e) => {
         $('input[name="shuffle-filter"]').on('change', evt => {
             // The pressed button, and the bar it's in.
             const input = evt.currentTarget;
-            const input_bar = input.parentNode.parentNode;
+            const inputBar = input.parentNode.parentNode;
             if (!input.checked) {
                 return
             }
@@ -128,18 +131,18 @@ window.onload = (e) => {
             // Updating the displayed rows.
             // TODO RESET ACTIVE TO "Todo"
             bars.forEach((bar) => {
-                const bar_parent = bar.getAttribute('parent');
+                const barParent = bar.getAttribute('parent');
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
-                if (bar === input_bar
-                        || barContains(bar, input_bar.getAttribute('parent'))
-                        || bar_parent === input.value) {
+                if (bar === inputBar
+                        || barContains(bar, inputBar.getAttribute('parent'))
+                        || barParent === input.value) {
                     // The bar will fade in if isn't already visible.
                     showBar(bar);
 
                     // The child will be resetted (this is important for
                     // whenever the same parent item is pressed).
-                    if (bar_parent === input.value) {
+                    if (barParent === input.value) {
                         resetBar(bar);
                     }
                 } else {
@@ -156,14 +159,14 @@ window.onload = (e) => {
     /*    Animation scroll js
     /* ================================================== */
 
-    let html_body = $('html, body');
+    let htmlAndBody = $('html, body');
     $('nav a, .page-scroll').on('click', function () {
         // Making sure the clicked hyperlink is inside this website
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             let target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
-                html_body.animate({
+                htmlAndBody.animate({
                     scrollTop: target.offset().top - 50
                 }, 750);
                 return false;
