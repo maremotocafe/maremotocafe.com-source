@@ -43,11 +43,17 @@
 // HTML pop-ups
 $('.open-popup-inline').magnificPopup({
     type: 'inline',
-    midClick: true
+    midClick: true,
+    fixedContentPos: false,
+    fixedBgPos: true
 });
 // Simple pop-ups
 $('.open-popup-standalone').magnificPopup({
-    type: 'image'
+    type: 'image',
+    midClick: true,
+    closeOnContentClick: true,
+    fixedContentPos: false,
+    fixedBgPos: true
 });
 </script>
 
