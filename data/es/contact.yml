@@ -2,7 +2,7 @@
 enable: true
 title: Contáctanos
 subtitle: Datos de Contacto
-content: "¿Quieres comentarnos algo? ¿Tienes alguna duda, alguna sugerencia para mejorar? ¿Necesitas información detallada de alguno de nuestros servicios o productos? ¡No dudes en contactárnos, estaremos encantados de atenderte!" 
+content: "¿Quieres comentarnos algo? ¿Tienes alguna duda, alguna sugerencia para mejorar? ¿Necesitas información detallada de alguno de nuestros servicios o productos? ¡No dudes en contactarnos, estaremos encantados de atenderte!"
 subject_txt: Asunto
 message_txt: Mensaje
 submit_txt: Enviar
