@@ -99,50 +99,37 @@ window.onload = (e) => {
             barJQ.animate({opacity: 1}, 400);
         }
 
-
+        // Initializing Shuffle
         var Shuffle = window.Shuffle;
         let myShuffle = new Shuffle(containerEl, {
             itemSelector: '.shuffle-item',
             buffer: 1,
             useTransforms: false  // better performance
         });
-        myShuffle.on(Shuffle.EventType.LAYOUT, function () {
-            observer.observe();
-        });
 
-        // The main bar will never be selected, since it's always visible.
-        const bars = document.querySelectorAll(
-            '.portfolio-filter:not(.menu-level-one)');
-
-
-        // The hidden levels will appear and disappear depending on the first
-        // level.
-        $('input[name="shuffle-filter"]').on('change', evt => {
+        // The hidden levels will appear and disappear depending on its
+        // parents.
+        const toggable = document.querySelectorAll('.portfolio-filter:not(.menu-level-one)');
+        $('input[name="shuffle-filter"]').on('click', evt => {
             // The pressed button, and the bar it's in.
             const input = evt.currentTarget;
+            const filterValue = input.getAttribute('filter-value');
             const inputBar = input.parentNode.parentNode;
-            if (!input.checked) {
-                return
-            }
-
-            // Filtering the items with the new selected button.
-            myShuffle.filter(input.value);
 
             // Updating the displayed rows.
-            // TODO RESET ACTIVE TO "Todo"
-            bars.forEach((bar) => {
+            toggable.forEach((bar) => {
                 const barParent = bar.getAttribute('parent');
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
                 if (bar === inputBar
                         || barContains(bar, inputBar.getAttribute('parent'))
-                        || barParent === input.value) {
+                        || barParent === filterValue) {
                     // The bar will fade in if isn't already visible.
                     showBar(bar);
 
                     // The child will be resetted (this is important for
                     // whenever the same parent item is pressed).
-                    if (barParent === input.value) {
+                    if (barParent === filterValue) {
                         resetBar(bar);
                     }
                 } else {
@@ -151,7 +138,8 @@ window.onload = (e) => {
                 }
             });
 
-            observer.observe();
+            // Filtering the items with the new selected button.
+            myShuffle.filter(filterValue);
         });
     }
 
