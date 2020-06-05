@@ -5,16 +5,18 @@
 set -e
 
 # The image directories are relative to $DIR
+BLACKLIST="dev/miniaturas_excepciones.txt"
 DIR="static"
 MENU="data/es/menu.yml"
 SIZE="465x350"
 
 sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | uniq | while read image; do
-    thumbnail=$(echo $image | sed 's/\(.*\).jpg/\1_small.jpg/')
-    if [ -f "$DIR/$thumbnail" ]; then
-        echo ">> Skipping $image as it already exists"
+    if grep -q "$image" "$BLACKLIST"; then
+        echo ">> Skipping $image as it's in the blacklist"
         continue
     fi
+
+    thumbnail=$(echo $image | sed 's/\(.*\).jpg/\1_small.jpg/')
 
     echo -n ">> Generating $thumbnail ... "
     magick "$DIR/$image" -resize "$SIZE" "$DIR/$thumbnail"
