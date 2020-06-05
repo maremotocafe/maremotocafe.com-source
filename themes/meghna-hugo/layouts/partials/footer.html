@@ -8,7 +8,7 @@
 				<div class="social-icon">
 					<ul class="list-inline">
 						{{ range .Site.Params.social }}
-						<li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+						<li class="list-inline-item"><a href="{{ .link | safeURL }}" target="_blank" rel="noreferrer"><i class="{{ .icon }}"></i></a></li>
 						{{ end }}
 					</ul>
 				</div>
@@ -43,11 +43,17 @@
 // HTML pop-ups
 $('.open-popup-inline').magnificPopup({
     type: 'inline',
-    midClick: true
+    midClick: true,
+    fixedContentPos: false,
+    fixedBgPos: true
 });
 // Simple pop-ups
 $('.open-popup-standalone').magnificPopup({
-    type: 'image'
+    type: 'image',
+    midClick: true,
+    closeOnContentClick: true,
+    fixedContentPos: false,
+    fixedBgPos: true
 });
 </script>
 

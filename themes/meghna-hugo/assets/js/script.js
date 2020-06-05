@@ -1,113 +1,124 @@
 'use strict';
 
-jQuery(function ($) {
-    // Lazy loads elements with default selector as ".lozad"
-	const observer = lozad();
-	observer.observe();
+function barContains(bar, value) {
+    for (let i = 0; i < bar.children.length; i++) {
+        if (bar.children[i].children[0].value === value) {
+            return true;
+        }
+    }
 
-	/* ================================================== */
-	/*	Magnific popup
-	/* ================================================== */
+    return false;
+}
 
-	$('.image-popup').magnificPopup({
-		type: 'image',
-		removalDelay: 160, //delay removal by X to allow out-animation
-		callbacks: {
-			beforeOpen: function () {
-				// just a hack that adds mfp-anim class to markup
-				this.st.image.markup = this.st.image.markup.replace(
-                    'mfp-figure', 'mfp-figure mfp-with-anim');
-				this.st.mainClass = this.st.el.attr('data-effect');
-			}
-		},
-		closeOnContentClick: true,
-		midClick: true,
-		fixedContentPos: false,
-		fixedBgPos: true
-	});
+function resetBar(bar) {
+    // Remove all active buttons
+    for (let i = 0; i < bar.children.length; i++) {
+        if (bar.children[i].classList.contains('active')) {
+            bar.children[i].classList.remove('active');
+            bar.children[i].classList.checked = false;
+            break;
+        }
+    }
 
-	/* ================================================== */
-	/*	Portfolio Filtering Hook
-	/* ================================================== */
+    // Default back to the first option
+    bar.children[0].classList.add('active');
+    bar.children[0].classList.checked = true;
+}
+
+function hideBar(bar) {
+    const bar_jq = $(bar);
+    if (bar_jq.is(':hidden')) {
+        return
+    }
+
+    resetBar(bar);
+
+    // Fade out with an animation
+    bar_jq.css('opacity', 1);
+    bar_jq.removeClass('d-flex');
+    bar_jq.addClass('d-none');
+    bar_jq.animate({opacity: 0}, 400);
+}
+
+function showBar(bar) {
+    const bar_jq = $(bar);
+    if (!bar_jq.is(':hidden')) {
+        return
+    }
+
+    // Fade in with an animation
+    bar_jq.css('opacity', 0);
+    bar_jq.removeClass('d-none');
+    bar_jq.addClass('d-flex');
+    bar_jq.animate({opacity: 1}, 400);
+}
+
+
+// Things that have to be loaded at the end
+window.onload = (e) => {
+    /* ================================================== */
+    /*    Scroll to top
+    /* ================================================== */
+
+    // The scroll to top button will be shown once the page has already
+    // been scrolled (either on load, or on scroll).
+    const min_scroll = 1000;
+    const scroll_btn = document.getElementById('scroll-to-top');
+    function toggleScrollToTop() {
+        if (document.documentElement.scrollTop > min_scroll || window.pageYOffset > min_scroll || document.body.scrollTop > min_scroll) {
+            scroll_btn.style.display = "block";
+        } else {
+            scroll_btn.style.display = "none";
+        }
+    }
+    window.onscroll = toggleScrollToTop;
+    toggleScrollToTop();
+
+    /* ================================================== */
+    /*    Lazy Loading
+    /* ================================================== */
+
+    const observer = lozad();
+    observer.observe();
+
+    /* ================================================== */
+    /*    Magnific popup
+    /* ================================================== */
+
+    $('.image-popup').magnificPopup({
+        fixedContentPos: false,
+        fixedBgPos: true
+    });
+
+    /* ================================================== */
+    /*    Portfolio Filtering Hook
+    /* ================================================== */
     // TODO CONSISTENT NAMING, CAMELCASE OR SNAKE CASE
 
     // Maximum of three nested filters for the gallery.
-	const containerEl = document.querySelector('.shuffle-wrapper');
-	if (containerEl) {
-		let Shuffle = window.Shuffle;
-		let myShuffle = new Shuffle(containerEl, {
-			itemSelector: '.shuffle-item',
-			buffer: 1
-		});
+    const containerEl = document.querySelector('.shuffle-wrapper');
+    if (containerEl) {
+        let Shuffle = window.Shuffle;
+        let myShuffle = new Shuffle(containerEl, {
+            itemSelector: '.shuffle-item',
+            buffer: 1
+        });
         myShuffle.on(Shuffle.EventType.LAYOUT, function () {
             observer.observe();
         });
 
         // The main bar will never be selected, since it's always visible.
-		const bars = document.querySelectorAll(
+        const bars = document.querySelectorAll(
             '.portfolio-filter:not(.menu-level-one)');
 
-        // Checking if a single bar contains an input element with some value.
-        function contains(bar, value) {
-            for (let i = 0; i < bar.children.length; i++) {
-                if (bar.children[i].children[0].value === value) {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        function resetBar(bar) {
-            // Remove all active buttons
-            for (let i = 0; i < bar.children.length; i++) {
-                if (bar.children[i].classList.contains('active')) {
-                    bar.children[i].classList.remove('active');
-                    bar.children[i].classList.checked = false;
-                    break;
-                }
-            }
-
-            // Default back to the first option
-            bar.children[0].classList.add('active');
-            bar.children[0].classList.checked = true;
-        }
-
-        function hideBar(bar) {
-            const bar_jq = $(bar);
-            if (bar_jq.is(':hidden')) {
-                return
-            }
-
-            resetBar(bar);
-
-            // Fade out with an animation
-            bar_jq.css('opacity', 1);
-            bar_jq.removeClass('d-flex');
-            bar_jq.addClass('d-none');
-            bar_jq.animate({opacity: 0}, 400);
-        }
-
-        function showBar(bar) {
-            const bar_jq = $(bar);
-            if (!bar_jq.is(':hidden')) {
-                return
-            }
-
-            // Fade in with an animation
-            bar_jq.css('opacity', 0);
-            bar_jq.removeClass('d-none');
-            bar_jq.addClass('d-flex');
-            bar_jq.animate({opacity: 1}, 400);
-        }
 
         // The hidden levels will appear and disappear depending on the first
         // level.
-		$('input[name="shuffle-filter"]').on('change', evt => {
+        $('input[name="shuffle-filter"]').on('change', evt => {
             // The pressed button, and the bar it's in.
-			const input = evt.currentTarget;
+            const input = evt.currentTarget;
             const input_bar = input.parentNode.parentNode;
-			if (!input.checked) {
+            if (!input.checked) {
                 return
             }
 
@@ -121,7 +132,7 @@ jQuery(function ($) {
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
                 if (bar === input_bar
-                        || contains(bar, input_bar.getAttribute('parent'))
+                        || barContains(bar, input_bar.getAttribute('parent'))
                         || bar_parent === input.value) {
                     // The bar will fade in if isn't already visible.
                     showBar(bar);
@@ -138,75 +149,59 @@ jQuery(function ($) {
             });
 
             observer.observe();
-		});
-	}
+        });
+    }
 
-	/* ================================================== */
-	/*	Animation scroll js
-	/* ================================================== */
+    /* ================================================== */
+    /*    Animation scroll js
+    /* ================================================== */
 
-	let html_body = $('html, body');
-    // use page-scroll class in any HTML tag for scrolling
-	$('nav a, .page-scroll').on('click', function () {
-		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-			let target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				html_body.animate({
-					scrollTop: target.offset().top - 50
-				}, 1500, 'easeInOutExpo');
-				return false;
-			}
-		}
-	});
+    let html_body = $('html, body');
+    $('nav a, .page-scroll').on('click', function () {
+        // Making sure the clicked hyperlink is inside this website
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+            let target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                html_body.animate({
+                    scrollTop: target.offset().top - 50
+                }, 750);
+                return false;
+            }
+        }
+    });
 
-	// easeInOutExpo Declaration
-	jQuery.extend(jQuery.easing, {
-		easeInOutExpo: function (x, t, b, c, d) {
-			if (t === 0) {
-				return b;
-			}
-			if (t === d) {
-				return b + c;
-			}
-			if ((t /= d / 2) < 1) {
-				return c / 2 * Math.pow(2, 10 * (t - 1)) + b;
-			}
-			return c / 2 * (-Math.pow(2, -10 * --t) + 2) + b;
-		}
-	});
+    /* ================================================== */
+    /*   Contact Form Validating
+    /* ================================================== */
 
-	/* ================================================== */
-	/*	Counter up
-	/* ================================================== */
+    $('#contact-submit').click(function (e) {
+        // Stop the form from being submitted
+        e.preventDefault();
 
-	function counter() {
-		let oTop;
-		if ($('.count').length !== 0) {
-			oTop = $('.count').offset().top - window.innerHeight;
-		}
-		if ($(window).scrollTop() > oTop) {
-			$('.count').each(function () {
-				let $this = $(this),
-					countTo = $this.attr('data-count');
-				$({
-					countNum: $this.text()
-				}).animate({
-					countNum: countTo
-				}, {
-					duration: 1000,
-					easing: 'swing',
-					step: function () {
-						$this.text(Math.floor(this.countNum));
-					},
-					complete: function () {
-						$this.text(this.countNum);
-					}
-				});
-			});
-		}
-	}
-	$(window).on('scroll', function () {
-		counter();
-	});
-});
+        // Making sure the fields are somewhat correct.
+        var subject = $('#subject').val();
+        var message = $('#message').val();
+        if (subject.length == 0) {
+            $('#subject').css("border-color", "#D8000C");
+            return;
+        } else {
+            $('#subject').css("border-color", "rgba(236,239,241,.07)");
+        }
+        if (message.length == 0) {
+            $('#message').css("border-color", "#D8000C");
+            return;
+        } else {
+            $('#message').css("border-color", "rgba(236,239,241,.07)");
+        }
+
+        // Now opening their mail client with the provided data.
+        let uri = 'mailto:yesus19@hotmail.es?subject='
+            + encodeURIComponent(subject) + '&body='
+            + encodeURIComponent(message);
+        window.open(uri, '_blank');
+
+        // Show a message with help in case it didn't work.
+        $('#contact-help').show();
+    });
+}

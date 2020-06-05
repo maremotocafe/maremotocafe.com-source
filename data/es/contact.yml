@@ -3,7 +3,10 @@ enable: true
 title: Contáctanos
 subtitle: Datos de Contacto
 content: "¿Quieres comentarnos algo? ¿Tienes alguna duda, alguna sugerencia para mejorar? ¿Necesitas información detallada de alguno de nuestros servicios o productos? ¡No dudes en contactárnos, estaremos encantados de atenderte!" 
-form_action: "#" #contact form works with https://formspree.io
+subject_txt: Asunto
+message_txt: Mensaje
+submit_txt: Enviar
+help_txt: "Si no se abrió tu cliente de correo es posible que necesites configurar tu navegador. [Haz click aquí](https://www.cristianmonroy.com/2016/03/abre-los-enlaces-mailto-de-internet-en-tu-cliente-de-correo-preferido-cuando-usas-chrome-o-firefox.html)."
 
 contact_details:
   - icon: ti-location-pin # themify icon pack : https://themify.me/themify-icons
