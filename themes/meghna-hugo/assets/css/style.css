@@ -965,6 +965,7 @@ a:hover {
 .popup-content {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   background: #FFF;
 }
@@ -984,7 +985,7 @@ a:hover {
 .popup-content .popup-details {
   text-align: left;
   min-width: 300px;
-  max-width: 700px;
+  max-width: 500px;
   height: 100%;
   margin: 20px;
 }
@@ -998,6 +999,10 @@ a:hover {
 .mfp-auto-cursor .mfp-content {
   max-width: 80%;
   margin: 0 auto;
+}
+
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+  width: auto;
 }
 
 /*=================================================================

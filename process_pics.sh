@@ -15,8 +15,8 @@ NO_RESIZE_LIST="dev/no_resize.txt"
 COMPRESSED_LIST="dev/compressed.txt"
 BASE_DIR="$1"
 EXPORT_DIR="out"
-MIN_SIZE="400x500"
-MAX_SIZE="540x670"
+MIN_SIZE="500x700"
+MAX_SIZE="700x700"
 
 
 if [ -d "$EXPORT_DIR" ]; then
