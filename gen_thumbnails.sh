@@ -4,21 +4,32 @@
 
 set -e
 
-# The image directories are relative to $DIR
-BLACKLIST="dev/miniaturas_excepciones.txt"
-DIR="static"
+# The image directories are relative to $BASE_DIR
+BLACKLIST="dev/no_resize.txt"
+BASE_DIR="static"
+EXPORT_DIR="out"
 MENU="data/es/menu.yml"
 SIZE="465x350"
 
-sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | uniq | while read image; do
-    if grep -q "$image" "$BLACKLIST"; then
-        echo ">> Skipping $image as it's in the blacklist"
+
+if [ -d "$EXPORT_DIR" ]; then
+    echo -n "Remove existing ${EXPORT_DIR}? [y/n]: "
+    read confirm
+    [ "$confirm" = "y" ] || (echo "Aborting" && exit 1)
+    rm -rf "$EXPORT_DIR"
+fi
+mkdir -p "$EXPORT_DIR"
+
+sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | uniq | sort -n | while read photo; do
+    # The new image will be a jpeg, saved into the export directory
+    new_photo=$(echo "$photo" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2_small.jpg:')
+
+    if grep -q "$photo" "$BLACKLIST"; then
+        echo "[$photo] Skipped"
         continue
     fi
 
-    thumbnail=$(echo $image | sed 's/\(.*\).jpg/\1_small.jpg/')
-
-    echo -n ">> Generating $thumbnail ... "
-    magick "$DIR/$image" -resize "$SIZE" "$DIR/$thumbnail"
+    echo -n "[$photo] Generating $new_photo ... "
+    magick "$BASE_DIR/$photo" -resize "$SIZE" "$new_photo"
     echo "done"
 done

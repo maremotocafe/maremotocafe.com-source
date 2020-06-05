@@ -1,22 +1,22 @@
 #!/bin/sh
-# This script automatically converts all the files in a provided directory
+# This script photo converts all the files in a provided directory
 # into a compressed format for the web. It also resizes them to appropiate
 # sizes.
 
 set -e
 
-if [ $# -ne 2 ]; then
-    echo "Usage: $0 DIRECTORY START_NUM"
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 DIRECTORY"
     exit 1
 fi
 
 
-COMPRESSED_LIST="dev/comprimidos.txt"
+NO_RESIZE_LIST="dev/no_resize.txt"
+COMPRESSED_LIST="dev/compressed.txt"
 BASE_DIR="$1"
-EXPORT_DIR="$BASE_DIR/out"
-START_NUM=$2
-MIN_SIZE=""
-MAX_SIZE=""
+EXPORT_DIR="out"
+MIN_SIZE="400x500"
+MAX_SIZE="540x670"
 
 
 if [ -d "$EXPORT_DIR" ]; then
@@ -27,23 +27,28 @@ if [ -d "$EXPORT_DIR" ]; then
 fi
 mkdir -p "$EXPORT_DIR"
 
-
-find "$BASE_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | while read photo; do
+find "$BASE_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | sort -n | while read photo; do
     # The new image will be a jpeg, saved into the export directory
-    name=$(echo "$EXPORT_DIR" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2.jpg:')
+    new_photo=$(echo "$photo" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2.jpg:')
 
-    # Checking it hasn't been compressed before
-    if grep -q "$name" "$COMPRESSED_LIST"; then
-        echo -n "[$name] Skipped"
+    # Checking it hasn't been compressed before and that it isn't a
+    # thumbnail.
+    if grep -q "$photo" "$COMPRESSED_LIST" || ( echo "$photo" | grep -q "_small.jpg" ); then
+        echo "[$photo] Skipped"
         continue
     fi
 
     # Converting it with magick
-    echo -n "[$name] Converting $photo ... "
-    magick "$photo" -resize "${MIN_SIZE}^" "$name"
-    magick "$name" -resize "${MAX_SIZE}" -strip -interlace Plane -quality 85% "$name"
+    echo -n "[$photo] Converting $new_photo ... "
+    if ! grep -q "$photo" "$NO_RESIZE_LIST"; then
+        magick "$photo" -resize "${MIN_SIZE}<" "$new_photo"
+        magick "$new_photo" -resize "${MAX_SIZE}>" "$new_photo"
+        magick "$new_photo" -strip -interlace Plane -quality 85% "$new_photo"
+    else
+        magick "$photo" -strip -interlace Plane -quality 85% "$new_photo"
+    fi
     echo "done"
 
     # Saving it into the previously compressed files
-    echo "$name" >> "$COMPRESSED_LIST"
+    echo "$photo" >> "$COMPRESSED_LIST"
 done
