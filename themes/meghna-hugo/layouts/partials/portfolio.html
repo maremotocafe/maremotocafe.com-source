@@ -48,7 +48,7 @@
             {{ end }}
 
 			{{"<!-- Portfolio item -->" | safeHTML}}
-			<figure class="col-lg-4 shuffle-item" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | urlize }}"{{ end }}]'>
+			<figure class="col-lg-4 shuffle-item {{ if gt $i $menu.max_items }}d-none{{ end }}" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | urlize }}"{{ end }}]'>
 				<div class="portfolio-block mb-4">
                     <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
                         <!-- <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}"> -->
@@ -86,6 +86,13 @@
             {{ $i = add $i 1 }}
 			{{ end }}
 		</div>
+
+        <button id="load-more-btn" class="btn btn-transparent btn-block" style="{{ if le (len $menu.items) $menu.max_items}}visibility: hidden;{{ end }}" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
+
+        <div id="no-items-msg" class="portfolio-message" {{ if gt (len $menu.items) 0 }}style="visibility: hidden"{{ end }}>
+            <i class="{{ $menu.no_items_icono }}"></i>
+            <span>{{ $menu.no_items_mensaje }}</span>
+        </div>
 	</div>
 </section>
 {{"<!-- /Portfolio -->" | safeHTML}}

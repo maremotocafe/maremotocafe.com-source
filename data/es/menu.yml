@@ -5,6 +5,12 @@ title: Nuestra Carta
 description: >
     Acota tu búsqueda utilizando las pestañas de familias de artículos.
 
+max_items: 30
+cargar_items: 30
+no_items_mensaje: >
+    No hay nada con esos filtros, prueba a usar otros.
+no_items_icono: las la-exclamation
+
 nombres_datos: ["ingredientes", "alergenos", "txt_aclaraciones", "txt_temporal", "grad_alcoholica", "vol_ml", "edul_gr", "pvp_local", "pvp_terraza"]
 titulos_datos:
     ingredientes: Ingredientes
@@ -27,6 +33,7 @@ iconos_datos:
     pvp_local: las la-money-bill-wave
     pvp_terraza: las la-money-bill-wave
 
+# 'all' no puede ser un nombre de categoría ya que representa todos los ítems.
 icono_todo: las la-times
 categorias:
   - nombre: Cafés y Tés

@@ -695,6 +695,7 @@ a:hover {
 }
 
 .contact-help {
+  display: none;
   margin-top: 10px;
 }
 
@@ -731,7 +732,7 @@ a:hover {
   color: #ddd !important;
 }
 
-#contact-submit {
+#contact-submit, #load-more-btn {
   border: 1px solid rgba(236, 239, 241, 0.07);
   background: #3c9fb4;
   padding: 12px 0;
@@ -759,7 +760,7 @@ a:hover {
 .error {
   display: none;
   padding: 10px;
-  color: #D8000C;
+  color: #b10b1f;
   border-radius: 4px;
   font-size: 13px;
   background-color: #FFBABA;
@@ -1003,6 +1004,26 @@ a:hover {
 
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
   width: auto;
+}
+
+#load-more-btn {
+  font-size: 18px;
+}
+
+.portfolio-message {
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 18px;
+  text-align: center;
+  background-color: #fff;
+  color: #b10b1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-message i {
+  font-size: 35px;
 }
 
 /*=================================================================

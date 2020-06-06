@@ -2,7 +2,7 @@
 
 
 // Things that have to be loaded at the end
-window.onload = (e) => {
+window.addEventListener('load', e => {
     /* ================================================== */
     /*    Scroll to top
     /* ================================================== */
@@ -46,33 +46,45 @@ window.onload = (e) => {
     // Maximum of three nested filters for the gallery.
     const containerEl = document.querySelector('.shuffle-wrapper');
     if (containerEl) {
-        function barContains(bar, value) {
-            for (let i = 0; i < bar.children.length; i++) {
-                const input = bar.children[i].children[0];
-                if (input.getAttribute('filter-value') === value) {
-                    return true;
-                }
-            }
+        // Frequently used items.
+        const allInputs = document.querySelectorAll('input[name="shuffle-filter"]');
+        const toggableBars = document.querySelectorAll('.portfolio-filter:not([filter-level="1"])');
+        const noItemsMsg = document.getElementById('no-items-msg');
+        const loadMoreBtn = document.getElementById('load-more-btn');
 
-            return false;
+        // The initial number of items for a filter result.
+        const INITIAL_NUM_ITEMS = parseInt(loadMoreBtn.getAttribute('load-max'));
+        // The increment over the current number of items.
+        const INCREMENT_LOAD = parseInt(loadMoreBtn.getAttribute('load-increment'));
+        // The current number of items, after possibly loading more.
+        let numItems = INITIAL_NUM_ITEMS;
+
+        // The previously selected filter.
+        let prevFilter = 'all';
+
+        // Checks if a bar contains a child with the provided filter value.
+        function barContains(bar, value) {
+            return Array.from(bar.children).some(i =>
+                i.children[0].getAttribute('filter-value') === value);
         }
 
+        // Resets the status of the bar.
         function resetBar(bar) {
-            // Remove all active buttons. There should only be one of them
-            // checked beforehand.
-            for (let i = 0; i < bar.children.length; i++) {
-                const btn = bar.children[i];
-                if (btn.classList.contains('active')) {
-                    btn.classList.remove('active');
-                    btn.classList.checked = false;
-                    break;
-                }
+            function deactivate(el) {
+                el.classList.remove('active');
+                el.classList.checked = false;
+            }
+            function activate(el) {
+                el.classList.add('active');
+                el.classList.checked = true;
             }
 
+            // Remove all active buttons. There should only be one of them
+            // checked beforehand.
+            deactivate(Array.from(bar.children).find(i => i.classList.contains('active')));
             // Default back to the first option (it's always going to be
             // the first child).
-            bar.children[0].classList.add('active');
-            bar.children[0].classList.checked = true;
+            activate(bar.children[0]);
         }
 
         function hideBar(bar) {
@@ -103,6 +115,47 @@ window.onload = (e) => {
             barJQ.animate({opacity: 1}, 400);
         }
 
+        function filterItems(filter) {
+            // A new filter will reset the number of items to the initial
+            // value.
+            if (prevFilter !== filter) {
+                numItems = INITIAL_NUM_ITEMS;
+                prevFilter = filter;
+            }
+
+            // Filtering the items with the new selected button.
+            let numMatches = 0;
+            myShuffle.filter(item => {
+                // If it matches any of the data groups, it's accepted.
+                // But it will only be shown if the limit hasn't been reached.
+                const dataGroups = JSON.parse(item.getAttribute('data-groups'));
+                if (filter === 'all' || dataGroups.some(field => field === filter)) {
+                    numMatches++;
+                    if (numMatches <= numItems) {
+                        // Some images start hidden for efficiency.
+                        item.classList.remove('d-none');
+                        return true;
+                    }
+                }
+
+                return false;
+            });
+
+            // If the limit was reached, a button will let the user load more
+            // items. If no items matched, a custom message is shown.
+            console.log(numMatches, numItems, INCREMENT_LOAD);
+            if (numMatches === 0) {
+                noItemsMsg.style.visibility = 'visible';
+                loadMoreBtn.style.visibility = 'hidden';
+            } else if (numMatches <= numItems) {
+                noItemsMsg.style.visibility = 'hidden';
+                loadMoreBtn.style.visibility = 'hidden';
+            } else {
+                noItemsMsg.style.visibility = 'hidden';
+                loadMoreBtn.style.visibility = 'visible';
+            }
+        }
+
         // Initializing Shuffle
         var Shuffle = window.Shuffle;
         let myShuffle = new Shuffle(containerEl, {
@@ -113,30 +166,29 @@ window.onload = (e) => {
 
         // The hidden levels will appear and disappear depending on its
         // parents.
-        const toggable = document.querySelectorAll(
-            '.portfolio-filter:not([filter-level="1"])');
-        $('input[name="shuffle-filter"]').click(e => {
+        Array.from(allInputs).forEach(item =>
+                item.addEventListener('click', e => {
             // The pressed button, and the bar it's in.
             const curInput = e.currentTarget;
-            const curValue = curInput.getAttribute('filter-value');
+            const curFilter = curInput.getAttribute('filter-value');
+
             const curBar = curInput.parentNode.parentNode;
 
             // Updating all the displayed rows.
-            toggable.forEach(iter => {
+            toggableBars.forEach(iter => {
                 const iterParent = iter.getAttribute('filter-parent');
 
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
-                console.log(iter, curBar.getAttribute('filter-parent'));
                 if (iter === curBar
                         || barContains(iter, curBar.getAttribute('filter-parent'))
-                        || iterParent === curValue) {
+                        || iterParent === curFilter) {
                     // The bar will fade in if isn't already visible.
                     showBar(iter);
 
                     // The child will be resetted (this is important for
                     // whenever the same parent item is pressed).
-                    if (iterParent === curValue) {
+                    if (iterParent === curFilter) {
                         resetBar(iter);
                     }
                 } else {
@@ -145,8 +197,12 @@ window.onload = (e) => {
                 }
             });
 
-            // Filtering the items with the new selected button.
-            myShuffle.filter(curValue);
+            filterItems(curFilter);
+        }));
+
+        loadMoreBtn.addEventListener('click', e => {
+            numItems += INCREMENT_LOAD;
+            filterItems(prevFilter);
         });
     }
 
@@ -173,25 +229,28 @@ window.onload = (e) => {
     /*   Contact Form Validating
     /* ================================================== */
 
-    $('#contact-submit').click(e => {
+    document.getElementById('contact-submit').addEventListener('click', e => {
         // Stop the form from being submitted
         e.preventDefault();
 
         // Making sure the fields are somewhat correct.
-        var subject = $('#subject').val();
-        var message = $('#message').val();
-        if (subject.length == 0) {
-            $('#subject').css("border-color", "#b10b1f");
+        const errColor = "#b10b1f";
+        const okColor = "rgba(236,239,241,.07)";
+        const subject = document.getElementById('subject');
+        const message = document.getElementById('message');
+        const helpMsg = document.getElementById('contact-help');
+
+        if (subject.value.length == 0) {
+            subject.style.borderColor = errColor;
             return;
-        } else {
-            $('#subject').css("border-color", "rgba(236,239,241,.07)");
         }
-        if (message.length == 0) {
-            $('#message').css("border-color", "#b10b1f");
+        subject.style.borderColor = okColor;
+
+        if (message.value.length == 0) {
+            message.style.borderColor = errColor;
             return;
-        } else {
-            $('#message').css("border-color", "rgba(236,239,241,.07)");
         }
+        message.style.borderColor = okColor;
 
         // Now opening their mail client with the provided data.
         let uri = 'mailto:yesus19@hotmail.es?subject='
@@ -200,6 +259,6 @@ window.onload = (e) => {
         window.open(uri, '_blank');
 
         // Show a message with help in case it didn't work.
-        $('#contact-help').show();
+        helpMsg.style.display = 'block'
     });
-}
+});
