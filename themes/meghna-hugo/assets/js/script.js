@@ -48,7 +48,8 @@ window.onload = (e) => {
     if (containerEl) {
         function barContains(bar, value) {
             for (let i = 0; i < bar.children.length; i++) {
-                if (bar.children[i].children[0].value === value) {
+                const input = bar.children[i].children[0];
+                if (input.getAttribute('filter-value') === value) {
                     return true;
                 }
             }
@@ -57,16 +58,19 @@ window.onload = (e) => {
         }
 
         function resetBar(bar) {
-            // Remove all active buttons
+            // Remove all active buttons. There should only be one of them
+            // checked beforehand.
             for (let i = 0; i < bar.children.length; i++) {
-                if (bar.children[i].classList.contains('active')) {
-                    bar.children[i].classList.remove('active');
-                    bar.children[i].classList.checked = false;
+                const btn = bar.children[i];
+                if (btn.classList.contains('active')) {
+                    btn.classList.remove('active');
+                    btn.classList.checked = false;
                     break;
                 }
             }
 
-            // Default back to the first option
+            // Default back to the first option (it's always going to be
+            // the first child).
             bar.children[0].classList.add('active');
             bar.children[0].classList.checked = true;
         }
@@ -109,37 +113,40 @@ window.onload = (e) => {
 
         // The hidden levels will appear and disappear depending on its
         // parents.
-        const toggable = document.querySelectorAll('.portfolio-filter:not(.menu-level-one)');
+        const toggable = document.querySelectorAll(
+            '.portfolio-filter:not([filter-level="1"])');
         $('input[name="shuffle-filter"]').on('click', evt => {
             // The pressed button, and the bar it's in.
-            const input = evt.currentTarget;
-            const filterValue = input.getAttribute('filter-value');
-            const inputBar = input.parentNode.parentNode;
+            const curInput = evt.currentTarget;
+            const curValue = curInput.getAttribute('filter-value');
+            const curBar = curInput.parentNode.parentNode;
 
-            // Updating the displayed rows.
-            toggable.forEach((bar) => {
-                const barParent = bar.getAttribute('parent');
+            // Updating all the displayed rows.
+            toggable.forEach(iter => {
+                const iterParent = iter.getAttribute('filter-parent');
+
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
-                if (bar === inputBar
-                        || barContains(bar, inputBar.getAttribute('parent'))
-                        || barParent === filterValue) {
+                console.log(iter, curBar.getAttribute('filter-parent'));
+                if (iter === curBar
+                        || barContains(iter, curBar.getAttribute('filter-parent'))
+                        || iterParent === curValue) {
                     // The bar will fade in if isn't already visible.
-                    showBar(bar);
+                    showBar(iter);
 
                     // The child will be resetted (this is important for
                     // whenever the same parent item is pressed).
-                    if (barParent === filterValue) {
-                        resetBar(bar);
+                    if (iterParent === curValue) {
+                        resetBar(iter);
                     }
                 } else {
                     // The bar will fade out if it isn't already hidden.
-                    hideBar(bar);
+                    hideBar(iter);
                 }
             });
 
             // Filtering the items with the new selected button.
-            myShuffle.filter(filterValue);
+            myShuffle.filter(curValue);
         });
     }
 

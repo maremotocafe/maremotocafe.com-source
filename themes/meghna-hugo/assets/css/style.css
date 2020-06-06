@@ -869,6 +869,7 @@ a:hover {
   justify-content: center;
   align-items: stretch;
   align-content: center;
+  margin-bottom: 20px;
 }
 
 .portfolio-filter .btn {
@@ -898,19 +899,15 @@ a:hover {
   margin-right: 5px;
 }
 
-.portfolio-filter .btn span {
-
-}
-
-.portfolio-filter.menu-level-one .btn.active {
+.portfolio-filter[filter-level="1"] .btn.active {
   border-color: #3c9fb4;
 }
 
-.portfolio-filter.menu-level-two .btn.active {
+.portfolio-filter[filter-level="2"] .btn.active {
   border-color: #7d55e0;
 }
 
-.portfolio-filter.menu-level-three .btn.active {
+.portfolio-filter[filter-level="3"] .btn.active {
   border-color: #eb6ae2;
 }
 
@@ -948,18 +945,6 @@ a:hover {
   font-size: 15px;
   line-height: 50px;
   padding-right: 10px;
-}
-
-.menu-level-one {
-  margin-bottom: 20px;
-}
-
-.menu-level-two {
-  margin-bottom: 20px;
-}
-
-.menu-level-three {
-  margin-bottom: 20px;
 }
 
 .popup-content {

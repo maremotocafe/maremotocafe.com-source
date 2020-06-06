@@ -20,7 +20,7 @@
 		<div class="row">
 			<div class="col-lg-12">
                 {{"<!-- First level -->" | safeHTML}}
-				<div class="btn-group btn-group-toggle portfolio-filter menu-level-one justify-content-center d-flex flex-wrap" data-toggle="buttons">
+				<div class="btn-group btn-group-toggle portfolio-filter justify-content-center d-flex flex-wrap" filter-level="1" data-toggle="buttons">
 					<label class="btn default active">
                         <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="all" checked>
                         <i class="{{ $menu.icono_todo }}"></i>
@@ -38,7 +38,7 @@
                 {{"<!-- Second level -->" | safeHTML}}
                 {{ range $parent := $menu.categorias }}
                 {{ if .subcategorias }}
-				<div class="btn-group btn-group-toggle portfolio-filter menu-level-two justify-content-center d-none flex-wrap" parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
+				<div class="btn-group btn-group-toggle portfolio-filter justify-content-center d-none flex-wrap" filter-level="2" filter-parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
 					<label class="btn default active">
                         <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ $parent.nombre | urlize }}" checked>
                         <i class="{{ $menu.icono_todo }}"></i>
@@ -59,7 +59,7 @@
                 {{ range $grandparent := $menu.categorias }}
                 {{ range $parent := .subcategorias }}
                 {{ if .subcategorias }}
-				<div class="btn-group btn-group-toggle portfolio-filter menu-level-three justify-content-center d-none flex-wrap" parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
+				<div class="btn-group btn-group-toggle portfolio-filter justify-content-center d-none flex-wrap" filter-level="3" filter-parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
 					<label class="btn default active">
                         <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ $parent.nombre | urlize }}" checked/>
                         <i class="{{ $menu.icono_todo }}"></i>

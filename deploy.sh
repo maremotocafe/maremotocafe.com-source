@@ -12,6 +12,7 @@ TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
 MSG="$1"
 
 echo ">> Building site..."
+rm -rf public/css public/images public/css public/js public/plugins
 hugo
 
 echo ">> Deploying to GitHub..."
