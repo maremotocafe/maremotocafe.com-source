@@ -46,17 +46,35 @@ window.addEventListener('load', e => {
     // Maximum of three nested filters for the gallery.
     const containerEl = document.querySelector('.shuffle-wrapper');
     if (containerEl) {
+        // Frequently used items.
+        const allInputs = document.querySelectorAll('input[name="shuffle-filter"]');
+        const toggableBars = document.querySelectorAll('.portfolio-filter:not([filter-level="1"])');
+        const noItemsMsg = document.getElementById('no-items-msg');
+        const loadMoreBtn = document.getElementById('load-more-btn');
+
+        // The initial number of items for a filter result.
+        const INITIAL_NUM_ITEMS = parseInt(loadMoreBtn.getAttribute('load-max'));
+        // The increment over the current number of items.
+        const INCREMENT_LOAD = parseInt(loadMoreBtn.getAttribute('load-increment'));
+        // The current number of items, after possibly loading more.
+        let numItems = INITIAL_NUM_ITEMS;
+
+        // The previously selected filter.
+        let prevFilter = 'all';
+
+        // Checks if a bar contains a child with the provided filter value.
         function barContains(bar, value) {
             return Array.from(bar.children).some(i =>
                 i.children[0].getAttribute('filter-value') === value);
         }
 
+        // Resets the status of the bar.
         function resetBar(bar) {
-            const deactivate = (el) => {
+            function deactivate(el) {
                 el.classList.remove('active');
                 el.classList.checked = false;
             }
-            const activate = (el) => {
+            function activate(el) {
                 el.classList.add('active');
                 el.classList.checked = true;
             }
@@ -97,6 +115,47 @@ window.addEventListener('load', e => {
             barJQ.animate({opacity: 1}, 400);
         }
 
+        function filterItems(filter) {
+            // A new filter will reset the number of items to the initial
+            // value.
+            if (prevFilter !== filter) {
+                numItems = INITIAL_NUM_ITEMS;
+                prevFilter = filter;
+            }
+
+            // Filtering the items with the new selected button.
+            let numMatches = 0;
+            myShuffle.filter(item => {
+                // If it matches any of the data groups, it's accepted.
+                // But it will only be shown if the limit hasn't been reached.
+                const dataGroups = JSON.parse(item.getAttribute('data-groups'));
+                if (filter === 'all' || dataGroups.some(field => field === filter)) {
+                    numMatches++;
+                    if (numMatches <= numItems) {
+                        // Some images start hidden for efficiency.
+                        item.classList.remove('d-none');
+                        return true;
+                    }
+                }
+
+                return false;
+            });
+
+            // If the limit was reached, a button will let the user load more
+            // items. If no items matched, a custom message is shown.
+            console.log(numMatches, numItems, INCREMENT_LOAD);
+            if (numMatches === 0) {
+                noItemsMsg.style.visibility = 'visible';
+                loadMoreBtn.style.visibility = 'hidden';
+            } else if (numMatches <= numItems) {
+                noItemsMsg.style.visibility = 'hidden';
+                loadMoreBtn.style.visibility = 'hidden';
+            } else {
+                noItemsMsg.style.visibility = 'hidden';
+                loadMoreBtn.style.visibility = 'visible';
+            }
+        }
+
         // Initializing Shuffle
         var Shuffle = window.Shuffle;
         let myShuffle = new Shuffle(containerEl, {
@@ -105,36 +164,30 @@ window.addEventListener('load', e => {
             useTransforms: false  // better performance
         });
 
-        const noItemsMsg = document.getElementById('no-items-msg');
-        const loadMoreBtn = document.getElementById('load-more-btn');
-        const MAX_ITEMS = loadMoreBtn.getAttribute('items-max');
-        const LOAD_ITEMS = loadMoreBtn.getAttribute('items-load');
-
         // The hidden levels will appear and disappear depending on its
         // parents.
-        const toggable = document.querySelectorAll(
-            '.portfolio-filter:not([filter-level="1"])');
-        $('input[name="shuffle-filter"]').on('click', evt => {
+        Array.from(allInputs).forEach(item =>
+                item.addEventListener('click', e => {
             // The pressed button, and the bar it's in.
-            const curInput = evt.currentTarget;
-            const curValue = curInput.getAttribute('filter-value');
+            const curInput = e.currentTarget;
+            const curFilter = curInput.getAttribute('filter-value');
             const curBar = curInput.parentNode.parentNode;
 
             // Updating all the displayed rows.
-            toggable.forEach(iter => {
+            toggableBars.forEach(iter => {
                 const iterParent = iter.getAttribute('filter-parent');
 
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
                 if (iter === curBar
                         || barContains(iter, curBar.getAttribute('filter-parent'))
-                        || iterParent === curValue) {
+                        || iterParent === curFilter) {
                     // The bar will fade in if isn't already visible.
                     showBar(iter);
 
                     // The child will be resetted (this is important for
                     // whenever the same parent item is pressed).
-                    if (iterParent === curValue) {
+                    if (iterParent === curFilter) {
                         resetBar(iter);
                     }
                 } else {
@@ -143,33 +196,12 @@ window.addEventListener('load', e => {
                 }
             });
 
-            // Filtering the items with the new selected button.
-            let numMatches = 0;
-            myShuffle.filter(item => {
-                // If it matches any of the data groups, it's accepted.
-                // But it will only be shown if the limit hasn't been reached.
-                const dataGroups = JSON.parse(item.getAttribute('data-groups'));
-                if (dataGroups.some(field => field === curValue)) {
-                    numMatches++;
-                    return numMatches <= MAX_ITEMS;
-                }
+            filterItems(curFilter);
+        }));
 
-                return false;
-            })
-
-            // If the limit was reached, a button will let the user load more
-            // items. If no items matched, a custom message is shown.
-            console.log(numMatches);
-            if (numMatches === 0) {
-                noItemsMsg.style.display = 'flex';
-                loadMoreBtn.style.display = 'none';
-            } else if (numMatches <= MAX_ITEMS) {
-                noItemsMsg.style.display = 'none';
-                loadMoreBtn.style.display = 'none';
-            } else {
-                noItemsMsg.style.display = 'none';
-                loadMoreBtn.style.display = 'block';
-            }
+        loadMoreBtn.addEventListener('click', e => {
+            numItems += INCREMENT_LOAD;
+            filterItems(prevFilter);
         });
     }
 

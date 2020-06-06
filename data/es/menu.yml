@@ -33,6 +33,7 @@ iconos_datos:
     pvp_local: las la-money-bill-wave
     pvp_terraza: las la-money-bill-wave
 
+# 'all' no puede ser un nombre de categoría ya que representa todos los ítems.
 icono_todo: las la-times
 categorias:
   - nombre: Cafés y Tés
