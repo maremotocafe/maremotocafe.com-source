@@ -155,7 +155,6 @@ window.addEventListener('load', e => {
 
             // If the limit was reached, a button will let the user load more
             // items. If no items matched, a custom message is shown.
-            console.log(numMatches, numItems, INCREMENT_LOAD);
             if (numMatches === 0) {
                 noItemsMsg.style.display = 'flex';
                 loadMoreBtn.style.display = 'none';
