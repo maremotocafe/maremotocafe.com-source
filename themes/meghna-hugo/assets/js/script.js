@@ -42,9 +42,21 @@ window.addEventListener('load', e => {
     /* ================================================== */
     /*    Portfolio Filtering Hook
     /* ================================================== */
+    const containerEl = document.querySelector('.shuffle-wrapper');
+
+    // Initializing Shuffle
+    var myShuffle = new window.Shuffle(containerEl, {
+        itemSelector: '.shuffle-item',
+        buffer: 1,
+        useTransforms: false  // better performance
+    });
+
+    // Lazy loading also works with Shuffle js to refresh the layout when
+    // the images are loaded to avoid them overlapping.
+    Array.from(document.getElementsByClassName('lozad')).forEach(img =>
+            img.addEventListener('load', () => myShuffle.layout()));
 
     // Maximum of three nested filters for the gallery.
-    const containerEl = document.querySelector('.shuffle-wrapper');
     if (containerEl) {
         // Frequently used items.
         const allInputs = document.querySelectorAll('input[name="shuffle-filter"]');
@@ -155,14 +167,6 @@ window.addEventListener('load', e => {
                 loadMoreBtn.style.display = 'block';
             }
         }
-
-        // Initializing Shuffle
-        var Shuffle = window.Shuffle;
-        let myShuffle = new Shuffle(containerEl, {
-            itemSelector: '.shuffle-item',
-            buffer: 1,
-            useTransforms: false  // better performance
-        });
 
         // The hidden levels will appear and disappear depending on its
         // parents.
