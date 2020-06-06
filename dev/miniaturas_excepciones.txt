@@ -1,8 +1,0 @@
-# FALTA REPOSTERIA SALUDABLE Y NUTRITIVA
-images/carta/1c.jpg
-images/carta/a1.jpg
-images/carta/1z.jpg
-images/carta/1d.jpg
-images/carta/1b.jpg
-images/carta/1s.jpg
-images/carta/1f.jpg
