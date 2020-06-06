@@ -145,14 +145,14 @@ window.addEventListener('load', e => {
             // items. If no items matched, a custom message is shown.
             console.log(numMatches, numItems, INCREMENT_LOAD);
             if (numMatches === 0) {
-                noItemsMsg.style.visibility = 'visible';
-                loadMoreBtn.style.visibility = 'hidden';
+                noItemsMsg.style.display = 'flex';
+                loadMoreBtn.style.display = 'none';
             } else if (numMatches <= numItems) {
-                noItemsMsg.style.visibility = 'hidden';
-                loadMoreBtn.style.visibility = 'hidden';
+                noItemsMsg.style.display = 'none';
+                loadMoreBtn.style.display = 'none';
             } else {
-                noItemsMsg.style.visibility = 'hidden';
-                loadMoreBtn.style.visibility = 'visible';
+                noItemsMsg.style.display = 'none';
+                loadMoreBtn.style.display = 'block';
             }
         }
 
