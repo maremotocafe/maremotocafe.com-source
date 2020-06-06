@@ -2,7 +2,7 @@
 
 
 // Things that have to be loaded at the end
-window.onload = (e) => {
+window.addEventListener('load', e => {
     /* ================================================== */
     /*    Scroll to top
     /* ================================================== */
@@ -47,32 +47,26 @@ window.onload = (e) => {
     const containerEl = document.querySelector('.shuffle-wrapper');
     if (containerEl) {
         function barContains(bar, value) {
-            for (let i = 0; i < bar.children.length; i++) {
-                const input = bar.children[i].children[0];
-                if (input.getAttribute('filter-value') === value) {
-                    return true;
-                }
-            }
-
-            return false;
+            return Array.from(bar.children).some(i =>
+                i.children[0].getAttribute('filter-value') === value);
         }
 
         function resetBar(bar) {
-            // Remove all active buttons. There should only be one of them
-            // checked beforehand.
-            for (let i = 0; i < bar.children.length; i++) {
-                const btn = bar.children[i];
-                if (btn.classList.contains('active')) {
-                    btn.classList.remove('active');
-                    btn.classList.checked = false;
-                    break;
-                }
+            const deactivate = (el) => {
+                el.classList.remove('active');
+                el.classList.checked = false;
+            }
+            const activate = (el) => {
+                el.classList.add('active');
+                el.classList.checked = true;
             }
 
+            // Remove all active buttons. There should only be one of them
+            // checked beforehand.
+            deactivate(Array.from(bar.children).find(i => i.classList.contains('active')));
             // Default back to the first option (it's always going to be
             // the first child).
-            bar.children[0].classList.add('active');
-            bar.children[0].classList.checked = true;
+            activate(bar.children[0]);
         }
 
         function hideBar(bar) {
@@ -111,6 +105,11 @@ window.onload = (e) => {
             useTransforms: false  // better performance
         });
 
+        const noItemsMsg = document.getElementById('no-items-msg');
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        const MAX_ITEMS = loadMoreBtn.getAttribute('items-max');
+        const LOAD_ITEMS = loadMoreBtn.getAttribute('items-load');
+
         // The hidden levels will appear and disappear depending on its
         // parents.
         const toggable = document.querySelectorAll(
@@ -127,7 +126,6 @@ window.onload = (e) => {
 
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
-                console.log(iter, curBar.getAttribute('filter-parent'));
                 if (iter === curBar
                         || barContains(iter, curBar.getAttribute('filter-parent'))
                         || iterParent === curValue) {
@@ -146,7 +144,32 @@ window.onload = (e) => {
             });
 
             // Filtering the items with the new selected button.
-            myShuffle.filter(curValue);
+            let numMatches = 0;
+            myShuffle.filter(item => {
+                // If it matches any of the data groups, it's accepted.
+                // But it will only be shown if the limit hasn't been reached.
+                const dataGroups = JSON.parse(item.getAttribute('data-groups'));
+                if (dataGroups.some(field => field === curValue)) {
+                    numMatches++;
+                    return numMatches <= MAX_ITEMS;
+                }
+
+                return false;
+            })
+
+            // If the limit was reached, a button will let the user load more
+            // items. If no items matched, a custom message is shown.
+            console.log(numMatches);
+            if (numMatches === 0) {
+                noItemsMsg.style.display = 'flex';
+                loadMoreBtn.style.display = 'none';
+            } else if (numMatches <= MAX_ITEMS) {
+                noItemsMsg.style.display = 'none';
+                loadMoreBtn.style.display = 'none';
+            } else {
+                noItemsMsg.style.display = 'none';
+                loadMoreBtn.style.display = 'block';
+            }
         });
     }
 
@@ -173,25 +196,28 @@ window.onload = (e) => {
     /*   Contact Form Validating
     /* ================================================== */
 
-    $('#contact-submit').click(function (e) {
+    document.getElementById('contact-submit').addEventListener('click', e => {
         // Stop the form from being submitted
         e.preventDefault();
 
         // Making sure the fields are somewhat correct.
-        var subject = $('#subject').val();
-        var message = $('#message').val();
-        if (subject.length == 0) {
-            $('#subject').css("border-color", "#b10b1f");
+        const errColor = "#b10b1f";
+        const okColor = "rgba(236,239,241,.07)";
+        const subject = document.getElementById('subject');
+        const message = document.getElementById('message');
+        const helpMsg = document.getElementById('contact-help');
+
+        if (subject.value.length == 0) {
+            subject.style.borderColor = errColor;
             return;
-        } else {
-            $('#subject').css("border-color", "rgba(236,239,241,.07)");
         }
-        if (message.length == 0) {
-            $('#message').css("border-color", "#b10b1f");
+        subject.style.borderColor = okColor;
+
+        if (message.value.length == 0) {
+            message.style.borderColor = errColor;
             return;
-        } else {
-            $('#message').css("border-color", "rgba(236,239,241,.07)");
         }
+        message.style.borderColor = okColor;
 
         // Now opening their mail client with the provided data.
         let uri = 'mailto:yesus19@hotmail.es?subject='
@@ -200,6 +226,6 @@ window.onload = (e) => {
         window.open(uri, '_blank');
 
         // Show a message with help in case it didn't work.
-        $('#contact-help').show();
+        helpMsg.style.display = 'block'
     });
-}
+});
