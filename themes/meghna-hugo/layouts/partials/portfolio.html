@@ -81,13 +81,11 @@
 
 		<div class="row shuffle-wrapper justify-content-center">
             {{ $i := 0 }}
-			{{ range (shuffle $menu.items) }}
-
-            {{ $fields := dict $menu.titulo_ingredientes .ingredientes $menu.titulo_alergenos .alergenos $menu.titulo_txt_aclaraciones .txt_aclaraciones $menu.titulo_txt_temporal .txt_temporal $menu.titulo_grad_alcoholica .grad_alcoholica $menu.titulo_vol_ml .vol_ml $menu.titulo_edul_gr .edul_gr $menu.titulo_pvp_local .pvp_local $menu.titulo_pvp_terraza .pvp_terraza }}
+			{{ range $item := (shuffle $menu.items) }}
 
             {{ $standalone := true }}
-            {{ range $_, $data := $fields }}
-                {{ if ne $data nil }}
+            {{ range $menu.nombres_datos }}
+                {{ if ne (index $item .) nil }}
                     {{ $standalone = false }}
                 {{ end }}
             {{ end }}
@@ -115,9 +113,13 @@
                     </div>
                     <div class="popup-details">
                         <h1>{{ .nombre }}</h1>
-                        {{ range $title, $data := $fields }}
-                            {{ with $data }}
-                            <p><b>{{ $title }}:</b> {{ . | markdownify }}</p>
+                        {{ range $menu.nombres_datos }}
+                            {{ if (index $item .) }}
+                            <p>
+                            <i class="field-icon {{ index $menu.iconos_datos . }}"></i>
+                            <span class="field-title">{{ (index $menu.titulos_datos .) }}: </span>
+                            <span class="field-description">{{ (index $item .) | markdownify }}</span>
+                            </p>
                             {{ end }}
                         {{ end }}
                     </div>

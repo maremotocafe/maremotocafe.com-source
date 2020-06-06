@@ -3,16 +3,30 @@
 enable: true
 title: Nuestra Carta
 description: >
-    Acota tu busqueda utilizando las pestañas de familias de articulos.
-titulo_ingredientes: Ingredientes
-titulo_alergenos: Alérgenos
-titulo_txt_aclaraciones: Aclaraciones
-titulo_txt_temporal: Temporalidad
-titulo_grad_alcoholica: Graduación
-titulo_vol_ml: Volumen (ml)
-titulo_edul_gr: Edulcorantes (gr)
-titulo_pvp_local: PVP en local
-titulo_pvp_terraza: PVP en terraza
+    Acota tu búsqueda utilizando las pestañas de familias de artículos.
+
+nombres_datos: ["ingredientes", "alergenos", "txt_aclaraciones", "txt_temporal", "grad_alcoholica", "vol_ml", "edul_gr", "pvp_local", "pvp_terraza"]
+titulos_datos:
+    ingredientes: Ingredientes
+    alergenos: Alérgenos
+    txt_aclaraciones: Aclaraciones
+    txt_temporal: Temporalidad
+    grad_alcoholica: Graduación
+    vol_ml: Volumen (ml)
+    edul_gr: Edulcorantes (gr)
+    pvp_local: PVP en local
+    pvp_terraza: PVP en terraza
+iconos_datos:
+    ingredientes: las la-book
+    alergenos: las la-times
+    txt_aclaraciones: las la-info-circle
+    txt_temporal: las la-calendar-alt
+    grad_alcoholica: las la-glass-martini
+    vol_ml: las la-prescription-bottle
+    edul_gr: las la-prescription-bottle
+    pvp_local: las la-money-bill-wave
+    pvp_terraza: las la-money-bill-wave
+
 icono_todo: las la-times
 categorias:
   - nombre: Cafés y Tés
@@ -2394,12 +2408,6 @@ items:
     imagen_pequenya: images/carta/a1.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-
-  - nombre: VACÍO
-    imagen: images/carta/1.jpg
-    imagen_pequenya: images/carta/1.jpg
-    categorias: ["Cocktails & Drinks"]
-
   - nombre: Zumos Naturales
     imagen: images/carta/1z.jpg
     imagen_pequenya: images/carta/z1.jpg
@@ -2411,79 +2419,7 @@ items:
     imagen_pequenya: images/carta/52.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-
   - nombre: Cookies Caseras
     imagen: images/carta/1c.jpg
     imagen_pequenya: images/carta/150.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
-
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: 
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: €
-    pvp_terraza: €
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: 
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: €
-    pvp_terraza: €
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: 
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: €
-    pvp_terraza: €
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: 
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: €
-    pvp_terraza: €
-
-  - nombre: 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: 
-    ingredientes: 
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
-    edul_gr: 
-    pvp_local: €
-    pvp_terraza: €

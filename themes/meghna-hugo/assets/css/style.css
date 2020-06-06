@@ -994,6 +994,15 @@ a:hover {
 }
 .popup-content .popup-details h1 {
   color: #555;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.popup-content .popup-details p .field-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.popup-content .popup-details p .field-title {
+  font-weight: 1000;
 }
 
 .mfp-auto-cursor .mfp-content {
