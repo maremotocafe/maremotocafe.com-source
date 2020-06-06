@@ -6,74 +6,31 @@
 	<div class="container">
 		<div class="row ">
 			<div class="col-xl-12">
-				{{"<!-- section title -->" | safeHTML}}
+				{{"<!-- Section title -->" | safeHTML}}
 				<div class="title text-center">
 					<h2>{{ with $menu.title }}{{ index (split . " ") 0 }}{{ end }}<span class="color">
 							{{ with $menu.title }}{{ index (split . " ") 1 }}{{ end }}</span></h2>
 					<div class="border-meghna"></div>
                     <p>{{ with $menu.description }}{{ . }}{{ end }}</p>
                 </div>
-				{{"<!-- /section title -->" | safeHTML}}
+				{{ "<!-- End of section title -->" | safeHTML }}
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-lg-12">
-                {{"<!-- First level -->" | safeHTML}}
-				<div class="btn-group btn-group-toggle portfolio-filter justify-content-center d-flex flex-wrap" filter-level="1" data-toggle="buttons">
-					<label class="btn default active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="all" checked>
-                        <i class="{{ $menu.icono_todo }}"></i>
-                        <span>{{ i18n "all"}}</span>
-					</label>
-                    {{ range $menu.categorias }}
-					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ .nombre | urlize }}">
-                        <i class="{{ .icono }}"></i>
-                        <span>{{ .nombre }}</span>
-					</label>
-					{{ end }}
-				</div>
+                {{ "<!-- First level -->" | safeHTML }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "1" "default" "all" "defaultIcon" $menu.icono_todo "children" $menu.categorias) }}
 
-                {{"<!-- Second level -->" | safeHTML}}
+                {{ "<!-- Second level -->" | safeHTML }}
                 {{ range $parent := $menu.categorias }}
-                {{ if .subcategorias }}
-				<div class="btn-group btn-group-toggle portfolio-filter justify-content-center d-none flex-wrap" filter-level="2" filter-parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
-					<label class="btn default active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ $parent.nombre | urlize }}" checked>
-                        <i class="{{ $menu.icono_todo }}"></i>
-                        <span>{{ i18n "all"}}</span>
-					</label>
-                    {{ range .subcategorias }}
-					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ .nombre | urlize }}">
-                        <i class="{{ $parent.icono }}"></i>
-                        <span>{{ .nombre }}</span>
-					</label>
-                    {{ end }}
-				</div>
-                {{ end }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "2" "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $parent.icono "parent" $parent.nombre "children" $parent.subcategorias) }}
                 {{ end }}
 
-                {{"<!-- Third level -->" | safeHTML}}
+                {{ "<!-- Third level -->" | safeHTML }}
                 {{ range $grandparent := $menu.categorias }}
-                {{ range $parent := .subcategorias }}
-                {{ if .subcategorias }}
-				<div class="btn-group btn-group-toggle portfolio-filter justify-content-center d-none flex-wrap" filter-level="3" filter-parent="{{ $parent.nombre | urlize }}" data-toggle="buttons">
-					<label class="btn default active">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ $parent.nombre | urlize }}" checked/>
-                        <i class="{{ $menu.icono_todo }}"></i>
-                        <span>{{ i18n "all"}}</span>
-					</label>
-                    {{ range .subcategorias }}
-					<label class="btn">
-                        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ .nombre | urlize }}">
-                        <i class="{{ $grandparent.icono }}"></i>
-                        <span>{{ .nombre }}</span>
-					</label>
-                    {{ end }}
-				</div>
-                {{ end }}
+                {{ range $parent := $grandparent.subcategorias }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "3" "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $grandparent.icono "parent" $parent.nombre "children" $parent.subcategorias) }}
                 {{ end }}
                 {{ end }}
 			</div>

@@ -1,0 +1,18 @@
+{{ $fallbackIcon := .icon }}
+
+{{ if ne .children nil }}
+<div class="btn-group btn-group-toggle portfolio-filter justify-content-center {{ if eq .level "1" }}d-flex{{ else }}d-none{{ end }} flex-wrap" filter-level="{{ .level }}" {{ with .parent }}filter-parent="{{ . | urlize }}"{{ end }} data-toggle="buttons">
+    <label class="btn default active">
+        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ .default | urlize }}" checked>
+        <i class="{{ .defaultIcon }}"></i>
+        <span>{{ i18n "all" }}</span>
+    </label>
+    {{ range .children }}
+    <label class="btn">
+        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ .nombre | urlize }}">
+        <i class="{{ if .icono }}{{ .icono }}{{ else }}{{ $fallbackIcon }}{{ end }}"></i>
+        <span>{{ .nombre }}</span>
+    </label>
+    {{ end }}
+</div>
+{{ end }}
