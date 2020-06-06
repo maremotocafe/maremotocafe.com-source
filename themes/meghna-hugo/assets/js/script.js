@@ -115,9 +115,9 @@ window.onload = (e) => {
         // parents.
         const toggable = document.querySelectorAll(
             '.portfolio-filter:not([filter-level="1"])');
-        $('input[name="shuffle-filter"]').on('click', evt => {
+        $('input[name="shuffle-filter"]').click(e => {
             // The pressed button, and the bar it's in.
-            const curInput = evt.currentTarget;
+            const curInput = e.currentTarget;
             const curValue = curInput.getAttribute('filter-value');
             const curBar = curInput.parentNode.parentNode;
 
@@ -155,7 +155,7 @@ window.onload = (e) => {
     /* ================================================== */
 
     let htmlAndBody = $('html, body');
-    $('nav a, .page-scroll').on('click', function () {
+    $('nav a, .page-scroll').click(() => {
         // Making sure the clicked hyperlink is inside this website
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             let target = $(this.hash);
@@ -173,7 +173,7 @@ window.onload = (e) => {
     /*   Contact Form Validating
     /* ================================================== */
 
-    $('#contact-submit').click(function (e) {
+    $('#contact-submit').click(e => {
         // Stop the form from being submitted
         e.preventDefault();
 
