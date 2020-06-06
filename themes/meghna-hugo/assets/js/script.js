@@ -171,6 +171,7 @@ window.addEventListener('load', e => {
             // The pressed button, and the bar it's in.
             const curInput = e.currentTarget;
             const curFilter = curInput.getAttribute('filter-value');
+
             const curBar = curInput.parentNode.parentNode;
 
             // Updating all the displayed rows.
@@ -210,7 +211,7 @@ window.addEventListener('load', e => {
     /* ================================================== */
 
     let htmlAndBody = $('html, body');
-    $('nav a, .page-scroll').on('click', function () {
+    $('nav a, .page-scroll').click(() => {
         // Making sure the clicked hyperlink is inside this website
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             let target = $(this.hash);
