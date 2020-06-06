@@ -50,7 +50,6 @@ static/images/carta/48.jpg
 static/images/carta/49.jpg
 static/images/carta/50.jpg
 static/images/carta/51.jpg
-static/images/carta/52.jpg
 static/images/carta/53.jpg
 static/images/carta/54.jpg
 static/images/carta/55.jpg
@@ -225,3 +224,4 @@ static/images/carta/puertoindias.jpg
 static/images/carta/s1.jpg
 static/images/carta/xoringer.jpg
 static/images/carta/z1.jpg
+static/images/carta/52.jpg

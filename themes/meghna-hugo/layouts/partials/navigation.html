@@ -10,7 +10,7 @@
                     {{ end }}
                 </a>
 
-                <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation">
+                <button class="navbar-toggler rounded-0" aria-label="{{ i18n "menu" }}" type="button" data-toggle="collapse" data-target="#navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -30,13 +30,11 @@
 					</li>
 					{{ end }}
 					{{ end }}
-					
 
 					{{ range .Site.Menus.static }}
 					<li class="nav-item"><a class="nav-link" target="_blank" href="{{ .URL }}">{{ .Name }}</a>
 					</li>
 					{{ end }}
-					
 				</ul>
 				<!-- Language List -->
 				{{- if .Site.IsMultiLingual }}

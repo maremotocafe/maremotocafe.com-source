@@ -14,3 +14,7 @@
   translation: Submit
 - id: all
   translation: Todo
+- id: menu
+  translation: Menú
+- id: map
+  translation: Mapa

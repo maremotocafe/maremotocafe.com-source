@@ -1898,7 +1898,7 @@ items:
 
   - nombre: Xoringer & Schweppes Premium Toque de Lima
     imagen: images/carta/xoringer.jpg
-    imagen_pequenya: images/carta/xoringer_smalls.jpg
+    imagen_pequenya: images/carta/xoringer_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
