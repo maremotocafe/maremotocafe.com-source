@@ -971,7 +971,7 @@ a:hover {
 }
 
 .popup-content .popup-img {
-  min-width: 300px;
+  min-width: 200px;
   max-width: 700px;
   flex: 1;
   text-align: center;
@@ -984,7 +984,7 @@ a:hover {
 
 .popup-content .popup-details {
   text-align: left;
-  min-width: 300px;
+  min-width: 200px;
   max-width: 500px;
   height: 100%;
   margin: 20px;
