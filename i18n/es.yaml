@@ -18,3 +18,5 @@
   translation: Menú
 - id: map
   translation: Mapa
+- id: load_more
+  translation: Cargar más

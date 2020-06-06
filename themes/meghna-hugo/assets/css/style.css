@@ -731,7 +731,7 @@ a:hover {
   color: #ddd !important;
 }
 
-#contact-submit {
+#contact-submit, #load-more {
   border: 1px solid rgba(236, 239, 241, 0.07);
   background: #3c9fb4;
   padding: 12px 0;
@@ -1003,6 +1003,10 @@ a:hover {
 
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
   width: auto;
+}
+
+#load-more {
+  font-size: 18px;
 }
 
 /*=================================================================

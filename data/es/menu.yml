@@ -5,6 +5,8 @@ title: Nuestra Carta
 description: >
     Acota tu búsqueda utilizando las pestañas de familias de artículos.
 
+max_items: 30
+
 nombres_datos: ["ingredientes", "alergenos", "txt_aclaraciones", "txt_temporal", "grad_alcoholica", "vol_ml", "edul_gr", "pvp_local", "pvp_terraza"]
 titulos_datos:
     ingredientes: Ingredientes

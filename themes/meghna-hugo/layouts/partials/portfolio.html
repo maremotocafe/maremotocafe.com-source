@@ -86,6 +86,10 @@
             {{ $i = add $i 1 }}
 			{{ end }}
 		</div>
+
+        <div id="cf-submit">
+            <button type="submit" id="load-more" class="btn btn-transparent btn-block" style="{{ if le (len $menu.items) $menu.max_items}}display: none;{{ end }}">{{ upper (i18n "load_more") }}</button>
+        </div>
 	</div>
 </section>
 {{"<!-- /Portfolio -->" | safeHTML}}
