@@ -211,7 +211,7 @@ window.addEventListener('load', e => {
     /* ================================================== */
 
     let htmlAndBody = $('html, body');
-    $('nav a, .page-scroll').click(() => {
+    $('nav a, .page-scroll').on('click', function () {
         // Making sure the clicked hyperlink is inside this website
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
             let target = $(this.hash);
