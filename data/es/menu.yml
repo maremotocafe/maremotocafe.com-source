@@ -352,8 +352,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Frappé al Caramelo
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/196.jpg
+    imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés fríos"]
     ingredientes: Café, Crema de Caramelo y Crema de Leche.
     alergenos: "*Leche*"
@@ -366,8 +366,8 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Frappé Rón Cream
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/196.jpg
+    imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos"]
     ingredientes: Café, Barceló Cream, Crema de Leche y topping de Caramelo
     alergenos: "*Leche*"
@@ -380,8 +380,8 @@ items:
     pvp_terraza: 4,25€
   
   - nombre: Frappé Mozart
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/196.jpg
+    imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos""]
     ingredientes: Café, Licor Mozart, Cacao, Crema de Leche y topping de Chocolate
     alergenos: "*Leche*"
@@ -394,8 +394,8 @@ items:
     pvp_terraza: 4,25€
    
   - nombre: Frappé Crema Catalana
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/196.jpg
+    imagen_pequenya: images/carta/196_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos""]
     ingredientes: Café, Licor Melody, Crema de Leche y topping de Caramelo.
     alergenos: "*Leche*" 
@@ -738,8 +738,8 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Granizado de Naranja y Menta 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/198.jpg
+    imagen_pequenya: images/carta/198_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos" , "Granizados"]
     ingredientes: Zumo de Naranja Natural, Menta fresca, Azúcar y Hielo.
     alergenos: 
@@ -752,8 +752,8 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Granizado de Café
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/197.jpg
+    imagen_pequenya: images/carta/197_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos" , "Granizados"]
     ingredientes: Sirope de Café y Hielo.
     alergenos: 
@@ -898,7 +898,7 @@ items:
     ingredientes: Mango Natural, Jalapeños, Zumo Natural de Naranja y Cilantro fresco.
     alergenos:
     txt_aclaraciones:
-    txt_temporal: Disponible todo el año
+    txt_temporal: Disponible próximamente.
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 0 gr
@@ -1736,8 +1736,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Vodka Berry
-    imagen: images/carta/50.jpg
-    imagen_pequenya: images/carta/50_small.jpg
+    imagen: images/carta/211.jpg
+    imagen_pequenya: images/carta/211_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Vodka Finlandia infusionado con Frambuesas & Tonica Royal Bliss Berry Sensation.
     alergenos:
@@ -1876,8 +1876,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Gin Blue Curaçao & Schweppes Premium Toque de Lima
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/218.jpg
+    imagen_pequenya: images/carta/218_smal.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Ginebra Ampersand infusionada con Lima, limón, Naranja, Pomelo, lemongrass, Jenjibre y flor de Malva.
     alergenos:
@@ -1918,8 +1918,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Tankeray Flor de Sevilla & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/244.jpg
+    imagen_pequenya: images/carta/244_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -1932,8 +1932,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Gin.Za & Schweppes Premium Toque de Lima
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/228.jpg
+    imagen_pequenya: images/carta/228_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -1946,8 +1946,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Larios 150 Aniversario & Fever Tre Mediterranean
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/234.jpg
+    imagen_pequenya: images/carta/234_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -1960,8 +1960,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: June & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/233.jpg
+    imagen_pequenya: images/carta/233_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -1974,8 +1974,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Bulldog & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/215.jpg
+    imagen_pequenya: images/carta/215_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2002,8 +2002,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Pink & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/239.jpg
+    imagen_pequenya: images/carta/239_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2030,8 +2030,8 @@ items:
     pvp_terraza: 8€ 
 
   - nombre: Citadelle & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/216.jpg
+    imagen_pequenya: images/carta/216_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:  
     alergenos:
@@ -2044,8 +2044,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ginbraltar & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/225.jpg
+    imagen_pequenya: images/carta/225_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2058,8 +2058,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ginbraltar Citrus & Schweppes Premium Toque de Lima
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/224.jpg
+    imagen_pequenya: images/carta/224_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2072,8 +2072,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Tanqueray Ten & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/243.jpg
+    imagen_pequenya: images/carta/243_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2086,8 +2086,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/242.jpg
+    imagen_pequenya: images/carta/242_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2100,8 +2100,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Voortrekker & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/238.jpg
+    imagen_pequenya: images/carta/238_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2114,8 +2114,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Magellan & Schweppes Pimienta Rosa
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/235.jpg
+    imagen_pequenya: images/carta/235_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2128,8 +2128,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Nordest & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/237.jpg
+    imagen_pequenya: images/carta/237_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2156,8 +2156,8 @@ items:
     pvp_terraza: €
 
   - nombre: Bloom & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/213.jpg
+    imagen_pequenya: images/carta/213_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2170,8 +2170,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Sipsmith & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/241.jpg
+    imagen_pequenya: images/carta/241_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2184,8 +2184,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Mombasa & Schweppes Pimienta Rosa
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/236.jpg
+    imagen_pequenya: images/carta/236_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2198,8 +2198,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ish & Schweppes Pimienta Rosa
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/233.jpg
+    imagen_pequenya: images/carta/233_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2212,8 +2212,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ish Limed & Schweppes Premium Toque de Lima
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/231.jpg
+    imagen_pequenya: images/carta/231_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2226,8 +2226,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Gin Loe
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/227.jpg
+    imagen_pequenya: images/carta/227_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2240,8 +2240,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: G'Vine Floraisson & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/230.jpg
+    imagen_pequenya: images/carta/230_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2254,8 +2254,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Gin Mare & Fever Tree Mediterranean
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/221.jpg
+    imagen_pequenya: images/carta/221_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2268,8 +2268,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Ford`s Gin & Fever Tre
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/217.jpg
+    imagen_pequenya: images/carta/217_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2282,8 +2282,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Gin del Professore Monsieur & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/220.jpg
+    imagen_pequenya: images/carta/220_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2296,8 +2296,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Gin del Professore Madame & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/219.jpg
+    imagen_pequenya: images/carta/219_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2310,8 +2310,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Gin Plymout & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/240.jpg
+    imagen_pequenya: images/carta/240_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2324,8 +2324,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Gordon`s Pink & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/229.jpg
+    imagen_pequenya: images/carta/229_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2352,8 +2352,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Ginial Rosé & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/226.jpg
+    imagen_pequenya: images/carta/226_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2366,8 +2366,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Proof 13 & 1724 tonic water
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/222.jpg
+    imagen_pequenya: images/carta/222_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2380,8 +2380,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Brockman`s & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/214.jpg
+    imagen_pequenya: images/carta/214_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2422,7 +2422,7 @@ items:
 
 
   - nombre:  Repostería Saludable y Súpernutritiva 
-    imagen: images/carta/
+    imagen: images/carta/r1.jpg
     imagen_pequenya: images/carta/52.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
