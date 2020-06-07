@@ -1,6 +1,6 @@
 ####### MAIN CONFIG #######
 baseURL = "https://maremotocafe.com/"
-title = "Maremoto Café and Cocktail"
+title = "Maremoto Café & Cocktail"
 theme = "meghna-hugo"
 defaultContentLanguage = "es"
 languageCode = "es"
@@ -20,7 +20,6 @@ disableLanguages = []
 ####### DEFAULT PARAMETERS ######
 [params]
 logo = "images/logo.png"
-description = "Maremoto Café and Cocktail"
 author = "Mario Ortiz Manero"
 google_analytics_id = "UA-162662877-2"
 post_share = true
@@ -31,6 +30,8 @@ languageName = "Es"
 languageCode = "es-es"
 contentDir = "content/spanish"
 weight = 1
+description = "Maremoto Café & Cocktail en Zaragoza"
+tags = "bar,pub,copas,cafeteria,cocktails,zaragoza,cafes,desayunos,brunch,zumos,reposteria,bocadillos,centro,aragon"
 home = "Inicio"
 copyright = """
 Página desarrollada por [Mario Ortiz Manero](https://github.com/marioortizmanero).  
