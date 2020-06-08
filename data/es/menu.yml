@@ -1202,8 +1202,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Rock Melón
-    imagen: images/carta/11a.jpg
-    imagen_pequenya: images/carta/11a_small.jpg
+    imagen: images/carta/2.jpg
+    imagen_pequenya: images/carta/2_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licor Proof 13, Puré de Melón Cantalupo Natural, Sirope de Hierbaluisa y Jengibre, Zumo de Naranja Natural, Zumo de Lima y Puré de Calabaza especiada.
     alergenos:

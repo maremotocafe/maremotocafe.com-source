@@ -13,7 +13,7 @@ SIZE="465x350"
 
 
 if [ -d "$EXPORT_DIR" ]; then
-    echo -n "Remove existing ${EXPORT_DIR}? [y/n]: "
+    echo "Remove existing ${EXPORT_DIR}? [y/n]: "
     read confirm
     [ "$confirm" = "y" ] || (echo "Aborting" && exit 1)
     rm -rf "$EXPORT_DIR"
@@ -21,9 +21,9 @@ fi
 mkdir -p "$EXPORT_DIR"
 
 num=0
-sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | sort -n | uniq | while read photo; do
+sed -n -E 's/imagen:\s?(.*.jpg)/\1/p' "$MENU" | sort -n | uniq | while read photo; do
     # The new image will be a jpeg, saved into the export directory
-    new_photo=$(echo "$photo" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2_small.jpg:')
+    new_photo=$(echo "$photo" | sed -E 's:(.+/)+(.+)\.(jpg|jpeg|png):'"$EXPORT_DIR"'/\2_small.jpg:')
 
     if grep -q "$photo" "$BLACKLIST"; then
         echo "[$photo] Skipped"
