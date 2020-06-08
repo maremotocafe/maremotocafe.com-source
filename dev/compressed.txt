@@ -263,7 +263,6 @@ static/images/carta/229.jpg
 static/images/carta/230.jpg
 static/images/carta/231.jpg
 static/images/carta/232.jpg
-static/images/carta/233.jpg
 static/images/carta/234.jpg
 static/images/carta/235.jpg
 static/images/carta/236.jpg
@@ -276,3 +275,4 @@ static/images/carta/242.jpg
 static/images/carta/243.jpg
 static/images/carta/244.jpg
 static/images/carta/r1.jpg
+static/images/carta/233.jpg

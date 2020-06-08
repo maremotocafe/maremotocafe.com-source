@@ -71,11 +71,13 @@
                         <h1>{{ .nombre }}</h1>
                         {{ range $menu.nombres_datos }}
                             {{ if (index $item .) }}
-                            <p>
-                            <i class="field-icon {{ index $menu.iconos_datos . }}"></i>
-                            <span class="field-title">{{ (index $menu.titulos_datos .) }}: </span>
-                            <span class="field-description">{{ (index $item .) | markdownify }}</span>
-                            </p>
+                            <div class="field-{{ urlize . }}">
+                                <p>
+                                <i class="field-icon {{ index $menu.iconos_datos . }}"></i>
+                                {{ with (index $menu.titulos_datos .) }}<span class="field-title">{{ . }}: </span>{{ end }}
+                                <span class="field-description">{{ (index $item .) | markdownify }}</span>
+                                </p>
+                            </div>
                             {{ end }}
                         {{ end }}
                     </div>

@@ -15,7 +15,7 @@ nombres_datos: ["ingredientes", "alergenos", "txt_aclaraciones", "txt_temporal",
 titulos_datos:
     ingredientes: Ingredientes
     alergenos: Alérgenos
-    txt_aclaraciones: Aclaraciones
+    txt_aclaraciones:
     txt_temporal: Temporalidad
     grad_alcoholica: Graduación
     vol_ml: Volumen (ml)
