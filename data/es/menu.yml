@@ -244,7 +244,9 @@ items:
     alergenos: "*Leche y Avellana*"
     txt_aclaraciones: >
      Elige entre Avellana*, Vainilla, Canela, Cookie o Tiramisú.
+
      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena y Soja.
+
      Todas las tardes de 16h a 22,30h con tu Cappuccino Gratis una Cookie casera a elegir entre 5 variedades distintas.
     txt_temporal: 
     grad_alcoholica: 
@@ -1158,8 +1160,8 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Grandma's Cherry 
-    imagen: images/carta/11a.jpg
-    imagen_pequenya: images/carta/11a_small.jpg
+    imagen: images/carta/128.jpg
+    imagen_pequenya: images/carta/128_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
     alergenos: 
