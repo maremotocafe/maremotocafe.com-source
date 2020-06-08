@@ -20,7 +20,7 @@ if [ -d "$EXPORT_DIR" ]; then
 fi
 mkdir -p "$EXPORT_DIR"
 
-sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | uniq | sort -n | while read photo; do
+sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | sort -n | uniq | while read photo; do
     # The new image will be a jpeg, saved into the export directory
     new_photo=$(echo "$photo" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2_small.jpg:')
 
