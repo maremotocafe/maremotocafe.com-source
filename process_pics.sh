@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # This script photo converts all the files in a provided directory
 # into a compressed format for the web. It also resizes them to appropiate
 # sizes.
@@ -21,16 +21,16 @@ MAX_SIZE="700x700"
 
 if [ -d "$EXPORT_DIR" ]; then
     echo -n "Remove existing ${EXPORT_DIR}? [y/n]: "
-    read confirm
+    read -r confirm
     [ "$confirm" = "y" ] || (echo "Aborting" && exit 1)
     rm -rf "$EXPORT_DIR"
 fi
 mkdir -p "$EXPORT_DIR"
 
 num=0
-find "$BASE_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | sort -n | while read photo; do
+while read -r photo; do
     # The new image will be a jpeg, saved into the export directory
-    new_photo=$(echo "$photo" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2.jpg:')
+    new_photo=$(echo "$photo" | sed -E 's:(.+/)+(.+)\.(jpg|jpeg|png):'"$EXPORT_DIR"'/\2_small.jpg:')
 
     # Checking it hasn't been compressed before and that it isn't a
     # thumbnail.
@@ -53,7 +53,7 @@ find "$BASE_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -in
     # Saving it into the previously compressed files
     echo "$photo" >> "$COMPRESSED_LIST"
     num=$((num + 1))
-done
+done < <(find "$BASE_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | sort -n)
 
 # Error code for exit if no images were generated.
 if [ $num -eq 0 ]; then exit 1; fi
