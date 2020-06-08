@@ -27,6 +27,7 @@ if [ -d "$EXPORT_DIR" ]; then
 fi
 mkdir -p "$EXPORT_DIR"
 
+num=0
 find "$BASE_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" \) | sort -n | while read photo; do
     # The new image will be a jpeg, saved into the export directory
     new_photo=$(echo "$photo" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2.jpg:')
@@ -51,4 +52,8 @@ find "$BASE_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -in
 
     # Saving it into the previously compressed files
     echo "$photo" >> "$COMPRESSED_LIST"
+    num=$((num + 1))
 done
+
+# Error code for exit if no images were generated.
+if [ $num -eq 0 ]; then exit 1; fi

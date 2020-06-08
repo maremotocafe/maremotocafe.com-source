@@ -20,6 +20,7 @@ if [ -d "$EXPORT_DIR" ]; then
 fi
 mkdir -p "$EXPORT_DIR"
 
+num=0
 sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | sort -n | uniq | while read photo; do
     # The new image will be a jpeg, saved into the export directory
     new_photo=$(echo "$photo" | sed 's:\(.\+/\)\(\w\+\)\.\(jpg\|jpeg\|png\):'"$EXPORT_DIR"'/\2_small.jpg:')
@@ -32,4 +33,8 @@ sed -n 's/imagen:\s\?\(.*.jpg\)/\1/p' "$MENU" | sort -n | uniq | while read phot
     echo -n "[$photo] Generating $new_photo ... "
     magick "$BASE_DIR/$photo" -resize "$SIZE" "$new_photo"
     echo "done"
+    num=$((num + 1))
 done
+
+# Error code for exit if no images were generated.
+if [ $num -eq 0 ]; then exit 1; fi
