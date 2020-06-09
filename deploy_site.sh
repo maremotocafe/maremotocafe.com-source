@@ -11,12 +11,21 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M")
 MSG="$1"
 
+cd public
+
+echo ">> Updating site from remote branch..."
+git fetch origin
+git reset --hard origin/master
+
+cd ..
+
 echo ">> Building site..."
 rm -rf public/css public/images public/css public/js public/plugins
 hugo
 
-echo ">> Deploying to GitHub..."
 cd public
+
+echo ">> Deploying to GitHub..."
 git add .
 if [ -n "$MSG" ]; then
     git commit -m "$MSG"
