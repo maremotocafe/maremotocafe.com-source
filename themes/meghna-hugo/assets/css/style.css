@@ -944,6 +944,8 @@ a:hover {
   display: table-cell;
   text-align: left;
   padding-left: 10px;
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 .portfolio-block .caption i {
@@ -954,6 +956,8 @@ a:hover {
   font-size: 15px;
   line-height: 50px;
   padding-right: 10px;
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 .popup-content {
