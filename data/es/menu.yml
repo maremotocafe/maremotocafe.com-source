@@ -1184,7 +1184,7 @@ items:
 
   - nombre: El Viejo Santa Claus
     imagen: images/carta/38.jpg
-    imagen_pequenya: images/carta/138_small.jpg
+    imagen_pequenya: images/carta/38_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Inspirado en la Navidad pero disponible todo el año.
     alergenos: "*Huevo*"
@@ -1452,19 +1452,19 @@ items:
     pvp_local: 6,50€
     pvp_terraza: 7€
 
-  - nombre: Sangria Jamaicana
+  - nombre: Sangría Jamaicana
     imagen: images/carta/12a.jpg
     imagen_pequenya: images/carta/12a_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
-    ingredientes: 
+    ingredientes: Rón Captain Morgan, Chartreuse amarillo, Granadina, Zumo de Limón, Trocitos de frutas tropicales y Azúcar. 
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
-    grad_alcoholica: 
-    vol_ml: 
+    grad_alcoholica: 11,30%
+    vol_ml: 235 ml
     edul_gr: 
-    pvp_local: 
-    pvp_terraza:
+    pvp_local: 6.5€
+    pvp_terraza: 7€
 
   - nombre: Singapure Sling
     imagen: images/carta/12a.jpg
@@ -1564,7 +1564,7 @@ items:
     pvp_local: 4,5€
     pvp_terraza: 5€
 
-  - nombre: Cherry Blossom Fizz
+  - nombre: Spritz Cherry Blossom 
     imagen: images/carta/205.jpg
     imagen_pequenya: images/carta/205_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
@@ -1827,8 +1827,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 
     edul_gr: 
-    pvp_local: 8,50€
-    pvp_terraza: 9€
+    pvp_local: 9€
+    pvp_terraza: 9,50€
 
   - nombre: Gin Maremoto (Con Espuma de Pomelo...)
     imagen: images/carta/ginmaremotopomelo.jpg
@@ -2163,8 +2163,8 @@ items:
     grad_alcoholica: 8%
     vol_ml: 250 ml
     edul_gr: 
-    pvp_local: €
-    pvp_terraza: €
+    pvp_local: 7.50€
+    pvp_terraza: 8€
 
   - nombre: Bloom & 1724 tonic water
     imagen: images/carta/213.jpg
