@@ -898,7 +898,7 @@ a:hover {
   justify-content: center;
 }
 
-.portfolio-filter .btn.default {
+.portfolio-filter .btn.filter-default {
   width: 30px;
   flex-grow: 1 !important;
 }
@@ -906,18 +906,6 @@ a:hover {
 .portfolio-filter .btn i {
   font-size: 25px;
   margin-right: 5px;
-}
-
-.portfolio-filter[filter-level="1"] .btn.active {
-  border-color: #3c9fb4;
-}
-
-.portfolio-filter[filter-level="2"] .btn.active {
-  border-color: #7d55e0;
-}
-
-.portfolio-filter[filter-level="3"] .btn.active {
-  border-color: #eb6ae2;
 }
 
 .portfolio-block {

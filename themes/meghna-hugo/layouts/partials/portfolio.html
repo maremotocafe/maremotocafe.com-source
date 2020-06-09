@@ -27,17 +27,30 @@
 
                 {{ "<!-- Second level -->" | safeHTML }}
                 {{ range $parent := $menu.categorias }}
-                {{ partial "portfolio-bar.html" (dict "context" . "level" "2" "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $parent.icono "parent" $parent.nombre "children" $parent.subcategorias) }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "2" "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $parent.icono "class_color" (md5 $parent.nombre) "parent" $parent.nombre "children" $parent.subcategorias) }}
                 {{ end }}
 
                 {{ "<!-- Third level -->" | safeHTML }}
                 {{ range $grandparent := $menu.categorias }}
                 {{ range $parent := $grandparent.subcategorias }}
-                {{ partial "portfolio-bar.html" (dict "context" . "level" "3" "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $grandparent.icono "parent" $parent.nombre "children" $parent.subcategorias) }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "3" "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $grandparent.icono "parent" $parent.nombre "class_color" (md5 $grandparent.nombre) "children" $parent.subcategorias) }}
                 {{ end }}
                 {{ end }}
 			</div>
 		</div>
+
+<style>
+.filter-default.active {
+  border-color: {{ $menu.color_bordes }};
+}
+{{ range $menu.categorias }}
+.filter-{{ md5 .nombre }}.active {
+  background-color: {{ .color }};
+  border-color: {{ $menu.color_bordes }};
+  color: #1d2024;
+}
+{{ end }}
+</style>
 
 		<div class="row shuffle-wrapper justify-content-center">
             {{ $i := 0 }}
@@ -51,7 +64,7 @@
             {{ end }}
 
 			{{"<!-- Portfolio item -->" | safeHTML}}
-			<figure class="col-lg-4 shuffle-item {{ if gt $i $menu.max_items }}d-none{{ end }}" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | urlize }}"{{ end }}]'>
+			<figure class="col-lg-4 shuffle-item {{ if gt $i $menu.max_items }}d-none{{ end }}" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
 				<div class="portfolio-block mb-4">
                     <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
                         <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">

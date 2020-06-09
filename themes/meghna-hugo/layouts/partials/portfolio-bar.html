@@ -1,16 +1,26 @@
-{{ $fallbackIcon := .icon }}
+{{/* Parameters taken:
+   *     level: the height/importance, from 1 to 3
+   *     default: the filter-value taken for the default filter
+   *     defaultIcon: the icon for the default filter
+   *     children: the rest of the filters
+   *     icon: the icon fallback for the rest of the filters
+   *     class_color: the name of the class of which the color should be
+   *     inherited. First levels will use their assigned colors.
+   *     parent: the parent name for the filter (if its level is 2 or 3)
+   */}}
 
+{{ $data := . }}
 {{ if ne .children nil }}
-<div class="btn-group btn-group-toggle portfolio-filter justify-content-center {{ if eq .level "1" }}d-flex{{ else }}d-none{{ end }} flex-wrap" filter-level="{{ .level }}" {{ with .parent }}filter-parent="{{ . | urlize }}"{{ end }} data-toggle="buttons">
-    <label class="btn default active">
-        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ .default | urlize }}" checked>
+<div class="btn-group btn-group-toggle portfolio-filter justify-content-center {{ if eq .level "1" }}d-flex{{ else }}d-none{{ end }} flex-wrap" filter-level="{{ .level }}" {{ with .parent }}filter-parent="{{ md5 . }}"{{ end }} data-toggle="buttons">
+    <label class="btn filter-{{ if eq .level "1" }}default{{ else }}{{ .class_color }}{{ end }} active">
+        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ if eq .level "1" }}{{ .default }}{{ else }}{{ md5 .default }}{{ end }}" checked>
         <i class="{{ .defaultIcon }}"></i>
         <span>{{ i18n "all" }}</span>
     </label>
     {{ range .children }}
-    <label class="btn">
-        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ .nombre | urlize }}">
-        <i class="{{ if .icono }}{{ .icono }}{{ else }}{{ $fallbackIcon }}{{ end }}"></i>
+    <label class="btn filter-{{ if eq $data.level "1" }}{{ md5 .nombre }}{{ else }}{{ $data.class_color }}{{ end }}">
+        <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ md5 .nombre }}">
+        <i class="{{ if .icono }}{{ .icono }}{{ else }}{{ $data.icon }}{{ end }}"></i>
         <span>{{ .nombre }}</span>
     </label>
     {{ end }}

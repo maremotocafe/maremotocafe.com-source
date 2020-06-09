@@ -36,9 +36,12 @@ iconos_datos:
 
 # 'all' no puede ser un nombre de categoría ya que representa todos los ítems.
 icono_todo: las la-times
+color_todo: "#2f2f2f"
+color_bordes: "#c4cdd5"
 categorias:
   - nombre: Cocktails & Drinks
     icono: las la-cocktail
+    color: "#5ba49d"
     subcategorias:
         - nombre: Gin Tonic y Vodka Tonic
         - nombre: Mojitos Caipirinhas y Similares
@@ -53,6 +56,7 @@ categorias:
         - nombre: Cocktails Clásicos
   - nombre: Smoothies, Healthy Drinks y Batidos
     icono: las la-blender
+    color: "#66a864"
     subcategorias:
         - nombre: Smoothies
         - nombre: Granizados
@@ -63,12 +67,14 @@ categorias:
               - nombre: Sin Alcohol ni Azúcares
   - nombre: Ofertas Destacadas
     icono: las la-certificate
+    color: "#aeac72"
     subcategorias:
         - nombre: Día
         - nombre: Tarde
         - nombre: Noche
   - nombre: Cafés y Tés
     icono: las la-coffee
+    color: "#936f59"
     subcategorias:
         - nombre: Cafés con Alcohol
         - nombre: Cafés sin Alcohol
@@ -79,8 +85,10 @@ categorias:
               - nombre: Calientes
   - nombre: Desayunos, Almuerzos y Zumos
     icono: las la-bacon
+    color: "#a17abb"
   - nombre: Bocadillos, Sándwich y Focaccias
     icono: las la-hamburger
+    color: "#d06e6e"
 
 items:
   - nombre: Bloody Mary Free
