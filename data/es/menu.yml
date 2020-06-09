@@ -4,6 +4,7 @@ enable: true
 title: Nuestra Carta
 description: >
     Acota tu búsqueda utilizando las pestañas de familias de artículos.
+description_icon: las la-info-circle
 
 max_items: 30
 cargar_items: 30
@@ -36,16 +37,6 @@ iconos_datos:
 # 'all' no puede ser un nombre de categoría ya que representa todos los ítems.
 icono_todo: las la-times
 categorias:
-  - nombre: Cafés y Tés
-    icono: las la-coffee
-    subcategorias:
-        - nombre: Cafés con Alcohol
-        - nombre: Cafés sin Alcohol
-        - nombre: Cafés Fríos
-        - nombre: Infusiones
-          subcategorias:
-              - nombre: Frías
-              - nombre: Calientes
   - nombre: Cocktails & Drinks
     icono: las la-cocktail
     subcategorias:
@@ -60,10 +51,6 @@ categorias:
         - nombre: Cocktails Frozeen
         - nombre: Cocktails Long Drinks
         - nombre: Cocktails Clásicos
-  - nombre: Desayunos, Almuerzos y Zumos
-    icono: las la-bacon
-  - nombre: Bocadillos, Sándwich y Focaccias
-    icono: las la-hamburger
   - nombre: Smoothies, Healthy Drinks y Batidos
     icono: las la-blender
     subcategorias:
@@ -80,6 +67,20 @@ categorias:
         - nombre: Día
         - nombre: Tarde
         - nombre: Noche
+  - nombre: Cafés y Tés
+    icono: las la-coffee
+    subcategorias:
+        - nombre: Cafés con Alcohol
+        - nombre: Cafés sin Alcohol
+        - nombre: Cafés Fríos
+        - nombre: Infusiones
+          subcategorias:
+              - nombre: Frías
+              - nombre: Calientes
+  - nombre: Desayunos, Almuerzos y Zumos
+    icono: las la-bacon
+  - nombre: Bocadillos, Sándwich y Focaccias
+    icono: las la-hamburger
 
 items:
   - nombre: Bloody Mary Free

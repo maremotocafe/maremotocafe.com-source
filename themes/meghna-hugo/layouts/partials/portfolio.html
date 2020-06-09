@@ -11,7 +11,10 @@
 					<h2>{{ with $menu.title }}{{ index (split . " ") 0 }}{{ end }}<span class="color">
 							{{ with $menu.title }}{{ index (split . " ") 1 }}{{ end }}</span></h2>
 					<div class="border-meghna"></div>
-                    <p>{{ with $menu.description }}{{ . }}{{ end }}</p>
+                    <p>
+                    {{ with $menu.description_icon }}<i class="field-icon {{ . }}"></i>{{ end }}
+                        <span>{{ with $menu.description }}{{ . }}{{ end }}</span>
+                    </p>
                 </div>
 				{{ "<!-- End of section title -->" | safeHTML }}
 			</div>
@@ -38,7 +41,7 @@
 
 		<div class="row shuffle-wrapper justify-content-center">
             {{ $i := 0 }}
-			{{ range $item := (shuffle $menu.items) }}
+			{{ range $item := (sort $menu.items "nombre") }}
 
             {{ $standalone := true }}
             {{ range $menu.nombres_datos }}

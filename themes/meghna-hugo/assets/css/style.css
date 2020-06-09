@@ -301,6 +301,7 @@ a:hover {
 }
 
 .title p {
+    font-size: 18px;
     width: 60%;
     margin: 30px auto 0 auto;
 }
@@ -349,6 +350,13 @@ a:hover {
 /* CSS mfp-with-zoom class */
 .mfp-img {
   max-height: 100% !important;
+}
+/* bigger X button to close the popup */
+.mfp-close {
+  font-size: 40px;
+  opacity: 1;
+  background-color: #fff !important;
+  border-radius: 50%;
 }
 
 .single-page-header {
@@ -977,6 +985,7 @@ a:hover {
 }
 .popup-content .popup-details p {
   color: #555;
+  margin-bottom: 5px;
 }
 .popup-content .popup-details h1 {
   color: #555;
@@ -997,6 +1006,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  .popup-content .popup-details {
+    margin: 0 20px 20px 20px;
+  }
   .mfp-auto-cursor .mfp-content {
     max-width: 90%;
   }
