@@ -3,8 +3,6 @@
 
 // Things that have to be loaded at the end
 window.addEventListener('load', (e) => {
-
-
     /* ================================================== */
     /*    Scroll to top
     /* ================================================== */
