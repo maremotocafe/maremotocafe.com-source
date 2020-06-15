@@ -572,7 +572,8 @@ a:hover {
   position: fixed;
   bottom: 0;
   left: 0;
-  margin: 20px 200px 20px 20px;
+  width: 100%;
+  padding: 20px;
   z-index: 1050;
   font-size: 18px;
   border: none;
@@ -580,7 +581,6 @@ a:hover {
   background-color: #9f404b;
   color: white;
   border-radius: 4px;
-  padding: 20px;
 }
 
 .old-browser .browser-desc {
