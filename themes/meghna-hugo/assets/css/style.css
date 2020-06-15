@@ -355,6 +355,10 @@ a:hover {
 .mfp-close {
   font-size: 40px;
   opacity: 1;
+}
+
+/* full images shouldn't have the background color */
+.carta-img .mfp-close {
   background-color: #fff !important;
   border-radius: 50%;
 }
