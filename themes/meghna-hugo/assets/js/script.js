@@ -2,7 +2,23 @@
 
 
 // Things that have to be loaded at the end
-window.addEventListener('load', e => {
+window.addEventListener('load', function(e) {
+    /* ================================================== */
+    /*    Browser incompatible warning (always at the top)
+    /* ================================================== */
+
+    // Checking if the browser is compatible via feature-checking.
+    function browserIncompatible() {
+        // Old browsers don't support some methods from querySelectorAll
+        if (document.querySelectorAll('.thisdoesntexist').forEach === 'undefined') {
+            return true;
+        }
+    }
+
+    if (browserIncompatible()) {
+        document.querySelector('.old-browser').style.display = 'flex';
+    }
+
     /* ================================================== */
     /*    Scroll to top
     /* ================================================== */
@@ -42,6 +58,7 @@ window.addEventListener('load', e => {
     /* ================================================== */
     /*    Portfolio Filtering Hook
     /* ================================================== */
+
     const containerEl = document.querySelector('.shuffle-wrapper');
 
     // Initializing Shuffle
