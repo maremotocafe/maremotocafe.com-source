@@ -63,6 +63,10 @@ $('.open-popup-standalone').magnificPopup({
 {{ "<!-- Shuffle -->" | safeHTML }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.2.3/shuffle.min.js" crossorigin="anonymous"></script>
 
+{{ "<!-- Compatibility Script -->" | safeHTML }}
+{{ $script := resources.Get "js/compat.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
