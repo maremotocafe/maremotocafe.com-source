@@ -2585,50 +2585,7 @@ items:
     pvp_local: 1,80€
     pvp_terraza: 2,20€
 
-  - nombre:  
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
 
-  - nombre:  
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
-
-  - nombre:  
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
-
-  - nombre:  
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
-
-  - nombre:  
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Ofertas Destacadas" , "Día"]
-    alergenos:
-    txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
 
 
 
