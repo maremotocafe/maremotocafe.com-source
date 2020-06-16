@@ -60,7 +60,6 @@ static/images/carta/59.jpg
 static/images/carta/60.jpg
 static/images/carta/61.jpg
 static/images/carta/62.jpg
-static/images/carta/63.jpg
 static/images/carta/64.jpg
 static/images/carta/65.jpg
 static/images/carta/66.jpg
@@ -292,3 +291,5 @@ static/images/carta/258.jpg
 static/images/carta/259.jpg
 static/images/carta/260.jpg
 static/images/carta/261.jpg
+static/images/carta/262.jpg
+static/images/carta/63.jpg

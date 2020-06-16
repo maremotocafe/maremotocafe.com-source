@@ -2083,8 +2083,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Tanqueray Ten & Fever Tree
-    imagen: images/carta/253.jpg
-    imagen_pequenya: images/carta/253_small.jpg
+    imagen: images/carta/262.jpg
+    imagen_pequenya: images/carta/262_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2586,8 +2586,8 @@ items:
     pvp_terraza: 2,20€
 
   - nombre:  
-    imagen: images/carta/.jpg
-    imagen_pequenya: images/carta/.jpg
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2595,8 +2595,8 @@ items:
     pvp_terraza:
 
   - nombre:  
-    imagen: images/carta/.jpg
-    imagen_pequenya: images/carta/.jpg
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2604,8 +2604,8 @@ items:
     pvp_terraza:
 
   - nombre:  
-    imagen: images/carta/.jpg
-    imagen_pequenya: images/carta/.jpg
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2613,8 +2613,8 @@ items:
     pvp_terraza:
 
   - nombre:  
-    imagen: images/carta/.jpg
-    imagen_pequenya: images/carta/.jpg
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
@@ -2622,8 +2622,8 @@ items:
     pvp_terraza:
 
   - nombre:  
-    imagen: images/carta/.jpg
-    imagen_pequenya: images/carta/.jpg
+    imagen: images/carta/
+    imagen_pequenya: images/carta/
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
