@@ -105,9 +105,9 @@ items:
     pvp_terraza: 6,50€
     
   - nombre: Café Bombón 
-    imagen: images/carta/193.jpg
-    imagen_pequenya: images/carta/193_small.jpg
-    categorias: ["Cafés y Tés", "Cafés sin Alcohol"]
+    imagen: images/carta/261.jpg
+    imagen_pequenya: images/carta/261_small.jpg
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
     ingredientes: Café expresso, Leche condensada y Crema de leche.
     alergenos: "*leche*"
     txt_temporal: 
@@ -177,8 +177,8 @@ items:
     pvp_terraza: 3€
     
 
-  - nombre: Desayunos 
-    imagen: images/carta/1d.jpg
+  - nombre: Café + Repostería + Zumo Natural 
+    imagen: images/carta/15.jpg
     imagen_pequenya: images/carta/15.jpg
     categorias: ["Desayunos Almuerzos y Zumos" , "Desayunos" , "Ofertas Destacadas" , "Día"]
 
@@ -735,8 +735,8 @@ items:
     pvp_terraza: 4,50€
 
   - nombre: Granizado de Limón Casero
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/258.jpg
+    imagen_pequenya: images/carta/258_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos" , "Granizados"]
     ingredientes: Zumo de Limón Natural, Azúcar y Hielo.
     alergenos: 
@@ -1339,8 +1339,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Brandy Smash Tiki
-    imagen: images/carta/11a.jpg
-    imagen_pequenya: images/carta/11a_small.jpg
+    imagen: images/carta/208.jpg
+    imagen_pequenya: images/carta/208_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Cognac Courvoisier, Zumo de Lima, Zumo de Naranja, Pimiento Dram, Azúcar y Bitter de Chocolate y Canela. 
     alergenos:
@@ -1551,8 +1551,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre:  Aperol Spritz
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/260.jpg
+    imagen_pequenya: images/carta/260_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Aperol, proseco Cinzano y Soda
     alergenos: "*Sulfitos*"
@@ -1607,9 +1607,9 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Bloody Mary
-    imagen: images/carta/77.jpg
-    imagen_pequenya: images/carta/77_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    imagen: images/carta/259.jpg
+    imagen_pequenya: images/carta/259_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Zumo de Tomate, Vodka Finlandia, Zumo de Limón, Tabasco, Sal de Apio, Pimienta y Salsa Perrins.
     alergenos: "*Apio*"
     txt_aclaraciones:
@@ -1623,7 +1623,7 @@ items:
   - nombre: Margarita Clásica
     imagen: images/carta/199.jpg
     imagen_pequenya: images/carta/199_small.jpg
-    categorias: [Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: [Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Tequila El Jimador, Zumo de Lima, Triple Seco y Azúcar
     alergenos:
     txt_aclaraciones: Este cocktail va escarchado con sal, si no lo desea avise al camarero.
@@ -1637,7 +1637,7 @@ items:
   - nombre: Cosmopolitan
     imagen: images/carta/10a.jpg
     imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Vodka Finlandia, Zumo de Lima, Zumo de Arándanos y Tripe Seco. 
     alergenos: 
     txt_aclaraciones:
@@ -1651,7 +1651,7 @@ items:
   - nombre: Daiquiri 
     imagen: images/carta/10a.jpg
     imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Rón Plantation 3 Stars, Zumo de Limón, Triple Seco y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1663,9 +1663,9 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Alexander
-    imagen: images/carta/10a.jpg
-    imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    imagen: images/carta/210.jpg
+    imagen_pequenya: images/carta/210_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Brandy, Nata y Licor Mozart.
     alergenos: "*Lacteo*"
     txt_aclaraciones:
@@ -1679,7 +1679,7 @@ items:
   - nombre: Black Russian
     imagen: images/carta/10a.jpg
     imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Vodka Finlandia y Kalhua
     alergenos:
     txt_aclaraciones:
@@ -1693,7 +1693,7 @@ items:
   - nombre: Manhatan
     imagen: images/carta/10a.jpg
     imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Bulleit Bourbon, Cinzano 1757 y Angostura
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -1707,7 +1707,7 @@ items:
   - nombre: Gin Fizz
     imagen: images/carta/10a.jpg
     imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Ginebra Gin-Za, Zumo de Limón y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1721,7 +1721,7 @@ items:
   - nombre: Dry Martini
     imagen: images/carta/10a.jpg
     imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Ginebra Tanqueray Ten, Vermout dry y Aceitunas
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -1735,7 +1735,7 @@ items:
   - nombre: Espresso Martini
     imagen: images/carta/10a.jpg
     imagen_pequenya: images/carta/10a_small.jpg
-    categorias: ["Cocktails & Drinks" , "Cocktails clásicos"]
+    categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Café espresso, Vodka Finlandia, Kalhua y Azúcar
     alergenos:
     txt_aclaraciones:
@@ -1789,8 +1789,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Ciroc & Schweppes Pimienta Rosa
-    imagen: images/carta/ciroc.jpg
-    imagen_pequenya: images/carta/ciroc_small.jpg
+    imagen: images/carta/251.jpg
+    imagen_pequenya: images/carta/251_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con brocheta de Uva y twist de Pomelo.
     alergenos:
@@ -1817,8 +1817,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Crystal Head & Schweppes Premium Toque de Lima.
-    imagen: images/carta/crystalhead.jpg
-    imagen_pequenya: images/carta/crystalhead_small.jpg
+    imagen: images/carta/249.jpg
+    imagen_pequenya: images/carta/249_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Con Bitter de Pomelo y twist de Pomelo.
     alergenos:
@@ -1943,8 +1943,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Gin.Za & Schweppes Premium Toque de Lima
-    imagen: images/carta/228.jpg
-    imagen_pequenya: images/carta/228_small.jpg
+    imagen: images/carta/246.jpg
+    imagen_pequenya: images/carta/246_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2027,8 +2027,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Martin Miller`s & Fever Tree
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/255
+    imagen_pequenya: images/carta/255_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2041,8 +2041,8 @@ items:
     pvp_terraza: 8€ 
 
   - nombre: Citadelle & 1724 tonic water
-    imagen: images/carta/216.jpg
-    imagen_pequenya: images/carta/216_small.jpg
+    imagen: images/carta/248.jpg
+    imagen_pequenya: images/carta/248_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes:  
     alergenos:
@@ -2055,8 +2055,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ginbraltar & Fever Tree
-    imagen: images/carta/225.jpg
-    imagen_pequenya: images/carta/225_small.jpg
+    imagen: images/carta/245.jpg
+    imagen_pequenya: images/carta/245_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2083,8 +2083,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Tanqueray Ten & Fever Tree
-    imagen: images/carta/243.jpg
-    imagen_pequenya: images/carta/243_small.jpg
+    imagen: images/carta/253.jpg
+    imagen_pequenya: images/carta/253_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2097,8 +2097,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Tanqueray Rangpur & Schweppes Premium Toque de Lima
-    imagen: images/carta/242.jpg
-    imagen_pequenya: images/carta/242_small.jpg
+    imagen: images/carta/256.jpg
+    imagen_pequenya: images/carta/256_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2153,8 +2153,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Cubical & Fever
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/257.jpg
+    imagen_pequenya: images/carta/257_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2251,8 +2251,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: G'Vine Floraisson & 1724 tonic water
-    imagen: images/carta/230.jpg
-    imagen_pequenya: images/carta/230_small.jpg
+    imagen: images/carta/250.jpg
+    imagen_pequenya: images/carta/250_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2279,8 +2279,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Ford`s Gin & Fever Tre
-    imagen: images/carta/217.jpg
-    imagen_pequenya: images/carta/217_small.jpg
+    imagen: images/carta/254.jpg
+    imagen_pequenya: images/carta/254_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2321,8 +2321,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Gin Plymout & Fever Tree
-    imagen: images/carta/240.jpg
-    imagen_pequenya: images/carta/240_small.jpg
+    imagen: images/carta/247.jpg
+    imagen_pequenya: images/carta/247_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2391,8 +2391,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Brockman`s & Fever Tree
-    imagen: images/carta/214.jpg
-    imagen_pequenya: images/carta/214_small.jpg
+    imagen: images/carta/252.jpg
+    imagen_pequenya: images/carta/252_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2441,3 +2441,194 @@ items:
     imagen: images/carta/1c.jpg
     imagen_pequenya: images/carta/150.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
+
+  - nombre: Café con Churros y Zumo Natural
+    imagen: images/carta/9.jpg
+    imagen_pequenya: images/carta/9_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: >
+     Café o té con 3 churros y un Zumo Natural a elegir.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     Oferta válida de 7 a 12:30. 
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre:  Café con Tostada de Tomate Natural y Zumo Nat. 
+    imagen: images/carta/67.jpg
+    imagen_pequenya: images/carta/67_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones: >
+     Café o té con Tostada a elegir entre hogaza Normal o Integral 5 Semillas y Zumo Natural a elegir.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre:  Café + Croissant Mixto y Zumo Natural
+    imagen: images/carta/70.jpg
+    imagen_pequenya: images/carta/70_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones: >
+     Café o té + Croissant Mixto de Jamón de York y Queso + Zumo Natural
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 16H
+    pvp_local: 4,75€
+    pvp_terraza: 5,15€
+
+  - nombre: Café + Croissant Plancha + Zumo Natural 
+    imagen: images/carta/71.jpg
+    imagen_pequenya: images/carta/71_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones: >
+     Café o Té con Croissant Plancha (Puedes ponerle Mermelada de Fresa, Melocotón o Naranja amarga, Miel, Philadelphia, Crema de Caramelo o Crema de Avellanas) + Zumo Natural.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre: Cappuccino + Cookie Casera Gratis  
+    imagen: images/carta/74.jpg
+    imagen_pequenya: images/carta/74_small.jpg
+    categorias: ["Ofertas Destacadas" , "Tarde"]
+    alergenos:
+    txt_aclaraciones: >
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Consulta la variedad de Cookies disponibles
+    pvp_local: Cappuccino Clásico 2,20€ Cappuccino Sabor 2,50€
+    pvp_terraza: Cappuccino Clásico 2,70€ Cappuccino Sabor 3€
+
+  - nombre: Café + Cookie Casera + Zumo Natural
+    imagen: images/carta/97.jpg
+    imagen_pequenya: images/carta/97_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones: >
+     Café o té + Cookie Casera + Zumo Natural a elegir.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre: Café + Tostada con Miel + Zumo Natural 
+    imagen: images/carta/109.jpg
+    imagen_pequenya: images/carta/109_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones: >
+     Café o té + Tostada a elegir entre Hogaza Normal o Integral 5 Semillas + Zumo Natural a elegir.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H 
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre: Café + Tostada con Philadelphia + Zumo Natural
+    imagen: images/carta/112.jpg
+    imagen_pequenya: images/carta/112_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos: >
+     Café o té + Tostada con queso crema Philadelphia a elegir entre Hogaza Normal o Integral 5 Semillas + Zumo Natural a elegir.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H
+    txt_aclaraciones:
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre: Café + Tostada con Aceite y Sal + Zumo Natural
+    imagen: images/carta/117.jpg
+    imagen_pequenya: images/carta/117_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos: >
+     Café o té + Tostada de Aceite de Oliva Virgen y Sal a elegir entre Hogaza Normal o Integral 5 Semillas + Zumo Natural a elegir.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H
+    txt_aclaraciones:
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre: Café + Tostada con crema de Caramelo + Zumo Natural 
+    imagen: images/carta/160.jpg
+    imagen_pequenya: images/carta/160_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones: >
+     Café o té + Tostada con crema de Caramelo a elegir entre Hogaza Normal o Integral 5 Semillas + Zumo Natural a elegir.
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H
+    pvp_local: 3,75€
+    pvp_terraza: 4,15€
+
+  - nombre: Café + Cookie Casera  
+    imagen: images/carta/165.jpg
+    imagen_pequenya: images/carta/165_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones: >
+     Café o Té con una Cookie Casera. 
+     Consulta las variedades disponibles. 
+     Disponemos de Leches Vegetales de Soja, Avena y Almendra además de Sin lactosa y Desnatada.
+     Los Cafes de carta o con licor quedan excluidos de la oferta.
+     OFERTA VÁLIDA DE 7 A 12:30H
+    pvp_local: 1,80€
+    pvp_terraza: 2,20€
+
+  - nombre:  
+    imagen: images/carta/.jpg
+    imagen_pequenya: images/carta/.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local:
+    pvp_terraza:
+
+  - nombre:  
+    imagen: images/carta/.jpg
+    imagen_pequenya: images/carta/.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local:
+    pvp_terraza:
+
+  - nombre:  
+    imagen: images/carta/.jpg
+    imagen_pequenya: images/carta/.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local:
+    pvp_terraza:
+
+  - nombre:  
+    imagen: images/carta/.jpg
+    imagen_pequenya: images/carta/.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local:
+    pvp_terraza:
+
+  - nombre:  
+    imagen: images/carta/.jpg
+    imagen_pequenya: images/carta/.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local:
+    pvp_terraza:
+
+
+
