@@ -50,6 +50,12 @@ where = "#carta"
 txt = "Ir a Carta"
 icon = "las la-angle-double-up"
 
+####### OLD BROWSER WARNING #######
+[params.oldBrowser]
+enable = true
+txt = "Tu navegador web es demasiado antiguo. Para ver la página correctamente, instala un navegador moderno:"
+icon = "las la-exclamation-triangle"
+
 ####### SOCIAL NETWORKS #######
 [[params.social]]
 icon = "lab la-facebook-f"

@@ -2,7 +2,7 @@
 
 
 // Things that have to be loaded at the end
-window.addEventListener('load', e => {
+window.addEventListener('load', (e) => {
     /* ================================================== */
     /*    Scroll to top
     /* ================================================== */
@@ -42,6 +42,7 @@ window.addEventListener('load', e => {
     /* ================================================== */
     /*    Portfolio Filtering Hook
     /* ================================================== */
+
     const containerEl = document.querySelector('.shuffle-wrapper');
 
     // Initializing Shuffle
@@ -256,9 +257,9 @@ window.addEventListener('load', e => {
         message.style.borderColor = okColor;
 
         // Now opening their mail client with the provided data.
-        let uri = 'mailto:yesus19@hotmail.es?subject='
-            + encodeURIComponent(subject) + '&body='
-            + encodeURIComponent(message);
+        let uri = 'mailto:maremotocafe@hotmail.com?subject='
+            + encodeURIComponent(subject.value) + '&body='
+            + encodeURIComponent(message.value);
         window.open(uri, '_blank');
 
         // Show a message with help in case it didn't work.
