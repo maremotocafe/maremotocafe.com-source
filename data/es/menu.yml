@@ -179,7 +179,7 @@ items:
 
   - nombre: Café + Repostería + Zumo Natural 
     imagen: images/carta/15.jpg
-    imagen_pequenya: images/carta/15.jpg
+    imagen_pequenya: images/carta/15_small.jpg
     categorias: ["Desayunos Almuerzos y Zumos" , "Desayunos" , "Ofertas Destacadas" , "Día"]
 
     
@@ -214,8 +214,8 @@ items:
     pvp_terraza: 4,25€ 
     
   - nombre: Pu-erh Cítricos
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Pu-erh, Naranja y Limón
     alergenos: 
@@ -419,8 +419,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Hierbas de Ibiza
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Anis estrellado, Tomillo, Romero, Hinojo, Hierba Luisa, Piel de Limón y Naranja 
     alergenos: 
@@ -433,8 +433,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Digestiva
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Manzanilla,Regaliz, Melisa u Anís
     alergenos: 
@@ -447,8 +447,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Touareg
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Té Verde, Hierbabuena, Menta y Clorofila.
     alergenos: 
@@ -461,8 +461,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Pasión Prohibida
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Manzana, Fresa, Grosella, Mora e Hibisco 
     alergenos: 
@@ -475,8 +475,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Taj Majal
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Té Negro, Canela, Cardamomo, Pimienta, Clavo y Jengibre.
     alergenos: 
@@ -489,8 +489,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Caribe
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Piña y Coco.
     alergenos: 
@@ -503,8 +503,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Relax
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Ortiga, Lemongrass, Valeriana, Melisa y Ginko.
     alergenos: 
@@ -517,8 +517,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Sueños de Chocolate
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Cacao, Chocolate blanco y negro, Pétalos de Flores y Rosas.
     alergenos: 
@@ -531,8 +531,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Té Indian Almond
-    imagen: images/carta/1a.jpg
-    imagen_pequenya: images/carta/1a_small.jpg
+    imagen: images/carta/114.jpg
+    imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Reconfortante bebida caliente a base de Té Chai y Leche de Almendra. 
     alergenos: 
@@ -791,8 +791,8 @@ items:
     pvp_terraza: 5€
 
   - nombre: Limonada de Sandía y Menta
-    imagen: images/carta/7a.jpg
-    imagen_pequenya: images/carta/7a_small.jpg
+    imagen: images/carta/270.jpg
+    imagen_pequenya: images/carta/270_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
     alergenos: 
@@ -1043,8 +1043,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Caipiroska 
-    imagen: images/carta/195.jpg
-    imagen_pequenya: images/carta/195_small.jpg
+    imagen: images/carta/269.jpg
+    imagen_pequenya: images/carta/269_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Vodka Finlandia, Lima y Azúcar.
     alergenos:
@@ -1071,8 +1071,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Caipiroska Black
-    imagen: images/carta/9a.jpg
-    imagen_pequenya: images/carta/9a_small.jpg
+    imagen: images/carta/266.jpg
+    imagen_pequenya: images/carta/266_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Vodka Eristoff Black, Lima y A zúcar.
     alergenos:
@@ -1085,8 +1085,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Moskow Mule
-    imagen: images/carta/9a.jpg
-    imagen_pequenya: images/carta/9a_small.jpg
+    imagen: images/carta/263.jpg
+    imagen_pequenya: images/carta/263_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
     ingredientes: Vodka Finlandia, Zumo de Lima, Sirope de Ágave y Giger Beer
     alergenos:
@@ -1099,8 +1099,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Caipirinha
-    imagen: images/carta/9a.jpg
-    imagen_pequenya: images/carta/9a_small.jpg
+    imagen: images/carta/268.jpg
+    imagen_pequenya: images/carta/268_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Cachaça, Lima y Azúcar.
     alergenos:
@@ -1113,8 +1113,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Caipirinha de Naranja y Piña
-    imagen: images/carta/9a.jpg
-    imagen_pequenya: images/carta/9a_small.jpg
+    imagen: images/carta/267.jpg
+    imagen_pequenya: images/carta/267_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Cachaça, Lima, Mermelada de Naranja homemade, Zumo de Piña y Azúcar.
     alergenos:
@@ -1537,8 +1537,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Cold Green Chilli Peppers
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/264.jpg
+    imagen_pequenya: images/carta/264_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Tequila El Jimador, Licor de Chilli Ancho Reyes, Zumo de Lima, Sirope de Ágave y Ginger Beer.
     alergenos:
@@ -2422,8 +2422,8 @@ items:
  
 
   - nombre: Almuerzos
-    imagen: images/carta/1al.jpg
-    imagen_pequenya: images/carta/a1.jpg
+    imagen: images/carta/almuerzosdentro.jpg
+    imagen_pequenya: images/carta/almuerzospq.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
   - nombre: Zumos Naturales
@@ -2442,7 +2442,7 @@ items:
     imagen_pequenya: images/carta/150.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-  - nombre: Café con Churros y Zumo Natural
+  - nombre: Café + Churros + Zumo Natural
     imagen: images/carta/9.jpg
     imagen_pequenya: images/carta/9_small.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
@@ -2456,7 +2456,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,15€
 
-  - nombre:  Café con Tostada de Tomate Natural y Zumo Nat. 
+  - nombre:  Café + Tostada de Tomate Natural + Zumo Natural 
     imagen: images/carta/67.jpg
     imagen_pequenya: images/carta/67_small.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
@@ -2469,7 +2469,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,15€
 
-  - nombre:  Café + Croissant Mixto y Zumo Natural
+  - nombre:  Café + Croissant Mixto + Zumo Natural
     imagen: images/carta/70.jpg
     imagen_pequenya: images/carta/70_small.jpg
     categorias: ["Ofertas Destacadas" , "Día"]

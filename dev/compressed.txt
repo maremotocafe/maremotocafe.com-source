@@ -293,3 +293,14 @@ static/images/carta/260.jpg
 static/images/carta/261.jpg
 static/images/carta/262.jpg
 static/images/carta/63.jpg
+static/images/carta/263.jpg
+static/images/carta/264.jpg
+static/images/carta/265.jpg
+static/images/carta/266.jpg
+static/images/carta/267.jpg
+static/images/carta/268.jpg
+static/images/carta/269.jpg
+static/images/carta/270.jpg
+static/images/carta/almuerzosdentro.jpg
+static/images/carta/almuerzospq.jpg
+static/images/carta/h1.jpg
