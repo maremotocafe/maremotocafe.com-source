@@ -161,8 +161,8 @@ items:
     pvp_terraza: 2,75€
     
   - nombre: Capuccino de Canela
-    imagen: images/carta/161.jpg
-    imagen_pequenya: images/carta/161_small.jpg
+    imagen: images/carta/103.jpg
+    imagen_pequenya: images/carta/103_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
     ingredientes: Café espresso, Crema de leche, Sirope de Canela y Toque de Cacao.
     alergenos: "*Leche*"
@@ -187,7 +187,7 @@ items:
   - nombre: Frapuccino
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
-    categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés fríos"]
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Chocolate, Crema de Leche y Cacao
     alergenos: "*Leche*"
     txt_aclaraciones: Refrescante bebida de café con hielo picado. También lo puedes pedir descafeinado!
@@ -202,7 +202,7 @@ items:
   - nombre: Frappé de Baileys
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
-    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos"]
+    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Baileys, Crema de leche y Cacao
     alergenos: "*Leche*"
     txt_aclaraciones: Refrescante bebida de café con hielo picado. También lo puedes pedir descafeinado!
@@ -246,8 +246,8 @@ items:
 
 
   - nombre: Capuccino Sabor
-    imagen: images/carta/161.jpg
-    imagen_pequenya: images/carta/161_small.jpg
+    imagen: images/carta/102.jpg
+    imagen_pequenya: images/carta/102_small.jpg
     categorias: ["Cafés y Tés" , "Cafés sin Alcohol"]
     ingredientes: Café espresso, Crema de leche, Sirope de Canela, Sirope del sabor que pidas y toque de Cacao.
     alergenos: "*Leche y Avellana*"
@@ -365,7 +365,7 @@ items:
   - nombre: Frappé al Caramelo
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
-    categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés fríos"]
+    categorias: ["Cafés y Tés" , "Cafés sin Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Crema de Caramelo y Crema de Leche.
     alergenos: "*Leche*"
     txt_aclaraciones: 
@@ -379,7 +379,7 @@ items:
   - nombre: Frappé Rón Cream
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
-    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos"]
+    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Barceló Cream, Crema de Leche y topping de Caramelo
     alergenos: "*Leche*"
     txt_aclaraciones: 
@@ -393,7 +393,7 @@ items:
   - nombre: Frappé Mozart
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
-    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos""]
+    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Licor Mozart, Cacao, Crema de Leche y topping de Chocolate
     alergenos: "*Leche*"
     txt_aclaraciones: 
@@ -407,7 +407,7 @@ items:
   - nombre: Frappé Crema Catalana
     imagen: images/carta/196.jpg
     imagen_pequenya: images/carta/196_small.jpg
-    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , Cafés fríos""]
+    categorias: ["Cafés y Tés" , "Cafés con Alcohol" , "Cafés Fríos"]
     ingredientes: Café, Licor Melody, Crema de Leche y topping de Caramelo.
     alergenos: "*Leche*" 
     txt_aclaraciones: 
@@ -1225,8 +1225,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Nido de Escocia
-    imagen: images/carta/11a.jpg
-    imagen_pequenya: images/carta/11a_small.jpg
+    imagen: images/carta/187.jpg
+    imagen_pequenya: images/carta/187_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Naked Grouse, Manzanilla (vino de Jerez) infusionada con té Lapsang Souchong, Cizano 1757, frambuesa, Romero, Azucar y Soda. 
     alergenos: "*Sulfitos*"
@@ -1269,8 +1269,8 @@ items:
     pvp_terraza: 9€
 
   - nombre: Puro Perú
-    imagen: images/carta/11a.jpg
-    imagen_pequenya: images/carta/11a_small.jpg
+    imagen: images/carta/111.jpg
+    imagen_pequenya: images/carta/111_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Pisco Quebranta, Sirope de Hierbaluisa y Jengibre, Arándanos frescos, Sirope de Manzana Caramelizada con Canela, 1724 tonic water y Espuma de Manzana, Albahaca y Cardamomo. 
     alergenos: "*Huevo*"
@@ -1297,8 +1297,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Mohito Nipon
-    imagen: images/carta/11a.jpg
-    imagen_pequenya: images/carta/11a_small.jpg
+    imagen: images/carta/185.jpg
+    imagen_pequenya: images/carta/185_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licuor Proof 13, Puré de Yuzu, Zumo de Manzana Granny Smith Natural, Albahaca y Frambuesa.
     alergenos:
@@ -1425,8 +1425,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Margarita Blue Frozeen
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/131.jpg
+    imagen_pequenya: images/carta/131_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Frozeen"]
     ingredientes: Tequila El Jimador, Curaçao azul, Zumo de Limón y Azúcar.
     alergenos:
