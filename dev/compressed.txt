@@ -304,3 +304,15 @@ static/images/carta/270.jpg
 static/images/carta/almuerzosdentro.jpg
 static/images/carta/almuerzospq.jpg
 static/images/carta/h1.jpg
+static/images/carta/271.jpg
+static/images/carta/272.jpg
+static/images/carta/273.jpg
+static/images/carta/274.jpg
+static/images/carta/275.jpg
+static/images/carta/276.jpg
+static/images/carta/277.jpg
+static/images/carta/278.jpg
+static/images/carta/279.jpg
+static/images/carta/280.jpg
+static/images/carta/281.jpg
+static/images/carta/282.jpg
