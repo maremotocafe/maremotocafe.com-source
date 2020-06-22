@@ -973,8 +973,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Mai Tai
-    imagen: images/carta/110.jpg
-    imagen_pequenya: images/carta/110_small.jpg
+    imagen: images/carta/286.jpg
+    imagen_pequenya: images/carta/286_small.jpg
     categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
     ingredientes: Rón Blanco Plantation, Rón añejo Captain Morgan Dark, Lima, Pomelo, Triple Seco, Caramelo, Falernum, Angostura y Pernod.
     alergenos: "*Almendra*"
@@ -1169,8 +1169,8 @@ items:
     pvp_terraza: 8,5€
 
   - nombre: Grandma's Cherry 
-    imagen: images/carta/128.jpg
-    imagen_pequenya: images/carta/128_small.jpg
+    imagen: images/carta/287.jpg
+    imagen_pequenya: images/carta/287_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
     alergenos: 
@@ -1283,8 +1283,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: The First Cocktail
-    imagen: images/carta/45.jpg
-    imagen_pequenya: images/carta/45_small.jpg
+    imagen: images/carta/285.jpg
+    imagen_pequenya: images/carta/285_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Rón Plantation 3 Stars, Mango Natural, Fresa Natural, Manzana Granny Smith, Sirope de Hierba luisa y jengibre, Falernum, Bitter de Melocotón y Soda.
     alergenos: "*Almendra*"
@@ -1579,8 +1579,8 @@ items:
     pvp_terraza: 6,5€
 
   - nombre: Garibaldi Fizz
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/284.jpg
+    imagen_pequenya: images/carta/284_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Campari, Zumo de Naranja, Sirope de especias y cítricos y 1724 Tonic Water.
     alergenos:
@@ -2584,6 +2584,20 @@ items:
      OFERTA VÁLIDA DE 7 A 12:30H
     pvp_local: 1,80€
     pvp_terraza: 2,20€
+
+  - nombre: Zape
+    imagen: images/carta/283.jpg
+    imagen_pequenya: images/carta/283_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Cinzano Bianco infusionado con Romero Y Albahaca, Zumo de Pomelo, Bonanto, Sirope de Romero y Soda. 
+    alergenos: "*Sulfitos*"
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 6,25%
+    vol_ml: 190 ml
+    edul_gr: 
+    pvp_local: 6,00€
+    pvp_terraza: 6,50€
 
 
 

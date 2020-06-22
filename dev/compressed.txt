@@ -316,3 +316,8 @@ static/images/carta/279.jpg
 static/images/carta/280.jpg
 static/images/carta/281.jpg
 static/images/carta/282.jpg
+static/images/carta/283.jpg
+static/images/carta/284.jpg
+static/images/carta/285.jpg
+static/images/carta/286.jpg
+static/images/carta/287.jpg
