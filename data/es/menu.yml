@@ -447,8 +447,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Touareg
-    imagen: images/carta/295.jpg
-    imagen_pequenya: images/carta/295_small.jpg
+    imagen: images/carta/298.jpg
+    imagen_pequenya: images/carta/298_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Té Verde, Hierbabuena, Menta y Clorofila.
     alergenos: 

@@ -331,3 +331,4 @@ static/images/carta/293.jpg
 static/images/carta/294.jpg
 static/images/carta/296.jpg
 static/images/carta/297.jpg
+static/images/carta/298.jpg
