@@ -321,3 +321,13 @@ static/images/carta/284.jpg
 static/images/carta/285.jpg
 static/images/carta/286.jpg
 static/images/carta/287.jpg
+static/images/carta/20200626_231242.jpg
+static/images/carta/288.jpg
+static/images/carta/289.jpg
+static/images/carta/290.jpg
+static/images/carta/291.jpg
+static/images/carta/292.jpg
+static/images/carta/293.jpg
+static/images/carta/294.jpg
+static/images/carta/296.jpg
+static/images/carta/297.jpg

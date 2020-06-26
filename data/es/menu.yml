@@ -95,7 +95,7 @@ items:
     imagen: images/carta/42.jpg
     imagen_pequenya: images/carta/42_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails", "Sin Alcohol ni Azúcares"]
-    ingredientes: Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta 
+    ingredientes: Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta. 
     alergenos: "*Apio.*" 
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 0%
@@ -214,8 +214,8 @@ items:
     pvp_terraza: 4,25€ 
     
   - nombre: Pu-erh Cítricos
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/296.jpg
+    imagen_pequenya: images/carta/296_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Pu-erh, Naranja y Limón
     alergenos: 
@@ -268,7 +268,7 @@ items:
     imagen: images/carta/2a.jpg
     imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
-    ingredientes: Café espresso con Leche condensada y Licor a elegir 
+    ingredientes: Café espresso con Leche condensada y Licor a elegir. 
     alergenos: "*Leche*"
     txt_aclaraciones: Elige entre Whisky, Rón; Cognac, Gran Marnier Rouge.
     txt_temporal: 
@@ -282,7 +282,7 @@ items:
     imagen: images/carta/2a.jpg
     imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
-    ingredientes: Café espresso con Leche merengada y Licor a elegir 
+    ingredientes: Café espresso con Leche merengada y Licor a elegir. 
     alergenos: "*Leche*"
     txt_aclaraciones: Elige entre Whisky, Rón, Cognac o Gran Marnier Rouge.
     txt_temporal: 
@@ -296,7 +296,7 @@ items:
     imagen: images/carta/282.jpg
     imagen_pequenya: images/carta/282_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
-    ingredientes: Café espresso con azúcar moreno, Whisky Irlandes y Nata semimontada.
+    ingredientes: Café espresso con azúcar moreno, Whisky Irlandés y Nata semimontada.
     alergenos: "*Leche*"
     txt_aclaraciones: 
     txt_temporal: 
@@ -310,9 +310,9 @@ items:
     imagen: images/carta/2a.jpg
     imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
-    ingredientes: Café espresso con nata y licor a elegir
+    ingredientes: Café espresso con nata y licor a elegir.
     alergenos: "*Leche*"
-    txt_aclaraciones: Elige entre Frangelico Amaretto, Gran Marnier Rouge o Kalhua.
+    txt_aclaraciones: Elige entre Frangélico Amaretto, Grand Marnier Rouge o Kalhua.
     txt_temporal: 
     grad_alcoholica: 9,50%
     vol_ml: 
@@ -324,9 +324,9 @@ items:
     imagen: images/carta/2a.jpg
     imagen_pequenya: images/carta/2a_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
-    ingredientes: Café espresso con Cacao, nata y Crema de licor a elegir
+    ingredientes: Café espresso con Cacao, Nata y Crema de licor a elegir
     alergenos: "*Leche*"
-    txt_aclaraciones: Elige entre Baileys, Melodi, Mozart, Crema de Orujo o Crema de Rón 
+    txt_aclaraciones: Elige entre Baileys, Mélodi, Mozart, Crema de Orujo o Crema de Rón. 
     txt_temporal: 
     grad_alcoholica: 4,10%
     vol_ml: 
@@ -419,8 +419,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Hierbas de Ibiza
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/294.jpg
+    imagen_pequenya: images/carta/294_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Anis estrellado, Tomillo, Romero, Hinojo, Hierba Luisa, Piel de Limón y Naranja 
     alergenos: 
@@ -433,8 +433,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Digestiva
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/293.jpg
+    imagen_pequenya: images/carta/293_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Manzanilla,Regaliz, Melisa u Anís
     alergenos: 
@@ -447,8 +447,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Touareg
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/295.jpg
+    imagen_pequenya: images/carta/295_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Té Verde, Hierbabuena, Menta y Clorofila.
     alergenos: 
@@ -461,8 +461,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Pasión Prohibida
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/291.jpg
+    imagen_pequenya: images/carta/291_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Manzana, Fresa, Grosella, Mora e Hibisco 
     alergenos: 
@@ -475,8 +475,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Taj Majal
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/288.jpg
+    imagen_pequenya: images/carta/288_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Té Negro, Canela, Cardamomo, Pimienta, Clavo y Jengibre.
     alergenos: 
@@ -489,8 +489,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Caribe
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/289.jpg
+    imagen_pequenya: images/carta/289_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Piña y Coco.
     alergenos: 
@@ -503,8 +503,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Relax
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/292.jpg
+    imagen_pequenya: images/carta/292_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Ortiga, Lemongrass, Valeriana, Melisa y Ginko.
     alergenos: 
@@ -517,8 +517,8 @@ items:
     pvp_terraza: 2,5€
 
   - nombre: Sueños de Chocolate
-    imagen: images/carta/114.jpg
-    imagen_pequenya: images/carta/114_small.jpg
+    imagen: images/carta/297.jpg
+    imagen_pequenya: images/carta/297_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
     ingredientes: Rooibos, Cacao, Chocolate blanco y negro, Pétalos de Flores y Rosas.
     alergenos: 
@@ -579,8 +579,12 @@ items:
     ingredientes: Leche, Fruta liofilizada, fructosa y Hielo.
     alergenos: "*Leche*"
     txt_aclaraciones: >
-     A elegir entre Fresa, Plátano, Chocolate, Vainilla o Avellana. Sin Guten ni Colorantes artificiales
+     A elegir entre Fresa, Plátano, Chocolate, Vainilla o Avellana.
+     
+     Sin Guten ni Colorantes artificiales.€s
+
      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su batido.
+
      Todos los Batidos incluyen Nata y Toppings, si no desea Nata comuniqueló a su camarero.
     txt_temporal: 
     grad_alcoholica: 
@@ -1175,12 +1179,12 @@ items:
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
     alergenos: 
     txt_aclaraciones:
-    txt_temporal: Disponible de Mayo a Junio
+    txt_temporal: Disponible de Mayo a Julio
     grad_alcoholica: 7,90% 
     vol_ml: 295 ml
     edul_gr: 
     pvp_local: 8€
-    pvp_terraza: 8,50€s
+    pvp_terraza: 8,50€
 
   - nombre: El Viejo Santa Claus
     imagen: images/carta/38.jpg
