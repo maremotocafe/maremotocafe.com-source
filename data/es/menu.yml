@@ -809,16 +809,16 @@ items:
     pvp_terraza: 5€
 
   - nombre: Limonada Mr Smith
-    imagen: images/carta/7a.jpg
-    imagen_pequenya: images/carta/7a_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
-    ingredientes: Zumo de Manzana Granny Smith Natural, Zumo de Pepino Natural, Zumo de Lima y Azúcar de Integral de caña.
+    imagen: images/carta/299.jpg
+    imagen_pequenya: images/carta/299_small.jpg
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
+    ingredientes: Zumo de Manzana Granny Smith Natural, Zumo de Manzana Royal Gala Natural, Zumo de Limón, Hojas de Menta fresca y Soda.
     alergenos: 
     txt_aclaraciones: 
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 0%
     vol_ml: 
-    edul_gr: 10gr de Azúcar Integral de caña
+    edul_gr: 0 gr
     pvp_local: 4,5€
     pvp_terraza: 5€
 
@@ -2602,6 +2602,20 @@ items:
     edul_gr: 
     pvp_local: 6,00€
     pvp_terraza: 6,50€
+
+  - nombre: Gewürztraminer & Cherries
+    imagen: images/carta/300.jpg
+    imagen_pequenya: images/carta/300_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda . 
+    alergenos: "*Sulfitos*"
+    txt_aclaraciones:
+    txt_temporal: Disponible de Mayo a Julio.
+    grad_alcoholica: 3,50%
+    vol_ml: 185 ml
+    edul_gr: 
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
 
 
