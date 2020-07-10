@@ -307,8 +307,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Coffee Licor
-    imagen: images/carta/2a.jpg
-    imagen_pequenya: images/carta/2a_small.jpg
+    imagen: images/carta/310.jpg
+    imagen_pequenya: images/carta/310_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con nata y licor a elegir.
     alergenos: "*Leche*"
@@ -321,8 +321,8 @@ items:
     pvp_terraza: 4,25€
 
   - nombre: Coffee Cream
-    imagen: images/carta/2a.jpg
-    imagen_pequenya: images/carta/2a_small.jpg
+    imagen: images/carta/309.jpg
+    imagen_pequenya: images/carta/309_small.jpg
     categorias: ["Cafés y Tés" , "Cafés con Alcohol"]
     ingredientes: Café espresso con Cacao, Nata y Crema de licor a elegir
     alergenos: "*Leche*"
@@ -879,8 +879,8 @@ items:
     pvp_terraza: 6€
 
   - nombre: Frescor Cálido
-    imagen: images/carta/8a.jpg
-    imagen_pequenya: images/carta/8a_small.jpg
+    imagen: images/carta/311.jpg
+    imagen_pequenya: images/carta/311_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
     alergenos: 
@@ -893,8 +893,8 @@ items:
     pvp_terraza: 6€
 
   - nombre: EmocionaTé
-    imagen: images/carta/8a.jpg
-    imagen_pequenya: images/carta/8a_small.jpg
+    imagen: images/carta/313.jpg
+    imagen_pequenya: images/carta/313_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Te rojo, Limón, Zumo Natural de Manzana Granny Smith, Srhub de Frambuesa, Sirope de Manzana caramelizada y Ginger beer.
     alergenos: "*Sulfitos*"
@@ -1159,8 +1159,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Dark Soul 
-    imagen: images/carta/11a.jpg
-    imagen_pequenya: images/carta/11a_small.jpg
+    imagen: images/carta/308.jpg
+    imagen_pequenya: images/carta/308_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Bulleit Bourbon, Puré de Melocotón en vino, Zumo de Naranja y Bitter de Melocotón.
     alergenos: "*Sulfitos*"
@@ -1597,8 +1597,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Aperoni Gin
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/312.jpg
+    imagen_pequenya: images/carta/312_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Tanqueray Ten, Aperol, Zumo de Pomelo y Azúcar.
     alergenos:
@@ -1695,8 +1695,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Manhatan
-    imagen: images/carta/10a.jpg
-    imagen_pequenya: images/carta/10a_small.jpg
+    imagen: images/carta/314.jpg
+    imagen_pequenya: images/carta/314_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Bulleit Bourbon, Cinzano 1757 y Angostura
     alergenos: "*Sulfitos*"

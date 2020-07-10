@@ -341,3 +341,10 @@ static/images/carta/304.jpg
 static/images/carta/305.jpg
 static/images/carta/306.jpg
 static/images/carta/307.jpg
+static/images/carta/308.jpg
+static/images/carta/309.jpg
+static/images/carta/310.jpg
+static/images/carta/311.jpg
+static/images/carta/312.jpg
+static/images/carta/313.jpg
+static/images/carta/314.jpg
