@@ -334,3 +334,10 @@ static/images/carta/297.jpg
 static/images/carta/298.jpg
 static/images/carta/299.jpg
 static/images/carta/300.jpg
+static/images/carta/301.jpg
+static/images/carta/302.jpg
+static/images/carta/303.jpg
+static/images/carta/304.jpg
+static/images/carta/305.jpg
+static/images/carta/306.jpg
+static/images/carta/307.jpg
