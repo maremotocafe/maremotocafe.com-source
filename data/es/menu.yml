@@ -545,8 +545,8 @@ items:
     pvp_terraza: 3,25€
 
   - nombre: Té Mojito Iced 
-    imagen: images/carta/3a.jpg
-    imagen_pequenya: images/carta/3a_small.jpg
+    imagen: images/carta/319.jpg
+    imagen_pequenya: images/carta/319_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Frías"]
     ingredientes: Té Verde, Menta, Limón y Lemongrass
     alergenos: 
@@ -823,8 +823,8 @@ items:
     pvp_terraza: 5€
 
   - nombre: San Francisco
-    imagen: images/carta/8a.jpg
-    imagen_pequenya: images/carta/8a_small.jpg
+    imagen: images/carta/317.jpg
+    imagen_pequenya: images/carta/317_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Naranja Natural, Zumo de piña, Zumo de Limón y Granadina.
     alergenos: 
@@ -837,8 +837,8 @@ items:
     pvp_terraza: 5,50€
 
   - nombre: Virgin Mojito
-    imagen: images/carta/8a.jpg
-    imagen_pequenya: images/carta/8a_small.jpg
+    imagen: images/carta/318.jpg
+    imagen_pequenya: images/carta/318_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Lima, Hierbabuena, Azucar, Piña, Jengibre fresco y Soda. 
     alergenos: 
@@ -907,8 +907,8 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Jalamango 
-    imagen: images/carta/8a.jpg
-    imagen_pequenya: images/carta/8a_small.jpg
+    imagen: images/carta/315.jpg
+    imagen_pequenya: images/carta/315_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
     ingredientes: Mango Natural, Jalapeños, Zumo Natural de Naranja y Cilantro fresco.
     alergenos:
@@ -1457,8 +1457,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Sangría Jamaicana
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/325.jpg
+    imagen_pequenya: images/carta/325_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Rón Captain Morgan, Chartreuse amarillo, Granadina, Zumo de Limón, Trocitos de frutas tropicales y Azúcar. 
     alergenos:
@@ -1471,8 +1471,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Singapure Sling
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/326.jpg
+    imagen_pequenya: images/carta/326_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Ginegra Ampersand, Triple Seco, Benedictine, Heering de Cereza, Zumo de Piña, Zumo de Limón y Angostura.
     alergenos:
@@ -1485,8 +1485,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Tom Collins
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/322.jpg
+    imagen_pequenya: images/carta/322_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Tanqueray Rangpur, Zumo de Limón, Soda y Azúcar.
     alergenos:
@@ -1513,8 +1513,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Destornillador
-    imagen: images/carta/12a.jpg
-    imagen_pequenya: images/carta/12a_small.jpg
+    imagen: images/carta/324.jpg
+    imagen_pequenya: images/carta/324_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Vodka Finlandia y Zumo de Naranja Natural.
     alergenos:
@@ -1891,8 +1891,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Gin Blue Curaçao & Schweppes Premium Toque de Lima
-    imagen: images/carta/218.jpg
-    imagen_pequenya: images/carta/218_smal.jpg
+    imagen: images/carta/321.jpg
+    imagen_pequenya: images/carta/321_smal.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Ginebra Ampersand infusionada con Lima, limón, Naranja, Pomelo, lemongrass, Jenjibre y flor de Malva.
     alergenos:
@@ -2003,8 +2003,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Hendrick's & Schweppes Pimienta Rosa
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/320.jpg
+    imagen_pequenya: images/carta/320_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2616,6 +2616,34 @@ items:
     edul_gr: 
     pvp_local: 6,50€
     pvp_terraza: 7€
+
+  - nombre: Gin Roku
+    imagen: images/carta/323.jpg
+    imagen_pequenya: images/carta/323_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: 
+    alergenos:
+    txt_aclaraciones: Ginebra artesanal japonesa muy fina y elegante que mezcla matices cítricos florales y especiados. 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Gin Fizz de Pomelo y Piña 
+    imagen: images/carta/316.jpg
+    imagen_pequenya: images/carta/316_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Tanqueray Ten, Sirope de Piña asada homemade, Zumo de Pomelo y MIxer de Pomelo Thomas henrry.
+    alergenos: 
+    txt_aclaraciones:
+    txt_temporal: Disponible todo el año
+    grad_alcoholica: No disponible  
+    vol_ml:
+    edul_gr: 
+    pvp_local: 7,50€
+    pvp_terraza: 8€
 
 
 
