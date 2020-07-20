@@ -1179,7 +1179,7 @@ items:
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
     alergenos: 
     txt_aclaraciones:
-    txt_temporal: Disponible de Mayo a Julio
+    txt_temporal: Disponible de Mayo a Agosto.
     grad_alcoholica: 7,90% 
     vol_ml: 295 ml
     edul_gr: 
@@ -1892,7 +1892,7 @@ items:
 
   - nombre: Gin Blue Curaçao & Schweppes Premium Toque de Lima
     imagen: images/carta/321.jpg
-    imagen_pequenya: images/carta/321_smal.jpg
+    imagen_pequenya: images/carta/321_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Ginebra Ampersand infusionada con Lima, limón, Naranja, Pomelo, lemongrass, Jenjibre y flor de Malva.
     alergenos:
@@ -2610,7 +2610,7 @@ items:
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda . 
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
-    txt_temporal: Disponible de Mayo a Julio.
+    txt_temporal: Disponible de Mayo a Agosto.
     grad_alcoholica: 3,50%
     vol_ml: 185 ml
     edul_gr: 
