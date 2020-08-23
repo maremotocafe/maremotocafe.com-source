@@ -7,11 +7,11 @@
 		<div class="row ">
 			<div class="col-xl-12">
 				{{"<!-- Section title -->" | safeHTML}}
-				<div class="title text-center">
+				<div class="title text-center" style="padding-bottom: 0">
 					<h2>{{ with $menu.title }}{{ index (split . " ") 0 }}{{ end }}<span class="color">
 							{{ with $menu.title }}{{ index (split . " ") 1 }}{{ end }}</span></h2>
 					<div class="border-meghna"></div>
-                    <p>
+                    <p style="font-size: 25px; font-weight: 800;">
                     {{ with $menu.description_icon }}<i class="field-icon {{ . }}"></i>{{ end }}
                         <span>{{ with $menu.description }}{{ . }}{{ end }}</span>
                     </p>
@@ -23,17 +23,17 @@
 		<div class="row">
 			<div class="col-lg-12">
                 {{ "<!-- First level -->" | safeHTML }}
-                {{ partial "portfolio-bar.html" (dict "context" . "level" "1" "message" $menu.paso1 "default" "all" "defaultIcon" $menu.icono_todo "children" $menu.categorias) }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "1" "message_prefix" $menu.paso1_prefijo "message" $menu.paso1 "default" "all" "defaultIcon" $menu.icono_todo "children" $menu.categorias) }}
 
                 {{ "<!-- Second level -->" | safeHTML }}
                 {{ range $parent := $menu.categorias }}
-                {{ partial "portfolio-bar.html" (dict "context" . "level" "2" "message" $menu.paso2 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $parent.icono "class_color" (md5 $parent.nombre) "parent" $parent.nombre "children" $parent.subcategorias) }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "2" "message_prefix" $menu.paso2_prefijo "message" $menu.paso2 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $parent.icono "class_color" (md5 $parent.nombre) "parent" $parent.nombre "children" $parent.subcategorias) }}
                 {{ end }}
 
                 {{ "<!-- Third level -->" | safeHTML }}
                 {{ range $grandparent := $menu.categorias }}
                 {{ range $parent := $grandparent.subcategorias }}
-                {{ partial "portfolio-bar.html" (dict "context" . "level" "3" "message" $menu.paso3 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $grandparent.icono "parent" $parent.nombre "class_color" (md5 $grandparent.nombre) "children" $parent.subcategorias) }}
+                {{ partial "portfolio-bar.html" (dict "context" . "level" "3" "message_prefix" $menu.paso3_prefijo "message" $menu.paso3 "default" $parent.nombre "defaultIcon" $menu.icono_todo "icon" $grandparent.icono "parent" $parent.nombre "class_color" (md5 $grandparent.nombre) "children" $parent.subcategorias) }}
                 {{ end }}
                 {{ end }}
 			</div>

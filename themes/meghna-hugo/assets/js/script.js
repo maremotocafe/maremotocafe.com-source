@@ -61,7 +61,7 @@ window.addEventListener('load', (e) => {
     if (containerEl) {
         // Frequently used items.
         const allInputs = document.querySelectorAll('input[name="shuffle-filter"]');
-        const toggableBars = document.querySelectorAll('.portfolio-filter:not([filter-level="1"])');
+        const toggableFilters = document.querySelectorAll('.portfolio-filter:not([filter-level="1"])');
         const noItemsMsg = document.getElementById('no-items-msg');
         const loadMoreBtn = document.getElementById('load-more-btn');
 
@@ -75,14 +75,19 @@ window.addEventListener('load', (e) => {
         // The previously selected filter.
         let prevFilter = 'all';
 
+        // Returns the bar inside a filter
+        function getBar(filter) {
+            return filter.children[1];
+        }
+
         // Checks if a bar contains a child with the provided filter value.
         function barContains(bar, value) {
             return Array.from(bar.children).some(i =>
                 i.children[0].getAttribute('filter-value') === value);
         }
 
-        // Resets the status of the bar.
-        function resetBar(bar) {
+        // Resets the status of the filter.
+        function resetFilter(filter) {
             function deactivate(el) {
                 el.classList.remove('active');
                 el.classList.checked = false;
@@ -92,6 +97,7 @@ window.addEventListener('load', (e) => {
                 el.classList.checked = true;
             }
 
+            let bar = getBar(filter);
             // Remove all active buttons. There should only be one of them
             // checked beforehand.
             deactivate(Array.from(bar.children).find(i => i.classList.contains('active')));
@@ -100,32 +106,30 @@ window.addEventListener('load', (e) => {
             activate(bar.children[0]);
         }
 
-        function hideBar(bar) {
-            const barJQ = $(bar);
-            if (barJQ.is(':hidden')) {
+        function hideFilter(filter) {
+            const filterJQ = $(filter);
+            if (filterJQ.is(':hidden')) {
                 return
             }
 
-            resetBar(bar);
+            resetFilter(filter);
 
             // Fade out with an animation
-            barJQ.css('opacity', 1);
-            barJQ.removeClass('d-flex');
-            barJQ.addClass('d-none');
-            barJQ.animate({opacity: 0}, 400);
+            filterJQ.css('opacity', 1);
+            filterJQ.addClass('d-none');
+            filterJQ.animate({opacity: 0}, 400);
         }
 
-        function showBar(bar) {
-            const barJQ = $(bar);
-            if (!barJQ.is(':hidden')) {
+        function showFilter(filter) {
+            const filterJQ = $(filter);
+            if (!filterJQ.is(':hidden')) {
                 return
             }
 
             // Fade in with an animation
-            barJQ.css('opacity', 0);
-            barJQ.removeClass('d-none');
-            barJQ.addClass('d-flex');
-            barJQ.animate({opacity: 1}, 400);
+            filterJQ.css('opacity', 0);
+            filterJQ.removeClass('d-none');
+            filterJQ.animate({opacity: 1}, 400);
         }
 
         function filterItems(filter) {
@@ -175,29 +179,31 @@ window.addEventListener('load', (e) => {
             // The pressed button, and the bar it's in.
             const curInput = e.currentTarget;
             const curFilter = curInput.getAttribute('filter-value');
-
             const curBar = curInput.parentNode.parentNode;
+            const curParent = curBar.parentNode.getAttribute('filter-parent');
+                    console.log(curParent);
 
             // Updating all the displayed rows.
-            toggableBars.forEach(iter => {
-                const iterParent = iter.getAttribute('filter-parent');
+            toggableFilters.forEach(filter => {
+                const filterParent = filter.getAttribute('filter-parent');
+                let bar = getBar(filter);
 
                 // Every bar will be hidden except for itself, its first
                 // child bar and its parents, respectively
-                if (iter === curBar
-                        || barContains(iter, curBar.getAttribute('filter-parent'))
-                        || iterParent === curFilter) {
-                    // The bar will fade in if isn't already visible.
-                    showBar(iter);
+                if (bar === curBar
+                    || barContains(bar, curParent)
+                    || filterParent === curFilter)
+                {
+                    showFilter(filter);
 
                     // The child will be resetted (this is important for
                     // whenever the same parent item is pressed).
-                    if (iterParent === curFilter) {
-                        resetBar(iter);
+                    if (filterParent === curFilter) {
+                        resetFilter(filter);
                     }
                 } else {
                     // The bar will fade out if it isn't already hidden.
-                    hideBar(iter);
+                    hideFilter(filter);
                 }
             });
 
