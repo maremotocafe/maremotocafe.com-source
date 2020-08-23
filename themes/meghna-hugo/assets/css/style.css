@@ -917,6 +917,16 @@ a:hover {
 /*=================================================================
   Portfolio section
 ==================================================================*/
+
+.step-block h3 {
+  color: #3c9fb4;
+  display: inline;
+}
+
+.step-block p {
+  display: inline;
+}
+
 .portfolio-filter {
   text-align: center;
   justify-content: center;

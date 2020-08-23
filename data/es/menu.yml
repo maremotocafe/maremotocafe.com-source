@@ -3,8 +3,12 @@
 enable: true
 title: Nuestra Carta
 description: >
-    Acota tu búsqueda utilizando las pestañas de familias de artículos.
+    Encuentra lo que deseas en 3 pasos
 description_icon: las la-info-circle
+
+paso1: Elige una categoría
+paso2: Ahora concreta tu búsqueda con una subcategoría
+paso3: Escoge una opción y selecciona una foto para ver más detalles
 
 max_items: 30
 cargar_items: 30
@@ -2598,7 +2602,7 @@ items:
 
   - nombre: Desayunos
     imagen: images/carta/1d.jpg
-    imagen_pequenya: images/carta/1d_small.jpg
+    imagen_pequenya: images/carta/1_small.jpg
     categorias: ["Ofertas Destacadas" , "Desayunos, Almuerzos y Zumos"]
     alergenos: 
     txt_aclaraciones: 

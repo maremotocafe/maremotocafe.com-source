@@ -3,6 +3,7 @@
    *     default: the filter-value taken for the default filter
    *     defaultIcon: the icon for the default filter
    *     children: the rest of the filters
+   *     message (opt): the text above the bar
    *     icon: the icon fallback for the rest of the filters
    *     class_color: the name of the class of which the color should be
    *     inherited. First levels will use their assigned colors.
@@ -11,6 +12,12 @@
 
 {{ $data := . }}
 {{ if ne .children nil }}
+{{ with .message }}
+<div class="step-block">
+    <h3>{{ i18n "step" }} {{ $data.level }}:</h3>
+    <p>{{ . }}</p>
+</div>
+{{ end }}
 <div class="btn-group btn-group-toggle portfolio-filter justify-content-center {{ if eq .level "1" }}d-flex{{ else }}d-none{{ end }} flex-wrap" filter-level="{{ .level }}" {{ with .parent }}filter-parent="{{ md5 . }}"{{ end }} data-toggle="buttons">
     <label class="btn filter-{{ if eq .level "1" }}default{{ else }}{{ .class_color }}{{ end }} active">
         <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ if eq .level "1" }}{{ .default }}{{ else }}{{ md5 .default }}{{ end }}" checked>
