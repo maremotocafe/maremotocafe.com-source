@@ -16,6 +16,6 @@ window.addEventListener('load', function (e) {
     }
 
     if (browserIncompatible()) {
-        document.querySelector('.old-browser').style.display = 'flex';
+        document.getElementById('old-browser').style.display = 'flex';
     }
 });

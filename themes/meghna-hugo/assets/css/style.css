@@ -917,15 +917,35 @@ a:hover {
 /*=================================================================
   Portfolio section
 ==================================================================*/
-.portfolio-filter {
+
+.portfolio-filter-step {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.portfolio-filter-step h3 {
+  font-weight: 800;
+  color: #3c9fb4;
+  display: inline;
+}
+
+.portfolio-filter-step p {
+  color: #fff;
+  font-weight: 800;
+  font-size: 25px;
+  display: inline;
+}
+
+.portfolio-filter-bar {
   text-align: center;
   justify-content: center;
   align-items: stretch;
   align-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.portfolio-filter .btn {
+.portfolio-filter-bar .btn {
   flex-grow: 2;
   outline: 0;
   border: 1px solid rgba(236, 239, 241, 0.07);
@@ -942,12 +962,12 @@ a:hover {
   justify-content: center;
 }
 
-.portfolio-filter .btn.filter-default {
+.portfolio-filter-bar .btn.filter-default {
   width: 30px;
   flex-grow: 1 !important;
 }
 
-.portfolio-filter .btn i {
+.portfolio-filter-bar .btn i {
   font-size: 25px;
   margin-right: 5px;
 }
