@@ -1560,9 +1560,9 @@ items:
     pvp_local: 4,5€
     pvp_terraza: 5€
 
-  - nombre: Spritz Cherry Blossom 
-    imagen: images/carta/205.jpg
-    imagen_pequenya: images/carta/205_small.jpg
+  - nombre: .Spritz Cherry Blossom🍒 
+    imagen: images/carta/348.jpg
+    imagen_pequenya: images/carta/348_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Long Drinks"]
     ingredientes: Vermout del Professore Bianco, proseco Cinzano, y Mixer Cherry Blossom Thomas Henrry. 
     alergenos: "*Sulfitos*"
@@ -1687,8 +1687,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Manhatan
-    imagen: images/carta/314.jpg
-    imagen_pequenya: images/carta/314_small.jpg
+    imagen: images/carta/349.jpg
+    imagen_pequenya: images/carta/349_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Bulleit Bourbon, Cinzano 1757 y Angostura
     alergenos: "*Sulfitos*"
@@ -1729,8 +1729,8 @@ items:
     pvp_terraza: 8€
 
   - nombre: Espresso Martini
-    imagen: images/carta/10a.jpg
-    imagen_pequenya: images/carta/10a_small.jpg
+    imagen: images/carta/350.jpg
+    imagen_pequenya: images/carta/350_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Café espresso, Vodka Finlandia, Kalhua y Azúcar
     alergenos:
@@ -1840,7 +1840,7 @@ items:
     pvp_local: 8€ 
     pvp_terraza: 8,50€
 
-  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana...)
+  - nombre: .Maremoto Hibiscus Foam (Con Espuma de Manzana🍏)
     imagen: images/carta/
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1924,7 +1924,7 @@ items:
     pvp_local: 7€
     pvp_terraza: 7,50€
 
-  - nombre: Tankeray Flor de Sevilla & 1724 tonic water
+  - nombre: Tanqueray Flor de Sevilla & 1724 tonic water
     imagen: images/carta/244.jpg
     imagen_pequenya: images/carta/244_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -1966,7 +1966,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: June & 1724 tonic water
+  - nombre: .June & 1724 tonic water 🍑
     imagen: images/carta/233.jpg
     imagen_pequenya: images/carta/233_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2205,7 +2205,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Ish & Schweppes Pimienta Rosa
-    imagen: images/carta/233.jpg
+    imagen: images/carta/232.jpg
     imagen_pequenya: images/carta/233_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
@@ -2246,7 +2246,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: G'Vine Floraisson & 1724 tonic water
+  - nombre: .G'Vine Floraisson & 1724 Tonic Water 🍇
     imagen: images/carta/250.jpg
     imagen_pequenya: images/carta/250_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2561,7 +2561,7 @@ items:
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda . 
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
-    txt_temporal: Disponible de Mayo a Septiembre.
+    txt_temporal: Disponible de Mayo a Agosto.
     grad_alcoholica: 3,50%
     vol_ml: 185 ml
     edul_gr: 
@@ -2582,7 +2582,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Gin Fizz de Pomelo y Piña 
+  - nombre: .Gin Fizz de Pomelo y Piña🍍 
     imagen: images/carta/316.jpg
     imagen_pequenya: images/carta/316_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2598,8 +2598,8 @@ items:
 
   - nombre: Desayunos
     imagen: images/carta/1d.jpg
-    imagen_pequenya: images/carta/1d_small.jpg
-    categorias: ["Ofertas Destacadas" , "Desayunos, Almuerzos y Zumos"]
+    imagen_pequenya: images/carta/1_small.jpg
+    categorias: ["Desayunos, Almuerzos y Zumos"]
     alergenos: 
     txt_aclaraciones: 
     pvp_local:
@@ -2689,11 +2689,11 @@ items:
   - nombre: Gordon`s Crips Cucumber
     imagen: images/carta/347.jpg
     imagen_pequenya: images/carta/347_small.jpg
-    categorias: ["Ofertas Destacadas" , "Tarde"]
+    categorias: ["Ofertas Destacadas" , "Tarde" , "Noche"]
     alergenos:
     txt_aclaraciones:
-    pvp_local: 
-    pvp_terraza: 
+    pvp_local: 5,50€ 
+    pvp_terraza: 6€
 
 
 

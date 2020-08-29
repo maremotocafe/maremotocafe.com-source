@@ -381,3 +381,6 @@ static/images/carta/344.png
 static/images/carta/345.png
 static/images/carta/346.png
 static/images/carta/347.png
+static/images/carta/348.jpg
+static/images/carta/349.jpg
+static/images/carta/350.jpg
