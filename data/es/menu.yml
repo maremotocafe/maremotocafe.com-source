@@ -549,7 +549,7 @@ items:
     ingredientes: Té Verde, Menta, Limón y Lemongrass
     alergenos: 
     txt_aclaraciones: 
-    txt_temporal: 
+    txt_temporal: Disponible todo el año.
     grad_alcoholica: 0%
     vol_ml: 
     edul_gr: 15 gr de Azúcar
@@ -563,7 +563,7 @@ items:
     ingredientes: Té Chai, Leche de Soja y Azúcar
     alergenos: 
     txt_aclaraciones: 
-    txt_temporal: 
+    txt_temporal: Disponible todo el año.
     grad_alcoholica: 
     vol_ml: 
     edul_gr: 10gr de Azúcar
@@ -584,14 +584,14 @@ items:
      Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su batido.
 
      Todos los Batidos incluyen Nata y Toppings, si no desea Nata comuniqueló a su camarero.
-    txt_temporal: 
+    txt_temporal: Disponible todo el año.
     grad_alcoholica: 
     vol_ml: 
     edul_gr: 
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Smoothies de Fruta con base de leche y un único sabor
+  - nombre: Smoothies de Fruta con base de leche.
     imagen: images/carta/204.jpg
     imagen_pequenya: images/carta/204_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -607,7 +607,7 @@ items:
     pvp_local: 3,50€
     pvp_terraza: 4€
 
-  - nombre: Smoothies de Fruta con base cítrica y un único sabor
+  - nombre: Smoothies de Fruta con base cítrica. (Sin Lacteos)
     imagen: images/carta/6a.jpg
     imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -645,7 +645,7 @@ items:
     ingredientes: Leche, Limón, Canela, Azúcar y Hielo
     alergenos: 
     txt_aclaraciones: 
-    txt_temporal: 
+    txt_temporal: Disponible todo el año.
     grad_alcoholica: 
     vol_ml: 
     edul_gr: 
@@ -792,9 +792,9 @@ items:
     pvp_local: 4,50€
     pvp_terraza: 5€
 
-  - nombre: Limonada de Sandía y Menta
+  - nombre: Limonada de Sandía y Menta (Fuera de temporada)
     imagen: images/carta/270.jpg
-    imagen_pequenya: images/carta/270_small.jpg
+    imagen_pequenya: images/carta/
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
     alergenos: 
@@ -862,9 +862,9 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: Shin Tonic
+  - nombre: Shin Tonic (Fuera de Temporada)
     imagen: images/carta/63.jpg
-    imagen_pequenya: images/carta/63_small.jpg
+    imagen_pequenya: images/carta/
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Sirope casero de especias y cítricos & Tonica Yuzu Sensation de Royal Bliss
     alergenos: 
@@ -911,7 +911,7 @@ items:
     ingredientes: Mango Natural, Jalapeños, Zumo Natural de Naranja y Cilantro fresco.
     alergenos:
     txt_aclaraciones:
-    txt_temporal: Disponible próximamente.
+    txt_temporal: Disponible todo el año.
     grad_alcoholica: 0%
     vol_ml:
     edul_gr: 0 gr
@@ -922,7 +922,7 @@ items:
     imagen: images/carta/20.jpg
     imagen_pequenya: images/carta/20_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
-    ingredientes: Zumo de Pomelo Natural, Datil Medjool, Romero fresco y CO2 
+    ingredientes: Elaborado con método de maceracion rápida en sifón de espuma. Zumo de Pomelo Natural, Datil Medjool, Romero fresco y CO2 
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año.
@@ -1170,9 +1170,9 @@ items:
     pvp_local: 8€ 
     pvp_terraza: 8,5€
 
-  - nombre: Grandma's Cherry 
+  - nombre: Grandma's Cherry (Fuera de temporada)
     imagen: images/carta/287.jpg
-    imagen_pequenya: images/carta/287_small.jpg
+    imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sirope homemade de Cerezas, Cerezas frescas, Marrasquino, Azúcar, Tónica 1724 y Bitter de Naranja.
     alergenos: 
@@ -1198,9 +1198,9 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Vodka Patilla
+  - nombre: Vodka Patilla (Fuera de temporada)
     imagen: images/carta/194.jpg
-    imagen_pequenya: images/carta/194_small.jpg
+    imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y bitter de Lima.
     alergenos:
@@ -1212,9 +1212,9 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Rock Melón
+  - nombre: Rock Melón (Fuera de temporada)
     imagen: images/carta/104.jpg
-    imagen_pequenya: images/carta/104_small.jpg
+    imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licor Proof 13, Puré de Melón Cantalupo Natural, Sirope de Hierbaluisa y Jengibre, Zumo de Naranja Natural, Zumo de Lima y Puré de Calabaza especiada.
     alergenos:
@@ -1339,6 +1339,20 @@ items:
     edul_gr: 
     pvp_local: 8,50€
     pvp_terraza: 9€
+
+  - nombre: Around the World
+    imagen: images/carta/353.jpg
+    imagen_pequenya: images/carta/353_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: (Cocktail finalista en World Class 2016) Ron Zacapa, Zumo de Mandarina, Sirope de Mandarina, Sirope de Borraja, Miel macerada con Frut@s sec@s (Orejon de Albaricoque, Nueces y Pasas) y Bitter de Chocolate y Canela.
+    alergenos:
+    txt_aclaraciones:
+    txt_temporal: Disponible de Octubre a Abril.
+    grad_alcoholica: 11%
+    vol_ml: 185 ml
+    edul_gr: 
+    pvp_local: 8,00€
+    pvp_terraza: 8,50€
 
   - nombre: Brandy Smash Tiki
     imagen: images/carta/208.jpg
@@ -1847,8 +1861,8 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: .Maremoto Hibiscus Foam (Con Espuma de Manzana🍏)
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
+    imagen: images/carta/351.jpg
+    imagen_pequenya: images/carta/351_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: Gin Xoringer, Schweppes Hibiscus y Espuma de Manzana, Albahaca, Cardamomo y Clara de huevo pasteurizada
     alergenos: "*Huevo*"
@@ -1870,20 +1884,6 @@ items:
     txt_temporal: 
     grad_alcoholica: 8%
     vol_ml: 250 ml
-    edul_gr: 
-    pvp_local: 7€
-    pvp_terraza: 7,50€
-
-  - nombre: Gin Thai Pepper & Schweppes Pimienta Rosa (Ginebras Infusionadas) 
-    imagen: images/carta/
-    imagen_pequenya: images/carta/
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
-    ingredientes:  Ginebra Ampersand infusionada con Canela, Jengibre, Cardamomo, Pimienta y Rooibos.
-    alergenos:
-    txt_aclaraciones:
-    txt_temporal: Disponible todo el año.
-    grad_alcoholica: 8%
-    vol_ml: 250% 
     edul_gr: 
     pvp_local: 7€
     pvp_terraza: 7,50€
@@ -1931,8 +1931,8 @@ items:
     pvp_terraza: 7,50€
 
   - nombre: Tanqueray Flor de Sevilla & 1724 tonic water
-    imagen: images/carta/244.jpg
-    imagen_pequenya: images/carta/244_small.jpg
+    imagen: images/carta/352.jpg
+    imagen_pequenya: images/carta/352_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
     ingredientes: 
     alergenos:
@@ -2560,9 +2560,9 @@ items:
     pvp_local: 6,00€
     pvp_terraza: 6,50€
 
-  - nombre: Gewürztraminer & Cherries
+  - nombre: Gewürztraminer & Cherries (Fuera de temporada)
     imagen: images/carta/300.jpg
-    imagen_pequenya: images/carta/300_small.jpg
+    imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda . 
     alergenos: "*Sulfitos*"
@@ -2588,9 +2588,9 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: .Gin Fizz de Pomelo y Piña🍍 
+  - nombre: Gin Fizz de Pomelo y Piña🍍(Fuera de temporada) 
     imagen: images/carta/316.jpg
-    imagen_pequenya: images/carta/316_small.jpg
+    imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tanqueray Ten, Sirope de Piña asada homemade, Zumo de Pomelo y Mixer de Pomelo Thomas henrry.
     alergenos: 
