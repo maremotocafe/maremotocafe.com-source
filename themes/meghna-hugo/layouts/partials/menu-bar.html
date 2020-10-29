@@ -13,15 +13,15 @@
 
 {{ $data := . }}
 {{ if ne .children nil }}
-<div class="portfolio-filter {{ if ne .level "1" }}d-none{{ end }}" filter-level="{{ .level }}" {{ with .parent }}filter-parent="{{ md5 . }}"{{ end }}>
+<div class="menu-filter {{ if ne .level "1" }}d-none{{ end }}" filter-level="{{ .level }}" {{ with .parent }}filter-parent="{{ md5 . }}"{{ end }}>
     {{ with .message }}
-    <div class="portfolio-filter-step">
+    <div class="menu-filter-step">
         <h3>{{ with $data.message_prefix }}{{ . }}{{ else }}{{ i18n "step" }} {{ $data.level }}:{{ end }}</h3>
         <p>{{ . }}</p>
     </div>
     {{ end }}
 
-    <div class="btn-group btn-group-toggle portfolio-filter-bar justify-content-center d-flex flex-wrap" data-toggle="buttons">
+    <div class="btn-group btn-group-toggle menu-filter-bar justify-content-center d-flex flex-wrap" data-toggle="buttons">
         <label class="btn filter-{{ if eq .level "1" }}default{{ else }}{{ .class_color }}{{ end }} active">
             <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ if eq .level "1" }}{{ .default }}{{ else }}{{ md5 .default }}{{ end }}" checked>
             <i class="{{ .defaultIcon }}"></i>

@@ -4,7 +4,7 @@ Author: Themefisher
 Author URI: www.Themefisher.com
 Description: Meghna Responsive HTML5/CSS3 Portfolio Template
 Version: 1.3
-Tags: one-page, single-page, portfolio, custom-colors, post-formats, responsive, html5, css3
+Tags: one-page, single-page, menu, custom-colors, post-formats, responsive, html5, css3
 */
 
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap");
@@ -918,26 +918,26 @@ a:hover {
   Portfolio section
 ==================================================================*/
 
-.portfolio-filter-step {
+.menu-filter-step {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.portfolio-filter-step h3 {
+.menu-filter-step h3 {
   font-weight: 800;
   color: #3c9fb4;
   display: inline;
 }
 
-.portfolio-filter-step p {
+.menu-filter-step p {
   color: #fff;
   font-weight: 800;
   font-size: 25px;
   display: inline;
 }
 
-.portfolio-filter-bar {
+.menu-filter-bar {
   text-align: center;
   justify-content: center;
   align-items: stretch;
@@ -945,7 +945,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.portfolio-filter-bar .btn {
+.menu-filter-bar .btn {
   flex-grow: 2;
   outline: 0;
   border: 1px solid rgba(236, 239, 241, 0.07);
@@ -962,27 +962,27 @@ a:hover {
   justify-content: center;
 }
 
-.portfolio-filter-bar .btn.filter-default {
+.menu-filter-bar .btn.filter-default {
   width: 30px;
   flex-grow: 1 !important;
 }
 
-.portfolio-filter-bar .btn i {
+.menu-filter-bar .btn i {
   font-size: 25px;
   margin-right: 5px;
 }
 
-.portfolio-block {
+.menu-block {
   position: relative;
 }
 
-.portfolio-block img {
+.menu-block img {
   width: 100%;
   height: auto;
   margin-bottom: 0;
 }
 
-.portfolio-block .caption {
+.menu-block .caption {
   display: table;
   background: white;
   color: #555;
@@ -992,7 +992,7 @@ a:hover {
   cursor: pointer;
 }
 
-.portfolio-block .caption span {
+.menu-block .caption span {
   display: table-cell;
   text-align: left;
   padding-left: 10px;
@@ -1000,7 +1000,7 @@ a:hover {
   vertical-align: middle;
 }
 
-.portfolio-block .caption i {
+.menu-block .caption i {
   display: table-cell;
   text-align: right;
   width: 50px;
@@ -1078,7 +1078,7 @@ a:hover {
   font-size: 18px;
 }
 
-.portfolio-message {
+.menu-message {
   padding: 10px;
   margin: 10px auto;
   font-size: 18px;
@@ -1090,7 +1090,7 @@ a:hover {
   justify-content: center;
 }
 
-.portfolio-message i {
+.menu-message i {
   font-size: 35px;
 }
 
