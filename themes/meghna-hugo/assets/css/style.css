@@ -700,139 +700,6 @@ a:hover {
 }
 
 /*=================================================================
- Call To Action 1
-==================================================================*/
-.call-to-action {
-  background-attachment: fixed;
-}
-
-.call-to-action h2 {
-  font-weight: 700;
-  color: #444;
-}
-
-.call-to-action p {
-  font-size: 16px;
-  color: #666;
-}
-
-.call-to-action .btn-main {
-  margin-top: 20px;
-}
-
-/*=================================================================
- Call To Action 2
-==================================================================*/
-.call-to-action-2 {
-  padding: 100px 0;
-  background-image: url("../images/call-to-action/call-to-action-bg.jpg");
-  background-size: cover;
-  color: #fff;
-}
-
-.call-to-action-2 h2 {
-  line-height: 1.5;
-}
-
-.call-to-action-2 p {
-  color: #fff;
-}
-
-.call-to-action-2 .btn-main {
-  margin-top: 20px;
-}
-
-.contact-us {
-  padding-top: 50px;
-}
-
-.contact-help {
-  display: none;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
-  .contact-us {
-    padding-top: 80px;
-  }
-}
-
-.contact-form {
-  margin-bottom: 60px;
-}
-
-.form-meghna .form-control {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 5px 10px;
-  color: #ddd;
-  border: 1px solid rgba(236, 239, 241, 0.07);
-}
-
-.form-meghna .form-control:focus {
-  border-color: none;
-  box-shadow: none;
-}
-
-.form-meghna input:hover,
-.form-meghna textarea:hover,
-#contact-submit:hover {
-  border-color: #3c9fb4;
-}
-
-.form-meghna ::placeholder {
-  color: #ddd !important;
-}
-
-#contact-submit, #load-more-btn {
-  border: 1px solid rgba(236, 239, 241, 0.07);
-  background: #3c9fb4;
-  padding: 12px 0;
-  width: 100%;
-  margin: 0;
-}
-
-.google-map #map-canvas {
-  height: 400px;
-}
-
-.contact-info p {
-  margin-bottom: 25px;
-}
-
-.con-info {
-  margin-bottom: 20px;
-}
-
-.con-info i,
-.con-info span {
-  padding-right: 5px;
-}
-
-.error {
-  display: none;
-  padding: 10px;
-  color: #b10b1f;
-  border-radius: 4px;
-  font-size: 13px;
-  background-color: #FFBABA;
-}
-
-.success {
-  background-color: #6cb670;
-  border-radius: 4px;
-  color: #fff;
-  display: none;
-  font-size: 13px;
-  padding: 10px;
-}
-
-#map {
-  height: 370px;
-  width: 100%;
-}
-
-/*=================================================================
   Item counter section
 ==================================================================*/
 .counters-item {
@@ -1747,6 +1614,100 @@ aside.widget {
 .post-pagination ul li.active a {
   background-color: #6CB670;
   color: #fff;
+}
+
+/*=================================================================
+	Contact us
+==================================================================*/
+
+.contact-us {
+  padding-top: 50px;
+}
+
+.contact-help {
+  display: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    padding-top: 80px;
+  }
+}
+
+.contact-form {
+  margin-bottom: 60px;
+}
+
+.form-meghna .form-control {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 5px 10px;
+  color: #ddd;
+  border: 1px solid rgba(236, 239, 241, 0.07);
+}
+
+.form-meghna .form-control:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+.form-meghna input:hover,
+.form-meghna textarea:hover,
+#contact-submit:hover {
+  border-color: #3c9fb4;
+}
+
+.form-meghna ::placeholder {
+  color: #ddd !important;
+}
+
+#contact-submit, #load-more-btn {
+  border: 1px solid rgba(236, 239, 241, 0.07);
+  background: #3c9fb4;
+  padding: 12px 0;
+  width: 100%;
+  margin: 0;
+}
+
+.google-map #map-canvas {
+  height: 400px;
+}
+
+.contact-info p {
+  margin-bottom: 25px;
+}
+
+.con-info {
+  margin-bottom: 20px;
+}
+
+.con-info i,
+.con-info span {
+  padding-right: 5px;
+}
+
+.error {
+  display: none;
+  padding: 10px;
+  color: #b10b1f;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #FFBABA;
+}
+
+.success {
+  background-color: #6cb670;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  font-size: 13px;
+  padding: 10px;
+}
+
+#map {
+  height: 370px;
+  width: 100%;
 }
 
 /*=================================================================
