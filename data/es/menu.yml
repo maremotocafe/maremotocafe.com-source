@@ -792,7 +792,8 @@ items:
     pvp_local: 4,50€
     pvp_terraza: 5€
 
-  - nombre: 🍉Limonada de Sandía y Menta (Fuera de temporada)
+  - nombre: 🍉 Limonada de Sandía y Menta (Fuera de temporada)
+    disponible: false
     imagen: images/carta/270.jpg
     imagen_pequenya: images/carta/
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
@@ -862,7 +863,8 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍊Shin Tonic (Fuera de Temporada)
+  - nombre: 🍊 Shin Tonic (Fuera de Temporada)
+    disponible: false
     imagen: images/carta/63.jpg
     imagen_pequenya: images/carta/
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
@@ -1170,7 +1172,8 @@ items:
     pvp_local: 8€ 
     pvp_terraza: 8,5€
 
-  - nombre: 🍒Grandma's Cherry (Fuera de temporada)
+  - nombre: 🍒 Grandma's Cherry (Fuera de temporada)
+    disponible: false
     imagen: images/carta/287.jpg
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1198,7 +1201,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍉Vodka Patilla (Fuera de temporada)
+  - nombre: 🍉 Vodka Patilla (Fuera de temporada)
+    disponible: false
     imagen: images/carta/194.jpg
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1212,7 +1216,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍈Rock Melón (Fuera de temporada)
+  - nombre: 🍈 Rock Melón (Fuera de temporada)
+    disponible: false
     imagen: images/carta/104.jpg
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2560,7 +2565,8 @@ items:
     pvp_local: 6,00€
     pvp_terraza: 6,50€
 
-  - nombre: 🍒Gewürztraminer & Cherries (Fuera de temporada)
+  - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
+    disponible: false
     imagen: images/carta/300.jpg
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2588,7 +2594,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍍Gin Fizz de Pomelo y Piña(Fuera de temporada) 
+  - nombre: 🍍 Gin Fizz de Pomelo y Piña (Fuera de temporada) 
+    disponible: false
     imagen: images/carta/316.jpg
     imagen_pequenya: images/carta/
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
