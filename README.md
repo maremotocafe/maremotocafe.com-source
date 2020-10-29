@@ -3,4 +3,6 @@ Este repositorio contiene el código fuente necesario para generar la página we
 
 Contiene scripts para facilitar el desarrollo, que deberían funcionar en Linux y Mac OS.
 
-*Desarrollado por Mario Ortiz Manero.*
+---
+
+This is a modified version of [Meghna Hugo](https://github.com/themefisher/meghna-hugo), visit their GitHub page for the original files and more information. Licensed with [Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).

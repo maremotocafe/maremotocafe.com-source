@@ -1,0 +1,14 @@
+{{ if .Site.Params.map.enable }}
+{{ with .Site.Params.map }}
+{{"<!-- Google Map -->" | safeHTML}}
+<iframe
+  class="lozad"
+  title="{{ i18n "map"}}"
+  width="100%"
+  height="450"
+  frameborder="0" style="border:0"
+  data-src="https://maps.google.com/maps?q={{ .place }}&output=embed"
+  allowfullscreen>
+</iframe>
+{{ end }}
+{{ end }}

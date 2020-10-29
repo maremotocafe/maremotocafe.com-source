@@ -1,0 +1,32 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.glovo.enable }}
+{{ with $data.glovo }}
+<section class="bg-one glovo section" id="glovo">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+          {{ partial "color-title.html" (dict "title" .title "level" "2") }}
+          <div class="border-meghna"></div>
+        </div>
+      </div>
+
+      {{ range .glovo_item }}
+      <div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+        <div class="block">
+          <div class="icon-box">
+            {{ with .icono }}<i class="{{ . }}"></i>{{ end }}
+          </div>
+          <div class="content text-center">
+            <h3>{{ .titulo }}</h3>
+            <p>{{ .texto | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
