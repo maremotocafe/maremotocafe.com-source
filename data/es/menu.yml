@@ -1578,7 +1578,7 @@ items:
     pvp_local: 4,5€
     pvp_terraza: 5€
 
-  - nombre: Spritz Cherry Blossom🍒
+  - nombre: Spritz Cherry Blossom 🍒
     prioridad: true
     imagen: images/carta/348.jpg
     imagen_pequenya: images/carta/348_small.jpg
@@ -1859,7 +1859,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana🍏)
+  - nombre: Maremoto Hibiscus Foam (Con Espuma de Manzana 🍏)
     prioridad: true
     imagen: images/carta/351.jpg
     imagen_pequenya: images/carta/351_small.jpg

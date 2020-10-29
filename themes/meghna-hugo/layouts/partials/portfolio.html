@@ -59,9 +59,12 @@
             {{ $priority := where $all "prioridad" "==" true }}
             {{ $items := $priority | append $all }}
 
+            {{/* Iterating the items to add them to the site. */}}
             {{ $i := 0 }}
 			{{ range $item := $items }}
 
+            {{/* Some items have text, but standalone ones just show the image
+                 when selected. */}}
             {{ $standalone := true }}
             {{ range $menu.nombres_datos }}
                 {{ if ne (index $item .) nil }}
