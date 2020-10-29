@@ -76,7 +76,9 @@
 			<figure class="col-lg-4 shuffle-item {{ if gt $i $menu.max_items }}d-none{{ end }}" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
 				<div class="portfolio-block mb-4">
                     <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
+                        {{ if ne .disponible false }}
                         <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
+                        {{ end }}
                         <div class="caption">
                             <span>{{ .nombre }}</span>
                             <i class="las la-search"></i>
