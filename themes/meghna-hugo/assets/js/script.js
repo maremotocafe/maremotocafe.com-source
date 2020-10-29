@@ -40,7 +40,7 @@ window.addEventListener('load', (e) => {
     });
 
     /* ================================================== */
-    /*    Portfolio Filtering Hook
+    /*    Menu Filtering Hook
     /* ================================================== */
 
     const containerEl = document.querySelector('.shuffle-wrapper');
