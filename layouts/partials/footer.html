@@ -1,29 +1,29 @@
 {{"<!-- end Contact Area -->" | safeHTML}}
 <footer id="footer" class="section-bg">
-	<div class="container">
-		<div class="row wow fadeInUp" data-wow-duration="500ms">
-			<div class="col-xl-12">
+  <div class="container">
+    <div class="row wow fadeInUp" data-wow-duration="500ms">
+      <div class="col-xl-12">
 
-				{{"<!-- Footer Social Links -->" | safeHTML}}
-				<div class="social-icon">
-					<ul class="list-inline">
-						{{ range .Site.Params.social }}
-						<li class="list-inline-item"><a href="{{ .link | safeURL }}" target="_blank" rel="noreferrer"><i class="{{ .icon }}"></i></a></li>
-						{{ end }}
-					</ul>
-				</div>
+        {{"<!-- Footer Social Links -->" | safeHTML}}
+        <div class="social-icon">
+          <ul class="list-inline">
+            {{ range .Site.Params.social }}
+            <li class="list-inline-item"><a href="{{ .link | safeURL }}" target="_blank" rel="noreferrer"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
 
-				{{"<!-- copyright -->" | safeHTML}}
-				<div class="copyright text-center">
-					<a href="{{ .Site.BaseURL | absLangURL }}">
-						<img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
-					</a>
-					<br>
-					<p>{{ .Site.Params.copyright | markdownify }}</p>
-				</div>
-			</div>
-		</div>
-	</div>
+        {{"<!-- copyright -->" | safeHTML}}
+        <div class="copyright text-center">
+          <a href="{{ .Site.BaseURL | absLangURL }}">
+            <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}" />
+          </a>
+          <br>
+          <p>{{ .Site.Params.copyright | markdownify }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 {{"<!-- /footer -->" | safeHTML}}
 
@@ -40,21 +40,21 @@
 {{ "<!-- Magnific Popup -->" | safeHTML }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" crossorigin="anonymous"></script>
 <script>
-// HTML pop-ups
-$('.open-popup-inline').magnificPopup({
-    type: 'inline',
-    midClick: true,
-    fixedContentPos: false,
-    fixedBgPos: true
-});
-// Simple pop-ups
-$('.open-popup-standalone').magnificPopup({
-    type: 'image',
-    midClick: true,
-    closeOnContentClick: true,
-    fixedContentPos: false,
-    fixedBgPos: true
-});
+    // HTML pop-ups
+    $('.open-popup-inline').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        fixedContentPos: false,
+        fixedBgPos: true
+    });
+    // Simple pop-ups
+    $('.open-popup-standalone').magnificPopup({
+        type: 'image',
+        midClick: true,
+        closeOnContentClick: true,
+        fixedContentPos: false,
+        fixedBgPos: true
+    });
 </script>
 
 {{ "<!-- Lozad -->" | safeHTML }}
@@ -75,10 +75,10 @@ $('.open-popup-standalone').magnificPopup({
 {{ with .Site.Params.google_analytics_id }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', '{{ . }}');
+    gtag('config', '{{ . }}');
 </script>
 {{ end }}
