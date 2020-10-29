@@ -53,9 +53,18 @@
 </style>
 
 		<div class="row shuffle-wrapper justify-content-center">
-            {{ $i := 0 }}
-			{{ range $item := (sort $menu.items "nombre") }}
+            {{/* Adding priority items first to the items list, both
+                 ordered alphabetically. */}}
+            {{ $all := sort $menu.items "nombre" }}
+            {{ $priority := where $all "prioridad" "==" true }}
+            {{ $items := $priority | append $all }}
 
+            {{/* Iterating the items to add them to the site. */}}
+            {{ $i := 0 }}
+			{{ range $item := $items }}
+
+            {{/* Some items have text, but standalone ones just show the image
+                 when selected. */}}
             {{ $standalone := true }}
             {{ range $menu.nombres_datos }}
                 {{ if ne (index $item .) nil }}
