@@ -53,8 +53,14 @@
 </style>
 
 		<div class="row shuffle-wrapper justify-content-center">
+            {{/* Adding priority items first to the items list, both
+                 ordered alphabetically. */}}
+            {{ $all := sort $menu.items "nombre" }}
+            {{ $priority := where $all "prioridad" "==" true }}
+            {{ $items := $priority | append $all }}
+
             {{ $i := 0 }}
-			{{ range $item := (sort $menu.items "nombre") }}
+			{{ range $item := $items }}
 
             {{ $standalone := true }}
             {{ range $menu.nombres_datos }}
