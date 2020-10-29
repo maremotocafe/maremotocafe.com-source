@@ -1,7 +1,6 @@
-############################### Banner ################################
 enable: true
 bg_image: "images/backgrounds/hero-area.jpg"
-icon: "" # themify icon pack : https://themify.me/themify-icons
+icon: ""
 title: "Maremoto Café & Cocktail"
 content: "Cafés, Desayunos, Brunch, Copas, Cocktails de Autor y mucho más"
 button:
