@@ -7,11 +7,7 @@
     <div class="row justify-content-center">
       <div class="col-lg-12">
         <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
-          {{ $words := split .title " " }}
-          {{ $half := div (len $words) 2 }}
-          {{ $begin := delimit (first $half $words) " " }}
-          {{ $end := delimit (after $half $words) " " }}
-          <h2>{{ $begin }}<span class="color"> {{ $end }}</span></h2>
+          {{ partial "color-title.html" (dict "title" .title "level" "2") }}
           <div class="border-meghna"></div>
         </div>
       </div>
