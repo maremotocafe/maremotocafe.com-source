@@ -1,7 +1,6 @@
 ####### MAIN CONFIG #######
 baseURL = "https://maremotocafe.com/"
 title = "Maremoto Café & Cocktail"
-theme = "meghna-hugo"
 defaultContentLanguage = "es"
 languageCode = "es"
 
@@ -35,7 +34,7 @@ tags = "bar,pub,copas,cafeteria,cocktails,zaragoza,cafes,desayunos,brunch,zumos,
 home = "Inicio"
 copyright = """
 Página desarrollada por [Mario Ortiz Manero](https://github.com/marioortizmanero).  
-*Basado en [gethugothemes](https://gethugothemes.com) &copy; 2019 todos los derechos reservados.*
+*Basado en [gethugothemes](https://gethugothemes.com), licencia [Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/).*
 """
 
 ####### MAP #######
