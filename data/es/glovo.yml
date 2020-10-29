@@ -1,0 +1,12 @@
+enable: true
+title: Encuéntranos en Glovo
+tarjetas:
+- icono: ti-ruler-pencil
+  titulo: Cocktails & Drinks
+  link: "https://glovoapp.com/en/zar/store/maremoto-drinks-cocktails/"
+  texto: 
+
+- icono: ti-cup
+  titulo: Desayunos
+  link: "https://glovoapp.com/en/zar/store/maremoto/"
+  texto: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
