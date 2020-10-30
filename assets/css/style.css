@@ -114,6 +114,7 @@ a:hover {
 
 .btn-transparent {
   border: 1px solid #4e595f;
+  box-shadow: 0 8px 6px -6px #4e595f;
 }
 
 .btn-transparent:hover,
