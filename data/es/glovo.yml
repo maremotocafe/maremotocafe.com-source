@@ -1,12 +1,13 @@
-enable: false
+enable: true
 title: Encuéntranos en Glovo
+texto_boton: Visitar página
 tarjetas:
-- icono: ti-ruler-pencil
+- icono: las la-cocktail
   titulo: Cocktails & Drinks
   link: "https://glovoapp.com/en/zar/store/maremoto-drinks-cocktails/"
-  texto: 
+  texto: Hola no se si quieres poner aquí algo o qué
 
-- icono: ti-cup
+- icono: las la-bacon
   titulo: Desayunos
   link: "https://glovoapp.com/en/zar/store/maremoto/"
-  texto: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.
+  texto: ¡Des

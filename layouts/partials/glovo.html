@@ -2,9 +2,10 @@
 
 {{ if $data.glovo.enable }}
 {{ with $data.glovo }}
+{{"<!-- Glovo Section -->" | safeHTML}}
 <section class="bg-one glovo section" id="glovo">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row">
       <div class="col-lg-12">
         <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
           {{ partial "color-title.html" (dict "title" .title "level" "2") }}
@@ -12,8 +13,8 @@
         </div>
       </div>
 
-      {{ range .glovo_item }}
-      <div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+      {{ range .tarjetas }}
+      <div class="col-sm-6 text-center wow fadeInUp" data-wow-duration="500ms">
         <div class="block">
           <div class="icon-box">
             {{ with .icono }}<i class="{{ . }}"></i>{{ end }}
@@ -21,6 +22,10 @@
           <div class="content text-center">
             <h3>{{ .titulo }}</h3>
             <p>{{ .texto | markdownify }}</p>
+            <img width="20" height="20" src="https://apprecs.org/ios/images/app-icons/256/4c/951812684.jpg"/>
+            <a target="_blank" rel="noreferrer" href="{{ .link }}" role="button" class="btn btn-transparent btn-block">
+                {{ $data.glovo.texto_boton }}
+            </a>
           </div>
         </div>
       </div>
@@ -28,5 +33,6 @@
     </div>
   </div>
 </section>
+{{"<!-- /Glovo -->" | safeHTML}}
 {{ end }}
 {{ end }}

@@ -608,9 +608,9 @@ a:hover {
 }
 
 /*=================================================================
-  About us section
+  glovo
 ==================================================================*/
-.about .block {
+.glovo .block {
   background: #242930;
   padding: 30px;
   border-bottom: 2px solid transparent;
@@ -618,16 +618,16 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.about .block:hover {
+.glovo .block:hover {
   border-bottom: 2px solid #3c9fb4;
 }
 
-.about .block:hover .icon-box {
+.glovo .block:hover .icon-box {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
 
-.about .block .icon-box {
+.glovo .block .icon-box {
   position: relative;
   width: 160px;
   height: 92.38px;
@@ -645,8 +645,8 @@ a:hover {
   transition-property: transform, -webkit-transform;
 }
 
-.about .block .icon-box:after,
-.about .block .icon-box:before {
+.glovo .block .icon-box:after,
+.glovo .block .icon-box:before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -658,45 +658,20 @@ a:hover {
   transform: scaleY(0.5774) rotate(-45deg);
 }
 
-.about .block .icon-box:before {
+.glovo .block .icon-box:before {
   top: -56.5685px;
   border-top: 2px solid rgba(236, 239, 241, 0.07);
   border-right: 2px solid rgba(236, 239, 241, 0.07);
 }
 
-.about .block .icon-box:after {
+.glovo .block .icon-box:after {
   bottom: -56.5685px;
   border-bottom: 2px solid rgba(236, 239, 241, 0.07);
   border-left: 2px solid rgba(236, 239, 241, 0.07);
 }
 
-.about .block .icon-box h3 {
+.glovo .block .icon-box h3 {
   color: #afbac4;
-}
-
-/*=================================================================
-  About us 2 section
-==================================================================*/
-.about-2 .content-block {
-  padding: 40px;
-}
-
-.about-2 .content-block .media {
-  margin-top: 25px;
-}
-
-.about-2 .content-block .media .pull-left {
-  padding-right: 15px;
-}
-
-.about-2 .content-block .media i {
-  font-size: 30px;
-  color: #3c9fb4;
-}
-
-.about-2 .content-block .media h4 {
-  font-size: 16px;
-  font-weight: 600;
 }
 
 /*=================================================================

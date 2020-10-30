@@ -70,11 +70,16 @@ link = "https://www.instagram.com/maremotocafeandcocktail"
 
 ####### NAVIGATION #######
 [[menu.main]]
+name = "Glovo"
+URL = "glovo"
+weight = 1
+
+[[menu.main]]
 name = "Carta"
 URL = "carta"
-weight = 1
+weight = 2
 
 [[menu.main]]
 name = "Contacto"
 URL = "contact"
-weight = 2
+weight = 3
