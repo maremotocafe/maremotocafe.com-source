@@ -679,12 +679,17 @@ a:hover {
   color: #1d2024;
 }
 
+.glovo .btn:focus {
+  background-color: #ffc245;
+  color: #1d2024;
+}
+
 .glovo .btn img {
   width: 30px;
 }
 
 .glovo .btn span {
-
+  font-size: 1.1rem;
 }
 
 /*=================================================================
