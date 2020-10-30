@@ -61,7 +61,7 @@ window.addEventListener('load', (e) => {
     if (containerEl) {
         // Frequently used items.
         const allInputs = document.querySelectorAll('input[name="shuffle-filter"]');
-        const toggableFilters = document.querySelectorAll('.portfolio-filter:not([filter-level="1"])');
+        const toggableFilters = document.querySelectorAll('.menu-filter:not([filter-level="1"])');
         const noItemsMsg = document.getElementById('no-items-msg');
         const loadMoreBtn = document.getElementById('load-more-btn');
 
@@ -181,7 +181,6 @@ window.addEventListener('load', (e) => {
             const curFilter = curInput.getAttribute('filter-value');
             const curBar = curInput.parentNode.parentNode;
             const curParent = curBar.parentNode.getAttribute('filter-parent');
-                    console.log(curParent);
 
             // Updating all the displayed rows.
             toggableFilters.forEach(filter => {
