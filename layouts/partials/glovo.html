@@ -22,9 +22,9 @@
           <div class="content text-center">
             <h3>{{ .titulo }}</h3>
             <p>{{ .texto | markdownify }}</p>
-            <img width="20" height="20" src="https://apprecs.org/ios/images/app-icons/256/4c/951812684.jpg"/>
             <a target="_blank" rel="noreferrer" href="{{ .link }}" role="button" class="btn btn-transparent btn-block">
-                {{ $data.glovo.texto_boton }}
+              <img src="https://apprecs.org/ios/images/app-icons/256/4c/951812684.jpg"/>
+              <span>{{ $data.glovo.texto_boton }}</span>
             </a>
           </div>
         </div>

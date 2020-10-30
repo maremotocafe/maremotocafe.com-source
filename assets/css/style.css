@@ -608,7 +608,7 @@ a:hover {
 }
 
 /*=================================================================
-  glovo
+  Glovo section
 ==================================================================*/
 .glovo .block {
   background: #242930;
@@ -619,7 +619,7 @@ a:hover {
 }
 
 .glovo .block:hover {
-  border-bottom: 2px solid #3c9fb4;
+  border-bottom: 2px solid #afbac4;
 }
 
 .glovo .block:hover .icon-box {
@@ -672,6 +672,19 @@ a:hover {
 
 .glovo .block .icon-box h3 {
   color: #afbac4;
+}
+
+.glovo .btn:hover {
+  background-color: #ffc245;
+  color: #1d2024;
+}
+
+.glovo .btn img {
+  width: 30px;
+}
+
+.glovo .btn span {
+
 }
 
 /*=================================================================
