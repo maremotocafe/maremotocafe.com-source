@@ -124,7 +124,7 @@
       {{ end }}
     </div>
 
-    <button id="load-more-btn" class="btn btn-transparent btn-block" style="{{ if le (len $menu.items) $menu.max_items}}display: none;{{ end }}" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
+    <button id="load-more-btn" class="btn btn-inverse-colors btn-block" style="{{ if le (len $menu.items) $menu.max_items}}display: none;{{ end }}" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
 
     <div id="no-items-msg" class="menu-message" {{ if gt (len $menu.items) 0 }}style="display: none;"{{ end }}>
       <i class="{{ $menu.no_items_icono }}"></i>
