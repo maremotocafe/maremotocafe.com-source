@@ -21,7 +21,7 @@
   </div>
   {{ end }}
 
-  <div class="btn-group btn-group-toggle btn-transparent menu-filter-bar justify-content-center d-flex flex-wrap" data-toggle="buttons">
+  <div class="btn-group btn-group-toggle menu-filter-bar justify-content-center d-flex flex-wrap" data-toggle="buttons">
     <label class="btn filter-{{ if eq .level "1" }}default{{ else }}{{ .class_color }}{{ end }} active">
       <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ if eq .level "1" }}{{ .default }}{{ else }}{{ md5 .default }}{{ end }}" checked>
       <i class="{{ .defaultIcon }}"></i>

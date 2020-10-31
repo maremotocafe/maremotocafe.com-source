@@ -58,6 +58,16 @@
   border-color: {{ $menu.color_bordes }};
   color: #1d2024;
 }
+
+.filter-{{ md5 .nombre }}:hover,
+.filter-{{ md5 .nombre }}:focus {
+{{ with .hover_color }}
+  background-color: {{ . }} !important;
+  color: #1d2024 !important;
+{{ else }}
+  background-color: transparent;
+{{ end }}
+}
 {{ end }}
 </style>
 

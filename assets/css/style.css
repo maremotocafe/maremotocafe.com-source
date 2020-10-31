@@ -117,6 +117,10 @@ a:hover {
   color: #fff;
 }
 
+.btn-inverse-colors {
+  background: #3c9fb4;
+}
+
 .btn-inverse-colors:hover,
 .btn-inverse-colors:focus {
   background-color: #ddd !important;
@@ -503,7 +507,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero-area .block .btn-transparent {
+.hero-area .block .btn {
   margin-top: 40px;
   border-color: #fff;
   padding: 14px 50px;
@@ -805,7 +809,6 @@ a:hover {
   flex-grow: 2;
   outline: 0;
   border: 1px solid rgba(236, 239, 241, 0.07);
-  background: transparent;
   display: inline-block;
   font-size: 16px;
   padding: 6px 10px;
@@ -816,6 +819,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 }
 
 .menu-filter-bar .btn.filter-default {
@@ -1653,7 +1657,6 @@ aside.widget {
 
 #contact-submit, #load-more-btn {
   border: 1px solid rgba(236, 239, 241, 0.07);
-  background: #3c9fb4;
   padding: 12px 0;
   width: 100%;
   margin: 0;
