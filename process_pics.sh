@@ -30,7 +30,7 @@ mkdir -p "$EXPORT_DIR"
 num=0
 while read -r photo; do
     # The new image will be a jpeg, saved into the export directory
-    new_photo=$(echo "$photo" | sed -E 's:(.+/)+(.+)\.(jpg|jpeg|png):'"$EXPORT_DIR"'/\2_small.jpg:')
+    new_photo=$(echo "$photo" | sed -E 's:(.+/)+(.+)\.(jpg|jpeg|png):'"$EXPORT_DIR"'/\2.jpg:')
 
     # Checking it hasn't been compressed before and that it isn't a
     # thumbnail.
