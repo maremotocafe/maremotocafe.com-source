@@ -95,6 +95,23 @@ categorias:
     color: "#d06e6e"
 
 items:
+  # - nombre: Bloody Mary Free
+  #   # Tiene prioridad: "true" (sin las comillas)
+  #   prioridad: true
+  #   # No está disponible: "false" (sin las comillas)
+  #   disponibilidad: false
+  #   imagen: images/carta/42.jpg
+  #   imagen_pequenya: images/carta/42_small.jpg
+  #   categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails", "Sin Alcohol ni Azúcares"]
+  #   ingredientes: Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta.
+  #   alergenos: "*Apio.*"
+  #   txt_temporal: Disponible todo el año.
+  #   grad_alcoholica: 0%
+  #   vol_ml: 300ml
+  #   edul_gr: 0 gr Azucares añadidos 0 gr Edulcorantes artificiales.
+  #   pvp_local: 6€
+  #   pvp_terraza: 6,50€
+
   - nombre: Bloody Mary Free
     imagen: images/carta/42.jpg
     imagen_pequenya: images/carta/42_small.jpg
