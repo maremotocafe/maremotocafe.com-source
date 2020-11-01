@@ -99,7 +99,7 @@ items:
   #   # Tiene prioridad: "true" (sin las comillas)
   #   prioridad: true
   #   # No está disponible: "false" (sin las comillas)
-  #   disponibilidad: false
+  #   disponible: false
   #   imagen: images/carta/42.jpg
   #   imagen_pequenya: images/carta/42_small.jpg
   #   categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails", "Sin Alcohol ni Azúcares"]
