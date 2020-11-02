@@ -1246,6 +1246,7 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Nido de Escocia
+    prioridad: true 
     imagen: images/carta/187.jpg
     imagen_pequenya: images/carta/187_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1262,6 +1263,7 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Donde Dije DHigo
+    disponible: false
     imagen: images/carta/273.jpg
     imagen_pequenya: images/carta/273_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2260,7 +2262,7 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: Gin Loe
+  - nombre: Gin Loe & 1724 tonic water
     imagen: images/carta/227.jpg
     imagen_pequenya: images/carta/227_small.jpg
     categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
@@ -2717,11 +2719,121 @@ items:
     pvp_local:
     pvp_terraza:
 
-  - nombre: Gordon`s Crips Cucumber
-    imagen: images/carta/347.jpg
-    imagen_pequenya: images/carta/347_small.jpg
-    categorias: ["Ofertas Destacadas" , "Tarde" , "Noche"]
+  - nombre: Gordon`s Crips Cucumber & Schweppes tonic
+    prioridad: true
+    imagen: images/carta/354.jpg
+    imagen_pequenya: images/carta/354_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
     alergenos:
-    txt_aclaraciones:
-    pvp_local: 5,50€
-    pvp_terraza: 6€
+    txt_aclaraciones: Ginebra inglesa elaborada con pepino entre otros botánicos.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 6€
+    pvp_terraza: 6,50€
+
+  - nombre: Harbour gin & Schweppes toque de lima
+    prioridad: true 
+    imagen: images/carta/355.jpg
+    imagen_pequenya: images/carta/355_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: Ginebra elaborada con botánicos del delta del Ebro.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Citadelle Old Tow & 1724 tonic water
+    priridad: true
+    imagen: images/carta/356.jpg
+    imagen_pequenya: images/carta/356_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: Ginebra francesa con un toque de barrica.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8,50%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€
+
+  - nombre: Master`s Green Apple & Schweppes tonic
+    prioridad: true
+    imagen: images/carta/357.jpg
+    imagen_pequenya: images/carta/357_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: Receta original de Master`s gin con un sutil toque de manzana.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 6€
+    pvp_terraza: 6,50€
+
+  - nombre: Aviation & Fever tree
+    prioridad: true 
+    imagen: images/carta/358.jpg
+    imagen_pequenya: images/carta/358_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: Ginebra americana de corte clásico.
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 8%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Gin Raw & Schweppes toque de lima 
+    prioridad: true 
+    imagen: images/carta/359.jpg
+    imagen_pequenya: images/carta/359_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: Ginegra de corte cítrico gracias a el uso de bergamota en su elaboración
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Modernesian & Schweppes Toque de lima
+    prioridad: true 
+    imagen: images/carta/360.jpg
+    imagen_pequenya: images/carta/360_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes:
+    alergenos:
+    txt_aclaraciones: Ginebra con toque mediterraneo
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica: 7,50%
+    vol_ml: 250 ml
+    edul_gr:
+    pvp_local: 7,50€
+    pvp_terraza: 8€
+
+  - nombre: Old Memories
+    imagen: images/carta/361.jpg
+    imagen_pequenya: images/carta/361_small.jpg
+    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    ingredientes: Whisky Lamphroaig, Zumo de Pomelo, Sirope de Canela, bitter Jerry thomas y Clara de huevo.
+    alergenos: "*Huevo*"
+    txt_aclaraciones: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 8€
+    pvp_terraza: 8,50€

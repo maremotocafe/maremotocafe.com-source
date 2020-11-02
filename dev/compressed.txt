@@ -407,3 +407,12 @@ static/images/carta/344.jpg
 static/images/carta/345.jpg
 static/images/carta/346.jpg
 static/images/carta/347.jpg
+static/images/carta/20201031_201200_2.jpg
+static/images/carta/354.jpg
+static/images/carta/355.jpg
+static/images/carta/356.jpg
+static/images/carta/357.jpg
+static/images/carta/358.jpg
+static/images/carta/359.jpg
+static/images/carta/360.jpg
+static/images/carta/361.jpg
