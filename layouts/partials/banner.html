@@ -2,7 +2,7 @@
 
 {{ if $data.banner.enable }}
 {{ with $data.banner }}
-<section class="hero-area" style='background-image: url("{{ .bg_image | absURL }}")'>
+<section class="banner-area" style='background-image: url("{{ .bg_image | absURL }}")'>
   <div class="block">
     {{ if .icon }}
     <div class="video-button">
@@ -13,7 +13,7 @@
     <p>{{ .content | markdownify }}</p>
     {{ if .button.enable }}
     {{ with .button }}
-    <a href="{{ .link }}" class="btn page-scroll">{{ .label }}</a>
+    <a href="{{ .link }}" class="btn dark-bg-btn btn-shadow page-scroll">{{ .label }}</a>
     {{ end }}
     {{ end }}
   </div>

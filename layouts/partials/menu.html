@@ -52,22 +52,28 @@
 .filter-default.active {
   border-color: {{ $menu.color_bordes }};
 }
+
 {{ range $menu.categorias }}
+
+{{ $default := .color }}
+{{ $hover := .hover_color }}
+
 .filter-{{ md5 .nombre }}.active {
-  background-color: {{ .color }};
+  background-color: {{ $default }};
   border-color: {{ $menu.color_bordes }};
   color: #1d2024;
 }
 
 .filter-{{ md5 .nombre }}:hover,
 .filter-{{ md5 .nombre }}:focus {
-{{ with .hover_color }}
-  background-color: {{ . }} !important;
   color: #1d2024 !important;
+{{ with $hover }}
+  background-color: {{ . }} !important;
 {{ else }}
-  background-color: transparent;
+  background-color: {{ $default }};
 {{ end }}
 }
+
 {{ end }}
 </style>
 
