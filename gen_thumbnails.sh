@@ -34,7 +34,7 @@ while read -r photo; do
     magick "$BASE_DIR/$photo" -resize "$SIZE" "$new_photo"
     echo "done"
     num=$((num + 1))
-done < <(sed -n -E 's/imagen:\s?(.*.jpg)/\1/p' "$MENU" | sort -n | uniq)
+done < <(sed -n -E 's/^\s*imagen:\s?(.*.jpg)/\1/p' "$MENU" | sort -n | uniq)
 
 # Error code for exit if no images were generated.
 if [ $num -eq 0 ]; then exit 1; fi
