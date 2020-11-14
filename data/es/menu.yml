@@ -2827,7 +2827,7 @@ items:
   - nombre: Old Memories
     imagen: images/carta/361.jpg
     imagen_pequenya: images/carta/361_small.jpg
-    categorias: ["Cocktails & Drinks" , "Gin Tonic y Vodka Tonic"]
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Whisky Lamphroaig, Zumo de Pomelo, Sirope de Canela, bitter Jerry thomas y Clara de huevo.
     alergenos: "*Huevo*"
     txt_aclaraciones: 
@@ -2837,3 +2837,18 @@ items:
     edul_gr:
     pvp_local: 8€
     pvp_terraza: 8,50€
+
+  - nombre: Grazie Mille
+    prioridad: true 
+    imagen: images/carta/362.jpg
+    imagen_pequenya: images/carta/362_small.jpg
+    categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
+    ingredientes: Whisky J&B Rare, Zumo de Piña, Zumo de Pomelo, Zumo de Limón, Licor de Frambuesas y Moras y Azúcar.
+    alergenos: 
+    txt_aclaraciones: 
+    txt_temporal: Disponible todo el año.
+    grad_alcoholica:
+    vol_ml:
+    edul_gr:
+    pvp_local: 7,5€
+    pvp_terraza: 8€
