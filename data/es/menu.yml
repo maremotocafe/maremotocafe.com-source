@@ -605,7 +605,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Smoothies de Fruta con base de leche.
+  - nombre: Smoothies de Fruta con leche.
     imagen: images/carta/204.jpg
     imagen_pequenya: images/carta/204_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -621,7 +621,7 @@ items:
     pvp_local: 3,50€
     pvp_terraza: 4€
 
-  - nombre: Smoothies de Fruta con base cítrica. (Sin Lacteos)
+  - nombre: Smoothies de Fruta (Sin Lacteos)
     imagen: images/carta/6a.jpg
     imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -859,7 +859,7 @@ items:
     txt_temporal: Disponible todo el año.
     grad_alcoholica: 0%
     vol_ml:
-    edul_gr: 22 gr
+    edul_gr: 22gr
     pvp_local: 5€
     pvp_terraza: 5,50€
 
@@ -877,20 +877,20 @@ items:
     pvp_local: 5,50€
     pvp_terraza: 6€
 
-  - nombre: 🍊 Shin Tonic (Fuera de Temporada)
-    disponible: false
+  - nombre: 🍊 Shin Tonic
+    disponible: true
     imagen: images/carta/63.jpg
     imagen_pequenya: images/carta/
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
-    ingredientes: Sirope casero de especias y cítricos & Tonica Yuzu Sensation de Royal Bliss
+    ingredientes: Martini Vibrante (Sin alcohol) & 1724 tonic watter
     alergenos:
     txt_aclaraciones:
     txt_temporal: Disponible todo el año
     grad_alcoholica: 0%
     vol_ml:
     edul_gr:
-    pvp_local: 5,50€
-    pvp_terraza: 6€
+    pvp_local: 6€
+    pvp_terraza: 6,50€
 
   - nombre: Frescor Cálido
     imagen: images/carta/311.jpg
@@ -2035,8 +2035,8 @@ items:
     grad_alcoholica: 8,80%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,50€
 
   - nombre: Pink & 1724 tonic water
     imagen: images/carta/239.jpg
@@ -2217,8 +2217,8 @@ items:
     grad_alcoholica: 8,30%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 7,50€
-    pvp_terraza: 8€
+    pvp_local: 8€
+    pvp_terraza: 8,50€
 
   - nombre: Mombasa & Schweppes Pimienta Rosa
     imagen: images/carta/236.jpg
@@ -2731,8 +2731,8 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
   - nombre: Harbour gin & Schweppes toque de lima
     prioridad: true 
@@ -2776,8 +2776,8 @@ items:
     grad_alcoholica: 7,50%
     vol_ml: 250 ml
     edul_gr:
-    pvp_local: 6€
-    pvp_terraza: 6,50€
+    pvp_local: 6,50€
+    pvp_terraza: 7€
 
   - nombre: Aviation & Fever tree
     prioridad: true 
