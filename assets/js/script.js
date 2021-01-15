@@ -34,9 +34,36 @@ window.addEventListener('load', (e) => {
     /*    Magnific popup
     /* ================================================== */
 
-    $('.image-popup').magnificPopup({
+    console.log("INIT");
+    function onOpenPopUp() {
+        this.close();
+        console.log("OPENED");
+    }
+    function onClosePopUp() {
+        console.log("CLOSED");
+    }
+    // HTML pop-ups
+    $('.open-popup-inline').magnificPopup({
+        type: 'inline',
+        midClick: true,
         fixedContentPos: false,
-        fixedBgPos: true
+        fixedBgPos: true,
+        callbacks: {
+            open: onOpenPopUp,
+            close: onClosePopUp,
+        }
+    });
+    // Simple pop-ups
+    $('.open-popup-standalone').magnificPopup({
+        type: 'image',
+        midClick: true,
+        closeOnContentClick: true,
+        fixedContentPos: false,
+        fixedBgPos: true,
+        callbacks: {
+            open: onOpenPopUp,
+            close: onClosePopUp,
+        }
     });
 
     /* ================================================== */
