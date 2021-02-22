@@ -34,14 +34,22 @@ window.addEventListener('load', (e) => {
     /*    Magnific popup
     /* ================================================== */
 
-    console.log("INIT");
-    function onOpenPopUp() {
-        this.close();
-        console.log("OPENED");
+    $(window).on('hashchange',function() {
+        if (location.href.indexOf("#item")<0) {
+            $.magnificPopup.close(); 
+        }
+    });
+
+    function onOpenPopup() {
+        location.href = location.href.split('#')[0] + "#item";
     }
-    function onClosePopUp() {
-        console.log("CLOSED");
+
+    function onClosePopup() {
+        if (location.hash) {
+            history.go(-1);
+        }
     }
+
     // HTML pop-ups
     $('.open-popup-inline').magnificPopup({
         type: 'inline',
@@ -49,8 +57,8 @@ window.addEventListener('load', (e) => {
         fixedContentPos: false,
         fixedBgPos: true,
         callbacks: {
-            open: onOpenPopUp,
-            close: onClosePopUp,
+            open: onOpenPopup,
+            close: onClosePopup,
         }
     });
     // Simple pop-ups
@@ -61,8 +69,8 @@ window.addEventListener('load', (e) => {
         fixedContentPos: false,
         fixedBgPos: true,
         callbacks: {
-            open: onOpenPopUp,
-            close: onClosePopUp,
+            open: onOpenPopup,
+            close: onClosePopup,
         }
     });
 
