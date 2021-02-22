@@ -34,9 +34,44 @@ window.addEventListener('load', (e) => {
     /*    Magnific popup
     /* ================================================== */
 
-    $('.image-popup').magnificPopup({
+    $(window).on('hashchange',function() {
+        if (location.href.indexOf("#item")<0) {
+            $.magnificPopup.close(); 
+        }
+    });
+
+    function onOpenPopup() {
+        location.href = location.href.split('#')[0] + "#item";
+    }
+
+    function onClosePopup() {
+        if (location.hash) {
+            history.go(-1);
+        }
+    }
+
+    // HTML pop-ups
+    $('.open-popup-inline').magnificPopup({
+        type: 'inline',
+        midClick: true,
         fixedContentPos: false,
-        fixedBgPos: true
+        fixedBgPos: true,
+        callbacks: {
+            open: onOpenPopup,
+            close: onClosePopup,
+        }
+    });
+    // Simple pop-ups
+    $('.open-popup-standalone').magnificPopup({
+        type: 'image',
+        midClick: true,
+        closeOnContentClick: true,
+        fixedContentPos: false,
+        fixedBgPos: true,
+        callbacks: {
+            open: onOpenPopup,
+            close: onClosePopup,
+        }
     });
 
     /* ================================================== */
