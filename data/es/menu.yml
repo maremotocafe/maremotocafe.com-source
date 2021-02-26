@@ -878,7 +878,6 @@ items:
     pvp_terraza: 6€
 
   - nombre: 🍊 Shin Tonic
-    disponible: true
     imagen: images/carta/63.jpg
     imagen_pequenya: images/carta/
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
@@ -1262,7 +1261,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Donde Dije DHigo
+  - nombre: Donde Dije DHigo (No Disponible)
     disponible: false
     imagen: images/carta/273.jpg
     imagen_pequenya: images/carta/273_small.jpg

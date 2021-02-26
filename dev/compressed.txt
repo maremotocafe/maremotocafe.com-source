@@ -418,3 +418,4 @@ static/images/carta/360.jpg
 static/images/carta/361.jpg
 static/images/carta/362.jpg
 static/images/carta/363.jpg
+static/images/carta/264_small copia.jpg
