@@ -176,7 +176,6 @@ class Menu {
             const dataGroups = JSON.parse(item.getAttribute('data-groups'));
             if (filter === 'all' || dataGroups.some(field => field === filter)) {
                 numMatches++;
-                console.log("found a match!", numMatches, this.numItems);
                 if (numMatches <= this.numItems) {
                     return true;
                 }
