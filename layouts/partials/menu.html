@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-xl-12">
         {{"<!-- Section title -->" | safeHTML}}
-        <div class="title text-center">
+        <div class="title text-center pb-3">
           <h2>{{ with $menu.title }}{{ index (split . " ") 0 }}{{ end }}<span class="color">
               {{ with $menu.title }}{{ index (split . " ") 1 }}{{ end }}</span></h2>
           <div class="border-meghna"></div>
@@ -16,11 +16,11 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row mb-3">
       <div class="col-md-12">
         {{"<!-- Section subtitle -->" | safeHTML}}
         <div class="text-center">
-          <h3 style="font-weight: 800">
+          <h3 class="font-weight-bold">
           {{ with $menu.description_icon }}<i class="field-icon {{ . }}"></i>{{ end }}
             <span>{{ with $menu.description }}{{ . }}{{ end }}</span>
           </h3>
@@ -49,31 +49,20 @@
     </div>
 
     <style>
-    .filter-default.active {
-      border-color: {{ $menu.color_bordes }};
+    .filter-reset,
+    .filter-reset.active,
+    .filter-reset:hover,
+    .filter-reset:focus {
+      background-color: {{ $menu.color_todo }} !important;
     }
 
     {{ range $menu.categorias }}
-
-    {{ $default := .color }}
-    {{ $hover := .hover_color }}
-
-    .filter-{{ md5 .nombre }}.active {
-      background-color: {{ $default }};
-      border-color: {{ $menu.color_bordes }};
-      color: #1d2024;
-    }
-
-    .filter-{{ md5 .nombre }}:hover,
-    .filter-{{ md5 .nombre }}:focus {
-      color: #1d2024 !important;
-    {{ with $hover }}
-      background-color: {{ . }} !important;
-    {{ else }}
-      background-color: {{ $default }};
-    {{ end }}
-    }
-
+      .filter-{{ md5 .nombre }},
+      .filter-{{ md5 .nombre }}:active,
+      .filter-{{ md5 .nombre }}:hover,
+      .filter-{{ md5 .nombre }}:focus {
+        background-color: {{ .color }};
+      }
     {{ end }}
     </style>
 
@@ -91,6 +80,21 @@
     {{ $low_priority := slice }}
     {{ $rest := slice }}
     {{ range $item := $all }}
+      {{/* Adding more attributes automatically:
+         *
+         * - Some items have text, but standalone ones just show the image when
+         *   selected.
+         */}}
+      {{ $standalone := true }}
+      {{ range $menu.nombres_datos }}
+        {{ if ne (index $item .) nil }}
+          {{ $standalone = false }}
+        {{ end }}
+      {{ end }}
+
+      {{ $data := dict "standalone" $standalone }}
+      {{ $item = merge $item $data }}
+
       {{ if (eq (index $item "prioridad") true) }}
         {{ $high_priority = $high_priority | append $item }}
       {{ else if (eq (index $item "disponible") false) }}
@@ -103,69 +107,79 @@
     {{ $items := $high_priority | append $rest | append $low_priority }}
 
     <div class="row shuffle-wrapper justify-content-center">
-      {{/* Iterating the items to add them to the site. */}}
-      {{ $i := 0 }}
-      {{ range $item := $items }}
-
-        {{/* Some items have text, but standalone ones just show the image
-           when selected. */}}
-        {{ $standalone := true }}
-        {{ range $menu.nombres_datos }}
-          {{ if ne (index $item .) nil }}
-            {{ $standalone = false }}
-          {{ end }}
-        {{ end }}
-
-        {{"<!-- Portfolio item -->" | safeHTML}}
-        <figure class="col-lg-4 shuffle-item {{ if gt $i $menu.max_items }}d-none{{ end }}" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
-          <div class="menu-block mb-4">
-            <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
-              {{ if ne .disponible false }}
-              <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
-              {{ end }}
-              <div class="caption">
-                <span>{{ .nombre }}</span>
-                <i class="las la-search"></i>
-              </div>
-            </a>
-          </div>
-        </figure>
-
-        {{"<!-- Portfolio pop-up with more data -->" | safeHTML}}
-        <div id="carta-img{{ $i }}" class="carta-img mfp-hide">
-          {{ if not $standalone }}
-          <div class="popup-content">
-            <div class="popup-img">
-              <img class="lozad" data-src="{{ .imagen | relURL }}" alt="{{ .nombre }}">
-            </div>
-            <div class="popup-details">
-              <h1>{{ .nombre }}</h1>
-              {{ range $menu.nombres_datos }}
-                {{ if (index $item .) }}
-                <div class="field-{{ urlize . }}">
-                  <p>
-                  <i class="field-icon {{ index $menu.iconos_datos . }}"></i>
-                  {{ with (index $menu.titulos_datos .) }}<span class="field-title">{{ . }}: </span>{{ end }}
-                  <span class="field-description">{{ (index $item .) | markdownify }}</span>
-                  </p>
-                </div>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
-          {{ end }}
-        </div>
-        {{ $i = add $i 1 }}
-      {{ end }}
     </div>
 
-    <button id="load-more-btn" class="btn btn-inverse-colors btn-block" style="{{ if le (len $menu.items) $menu.max_items}}display: none;{{ end }}" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
+    <button id="load-more-btn" class="btn btn-inverse-colors btn-block d-none">{{ upper (i18n "load_more") }}</button>
 
-    <div id="no-items-msg" class="menu-message" {{ if gt (len $menu.items) 0 }}style="display: none;"{{ end }}>
+    <div id="no-items-msg" class="menu-message d-none">
       <i class="{{ $menu.no_items_icono }}"></i>
       <span>{{ $menu.no_items_mensaje }}</span>
     </div>
   </div>
+
+  {{"<!-- Menu items -->" | safeHTML}}
+  <div id="menu-items" class="d-none">
+    {{/* Iterating the items to add them to the site. */}}
+    {{ range $i, $item := $items }}
+      <figure class="col-lg-4 shuffle-item" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
+        <div class="menu-block mb-4">
+          <a class="open-popup-{{ if .standalone }}standalone{{ else }}inline{{ end }}" href="{{ if .standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
+            {{ if ne .disponible false }}
+            <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
+            {{ end }}
+            <div class="caption">
+              <span>{{ .nombre }}</span>
+              <i class="las la-search"></i>
+            </div>
+          </a>
+        </div>
+      </figure>
+    {{ end }}
+  </div>
+
+  {{"<!-- Menu popups with more data -->" | safeHTML}}
+  <div id="menu-popups" class="d-none">
+    {{ range $i, $item := $items }}
+      <div id="carta-img{{ $i }}" class="carta-img mfp-hide">
+        {{ if not .standalone }}
+        <div class="popup-content">
+          <div class="popup-img">
+            <img class="lozad" data-src="{{ .imagen | relURL }}" alt="{{ .nombre }}">
+          </div>
+          <div class="popup-details">
+            <h1>{{ .nombre }}</h1>
+            {{ range $menu.nombres_datos }}
+              {{ if (index $item .) }}
+              <div class="field-{{ urlize . }}">
+                <p>
+                <i class="field-icon {{ index $menu.iconos_datos . }}"></i>
+                {{ with (index $menu.titulos_datos .) }}<span class="field-title">{{ . }}: </span>{{ end }}
+                <span class="field-description">{{ (index $item .) | markdownify }}</span>
+                </p>
+              </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+
+  {{ "<!-- Menu Script -->" | safeHTML }}
+  {{ $script := resources.Get "js/menu.js" | minify }}
+  <script src="{{ $script.Permalink }}"></script>
+  <script>
+  const initialItems = {{ $menu.items_iniciales }};
+  const itemsIncrement = {{ $menu.items_incremento }};
+  window.menuInstance = new window.Menu(initialItems, itemsIncrement);
+
+  window.addEventListener('load', (e) => {
+      console.log("Setting up menu");
+      window.menuInstance.setup("menu-items", "menu-popups");
+  });
+  </script>
+
 </section>
 {{"<!-- /Menu -->" | safeHTML}}
 {{ end }}

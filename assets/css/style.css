@@ -253,7 +253,8 @@ a:hover {
 }
 
 .section {
-  padding: 100px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 480px) {
@@ -785,63 +786,71 @@ a:hover {
   Menu section
 ==================================================================*/
 
-.menu-filter-step {
+/* For the menu button bar */
+
+.menu-filter > .step-msg {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.menu-filter-step h3 {
+.menu-filter > .step-msg > h3 {
   font-weight: 800;
   color: #3c9fb4;
   display: inline;
 }
 
-.menu-filter-step p {
+.menu-filter > .step-msg > p {
   color: #fff;
   font-weight: 800;
   font-size: 25px;
   display: inline;
 }
 
-.menu-filter-bar {
+.menu-filter > .btn-group {
   text-align: center;
   justify-content: center;
   align-items: stretch;
   align-content: center;
-  margin-bottom: 30px;
+  /* Hack for a compatible `gap` attribute */
+  margin: -5px;
+  margin-bottom: 25px;
 }
 
-.menu-filter-bar .btn {
+.menu-filter > .btn-group > .btn {
+  /* To make the default item smaller later */
   flex-grow: 2;
-  outline: 0;
-  border: 1px solid rgba(236, 239, 241, 0.07);
-  display: inline-block;
-  font-size: 16px;
-  padding: 6px 10px;
-  font-weight: 700;
-  color: #c4cdd5;
-  transition: .3s all;
+  /* Can be deactivated for wider buttons */
   flex-basis: 0;
+  margin: 5px;
+  padding: 6px 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #1d2024;
+  transition: .3s all;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.menu-filter-bar .btn.filter-default {
+.menu-filter > .btn-group > .btn.active {
+  border-color: white;
+}
+
+/* The first item in the group is smaller */
+.menu-filter > .btn-group > .btn.filter-reset {
   width: 30px;
   flex-grow: 1 !important;
 }
 
-.btn.filter-default:hover,
-.btn.filter-default:focus {
-  background-color: transparent;
-}
-
-.menu-filter-bar .btn i {
+.menu-filter > .btn-group > .btn > i {
   font-size: 25px;
   margin-right: 5px;
 }
+
+/* For items in the menu */
 
 .menu-block {
   position: relative;

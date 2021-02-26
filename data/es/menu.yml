@@ -4,15 +4,15 @@ title: Nuestra Carta
 description: Encuentra lo que deseas paso a paso
 description_icon: las la-info-circle
 
-paso1_prefijo: Primero
-paso1: elige una categoría
-paso2_prefijo: Ahora
-paso2: concreta tu búsqueda con una de las siguientes subcategorías
-paso3_prefijo: Finalmente
-paso3: escoge una opción y pulsa una foto para ver más detalles
+paso1_prefijo: "Primero"
+paso1: "elige una categoría:"
+paso2_prefijo: "Ahora"
+paso2: "concreta tu búsqueda con una de las siguientes subcategorías:"
+paso3_prefijo: "Finalmente"
+paso3: "escoge una opción y pulsa una foto para ver más detalles:"
 
-max_items: 30
-cargar_items: 30
+items_iniciales: 30
+items_incremento: 30
 no_items_mensaje: No hay nada con esos filtros, prueba a usar otros.
 no_items_icono: las la-exclamation
 
@@ -40,12 +40,11 @@ iconos_datos:
 
 # 'all' no puede ser un nombre de categoría ya que representa todos los ítems.
 icono_todo: las la-times
-color_todo: "#2f2f2f"
-color_bordes: "#c4cdd5"
+color_todo: "#e4e8ec"
 categorias:
   - nombre: Cocktails & Drinks
     icono: las la-cocktail
-    color: "#5ba49d"
+    color: "#a7dfda"
     subcategorias:
         - nombre: Gin Tonic y Vodka Tonic
         - nombre: Mojitos Caipirinhas y Similares
@@ -60,7 +59,7 @@ categorias:
         - nombre: Cocktails Clásicos
   - nombre: Smoothies, Healthy Drinks y Batidos
     icono: las la-blender
-    color: "#66a864"
+    color: "#97d295"
     subcategorias:
         - nombre: Smoothies
         - nombre: Granizados
@@ -71,14 +70,14 @@ categorias:
               - nombre: Sin Alcohol ni Azúcares
   - nombre: Ofertas Destacadas
     icono: las la-certificate
-    color: "#aeac72"
+    color: "#dbd9a7"
     subcategorias:
         - nombre: Día
         - nombre: Tarde
         - nombre: Noche
   - nombre: Cafés y Tés
     icono: las la-coffee
-    color: "#936f59"
+    color: "#cea389"
     subcategorias:
         - nombre: Cafés con Alcohol
         - nombre: Cafés sin Alcohol
@@ -89,10 +88,10 @@ categorias:
               - nombre: Calientes
   - nombre: Desayunos, Almuerzos y Zumos
     icono: las la-bacon
-    color: "#a17abb"
+    color: "#d1b9e1"
   - nombre: Bocadillos, Sándwich y Focaccias
     icono: las la-hamburger
-    color: "#d06e6e"
+    color: "#f0c0c0"
 
 items:
   # - nombre: Bloody Mary Free
