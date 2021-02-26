@@ -253,7 +253,8 @@ a:hover {
 }
 
 .section {
-  padding: 100px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 480px) {
@@ -789,7 +790,7 @@ a:hover {
 
 .menu-filter > .step-msg {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -813,7 +814,7 @@ a:hover {
   align-content: center;
   /* Hack for a compatible `gap` attribute */
   margin: -5px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .menu-filter > .btn-group > .btn {
@@ -826,8 +827,7 @@ a:hover {
 
   font-size: 16px;
   font-weight: 700;
-  color: white;
-  background-color: #3c9fb4;
+  color: #1d2024;
   transition: .3s all;
 
   display: flex;
@@ -839,8 +839,8 @@ a:hover {
   border-color: white;
 }
 
-/* The default item in the group is smaller */
-.menu-filter > .btn-group > .btn.filter-default {
+/* The first item in the group is smaller */
+.menu-filter > .btn-group > .btn.filter-reset {
   width: 30px;
   flex-grow: 1 !important;
 }

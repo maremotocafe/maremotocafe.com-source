@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-xl-12">
         {{"<!-- Section title -->" | safeHTML}}
-        <div class="title text-center">
+        <div class="title text-center" style="padding-bottom: 25px;">
           <h2>{{ with $menu.title }}{{ index (split . " ") 0 }}{{ end }}<span class="color">
               {{ with $menu.title }}{{ index (split . " ") 1 }}{{ end }}</span></h2>
           <div class="border-meghna"></div>
@@ -49,25 +49,19 @@
     </div>
 
     <style>
-    .filter-default {
-    /*
-    .filter-default.active,
-    .filter-default:hover,
-    .filter-default:focus {
-    */
+    .filter-reset,
+    .filter-reset.active,
+    .filter-reset:hover,
+    .filter-reset:focus {
       background-color: {{ $menu.color_todo }} !important;
-      color: #1d2024 !important;
     }
 
     {{ range $menu.categorias }}
-      .filter-{{ md5 .nombre }} {
-      /*
+      .filter-{{ md5 .nombre }},
       .filter-{{ md5 .nombre }}:active,
       .filter-{{ md5 .nombre }}:hover,
       .filter-{{ md5 .nombre }}:focus {
-      */
-        color: #1d2024 !important;
-        background-color: {{ .color }} !important;
+        background-color: {{ .color }};
       }
     {{ end }}
     </style>
@@ -154,7 +148,7 @@
       {{ end }}
     </div>
 
-    <button id="load-more-btn" class="btn btn-inverse-colors btn-block d-none" style="{{ if le (len $menu.items) $menu.max_items}}display: none;{{ end }}" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
+    <button id="load-more-btn" class="btn btn-inverse-colors btn-block d-none" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
 
     <div id="no-items-msg" class="menu-message" {{ if gt (len $menu.items) 0 }}style="display: none;"{{ end }}>
       <i class="{{ $menu.no_items_icono }}"></i>

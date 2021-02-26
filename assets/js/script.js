@@ -184,17 +184,18 @@ function setupFilters() {
             return false;
         });
 
-        // If the limit was reached, a button will let the user load more
-        // items. If no items matched, a custom message is shown.
+        // If no items matched, a custom message is shown.
         if (numMatches === 0) {
-            noItemsMsg.style.display = 'flex';
-            loadMoreBtn.style.display = 'none';
-        } else if (numMatches <= numItems) {
-            noItemsMsg.style.display = 'none';
-            loadMoreBtn.style.display = 'none';
+            noItemsMsg.classList.remove('d-none');
         } else {
-            noItemsMsg.style.display = 'none';
-            loadMoreBtn.style.display = 'block';
+            noItemsMsg.classList.add('d-none');
+        }
+
+        // If the limit was reached, a button will let the user load more items. 
+        if (numMatches <= numItems) {
+            loadMoreBtn.classList.add('d-none');
+        } else {
+            loadMoreBtn.classList.remove('d-none');
         }
     }
 
