@@ -1,12 +1,6 @@
 'use strict';
 
-
-// Things that have to be loaded at the end
-window.addEventListener('load', (e) => {
-    /* ================================================== */
-    /*    Scroll to top
-    /* ================================================== */
-
+function setupScrollToTop() {
     // The scroll to top button will be shown once the page has already
     // been scrolled (either on load, or on scroll).
     const minScroll = 1000;
@@ -22,18 +16,14 @@ window.addEventListener('load', (e) => {
     }
     window.onscroll = toggleScrollToTop;
     toggleScrollToTop();
+}
 
-    /* ================================================== */
-    /*    Lazy Loading
-    /* ================================================== */
-
+function setupLazyLoading() {
     const observer = lozad();
     observer.observe();
+}
 
-    /* ================================================== */
-    /*    Magnific popup
-    /* ================================================== */
-
+function setupPopUp() {
     $(window).on('hashchange',function() {
         if (location.href.indexOf("#item")<0) {
             $.magnificPopup.close(); 
@@ -73,11 +63,9 @@ window.addEventListener('load', (e) => {
             close: onClosePopup,
         }
     });
+}
 
-    /* ================================================== */
-    /*    Menu Filtering Hook
-    /* ================================================== */
-
+function setupFilters() {
     const containerEl = document.querySelector('.shuffle-wrapper');
 
     // Initializing Shuffle
@@ -93,167 +81,167 @@ window.addEventListener('load', (e) => {
             img.addEventListener('load', () => myShuffle.layout()));
 
     // Maximum of three nested filters for the gallery.
-    if (containerEl) {
-        // Frequently used items.
-        const allInputs = document.querySelectorAll('input[name="shuffle-filter"]');
-        const toggableFilters = document.querySelectorAll('.menu-filter:not([filter-level="1"])');
-        const noItemsMsg = document.getElementById('no-items-msg');
-        const loadMoreBtn = document.getElementById('load-more-btn');
-
-        // The initial number of items for a filter result.
-        const INITIAL_NUM_ITEMS = parseInt(loadMoreBtn.getAttribute('load-max'));
-        // The increment over the current number of items.
-        const INCREMENT_LOAD = parseInt(loadMoreBtn.getAttribute('load-increment'));
-        // The current number of items, after possibly loading more.
-        let numItems = INITIAL_NUM_ITEMS;
-
-        // The previously selected filter.
-        let prevFilter = 'all';
-
-        // Returns the bar inside a filter
-        function getBar(filter) {
-            return filter.children[1];
-        }
-
-        // Checks if a bar contains a child with the provided filter value.
-        function barContains(bar, value) {
-            return Array.from(bar.children).some(i =>
-                i.children[0].getAttribute('filter-value') === value);
-        }
-
-        // Resets the status of the filter.
-        function resetFilter(filter) {
-            function deactivate(el) {
-                el.classList.remove('active');
-                el.classList.checked = false;
-            }
-            function activate(el) {
-                el.classList.add('active');
-                el.classList.checked = true;
-            }
-
-            let bar = getBar(filter);
-            // Remove all active buttons. There should only be one of them
-            // checked beforehand.
-            deactivate(Array.from(bar.children).find(i => i.classList.contains('active')));
-            // Default back to the first option (it's always going to be
-            // the first child).
-            activate(bar.children[0]);
-        }
-
-        function hideFilter(filter) {
-            const filterJQ = $(filter);
-            if (filterJQ.is(':hidden')) {
-                return
-            }
-
-            resetFilter(filter);
-
-            // Fade out with an animation
-            filterJQ.css('opacity', 1);
-            filterJQ.addClass('d-none');
-            filterJQ.animate({opacity: 0}, 400);
-        }
-
-        function showFilter(filter) {
-            const filterJQ = $(filter);
-            if (!filterJQ.is(':hidden')) {
-                return
-            }
-
-            // Fade in with an animation
-            filterJQ.css('opacity', 0);
-            filterJQ.removeClass('d-none');
-            filterJQ.animate({opacity: 1}, 400);
-        }
-
-        function filterItems(filter) {
-            // A new filter will reset the number of items to the initial
-            // value.
-            if (prevFilter !== filter) {
-                numItems = INITIAL_NUM_ITEMS;
-                prevFilter = filter;
-            }
-
-            // Filtering the items with the new selected button.
-            let numMatches = 0;
-            myShuffle.filter(item => {
-                // If it matches any of the data groups, it's accepted.
-                // But it will only be shown if the limit hasn't been reached.
-                const dataGroups = JSON.parse(item.getAttribute('data-groups'));
-                if (filter === 'all' || dataGroups.some(field => field === filter)) {
-                    numMatches++;
-                    if (numMatches <= numItems) {
-                        // Some images start hidden for efficiency.
-                        item.classList.remove('d-none');
-                        return true;
-                    }
-                }
-
-                return false;
-            });
-
-            // If the limit was reached, a button will let the user load more
-            // items. If no items matched, a custom message is shown.
-            if (numMatches === 0) {
-                noItemsMsg.style.display = 'flex';
-                loadMoreBtn.style.display = 'none';
-            } else if (numMatches <= numItems) {
-                noItemsMsg.style.display = 'none';
-                loadMoreBtn.style.display = 'none';
-            } else {
-                noItemsMsg.style.display = 'none';
-                loadMoreBtn.style.display = 'block';
-            }
-        }
-
-        // The hidden levels will appear and disappear depending on its
-        // parents.
-        Array.from(allInputs).forEach(item =>
-                item.addEventListener('click', e => {
-            // The pressed button, and the bar it's in.
-            const curInput = e.currentTarget;
-            const curFilter = curInput.getAttribute('filter-value');
-            const curBar = curInput.parentNode.parentNode;
-            const curParent = curBar.parentNode.getAttribute('filter-parent');
-
-            // Updating all the displayed rows.
-            toggableFilters.forEach(filter => {
-                const filterParent = filter.getAttribute('filter-parent');
-                let bar = getBar(filter);
-
-                // Every bar will be hidden except for itself, its first
-                // child bar and its parents, respectively
-                if (bar === curBar
-                    || barContains(bar, curParent)
-                    || filterParent === curFilter)
-                {
-                    showFilter(filter);
-
-                    // The child will be resetted (this is important for
-                    // whenever the same parent item is pressed).
-                    if (filterParent === curFilter) {
-                        resetFilter(filter);
-                    }
-                } else {
-                    // The bar will fade out if it isn't already hidden.
-                    hideFilter(filter);
-                }
-            });
-
-            filterItems(curFilter);
-        }));
-
-        loadMoreBtn.addEventListener('click', e => {
-            numItems += INCREMENT_LOAD;
-            filterItems(prevFilter);
-        });
+    if (!containerEl) {
+        return;
     }
 
-    /* ================================================== */
-    /*    Animation scroll js
-    /* ================================================== */
+    // Frequently used items.
+    const allInputs = document.querySelectorAll('input[name="shuffle-filter"]');
+    const toggableFilters = document.querySelectorAll('.menu-filter:not([filter-level="1"])');
+    const noItemsMsg = document.getElementById('no-items-msg');
+    const loadMoreBtn = document.getElementById('load-more-btn');
 
+    // The initial number of items for a filter result.
+    const INITIAL_NUM_ITEMS = parseInt(loadMoreBtn.getAttribute('load-max'));
+    // The increment over the current number of items.
+    const INCREMENT_LOAD = parseInt(loadMoreBtn.getAttribute('load-increment'));
+    // The current number of items, after possibly loading more.
+    let numItems = INITIAL_NUM_ITEMS;
+
+    // The previously selected filter.
+    let prevFilter = 'all';
+
+    // Returns the bar inside a filter
+    function getBar(filter) {
+        return filter.children[1];
+    }
+
+    // Checks if a bar contains a child with the provided filter value.
+    function barContains(bar, value) {
+        return Array.from(bar.children).some(i =>
+            i.children[0].getAttribute('filter-value') === value);
+    }
+
+    // Resets the status of the filter.
+    function resetFilter(filter) {
+        function deactivate(el) {
+            el.classList.remove('active');
+            el.classList.checked = false;
+        }
+        function activate(el) {
+            el.classList.add('active');
+            el.classList.checked = true;
+        }
+
+        let bar = getBar(filter);
+        // Remove all active buttons. There should only be one of them
+        // checked beforehand.
+        deactivate(Array.from(bar.children).find(i => i.classList.contains('active')));
+        // Default back to the first option (it's always going to be
+        // the first child).
+        activate(bar.children[0]);
+    }
+
+    function hideFilter(filter) {
+        const filterJQ = $(filter);
+        if (filterJQ.is(':hidden')) {
+            return
+        }
+
+        resetFilter(filter);
+
+        // Fade out with an animation
+        filterJQ.css('opacity', 1);
+        filterJQ.addClass('d-none');
+        filterJQ.animate({opacity: 0}, 400);
+    }
+
+    function showFilter(filter) {
+        const filterJQ = $(filter);
+        if (!filterJQ.is(':hidden')) {
+            return
+        }
+
+        // Fade in with an animation
+        filterJQ.css('opacity', 0);
+        filterJQ.removeClass('d-none');
+        filterJQ.animate({opacity: 1}, 400);
+    }
+
+    function filterItems(filter) {
+        // A new filter will reset the number of items to the initial
+        // value.
+        if (prevFilter !== filter) {
+            numItems = INITIAL_NUM_ITEMS;
+            prevFilter = filter;
+        }
+
+        // Filtering the items with the new selected button.
+        let numMatches = 0;
+        myShuffle.filter(item => {
+            // If it matches any of the data groups, it's accepted.
+            // But it will only be shown if the limit hasn't been reached.
+            const dataGroups = JSON.parse(item.getAttribute('data-groups'));
+            if (filter === 'all' || dataGroups.some(field => field === filter)) {
+                numMatches++;
+                if (numMatches <= numItems) {
+                    // Some images start hidden for efficiency.
+                    item.classList.remove('d-none');
+                    return true;
+                }
+            }
+
+            return false;
+        });
+
+        // If the limit was reached, a button will let the user load more
+        // items. If no items matched, a custom message is shown.
+        if (numMatches === 0) {
+            noItemsMsg.style.display = 'flex';
+            loadMoreBtn.style.display = 'none';
+        } else if (numMatches <= numItems) {
+            noItemsMsg.style.display = 'none';
+            loadMoreBtn.style.display = 'none';
+        } else {
+            noItemsMsg.style.display = 'none';
+            loadMoreBtn.style.display = 'block';
+        }
+    }
+
+    // The hidden levels will appear and disappear depending on its
+    // parents.
+    Array.from(allInputs).forEach(item =>
+            item.addEventListener('click', e => {
+        // The pressed button, and the bar it's in.
+        const curInput = e.currentTarget;
+        const curFilter = curInput.getAttribute('filter-value');
+        const curBar = curInput.parentNode.parentNode;
+        const curParent = curBar.parentNode.getAttribute('filter-parent');
+
+        // Updating all the displayed rows.
+        toggableFilters.forEach(filter => {
+            const filterParent = filter.getAttribute('filter-parent');
+            let bar = getBar(filter);
+
+            // Every bar will be hidden except for itself, its first
+            // child bar and its parents, respectively
+            if (bar === curBar
+                || barContains(bar, curParent)
+                || filterParent === curFilter)
+            {
+                showFilter(filter);
+
+                // The child will be resetted (this is important for
+                // whenever the same parent item is pressed).
+                if (filterParent === curFilter) {
+                    resetFilter(filter);
+                }
+            } else {
+                // The bar will fade out if it isn't already hidden.
+                hideFilter(filter);
+            }
+        });
+
+        filterItems(curFilter);
+    }));
+
+    loadMoreBtn.addEventListener('click', e => {
+        numItems += INCREMENT_LOAD;
+        filterItems(prevFilter);
+    });
+}
+
+function setupScrollAnimation() {
     let htmlAndBody = $('html, body');
     $('nav a, .page-scroll').on('click', function () {
         // Making sure the clicked hyperlink is inside this website
@@ -268,11 +256,9 @@ window.addEventListener('load', (e) => {
             }
         }
     });
+}
 
-    /* ================================================== */
-    /*   Contact Form Validating
-    /* ================================================== */
-
+function setupFormValidation() {
     document.getElementById('contact-submit').addEventListener('click', e => {
         // Stop the form from being submitted
         e.preventDefault();
@@ -305,4 +291,25 @@ window.addEventListener('load', (e) => {
         // Show a message with help in case it didn't work.
         helpMsg.style.display = 'block'
     });
+}
+
+// Things that have to be loaded at the end
+window.addEventListener('load', (e) => {
+    console.log("Setting up scroll to top");
+    setupScrollToTop();
+
+    console.log("Setting up lazy loading");
+    setupLazyLoading();
+
+    console.log("Setting up pop up");
+    setupPopUp();
+
+    console.log("Setting up filters");
+    setupFilters();
+
+    console.log("Setting up scroll animation");
+    setupScrollAnimation();
+
+    console.log("Setting up form validation");
+    setupFormValidation();
 });

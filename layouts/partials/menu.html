@@ -112,7 +112,7 @@
         {{ end }}
 
         {{"<!-- Portfolio item -->" | safeHTML}}
-        <figure class="col-lg-4 shuffle-item {{ if gt $i $menu.max_items }}d-none{{ end }}" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
+        <figure class="col-lg-4 shuffle-item d-none" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
           <div class="menu-block mb-4">
             <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
               {{ if ne .disponible false }}
@@ -154,7 +154,7 @@
       {{ end }}
     </div>
 
-    <button id="load-more-btn" class="btn btn-inverse-colors btn-block" style="{{ if le (len $menu.items) $menu.max_items}}display: none;{{ end }}" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
+    <button id="load-more-btn" class="btn btn-inverse-colors btn-block d-none" style="{{ if le (len $menu.items) $menu.max_items}}display: none;{{ end }}" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
 
     <div id="no-items-msg" class="menu-message" {{ if gt (len $menu.items) 0 }}style="display: none;"{{ end }}>
       <i class="{{ $menu.no_items_icono }}"></i>
