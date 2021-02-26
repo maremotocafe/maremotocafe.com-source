@@ -92,63 +92,9 @@
     {{ $items := $high_priority | append $rest | append $low_priority }}
 
     <div class="row shuffle-wrapper justify-content-center">
-      {{/* Iterating the items to add them to the site. */}}
-      {{ $i := 0 }}
-      {{ range $item := $items }}
-
-        {{/* Some items have text, but standalone ones just show the image
-           when selected. */}}
-        {{ $standalone := true }}
-        {{ range $menu.nombres_datos }}
-          {{ if ne (index $item .) nil }}
-            {{ $standalone = false }}
-          {{ end }}
-        {{ end }}
-
-        {{"<!-- Portfolio item -->" | safeHTML}}
-        <figure class="col-lg-4 shuffle-item d-none" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
-          <div class="menu-block mb-4">
-            <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
-              {{ if ne .disponible false }}
-              <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
-              {{ end }}
-              <div class="caption">
-                <span>{{ .nombre }}</span>
-                <i class="las la-search"></i>
-              </div>
-            </a>
-          </div>
-        </figure>
-
-        {{"<!-- Portfolio pop-up with more data -->" | safeHTML}}
-        <div id="carta-img{{ $i }}" class="carta-img mfp-hide">
-          {{ if not $standalone }}
-          <div class="popup-content">
-            <div class="popup-img">
-              <img class="lozad" data-src="{{ .imagen | relURL }}" alt="{{ .nombre }}">
-            </div>
-            <div class="popup-details">
-              <h1>{{ .nombre }}</h1>
-              {{ range $menu.nombres_datos }}
-                {{ if (index $item .) }}
-                <div class="field-{{ urlize . }}">
-                  <p>
-                  <i class="field-icon {{ index $menu.iconos_datos . }}"></i>
-                  {{ with (index $menu.titulos_datos .) }}<span class="field-title">{{ . }}: </span>{{ end }}
-                  <span class="field-description">{{ (index $item .) | markdownify }}</span>
-                  </p>
-                </div>
-                {{ end }}
-              {{ end }}
-            </div>
-          </div>
-          {{ end }}
-        </div>
-        {{ $i = add $i 1 }}
-      {{ end }}
     </div>
 
-    <button id="load-more-btn" class="btn btn-inverse-colors btn-block d-none" load-max="{{ $menu.max_items }}" load-increment="{{ $menu.cargar_items }}">{{ upper (i18n "load_more") }}</button>
+    <button id="load-more-btn" class="btn btn-inverse-colors btn-block d-none">{{ upper (i18n "load_more") }}</button>
 
     <div id="no-items-msg" class="menu-message" {{ if gt (len $menu.items) 0 }}style="display: none;"{{ end }}>
       <i class="{{ $menu.no_items_icono }}"></i>
@@ -156,15 +102,74 @@
     </div>
   </div>
 
+  <div id="menu-items" class="d-none">
+    {{/* Iterating the items to add them to the site. */}}
+    {{ $i := 0 }}
+    {{ range $item := $items }}
+
+      {{/* Some items have text, but standalone ones just show the image
+         when selected. */}}
+      {{ $standalone := true }}
+      {{ range $menu.nombres_datos }}
+        {{ if ne (index $item .) nil }}
+          {{ $standalone = false }}
+        {{ end }}
+      {{ end }}
+
+      {{"<!-- Portfolio item -->" | safeHTML}}
+      <figure class="col-lg-4 shuffle-item d-none" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
+        <div class="menu-block mb-4">
+          <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
+            {{ if ne .disponible false }}
+            <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
+            {{ end }}
+            <div class="caption">
+              <span>{{ .nombre }}</span>
+              <i class="las la-search"></i>
+            </div>
+          </a>
+        </div>
+      </figure>
+
+      {{"<!-- Portfolio pop-up with more data -->" | safeHTML}}
+      <div id="carta-img{{ $i }}" class="carta-img mfp-hide">
+        {{ if not $standalone }}
+        <div class="popup-content">
+          <div class="popup-img">
+            <img class="lozad" data-src="{{ .imagen | relURL }}" alt="{{ .nombre }}">
+          </div>
+          <div class="popup-details">
+            <h1>{{ .nombre }}</h1>
+            {{ range $menu.nombres_datos }}
+              {{ if (index $item .) }}
+              <div class="field-{{ urlize . }}">
+                <p>
+                <i class="field-icon {{ index $menu.iconos_datos . }}"></i>
+                {{ with (index $menu.titulos_datos .) }}<span class="field-title">{{ . }}: </span>{{ end }}
+                <span class="field-description">{{ (index $item .) | markdownify }}</span>
+                </p>
+              </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ $i = add $i 1 }}
+    {{ end }}
+  </div>
+
   {{ "<!-- Menu Script -->" | safeHTML }}
   {{ $script := resources.Get "js/menu.js" | minify }}
   <script src="{{ $script.Permalink }}"></script>
   <script>
+  const maxItems = {{ $menu.max_items }};
+  const initialItems = {{ $menu.cargar_items }};
+  window.menuInstance = new window.Menu(maxItems, initialItems);
+
   window.addEventListener('load', (e) => {
       console.log("Setting up menu");
-
-      window.menuInstance = new window.Menu();
-      window.menuInstance.setup("asd");
+      window.menuInstance.setup("menu-items");
   });
   </script>
 

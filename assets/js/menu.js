@@ -1,71 +1,29 @@
 class Menu {
-    constructor() {
+    constructor(initialItems, incrementLoad) {
+        // The initial number of items for a filter result.
+        this.initialNumItems = initialItems;
+        // The increment over the current number of items.
+        this.incrementLoad = incrementLoad;
+
+        // The current number of items, after possibly loading more.
+        this.numItems = this.initialNumItems;
+        // The previously selected filter.
+        this.prevFilter = 'all';
+    }
+
+    setup(itemsId) {
         // Frequently used DOM items.
         this.container = document.querySelector('.shuffle-wrapper');
-        this.allInputs = document.querySelectorAll(
-            'input[name="shuffle-filter"]');
+        this.allInputs = Array.from(document.querySelectorAll(
+            'input[name="shuffle-filter"]'));
         this.toggableFilters = document.querySelectorAll(
             '.menu-filter:not([filter-level="1"])');
         this.noItemsMsg = document.getElementById('no-items-msg');
         this.loadMoreBtn = document.getElementById('load-more-btn');
 
-        // The initial number of items for a filter result.
-        this.initialNumItems = parseInt(
-            this.loadMoreBtn.getAttribute('load-max'));
-        // The increment over the current number of items.
-        this.incrementLoad = parseInt(
-            this.loadMoreBtn.getAttribute('load-increment'));
-        // The current number of items, after possibly loading more.
-        this.numItems = this.initialNumItems;
-
-        // The previously selected filter.
-        this.prevFilter = 'all';
-    }
-
-    setup(data) {
         this.setupShuffle();
-
-        // The hidden levels will appear and disappear depending on its
-        // parents.
-        Array.from(this.allInputs).forEach(item =>
-                item.addEventListener('click', e => {
-            // The pressed button, and the bar it's in.
-            const curInput = e.currentTarget;
-            const curFilter = curInput.getAttribute('filter-value');
-            const curBar = curInput.parentNode.parentNode;
-            const curParent = curBar.parentNode.getAttribute('filter-parent');
-
-            // Updating all the displayed rows.
-            this.toggableFilters.forEach(filter => {
-                const filterParent = filter.getAttribute('filter-parent');
-                let bar = this.getBar(filter);
-
-                // Every bar will be hidden except for itself, its first
-                // child bar and its parents, respectively
-                if (bar === curBar
-                    || this.barContains(bar, curParent)
-                    || filterParent === curFilter)
-                {
-                    this.showFilter(filter);
-
-                    // The child will be resetted (this is important for
-                    // whenever the same parent item is pressed).
-                    if (filterParent === curFilter) {
-                        this.resetFilter(filter);
-                    }
-                } else {
-                    // The bar will fade out if it isn't already hidden.
-                    this.hideFilter(filter);
-                }
-            });
-
-            this.filterItems(curFilter);
-        }));
-
-        this.loadMoreBtn.addEventListener('click', e => {
-            this.numItems += this.incrementLoad;
-            this.filterItems(this.prevFilter);
-        });
+        this.setupListeners();
+        this.setupItems(itemsId);
     }
 
     setupShuffle() {
@@ -80,6 +38,22 @@ class Menu {
         // the images are loaded to avoid them overlapping.
         Array.from(document.getElementsByClassName('lozad')).forEach(img =>
                 img.addEventListener('load', () => this.Shuffle.layout()));
+    }
+
+    setupListeners() {
+        // The hidden levels will appear and disappear depending on its
+        // parents.
+        this.allInputs.forEach(item => {
+            item.addEventListener('click', e => this.onInputClick(e))
+        });
+
+        this.loadMoreBtn.addEventListener('click', e => {
+            this.onLoadMoreClicked(e)
+        });
+    }
+
+    setupItems(itemsId) {
+        this.items = document.getElementById(itemsId);
     }
 
     // Returns the bar inside a filter
@@ -183,6 +157,45 @@ class Menu {
         } else {
             this.loadMoreBtn.classList.remove('d-none');
         }
+    }
+
+    onInputClick(e) {
+        // The pressed button, and the bar it's in.
+        const curInput = e.currentTarget;
+        const curFilter = curInput.getAttribute('filter-value');
+        const curBar = curInput.parentNode.parentNode;
+        const curParent = curBar.parentNode.getAttribute('filter-parent');
+
+        // Updating all the displayed rows.
+        this.toggableFilters.forEach(filter => {
+            const filterParent = filter.getAttribute('filter-parent');
+            let bar = this.getBar(filter);
+
+            // Every bar will be hidden except for itself, its first
+            // child bar and its parents, respectively
+            if (bar === curBar
+                || this.barContains(bar, curParent)
+                || filterParent === curFilter)
+            {
+                this.showFilter(filter);
+
+                // The child will be resetted (this is important for
+                // whenever the same parent item is pressed).
+                if (filterParent === curFilter) {
+                    this.resetFilter(filter);
+                }
+            } else {
+                // The bar will fade out if it isn't already hidden.
+                this.hideFilter(filter);
+            }
+        });
+
+        this.filterItems(curFilter);
+    }
+
+    onLoadMoreClicked(e) {
+        this.numItems += this.incrementLoad;
+        this.filterItems(this.prevFilter);
     }
 }
 
