@@ -155,6 +155,19 @@
       <span>{{ $menu.no_items_mensaje }}</span>
     </div>
   </div>
+
+  {{ "<!-- Menu Script -->" | safeHTML }}
+  {{ $script := resources.Get "js/menu.js" | minify }}
+  <script src="{{ $script.Permalink }}"></script>
+  <script>
+  window.addEventListener('load', (e) => {
+      console.log("Setting up menu");
+
+      window.menuInstance = new window.Menu();
+      window.menuInstance.setup("asd");
+  });
+  </script>
+
 </section>
 {{"<!-- /Menu -->" | safeHTML}}
 {{ end }}
