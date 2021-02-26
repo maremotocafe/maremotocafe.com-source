@@ -11,8 +11,8 @@ paso2: "concreta tu búsqueda con una de las siguientes subcategorías:"
 paso3_prefijo: "Finalmente"
 paso3: "escoge una opción y pulsa una foto para ver más detalles:"
 
-max_items: 30
-cargar_items: 0
+items_iniciales: 30
+items_incremento: 30
 no_items_mensaje: No hay nada con esos filtros, prueba a usar otros.
 no_items_icono: las la-exclamation
 

@@ -1,17 +1,23 @@
+'use strict';
+
 class Menu {
     constructor(initialItems, incrementLoad) {
-        // The initial number of items for a filter result.
-        this.initialNumItems = initialItems;
-        // The increment over the current number of items.
+        // The current number of items, after possibly loading more.
+        this.numItems = 0;
+        // The number of items after to be loaded after the initialization.
+        this.initialItems = initialItems;
+        // The increment over the current number of items when the 'Load more'
+        // button is pressed.
         this.incrementLoad = incrementLoad;
 
-        // The current number of items, after possibly loading more.
-        this.numItems = this.initialNumItems;
-        // The previously selected filter.
-        this.prevFilter = 'all';
+        // The currently active filter.
+        this.curFilter = 'all';
+        // The items will only show up after the first filter click, and this
+        // helps keep track of that.
+        this.firstTime = true;
     }
 
-    setup(itemsId) {
+    setup(itemsId, popUpsId) {
         // Frequently used DOM items.
         this.container = document.querySelector('.shuffle-wrapper');
         this.allInputs = Array.from(document.querySelectorAll(
@@ -23,12 +29,12 @@ class Menu {
 
         this.setupShuffle();
         this.setupListeners();
-        this.setupItems(itemsId);
+        this.setupItems(itemsId, popUpsId);
     }
 
     setupShuffle() {
         // Initializing Shuffle.js
-        this.Shuffle = new window.Shuffle(this.container, {
+        this.shuffle = new window.Shuffle(this.container, {
             itemSelector: '.shuffle-item',
             buffer: 1,
             useTransforms: false  // better performance
@@ -37,7 +43,7 @@ class Menu {
         // Lazy loading also works with Shuffle js to refresh the layout when
         // the images are loaded to avoid them overlapping.
         Array.from(document.getElementsByClassName('lozad')).forEach(img =>
-                img.addEventListener('load', () => this.Shuffle.layout()));
+                img.addEventListener('load', () => this.shuffle.layout()));
     }
 
     setupListeners() {
@@ -52,8 +58,12 @@ class Menu {
         });
     }
 
-    setupItems(itemsId) {
-        this.items = document.getElementById(itemsId);
+    setupItems(itemsId, popUpsId) {
+        this.items = Array.from(document.getElementById(itemsId).children);
+
+        this.items.forEach(element => {
+          this.shuffle.element.appendChild(element);
+        });
     }
 
     // Returns the bar inside a filter
@@ -119,54 +129,8 @@ class Menu {
         filterJQ.animate({opacity: 1}, 400);
     }
 
-    filterItems(filter) {
-        // A new filter will reset the number of items to the initial
-        // value.
-        if (this.prevFilter !== filter) {
-            this.numItems = this.maxItems;
-            this.prevFilter = filter;
-        }
-
-        // Filtering the items with the new selected button.
-        let numMatches = 0;
-        this.Shuffle.filter(item => {
-            // If it matches any of the data groups, it's accepted.
-            // But it will only be shown if the limit hasn't been reached.
-            const dataGroups = JSON.parse(item.getAttribute('data-groups'));
-            if (filter === 'all' || dataGroups.some(field => field === filter)) {
-                numMatches++;
-                if (numMatches <= this.numItems) {
-                    item.classList.remove('d-none');
-                    return true;
-                }
-            }
-
-            return false;
-        });
-
-        // If no items matched, a custom message is shown.
-        if (numMatches === 0) {
-            this.noItemsMsg.classList.remove('d-none');
-        } else {
-            this.noItemsMsg.classList.add('d-none');
-        }
-
-        // If the limit was reached, a button will let the user load more items. 
-        if (numMatches <= this.numItems) {
-            this.loadMoreBtn.classList.add('d-none');
-        } else {
-            this.loadMoreBtn.classList.remove('d-none');
-        }
-    }
-
-    onInputClick(e) {
-        // The pressed button, and the bar it's in.
-        const curInput = e.currentTarget;
-        const curFilter = curInput.getAttribute('filter-value');
-        const curBar = curInput.parentNode.parentNode;
-        const curParent = curBar.parentNode.getAttribute('filter-parent');
-
-        // Updating all the displayed rows.
+    // Updating all the displayed rows.
+    updateFilters(curBar, curParent, curFilter) {
         this.toggableFilters.forEach(filter => {
             const filterParent = filter.getAttribute('filter-parent');
             let bar = this.getBar(filter);
@@ -189,13 +153,69 @@ class Menu {
                 this.hideFilter(filter);
             }
         });
+    }
 
-        this.filterItems(curFilter);
+    // Classify the items given a new filter.
+    updateItems(filter) {
+        if (this.firstTime) {
+            this.shuffle.add(this.items);
+            this.firstTime = false;
+        }
+
+        // A new filter will reset the number of items to the initial value.
+        if (this.curFilter !== filter) {
+            this.numItems = this.initialItems;
+            this.curFilter = filter;
+        }
+
+        // Filtering the items with the new selected button.
+        let numMatches = 0;
+        this.shuffle.filter(item => {
+            // If it matches any of the data groups, it's accepted.
+            // But it will only be shown if the limit hasn't been reached.
+            const dataGroups = JSON.parse(item.getAttribute('data-groups'));
+            if (filter === 'all' || dataGroups.some(field => field === filter)) {
+                numMatches++;
+                console.log("found a match!", numMatches, this.numItems);
+                if (numMatches <= this.numItems) {
+                    return true;
+                }
+            }
+
+            return false;
+        });
+
+        // If no items matched, a custom message is shown.
+        if (numMatches === 0) {
+            this.noItemsMsg.classList.remove('d-none');
+        } else {
+            this.noItemsMsg.classList.add('d-none');
+        }
+
+        // If the limit was reached, a button will let the user load more items. 
+        if (numMatches <= this.numItems) {
+            this.loadMoreBtn.classList.add('d-none');
+        } else {
+            this.loadMoreBtn.classList.remove('d-none');
+        }
+
+        this.shuffle.update();
+    }
+
+    onInputClick(e) {
+        // The pressed button, and the bar it's in.
+        const clickedInput = e.currentTarget;
+        const clickedFilter = clickedInput.getAttribute('filter-value');
+        const clickedBar = clickedInput.parentNode.parentNode;
+        const clickedParent = clickedBar.parentNode.getAttribute('filter-parent');
+
+        this.updateFilters(clickedBar, clickedParent, clickedFilter);
+        this.updateItems(clickedFilter);
     }
 
     onLoadMoreClicked(e) {
         this.numItems += this.incrementLoad;
-        this.filterItems(this.prevFilter);
+        this.updateItems(this.curFilter);
     }
 }
 

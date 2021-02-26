@@ -80,6 +80,21 @@
     {{ $low_priority := slice }}
     {{ $rest := slice }}
     {{ range $item := $all }}
+      {{/* Adding more attributes automatically:
+         *
+         * - Some items have text, but standalone ones just show the image when
+         *   selected.
+         */}}
+      {{ $standalone := true }}
+      {{ range $menu.nombres_datos }}
+        {{ if ne (index $item .) nil }}
+          {{ $standalone = false }}
+        {{ end }}
+      {{ end }}
+
+      {{ $data := dict "standalone" $standalone }}
+      {{ $item = merge $item $data }}
+
       {{ if (eq (index $item "prioridad") true) }}
         {{ $high_priority = $high_priority | append $item }}
       {{ else if (eq (index $item "disponible") false) }}
@@ -102,24 +117,13 @@
     </div>
   </div>
 
+  {{"<!-- Menu items -->" | safeHTML}}
   <div id="menu-items" class="d-none">
     {{/* Iterating the items to add them to the site. */}}
-    {{ $i := 0 }}
-    {{ range $item := $items }}
-
-      {{/* Some items have text, but standalone ones just show the image
-         when selected. */}}
-      {{ $standalone := true }}
-      {{ range $menu.nombres_datos }}
-        {{ if ne (index $item .) nil }}
-          {{ $standalone = false }}
-        {{ end }}
-      {{ end }}
-
-      {{"<!-- Portfolio item -->" | safeHTML}}
-      <figure class="col-lg-4 shuffle-item d-none" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
+    {{ range $i, $item := $items }}
+      <figure class="col-lg-4 shuffle-item" data-groups='[{{ range $index, $element:= .categorias }}{{ if ne $index 0 }},{{ end }}"{{ . | md5 }}"{{ end }}]'>
         <div class="menu-block mb-4">
-          <a class="open-popup-{{ if $standalone }}standalone{{ else }}inline{{ end }}" href="{{ if $standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
+          <a class="open-popup-{{ if .standalone }}standalone{{ else }}inline{{ end }}" href="{{ if .standalone }}{{ .imagen | relURL }}{{ else }}#carta-img{{ $i }}{{ end }}">
             {{ if ne .disponible false }}
             <img class="lozad img-fluid" data-src="{{ .imagen_pequenya | absURL }}" alt="{{ .nombre }}">
             {{ end }}
@@ -130,10 +134,14 @@
           </a>
         </div>
       </figure>
+    {{ end }}
+  </div>
 
-      {{"<!-- Portfolio pop-up with more data -->" | safeHTML}}
+  {{"<!-- Menu popups with more data -->" | safeHTML}}
+  <div id="menu-popups" class="d-none">
+    {{ range $i, $item := $items }}
       <div id="carta-img{{ $i }}" class="carta-img mfp-hide">
-        {{ if not $standalone }}
+        {{ if not .standalone }}
         <div class="popup-content">
           <div class="popup-img">
             <img class="lozad" data-src="{{ .imagen | relURL }}" alt="{{ .nombre }}">
@@ -155,7 +163,6 @@
         </div>
         {{ end }}
       </div>
-      {{ $i = add $i 1 }}
     {{ end }}
   </div>
 
@@ -163,13 +170,13 @@
   {{ $script := resources.Get "js/menu.js" | minify }}
   <script src="{{ $script.Permalink }}"></script>
   <script>
-  const maxItems = {{ $menu.max_items }};
-  const initialItems = {{ $menu.cargar_items }};
-  window.menuInstance = new window.Menu(maxItems, initialItems);
+  const initialItems = {{ $menu.items_iniciales }};
+  const itemsIncrement = {{ $menu.items_incremento }};
+  window.menuInstance = new window.Menu(initialItems, itemsIncrement);
 
   window.addEventListener('load', (e) => {
       console.log("Setting up menu");
-      window.menuInstance.setup("menu-items");
+      window.menuInstance.setup("menu-items", "menu-popups");
   });
   </script>
 
