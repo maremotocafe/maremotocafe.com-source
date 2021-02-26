@@ -49,31 +49,26 @@
     </div>
 
     <style>
-    .filter-default.active {
-      border-color: {{ $menu.color_bordes }};
+    .filter-default {
+    /*
+    .filter-default.active,
+    .filter-default:hover,
+    .filter-default:focus {
+    */
+      background-color: {{ $menu.color_todo }} !important;
+      color: #1d2024 !important;
     }
 
     {{ range $menu.categorias }}
-
-    {{ $default := .color }}
-    {{ $hover := .hover_color }}
-
-    .filter-{{ md5 .nombre }}.active {
-      background-color: {{ $default }};
-      border-color: {{ $menu.color_bordes }};
-      color: #1d2024;
-    }
-
-    .filter-{{ md5 .nombre }}:hover,
-    .filter-{{ md5 .nombre }}:focus {
-      color: #1d2024 !important;
-    {{ with $hover }}
-      background-color: {{ . }} !important;
-    {{ else }}
-      background-color: {{ $default }};
-    {{ end }}
-    }
-
+      .filter-{{ md5 .nombre }} {
+      /*
+      .filter-{{ md5 .nombre }}:active,
+      .filter-{{ md5 .nombre }}:hover,
+      .filter-{{ md5 .nombre }}:focus {
+      */
+        color: #1d2024 !important;
+        background-color: {{ .color }} !important;
+      }
     {{ end }}
     </style>
 

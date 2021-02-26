@@ -785,6 +785,8 @@ a:hover {
   Menu section
 ==================================================================*/
 
+/* For the menu button bar */
+
 .menu-filter > .step-msg {
   text-align: center;
   margin-top: 30px;
@@ -809,11 +811,13 @@ a:hover {
   justify-content: center;
   align-items: stretch;
   align-content: center;
+  /* Hack for a compatible `gap` attribute */
   margin: -5px;
   margin-bottom: 30px;
 }
 
 .menu-filter > .btn-group > .btn {
+  /* To make the default item smaller later */
   flex-grow: 2;
   /* Can be deactivated for wider buttons */
   flex-basis: 0;
@@ -831,20 +835,22 @@ a:hover {
   justify-content: center;
 }
 
+.menu-filter > .btn-group > .btn.active {
+  border-color: white;
+}
+
+/* The default item in the group is smaller */
 .menu-filter > .btn-group > .btn.filter-default {
   width: 30px;
   flex-grow: 1 !important;
 }
 
-.btn.filter-default:hover,
-.btn.filter-default:focus {
-  background-color: transparent;
-}
-
-.menu-filter-bar .btn i {
+.menu-filter > .btn-group > .btn > i {
   font-size: 25px;
   margin-right: 5px;
 }
+
+/* For items in the menu */
 
 .menu-block {
   position: relative;
