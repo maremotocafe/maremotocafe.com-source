@@ -4,15 +4,15 @@ title: Nuestra Carta
 description: Encuentra lo que deseas paso a paso
 description_icon: las la-info-circle
 
-paso1_prefijo: "Primero"
-paso1: "elige una categoría:"
-paso2_prefijo: "Ahora"
-paso2: "concreta tu búsqueda con una de las siguientes subcategorías:"
-paso3_prefijo: "Finalmente"
-paso3: "escoge una opción y pulsa una foto para ver más detalles:"
+paso1_prefijo: Primero
+paso1: elige una categoría
+paso2_prefijo: Ahora
+paso2: concreta tu búsqueda con una de las siguientes subcategorías
+paso3_prefijo: Finalmente
+paso3: escoge una opción y pulsa una foto para ver más detalles
 
-items_iniciales: 30
-items_incremento: 30
+max_items: 30
+cargar_items: 30
 no_items_mensaje: No hay nada con esos filtros, prueba a usar otros.
 no_items_icono: las la-exclamation
 
@@ -40,11 +40,12 @@ iconos_datos:
 
 # 'all' no puede ser un nombre de categoría ya que representa todos los ítems.
 icono_todo: las la-times
-color_todo: "#e4e8ec"
+color_todo: "#2f2f2f"
+color_bordes: "#c4cdd5"
 categorias:
   - nombre: Cocktails & Drinks
     icono: las la-cocktail
-    color: "#a7dfda"
+    color: "#5ba49d"
     subcategorias:
         - nombre: Gin Tonic y Vodka Tonic
         - nombre: Mojitos Caipirinhas y Similares
@@ -59,7 +60,7 @@ categorias:
         - nombre: Cocktails Clásicos
   - nombre: Smoothies, Healthy Drinks y Batidos
     icono: las la-blender
-    color: "#97d295"
+    color: "#66a864"
     subcategorias:
         - nombre: Smoothies
         - nombre: Granizados
@@ -70,14 +71,14 @@ categorias:
               - nombre: Sin Alcohol ni Azúcares
   - nombre: Ofertas Destacadas
     icono: las la-certificate
-    color: "#dbd9a7"
+    color: "#aeac72"
     subcategorias:
         - nombre: Día
         - nombre: Tarde
         - nombre: Noche
   - nombre: Cafés y Tés
     icono: las la-coffee
-    color: "#cea389"
+    color: "#936f59"
     subcategorias:
         - nombre: Cafés con Alcohol
         - nombre: Cafés sin Alcohol
@@ -88,10 +89,10 @@ categorias:
               - nombre: Calientes
   - nombre: Desayunos, Almuerzos y Zumos
     icono: las la-bacon
-    color: "#d1b9e1"
+    color: "#a17abb"
   - nombre: Bocadillos, Sándwich y Focaccias
     icono: las la-hamburger
-    color: "#f0c0c0"
+    color: "#d06e6e"
 
 items:
   # - nombre: Bloody Mary Free
@@ -545,15 +546,9 @@ items:
     imagen: images/carta/114.jpg
     imagen_pequenya: images/carta/114_small.jpg
     categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
-    ingredientes: Reconfortante bebida caliente a base de Té Chai y Leche de Almendra.
+    ingredientes: Reconfortante bebida caliente a base de Té Chai y Leche de Almendra o la leche que prefieras.
     alergenos:
-    txt_aclaraciones:
-    txt_temporal:
-    grad_alcoholica:
-    vol_ml:
-    edul_gr: 10gr de Azúcar
-    pvp_local: 2,75€
-    pvp_terraza: 3,25€
+    txt_aclaraciones: Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración
 
   - nombre: Té Mojito Iced
     imagen: images/carta/319.jpg
@@ -604,7 +599,7 @@ items:
     pvp_local: 3,75€
     pvp_terraza: 4,25€
 
-  - nombre: Smoothies de Fruta con leche.
+  - nombre: Smoothies de Frutas (Con leche)
     imagen: images/carta/204.jpg
     imagen_pequenya: images/carta/204_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -612,7 +607,7 @@ items:
     alergenos: "*Leche*"
     txt_aclaraciones: >
      A elegir entre; Coco, Plátano, Fresa, Frambuesa, Arándano Azul o Cereza.
-     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su batido.
+     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su Smoothie.
     txt_temporal:
     grad_alcoholica:
     vol_ml:
@@ -643,7 +638,7 @@ items:
     alergenos: "*Leche*"
     txt_aclaraciones: >
      A elegir entre; Frambuesa con Mora, Fresa con Plátano o Frambuesa y Coco.
-     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su batido.
+     Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración de su Smoothie.
     txt_temporal:
     grad_alcoholica:
     vol_ml:
@@ -665,7 +660,7 @@ items:
     pvp_local: 3,50€
     pvp_terraza: 4€
 
-  - nombre: Smoothie Estambul
+  - nombre: Smoothie Premium Estambul
     imagen: images/carta/6a.jpg
     imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -679,7 +674,7 @@ items:
     pvp_local: 5€
     pvp_terraza: 5,50€
 
-  - nombre: Smoothie Paradis
+  - nombre: Smoothie Premium Paradis
     imagen: images/carta/6a.jpg
     imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -693,7 +688,7 @@ items:
     pvp_local: 5€
     pvp_terraza: 5,50€
 
-  - nombre: Smoothie Auténtico Placer
+  - nombre: Smoothie Premium Auténtico Placer
     imagen: images/carta/6a.jpg
     imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -707,7 +702,7 @@ items:
     pvp_local: 5€
     pvp_terraza: 5,50€
 
-  - nombre: Smoothie Mango & Basil
+  - nombre: Smoothie Premium Mango & Basil
     imagen: images/carta/6a.jpg
     imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -721,7 +716,7 @@ items:
     pvp_local: 5€
     pvp_terraza: 5,50€
 
-  - nombre: Smoothie Caribe
+  - nombre: Smoothie Premium Caribe
     imagen: images/carta/6a.jpg
     imagen_pequenya: images/carta/6a_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Smoothies"]
@@ -877,6 +872,7 @@ items:
     pvp_terraza: 6€
 
   - nombre: 🍊 Shin Tonic
+    disponible: true
     imagen: images/carta/63.jpg
     imagen_pequenya: images/carta/
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
@@ -932,7 +928,7 @@ items:
     pvp_local: 6€
     pvp_terraza: 6,50€
 
-  - nombre: Fizz de Pomelo y Romero
+  - nombre: Santa Romeria
     imagen: images/carta/20.jpg
     imagen_pequenya: images/carta/20_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
@@ -1260,7 +1256,7 @@ items:
     pvp_local: 8€
     pvp_terraza: 8,50€
 
-  - nombre: Donde Dije DHigo (No Disponible)
+  - nombre: Donde Dije DHigo
     disponible: false
     imagen: images/carta/273.jpg
     imagen_pequenya: images/carta/273_small.jpg
