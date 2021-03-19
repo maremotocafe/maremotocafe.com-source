@@ -49,11 +49,6 @@ categorias:
     subcategorias:
         - nombre: Gin Tonic y Vodka Tonic
         - nombre: Mojitos Caipirinhas y Similares
-          subcategorias:
-              - nombre: Con Rón o Cachaça
-              - nombre: Con Whisky o Bourbon
-              - nombre: Con Vodka o Gin
-              - nombre: Otros Licores
         - nombre: Cocktails de Autor
         - nombre: Cocktails Frozeen
         - nombre: Cocktails Long Drinks
@@ -66,9 +61,6 @@ categorias:
         - nombre: Granizados
         - nombre: Batidos
         - nombre: Healthy Cocktails
-          subcategorias:
-              - nombre: Sin Alcohol
-              - nombre: Sin Alcohol ni Azúcares
   - nombre: Ofertas Destacadas
     icono: las la-certificate
     color: "#dbd9a7"
@@ -84,9 +76,6 @@ categorias:
         - nombre: Cafés sin Alcohol
         - nombre: Cafés Fríos
         - nombre: Infusiones
-          subcategorias:
-              - nombre: Frías
-              - nombre: Calientes
   - nombre: Desayunos, Almuerzos y Zumos
     icono: las la-bacon
     color: "#d1b9e1"
@@ -115,7 +104,7 @@ items:
   - nombre: Bloody Mary Free
     imagen: images/carta/42.jpg
     imagen_pequenya: images/carta/42_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails", "Sin Alcohol ni Azúcares"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Tomate Natural, Zumo de Limón, Salsa Perrin's, Tabasco, Romero, Jengibre, Sal de Apio y Pimienta.
     alergenos: "*Apio.*"
     txt_temporal: Disponible todo el año.
@@ -228,7 +217,7 @@ items:
   - nombre: Pu-erh Cítricos
     imagen: images/carta/296.jpg
     imagen_pequenya: images/carta/296_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Pu-erh, Naranja y Limón
     alergenos:
     txt_aclaraciones:
@@ -244,7 +233,7 @@ items:
   - nombre: Té de Frutas del Bosque
     imagen: images/carta/192.jpg
     imagen_pequenya: images/carta/192_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Frías"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Hibiscus, Frutas del bosque, Escaramujo, Rosas y Enebro
     alergenos:
     txt_aclaraciones:
@@ -433,7 +422,7 @@ items:
   - nombre: Hierbas de Ibiza
     imagen: images/carta/294.jpg
     imagen_pequenya: images/carta/294_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Anis estrellado, Tomillo, Romero, Hinojo, Hierba Luisa, Piel de Limón y Naranja
     alergenos:
     txt_aclaraciones:
@@ -447,7 +436,7 @@ items:
   - nombre: Digestiva
     imagen: images/carta/293.jpg
     imagen_pequenya: images/carta/293_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Manzanilla,Regaliz, Melisa u Anís
     alergenos:
     txt_aclaraciones:
@@ -461,7 +450,7 @@ items:
   - nombre: Touareg
     imagen: images/carta/298.jpg
     imagen_pequenya: images/carta/298_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Té Verde, Hierbabuena, Menta y Clorofila.
     alergenos:
     txt_aclaraciones:
@@ -475,7 +464,7 @@ items:
   - nombre: Pasión Prohibida
     imagen: images/carta/291.jpg
     imagen_pequenya: images/carta/291_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Manzana, Fresa, Grosella, Mora e Hibisco
     alergenos:
     txt_aclaraciones:
@@ -489,7 +478,7 @@ items:
   - nombre: Taj Majal
     imagen: images/carta/288.jpg
     imagen_pequenya: images/carta/288_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Té Negro, Canela, Cardamomo, Pimienta, Clavo y Jengibre.
     alergenos:
     txt_aclaraciones:
@@ -503,7 +492,7 @@ items:
   - nombre: Caribe
     imagen: images/carta/289.jpg
     imagen_pequenya: images/carta/289_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Rooibos, Piña y Coco.
     alergenos:
     txt_aclaraciones:
@@ -517,7 +506,7 @@ items:
   - nombre: Relax
     imagen: images/carta/292.jpg
     imagen_pequenya: images/carta/292_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Rooibos, Ortiga, Lemongrass, Valeriana, Melisa y Ginko.
     alergenos:
     txt_aclaraciones:
@@ -531,7 +520,7 @@ items:
   - nombre: Sueños de Chocolate
     imagen: images/carta/297.jpg
     imagen_pequenya: images/carta/297_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Rooibos, Cacao, Chocolate blanco y negro, Pétalos de Flores y Rosas.
     alergenos:
     txt_aclaraciones:
@@ -545,7 +534,7 @@ items:
   - nombre: Té Indian Almond
     imagen: images/carta/393.jpg
     imagen_pequenya: images/carta/393_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Calientes"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Reconfortante bebida caliente a base de Té Chai y Leche de Almendra o la leche que prefieras.
     alergenos:
     txt_aclaraciones: Disponemos de leche Sin Lactosa, Desnatada, Almendra, Avena o Soja para la elaboración
@@ -553,7 +542,7 @@ items:
   - nombre: Té Mojito Iced
     imagen: images/carta/319.jpg
     imagen_pequenya: images/carta/319_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Frías"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Té Verde, Menta, Limón y Lemongrass
     alergenos:
     txt_aclaraciones:
@@ -567,7 +556,7 @@ items:
   - nombre: Té Chai con Leche de Soja
     imagen: images/carta/280.jpg
     imagen_pequenya: images/carta/280_small.jpg
-    categorias: ["Cafés y Tés" , "Infusiones" , "Frías"]
+    categorias: ["Cafés y Tés" , "Infusiones"]
     ingredientes: Té Chai, Leche de Soja y Azúcar
     alergenos:
     txt_aclaraciones:
@@ -789,7 +778,7 @@ items:
   - nombre: Limonada de Jengigre y Pomelo
     imagen: images/carta/272.jpg
     imagen_pequenya: images/carta/272_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Limón, Zumo de Pomelo Natural, Jengibre fresco, Azucar Integral de caña, y Menta fresca.
     alergenos:
     txt_aclaraciones:
@@ -804,7 +793,7 @@ items:
     disponible: false
     imagen: images/carta/270.jpg
     imagen_pequenya: images/carta/
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
     alergenos:
     txt_aclaraciones:
@@ -818,7 +807,7 @@ items:
   - nombre: Limonada Mr Smith
     imagen: images/carta/299.jpg
     imagen_pequenya: images/carta/299_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Manzana Granny Smith Natural, Zumo de Manzana Royal Gala Natural, Zumo de Limón, Hojas de Menta fresca y Soda.
     alergenos:
     txt_aclaraciones:
@@ -832,7 +821,7 @@ items:
   - nombre: San Francisco
     imagen: images/carta/317.jpg
     imagen_pequenya: images/carta/317_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Naranja Natural, Zumo de piña, Zumo de Limón y Granadina.
     alergenos:
     txt_aclaraciones:
@@ -846,7 +835,7 @@ items:
   - nombre: Virgin Mojito
     imagen: images/carta/318.jpg
     imagen_pequenya: images/carta/318_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Lima, Hierbabuena, Azucar, Piña, Jengibre fresco y Soda.
     alergenos:
     txt_aclaraciones:
@@ -860,7 +849,7 @@ items:
   - nombre: Virgin Colada.
     imagen: images/carta/394.jpg
     imagen_pequenya: images/carta/394_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Piña, Zumo de Lima, Puré de coco, Azúcar y Nata.
     alergenos: "*Leche*"
     txt_aclaraciones:
@@ -875,7 +864,7 @@ items:
     disponible: true
     imagen: images/carta/63.jpg
     imagen_pequenya: images/carta/
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Martini Vibrante (Sin alcohol) & 1724 tonic watter
     alergenos:
     txt_aclaraciones:
@@ -889,7 +878,7 @@ items:
   - nombre: Frescor Cálido
     imagen: images/carta/311.jpg
     imagen_pequenya: images/carta/311_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo Natural de Granada, Sirope de Especias, Zumo de Limón, Canela y Soda.
     alergenos:
     txt_aclaraciones:
@@ -903,7 +892,7 @@ items:
   - nombre: EmocionaTé
     imagen: images/carta/313.jpg
     imagen_pequenya: images/carta/313_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Te rojo, Limón, Zumo Natural de Manzana Granny Smith, Srhub de Frambuesa, Sirope de Manzana caramelizada y Ginger beer.
     alergenos: "*Sulfitos*"
     txt_aclaraciones:
@@ -917,7 +906,7 @@ items:
   - nombre: Jalamango
     imagen: images/carta/315.jpg
     imagen_pequenya: images/carta/315_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Mango Natural, Jalapeños, Zumo Natural de Naranja y Cilantro fresco.
     alergenos:
     txt_aclaraciones:
@@ -931,7 +920,7 @@ items:
   - nombre: Santa Romeria
     imagen: images/carta/20.jpg
     imagen_pequenya: images/carta/20_small.jpg
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol ni Azúcares"]
+    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Elaborado con método de maceracion rápida en sifón de espuma. Zumo de Pomelo Natural, Datil Medjool, Romero fresco y CO2
     alergenos:
     txt_aclaraciones:
@@ -945,7 +934,7 @@ items:
   - nombre: Mojito Clásico
     imagen: images/carta/201.jpg
     imagen_pequenya: images/carta/201_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Rón blanco Plantation, Lima, Hierbabuena, Azúcar y Soda.
     alergenos:
     txt_aclaraciones:
@@ -959,7 +948,7 @@ items:
   - nombre: Mojito Sabor
     imagen: images/carta/202.jpg
     imagen_pequenya: images/carta/202_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Rón blanco Plantation, Lima, Hierbabuena, Puré de Frutas, Azúcar y Soda.
     alergenos:
     txt_aclaraciones: Mojito Cásico al que le añadimos un toque de fruta a elegir entre Fresa Natural, Mango Natural, Frambuesa Natural, Cereza o Arandano Azul.
@@ -973,7 +962,7 @@ items:
   - nombre: Mojito Moreno
     imagen: images/carta/275.jpg
     imagen_pequenya: images/carta/275_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Ron Añejo especiado, Lima, Hierbabuena, Azúcar moreno, Angostura y Soda
     alergenos:
     txt_aclaraciones:
@@ -987,7 +976,7 @@ items:
   - nombre: Mai Tai
     imagen: images/carta/286.jpg
     imagen_pequenya: images/carta/286_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Rón Blanco Plantation, Rón añejo Captain Morgan Dark, Lima, Pomelo, Triple Seco, Caramelo, Falernum, Angostura y Pernod.
     alergenos: "*Almendra*"
     txt_aclaraciones: Descubre la coctelería Tiki con su Cocktail más Popular.
@@ -1001,7 +990,7 @@ items:
   - nombre: Mint Julep
     imagen: images/carta/279.jpg
     imagen_pequenya: images/carta/279_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Whisky o Bourbon"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Bulleit bourbon, Menta fresca, Azúcar y Soda.
     alergenos:
     txt_aclaraciones:
@@ -1015,7 +1004,7 @@ items:
   - nombre: Honey & Mint
     imagen: images/carta/278.jpg
     imagen_pequenya: images/carta/278_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Whisky o Bourbon"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: J & B Honey, Lima, Manzana Granny Smith y Azúcar
     alergenos:
     txt_aclaraciones:
@@ -1029,7 +1018,7 @@ items:
   - nombre: Lynchburg Lemonade
     imagen: images/carta/276.jpg
     imagen_pequenya: images/carta/276_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Whisky o Bourbon"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Jack Daniels, Zumo de Limón, Triple Seco, Azúcar y Sprite.
     alergenos:
     txt_aclaraciones:
@@ -1043,7 +1032,7 @@ items:
   - nombre: Gin Smash Basil
     imagen: images/carta/277.jpg
     imagen_pequenya: images/carta/277_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Tanqueray Ten, Zumo de Limón, Zumo de Pomelo, Albahaca y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1057,7 +1046,7 @@ items:
   - nombre: Caipiroska
     imagen: images/carta/269.jpg
     imagen_pequenya: images/carta/269_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Finlandia, Lima y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1071,7 +1060,7 @@ items:
   - nombre: Caipiroska Sabor
     imagen: images/carta/195.jpg
     imagen_pequenya: images/carta/195_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Finlandia, Lima, Pure de Fruta y Azúcar.
     alergenos:
     txt_aclaraciones: Caipiroska Clasica a la que le añadimos fruta a elegir entre Fresa Natural, Frambuesa Natural o Melocotón.
@@ -1085,7 +1074,7 @@ items:
   - nombre: Caipiroska Black
     imagen: images/carta/266.jpg
     imagen_pequenya: images/carta/266_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Eristoff Black, Lima y A zúcar.
     alergenos:
     txt_aclaraciones:
@@ -1099,7 +1088,7 @@ items:
   - nombre: Moskow Mule
     imagen: images/carta/263.jpg
     imagen_pequenya: images/carta/263_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Vodka o Gin"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Vodka Finlandia, Zumo de Lima, Sirope de Ágave y Giger Beer
     alergenos:
     txt_aclaraciones:
@@ -1113,7 +1102,7 @@ items:
   - nombre: Caipirinha
     imagen: images/carta/268.jpg
     imagen_pequenya: images/carta/268_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Cachaça, Lima y Azúcar.
     alergenos:
     txt_aclaraciones:
@@ -1127,7 +1116,7 @@ items:
   - nombre: Caipirinha de Naranja y Piña
     imagen: images/carta/267.jpg
     imagen_pequenya: images/carta/267_small.jpg
-    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares" , "Con Rón o Cachaça"]
+    categorias: ["Cocktails & Drinks" , "Mojitos Caipirinhas y Similares"]
     ingredientes: Cachaça, Lima, Mermelada de Naranja homemade, Zumo de Piña y Azúcar.
     alergenos:
     txt_aclaraciones:
