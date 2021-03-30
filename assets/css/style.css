@@ -817,7 +817,7 @@ a:hover {
   margin-bottom: 25px;
 }
 
-.menu-filter > .btn-group .btn {
+.menu-filter > .btn-group > .btn {
   /* To make the default item smaller later */
   flex-grow: 2;
   /* Can be deactivated for wider buttons */
@@ -835,17 +835,17 @@ a:hover {
   justify-content: center;
 }
 
-.menu-filter > .btn-group .btn.active {
+.menu-filter > .btn-group > .btn.active {
   border-color: white;
 }
 
 /* The first item in the group is smaller */
-.menu-filter > .btn-group .btn.filter-reset {
+.menu-filter > .btn-group > .btn.filter-reset {
   width: 30px;
   flex-grow: 1 !important;
 }
 
-.menu-filter > .btn-group .btn > i {
+.menu-filter > .btn-group > .btn > i {
   font-size: 25px;
   margin-right: 5px;
 }
