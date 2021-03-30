@@ -27,7 +27,7 @@
        * to the first button to reset its status to all items.
        */}}
     {{ if ne .level "1" }}
-    <label class="btn btn-shadow filter-reset filter-{{ .class_color }} active">
+    <label class="btn btn-shadow page-scroll filter-reset filter-{{ .class_color }} active">
       <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ if eq .level "1" }}{{ .default }}{{ else }}{{ md5 .default }}{{ end }}" checked>
       <i class="{{ .defaultIcon }}"></i>
       <span>{{ i18n "all" }}</span>
@@ -35,7 +35,7 @@
     {{ end }}
 
     {{ range .children }}
-    <label class="btn btn-shadow filter-{{ if eq $data.level "1" }}{{ md5 .nombre }}{{ else }}{{ $data.class_color }}{{ end }}">
+    <label class="btn btn-shadow page-scroll filter-{{ if eq $data.level "1" }}{{ md5 .nombre }}{{ else }}{{ $data.class_color }}{{ end }}">
       <input type="radio" autocomplete="off" name="shuffle-filter" filter-value="{{ md5 .nombre }}">
       <i class="{{ if .icono }}{{ .icono }}{{ else }}{{ $data.icon }}{{ end }}"></i>
       <span>{{ .nombre }}</span>
