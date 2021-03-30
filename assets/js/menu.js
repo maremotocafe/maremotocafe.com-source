@@ -133,6 +133,14 @@ class Menu {
         filterJQ.animate({opacity: 1}, 400);
     }
 
+    // Automatically scrolling to the next filter
+    scrollTo(item) {
+        const htmlAndBody = $('html, body');
+        htmlAndBody.animate({
+            scrollTop: $(item).offset().top - 90
+        }, 500);
+    }
+
     // Updating all the displayed rows.
     updateFilters(curBar, curParent, curFilter) {
         this.toggableFilters.forEach(filter => {
@@ -141,11 +149,16 @@ class Menu {
 
             // Every bar will be hidden except for itself, its first
             // child bar and its parents, respectively
-            if (bar === curBar
-                || this.barContains(bar, curParent)
-                || filterParent === curFilter)
-            {
+            const isSelf = bar === curBar;
+            const isChild = filterParent === curFilter;
+            const isParent = this.barContains(bar, curParent);
+            if (isSelf || isChild || isParent) {
                 this.showFilter(filter);
+
+                // If it's a child bar it's automatically scrolled to it
+                if (isChild) {
+                    this.scrollTo(filter);
+                }
 
                 // The child will be resetted (this is important for
                 // whenever the same parent item is pressed).
