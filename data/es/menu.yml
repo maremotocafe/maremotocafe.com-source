@@ -874,7 +874,7 @@ items:
   - nombre: 🍊 Shin Tonic
     disponible: true
     imagen: images/carta/63.jpg
-    imagen_pequenya: images/carta/
+    imagen_pequenya: images/carta/63_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
     ingredientes: Martini Vibrante (Sin alcohol) & 1724 tonic watter
     alergenos:
@@ -1139,8 +1139,8 @@ items:
     pvp_terraza: 7€
 
   - nombre: Whisky Sour
-    imagen: images/carta/10a.jpg
-    imagen_pequenya: images/carta/10a_small.jpg
+    imagen: images/carta/395.jpg
+    imagen_pequenya: images/carta/395_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails Clásicos"]
     ingredientes: Bulleit bourbon, Zumo de Limón, Clara de Huevo pasteurizada, Angostura y Azúcar.
     alergenos: "*Huevo*"
@@ -1356,6 +1356,7 @@ items:
     pvp_terraza: 9€
 
   - nombre: Around the World
+    disponible: false
     imagen: images/carta/353.jpg
     imagen_pequenya: images/carta/353_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
