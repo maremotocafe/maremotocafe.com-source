@@ -863,7 +863,7 @@ items:
   - nombre: 🍊 Shin Tonic
     disponible: true
     imagen: images/carta/63.jpg
-    imagen_pequenya: images/carta/
+    imagen_pequenya: images/carta/63_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Martini Vibrante (Sin alcohol) & 1724 tonic watter
     alergenos:
@@ -875,8 +875,8 @@ items:
     pvp_local: 6€
     pvp_terraza: 6,50€
 
-  - nombre: Frescor Cálido
-    prioridad: true
+  - nombre: Frescor Cálido (Fuera de Temporada)
+    disponible: false
     imagen: images/carta/311.jpg
     imagen_pequenya: images/carta/311_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -1345,7 +1345,8 @@ items:
     pvp_local: 8,50€
     pvp_terraza: 9€
 
-  - nombre: Around the World
+  - nombre: Around the World (Fuera de Temporada)
+    disponible: false
     imagen: images/carta/353.jpg
     imagen_pequenya: images/carta/353_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
