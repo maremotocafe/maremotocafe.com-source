@@ -789,10 +789,10 @@ items:
     pvp_local: 4,50€
     pvp_terraza: 5€
 
-  - nombre: 🍉 Limonada de Sandía y Menta (Fuera de temporada)
-    disponible: false
+  - nombre: 🍉 Limonada de Sandía y Menta
+    prioridad: true
     imagen: images/carta/270.jpg
-    imagen_pequenya: images/carta/
+    imagen_pequenya: images/carta/270_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
     ingredientes: Zumo de Sandía Natural, Zumo de Lima, Menta fresca y Azúcar Integral de caña.
     alergenos:
@@ -876,6 +876,7 @@ items:
     pvp_terraza: 6,50€
 
   - nombre: Frescor Cálido
+    prioridad: true
     imagen: images/carta/311.jpg
     imagen_pequenya: images/carta/311_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -1198,10 +1199,10 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍉 Vodka Patilla (Fuera de temporada)
-    disponible: false
+  - nombre: 🍉 Vodka Patilla
+    prioridad: true
     imagen: images/carta/194.jpg
-    imagen_pequenya: images/carta/
+    imagen_pequenya: images/carta/194_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vodka Finlandia, Sandía fresca, Zumo de Lima, Sirope de Romero, Azúcar, Pimienta Negra y bitter de Lima.
     alergenos:
@@ -1213,10 +1214,10 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍈 Rock Melón (Fuera de temporada)
-    disponible: false
+  - nombre: 🍈 Rock Melón
+    prioridad: true
     imagen: images/carta/104.jpg
-    imagen_pequenya: images/carta/
+    imagen_pequenya: images/carta/104_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Gin licor Proof 13, Puré de Melón Cantalupo Natural, Sirope de Hierbaluisa y Jengibre, Zumo de Naranja Natural, Zumo de Lima y Puré de Calabaza especiada.
     alergenos:
@@ -2568,10 +2569,10 @@ items:
     pvp_local: 6,00€
     pvp_terraza: 6,50€
 
-  - nombre: 🍒 Gewürztraminer & Cherries (Fuera de temporada)
-    disponible: false
+  - nombre: 🍒 Gewürztraminer & Cherries
+    prioridad: true
     imagen: images/carta/300.jpg
-    imagen_pequenya: images/carta/
+    imagen_pequenya: images/carta/300_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Vino Gewürztraminer D.O. Somontano, Sirope de Cereza Homemade, Sirope de Romero Homemade, Zumo de Lima y Soda .
     alergenos: "*Sulfitos*"
@@ -2597,10 +2598,10 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-  - nombre: 🍍 Gin Fizz de Pomelo y Piña (Fuera de temporada) 
-    disponible: false
+  - nombre: 🍍 Gin Fizz de Pomelo y Piña
+    prioridad: true
     imagen: images/carta/316.jpg
-    imagen_pequenya: images/carta/
+    imagen_pequenya: images/carta/316_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
     ingredientes: Tanqueray Ten, Sirope de Piña asada homemade, Zumo de Pomelo y Mixer de Pomelo Thomas henrry.
     alergenos:
