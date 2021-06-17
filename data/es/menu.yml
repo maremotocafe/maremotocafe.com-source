@@ -2441,12 +2441,6 @@ items:
     imagen_pequenya: images/carta/z1.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
-
-  - nombre: Repostería Saludable y Súpernutritiva
-    imagen: images/carta/r1.jpg
-    imagen_pequenya: images/carta/52.jpg
-    categorias: ["Desayunos, Almuerzos y Zumos"]
-
   - nombre: Cookies Caseras
     imagen: images/carta/1c.jpg
     imagen_pequenya: images/carta/150.jpg
@@ -2612,6 +2606,16 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
+  - nombre: Café o té + Tarta del día
+    prioridad: true
+    imagen: images/carta/tarta.jpg
+    imagen_pequenya: images/carta/tarta_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local: 3,95€
+    pvp_terraza: 4,35€
+
   - nombre: Desayunos
     imagen: images/carta/desayunos.jpg
     imagen_pequenya: images/carta/1_small.jpg
@@ -2666,14 +2670,15 @@ items:
     pvp_local:
     pvp_terraza:
 
-  - nombre: Café + Muffin Saludable
-    imagen: images/carta/343.jpg
-    imagen_pequenya: images/carta/343_small.jpg
+  - nombre: Café + Muffin
+    prioridad: true
+    imagen: images/carta/muffins.jpg
+    imagen_pequenya: images/carta/muffins_small.jpg
     categorias: ["Ofertas Destacadas" , "Día"]
     alergenos:
     txt_aclaraciones:
-    pvp_local:
-    pvp_terraza:
+    pvp_local: 3,50
+    pvp_terraza: 3,90
 
   - nombre: Chocolate con Churros
     imagen: images/carta/344.jpg
@@ -2835,3 +2840,13 @@ items:
     edul_gr:
     pvp_local: 7,5€
     pvp_terraza: 8€
+
+  - nombre: Cookies
+    prioridad: true
+    imagen: images/carta/cookies caseras.jpg
+    imagen_pequenya: images/carta/cookies caseras_small.jpg
+    categorias: ["Ofertas Destacadas" , "Día"]
+    alergenos:
+    txt_aclaraciones:
+    pvp_local: 1€
+    pvp_terraza: 1€
