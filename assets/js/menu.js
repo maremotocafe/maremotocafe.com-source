@@ -12,9 +12,6 @@ class Menu {
 
         // The currently active filter.
         this.curFilter = 'all';
-        // The items will only show up after the first filter click, and this
-        // helps keep track of that.
-        this.firstTime = true;
     }
 
     setup(itemsId, popUpsId) {
@@ -34,10 +31,14 @@ class Menu {
 
     setupShuffle() {
         // Initializing Shuffle.js
+        //
+        // NOTE: a bug in Shuffle causes cards to not be set to `visibility:
+        // hidden` when `useTransforms` is disabled, supposedly recommended for
+        // performance gains.
         this.shuffle = new window.Shuffle(this.container, {
             itemSelector: '.shuffle-item',
             buffer: 1,
-            useTransforms: false  // better performance
+            // useTransforms: false  
         });
 
         // Lazy loading also works with Shuffle js to refresh the layout when
@@ -64,6 +65,9 @@ class Menu {
         this.items.forEach(element => {
           this.shuffle.element.appendChild(element);
         });
+
+        this.shuffle.add(this.items);
+        this.shuffle.filter(_ => false);
     }
 
     // Returns the bar inside a filter
@@ -129,6 +133,14 @@ class Menu {
         filterJQ.animate({opacity: 1}, 400);
     }
 
+    // Automatically scrolling to the next filter
+    scrollTo(item) {
+        const htmlAndBody = $('html, body');
+        htmlAndBody.animate({
+            scrollTop: $(item).offset().top - 90
+        }, 500);
+    }
+
     // Updating all the displayed rows.
     updateFilters(curBar, curParent, curFilter) {
         this.toggableFilters.forEach(filter => {
@@ -137,11 +149,16 @@ class Menu {
 
             // Every bar will be hidden except for itself, its first
             // child bar and its parents, respectively
-            if (bar === curBar
-                || this.barContains(bar, curParent)
-                || filterParent === curFilter)
-            {
+            const isSelf = bar === curBar;
+            const isChild = filterParent === curFilter;
+            const isParent = this.barContains(bar, curParent);
+            if (isSelf || isChild || isParent) {
                 this.showFilter(filter);
+
+                // If it's a child bar it's automatically scrolled to it
+                if (isChild) {
+                    this.scrollTo(filter);
+                }
 
                 // The child will be resetted (this is important for
                 // whenever the same parent item is pressed).
@@ -157,11 +174,6 @@ class Menu {
 
     // Classify the items given a new filter.
     updateItems(filter) {
-        if (this.firstTime) {
-            this.shuffle.add(this.items);
-            this.firstTime = false;
-        }
-
         // A new filter will reset the number of items to the initial value.
         if (this.curFilter !== filter) {
             this.numItems = this.initialItems;
@@ -184,6 +196,8 @@ class Menu {
             return false;
         });
 
+        this.shuffle.update();
+
         // If no items matched, a custom message is shown.
         if (numMatches === 0) {
             this.noItemsMsg.classList.remove('d-none');
@@ -197,8 +211,6 @@ class Menu {
         } else {
             this.loadMoreBtn.classList.remove('d-none');
         }
-
-        this.shuffle.update();
     }
 
     onInputClick(e) {

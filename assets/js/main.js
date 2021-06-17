@@ -1,6 +1,6 @@
 'use strict';
 
-function setupScrollToTop() {
+function setupScrollToTopButton() {
     // The scroll to top button will be shown once the page has already
     // been scrolled (either on load, or on scroll).
     const minScroll = 1000;
@@ -65,19 +65,53 @@ function setupPopUp() {
     });
 }
 
+function isInternalURL(url) {
+    if (url.startsWith("#") || url.startsWith("/")) {
+        return true;
+    }
+
+    const curHostname = location.hostname;
+    const itemHostname = new URL(url).hostname;
+    if (curHostname !== itemHostname) {
+        return false;
+    }
+
+    return true;
+}
+
+function getURLHash(url) {
+    if (url.startsWith("#")) {
+        return url;
+    }
+
+    if (url.startsWith("/")) {
+        url = location + url;
+    }
+
+    return new URL(url).hash;
+}
+
 function setupScrollAnimation() {
     let htmlAndBody = $('html, body');
     $('nav a, .page-scroll').on('click', function () {
         // Making sure the clicked hyperlink is inside this website
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-            let target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            if (target.length) {
-                htmlAndBody.animate({
-                    scrollTop: target.offset().top - 50
-                }, 750);
-                return false;
-            }
+        const url = this.getAttribute("href");
+        if (!url) {
+            return true;
+        }
+        if (!isInternalURL(url)) {
+            return true;
+        }
+
+        const hash = getURLHash(url);
+        let target = $(hash);
+        target = target.length ? target : $('[name=' + hash.slice(1) + ']');
+        if (target.length) {
+            htmlAndBody.animate({
+                scrollTop: target.offset().top - 50
+            }, 750);
+
+            return false; // stop propagation
         }
     });
 }
@@ -119,8 +153,8 @@ function setupFormValidation() {
 
 // Things that have to be loaded at the end
 window.addEventListener('load', (e) => {
-    console.log("Setting up scroll to top");
-    setupScrollToTop();
+    console.log("Setting up scroll to top button");
+    setupScrollToTopButton();
 
     console.log("Setting up lazy loading");
     setupLazyLoading();
