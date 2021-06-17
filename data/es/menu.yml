@@ -790,11 +790,7 @@ items:
     pvp_terraza: 5€
 
   - nombre: 🍉 Limonada de Sandía y Menta
-<<<<<<< HEAD
-    disponible: true
-=======
     prioridad: true
->>>>>>> 92303cb499aae4dbb457ea43112c5303d790cf05
     imagen: images/carta/270.jpg
     imagen_pequenya: images/carta/270_small.jpg
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
@@ -865,14 +861,9 @@ items:
     pvp_terraza: 6€
 
   - nombre: 🍊 Shin Tonic
-    disponible: true
     imagen: images/carta/63.jpg
     imagen_pequenya: images/carta/63_small.jpg
-<<<<<<< HEAD
     categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails" , "Sin Alcohol"]
-=======
-    categorias: ["Smoothies, Healthy Drinks y Batidos", "Healthy Cocktails"]
->>>>>>> 92303cb499aae4dbb457ea43112c5303d790cf05
     ingredientes: Martini Vibrante (Sin alcohol) & 1724 tonic watter
     alergenos:
     txt_aclaraciones:
@@ -1207,13 +1198,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-<<<<<<< HEAD
   - nombre: 🍉 Vodka Patilla 
-    disponible: true
-=======
-  - nombre: 🍉 Vodka Patilla
     prioridad: true
->>>>>>> 92303cb499aae4dbb457ea43112c5303d790cf05
     imagen: images/carta/194.jpg
     imagen_pequenya: images/carta/194_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1227,13 +1213,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-<<<<<<< HEAD
   - nombre: 🍈 Rock Melón 
-    disponible: true
-=======
-  - nombre: 🍈 Rock Melón
     prioridad: true
->>>>>>> 92303cb499aae4dbb457ea43112c5303d790cf05
     imagen: images/carta/104.jpg
     imagen_pequenya: images/carta/104_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1248,7 +1229,6 @@ items:
     pvp_terraza: 8,50€
 
   - nombre: Nido de Escocia
-    prioridad: true 
     imagen: images/carta/381.jpg
     imagen_pequenya: images/carta/381_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -1363,11 +1343,7 @@ items:
     pvp_local: 8,50€
     pvp_terraza: 9€
 
-<<<<<<< HEAD
   - nombre: Around the World (Fuera de temporada)
-=======
-  - nombre: Around the World (Fuera de Temporada)
->>>>>>> 92303cb499aae4dbb457ea43112c5303d790cf05
     disponible: false
     imagen: images/carta/353.jpg
     imagen_pequenya: images/carta/353_small.jpg
@@ -2456,7 +2432,7 @@ items:
 
 
   - nombre: Almuerzos
-    imagen: images/carta/almuerzosdentro.jpg
+    imagen: images/carta/almuerzos.jpg
     imagen_pequenya: images/carta/almuerzospq.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
 
@@ -2592,13 +2568,8 @@ items:
     pvp_local: 6,00€
     pvp_terraza: 6,50€
 
-<<<<<<< HEAD
-  - nombre: 🍒 Gewürztraminer & Cherries 
-    disponible: true
-=======
   - nombre: 🍒 Gewürztraminer & Cherries
     prioridad: true
->>>>>>> 92303cb499aae4dbb457ea43112c5303d790cf05
     imagen: images/carta/300.jpg
     imagen_pequenya: images/carta/300_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2626,13 +2597,8 @@ items:
     pvp_local: 7,50€
     pvp_terraza: 8€
 
-<<<<<<< HEAD
-  - nombre: 🍍 Gin Fizz de Pomelo y Piña  
-    disponible: true
-=======
   - nombre: 🍍 Gin Fizz de Pomelo y Piña
     prioridad: true
->>>>>>> 92303cb499aae4dbb457ea43112c5303d790cf05
     imagen: images/carta/316.jpg
     imagen_pequenya: images/carta/316_small.jpg
     categorias: ["Cocktails & Drinks" , "Cocktails de Autor"]
@@ -2647,7 +2613,7 @@ items:
     pvp_terraza: 8€
 
   - nombre: Desayunos
-    imagen: images/carta/1d.jpg
+    imagen: images/carta/desayunos.jpg
     imagen_pequenya: images/carta/1_small.jpg
     categorias: ["Desayunos, Almuerzos y Zumos"]
     alergenos:

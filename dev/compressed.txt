@@ -452,3 +452,13 @@ static/images/carta/392.jpg
 static/images/carta/393.jpg
 static/images/carta/394.jpg
 static/images/carta/395.jpg
+static/images/carta/almuerzos.png
+static/images/carta/cookies caseras.png
+static/images/carta/desayunos.png
+static/images/carta/muffins.png
+static/images/carta/tarta.png
+static/images/carta/almuerzos.jpg
+static/images/carta/cookies caseras.jpg
+static/images/carta/desayunos.jpg
+static/images/carta/muffins.jpg
+static/images/carta/tarta.jpg
